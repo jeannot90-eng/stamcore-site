@@ -1,0 +1,4 @@
+# Stam Core — Netlify-instellingen voor continuous deploy vanaf GitHub.
+# Statische site: geen build-stap, publiceer de hele map.
+[build]
+  publish = "."
