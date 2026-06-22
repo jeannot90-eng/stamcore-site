@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ons werk — Stam Core | Systemen die echt draaien</title>
+<meta name="description" content="Wat Stam Core bouwt, in de praktijk: een boekingssite voor Massagepraktijk Ali Macar, een complete backoffice voor een reinigingsbedrijf, en AI-agents die 24/7 werk uit handen nemen.">
+<meta name="theme-color" content="#020617">
+<link rel="canonical" href="https://stam-core.nl/werk.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+
+<meta property="og:title" content="Ons werk — Stam Core">
+<meta property="og:description" content="Systemen die echt draaien: boekingssites, backoffices en AI-agents.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://stam-core.nl/werk.html">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:image" content="https://stam-core.nl/img/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ons werk — Stam Core">
+<meta name="twitter:description" content="Systemen die echt draaien: boekingssites, backoffices en AI-agents.">
+<meta name="twitter:image" content="https://stam-core.nl/img/og-default.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          display: ['"Space Grotesk"', 'Inter', 'sans-serif'],
+        },
+        colors: {
+          electric: { 400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7' },
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { -webkit-font-smoothing: antialiased; }
+  body { background-color: #020617; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  .glow-grid {
+    background-image:
+      radial-gradient(60rem 40rem at 50% -10%, rgba(14,165,233,.16), transparent 60%),
+      radial-gradient(40rem 30rem at 85% 10%, rgba(16,185,129,.10), transparent 60%);
+  }
+  .hairline { background: linear-gradient(90deg, transparent, rgba(148,163,184,.25), transparent); }
+</style>
+</head>
+
+<body class="font-sans text-slate-200 antialiased selection:bg-electric-500/30 selection:text-white">
+
+<!-- ================= HEADER ================= -->
+<header class="fixed inset-x-0 top-0 z-50">
+  <div class="mx-auto max-w-7xl px-6">
+    <nav class="mt-4 flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/70 px-5 py-3 backdrop-blur-xl" aria-label="Hoofdmenu">
+      <a href="index.html" class="group flex items-center gap-3" aria-label="Stam Core home">
+        <span class="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-electric-400 to-emerald-400 font-display text-sm font-bold text-slate-950 shadow-lg shadow-electric-500/20">SC</span>
+        <span class="leading-tight">
+          <span class="block font-display text-lg font-bold tracking-tight text-white">Stam Core</span>
+          <span class="block text-[11px] font-medium uppercase tracking-[0.2em] text-slate-400">Business Automation</span>
+        </span>
+      </a>
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="hidden text-sm font-medium text-slate-300 transition hover:text-white sm:inline-block">Home</a>
+        <a href="index.html#contact" class="rounded-lg bg-white px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-electric-400">Adviesgesprek</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="glow-grid relative overflow-hidden pt-40 pb-16 sm:pt-48 sm:pb-20">
+  <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,transparent,#020617)]"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-3xl text-center">
+      <a href="index.html" class="reveal inline-flex items-center gap-2 text-sm font-medium text-slate-400 transition hover:text-white">
+        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 12H5m0 0l6 6m-6-6l6-6"/></svg>
+        Terug naar home
+      </a>
+      <h1 class="reveal mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl">
+        Systemen die <span class="bg-gradient-to-r from-electric-400 to-emerald-400 bg-clip-text text-transparent">echt draaien</span>
+      </h1>
+      <p class="reveal mx-auto mt-6 max-w-2xl text-lg text-slate-300 sm:text-xl">
+        Geen mockups, geen beloftes. Hieronder zie je de systemen die we hebben gebouwd en
+        die elke dag in gebruik zijn — van de digitale voordeur tot de agents op de achtergrond.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 1. FRONT-END · ALI MACAR ================= -->
+<section class="relative py-16 sm:py-20">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-10 lg:grid-cols-12 lg:items-center">
+      <div class="lg:col-span-5">
+        <span class="reveal text-xs font-semibold uppercase tracking-[0.2em] text-electric-400">Front-End &middot; De digitale voordeur</span>
+        <h2 class="reveal mt-3 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Massagepraktijk Ali Macar</h2>
+        <p class="reveal mt-5 text-slate-300">Een vakman zonder online deur kreeg een boekingssite
+          waar klanten 24/7 zelf plannen — gekoppeld aan een beheersysteem voor aanvragen, agenda,
+          betaalverzoeken en automatische reviews.</p>
+        <ul class="reveal mt-6 space-y-3 text-slate-300">
+          <li class="flex gap-3"><span class="mt-1 text-emerald-400">&check;</span><span>24/7 zelf online boeken</span></li>
+          <li class="flex gap-3"><span class="mt-1 text-emerald-400">&check;</span><span>Beschikbaarheid per dag instelbaar</span></li>
+          <li class="flex gap-3"><span class="mt-1 text-emerald-400">&check;</span><span>Aanvragen bevestigen, betaalverzoek of review in één tik</span></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-7">
+        <!-- Browser-mockup: ali-1.png (homepage, desktop) -->
+        <div class="reveal overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60 shadow-2xl shadow-slate-950/50">
+          <div class="flex items-center gap-2 border-b border-white/5 bg-slate-950/60 px-4 py-3">
+            <span class="h-3 w-3 rounded-full bg-rose-400/70"></span>
+            <span class="h-3 w-3 rounded-full bg-amber-400/70"></span>
+            <span class="h-3 w-3 rounded-full bg-emerald-400/70"></span>
+            <span class="ml-3 truncate rounded-md bg-white/5 px-3 py-1 text-xs text-slate-400">alimacar-massage.nl</span>
+          </div>
+          <div class="aspect-[16/10]">
+            <img src="img/ali-1.jpg" alt="Boekingssite Massagepraktijk Ali Macar" class="h-full w-full object-cover object-top">
+          </div>
+        </div>
+        <div class="reveal mt-6 grid grid-cols-2 gap-6">
+          <!-- Telefoon-mockup: ali-2.png (aanvragen, mobiel) -->
+          <div class="mx-auto w-full max-w-[230px]">
+            <div class="overflow-hidden rounded-[2rem] border-4 border-slate-800 bg-slate-900 shadow-2xl shadow-slate-950/50">
+              <div class="aspect-[9/19]">
+                <img src="img/ali-2.jpg" alt="Aanvragen en planning in het beheersysteem" class="h-full w-full object-cover object-top">
+              </div>
+            </div>
+            <p class="mt-3 text-center text-xs text-slate-500">Aanvragen &amp; planning</p>
+          </div>
+          <!-- Telefoon-mockup: ali-3.png (beschikbaarheid, mobiel) -->
+          <div class="mx-auto w-full max-w-[230px]">
+            <div class="overflow-hidden rounded-[2rem] border-4 border-slate-800 bg-slate-900 shadow-2xl shadow-slate-950/50">
+              <div class="aspect-[9/19]">
+                <img src="img/ali-3.jpg" alt="Beschikbaarheid per dag instellen" class="h-full w-full object-cover object-top">
+              </div>
+            </div>
+            <p class="mt-3 text-center text-xs text-slate-500">Beschikbaarheid instellen</p>
+          </div>
+        </div>
+        <!-- Browser-mockup: ali-4 (beheer/groei, bijgesneden) -->
+        <div class="reveal mt-6 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60 shadow-2xl shadow-slate-950/50">
+          <div class="flex items-center gap-2 border-b border-white/5 bg-slate-950/60 px-4 py-3">
+            <span class="h-3 w-3 rounded-full bg-rose-400/70"></span>
+            <span class="h-3 w-3 rounded-full bg-amber-400/70"></span>
+            <span class="h-3 w-3 rounded-full bg-emerald-400/70"></span>
+            <span class="ml-3 truncate rounded-md bg-white/5 px-3 py-1 text-xs text-slate-400">beheer &middot; groei &amp; inzichten</span>
+          </div>
+          <div class="aspect-[671/580]">
+            <img src="img/ali-4.jpg" alt="Groei en inzichten in het beheersysteem" class="h-full w-full object-cover object-top">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 2. CORE · KUSTERMANS ================= -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-10 lg:grid-cols-12 lg:items-center">
+      <div class="order-2 lg:order-1 lg:col-span-7">
+        <!-- Browser-mockup: kustermans-1.png (dashboard, desktop) -->
+        <div class="reveal overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60 shadow-2xl shadow-slate-950/50">
+          <div class="flex items-center gap-2 border-b border-white/5 bg-slate-950/60 px-4 py-3">
+            <span class="h-3 w-3 rounded-full bg-rose-400/70"></span>
+            <span class="h-3 w-3 rounded-full bg-amber-400/70"></span>
+            <span class="h-3 w-3 rounded-full bg-emerald-400/70"></span>
+            <span class="ml-3 truncate rounded-md bg-white/5 px-3 py-1 text-xs text-slate-400">backoffice &middot; dashboard</span>
+          </div>
+          <div class="aspect-[16/10]">
+            <img src="img/kustermans-1.jpg" alt="Backoffice dashboard (klantdata afgedekt)" class="h-full w-full object-cover object-top">
+          </div>
+        </div>
+        <div class="reveal mt-6">
+          <!-- Browser-mockup: kustermans-2.png (planning, desktop) -->
+          <div class="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/60 shadow-2xl shadow-slate-950/50">
+            <div class="flex items-center gap-2 border-b border-white/5 bg-slate-950/60 px-4 py-3">
+              <span class="h-3 w-3 rounded-full bg-rose-400/70"></span>
+              <span class="h-3 w-3 rounded-full bg-amber-400/70"></span>
+              <span class="h-3 w-3 rounded-full bg-emerald-400/70"></span>
+              <span class="ml-3 truncate rounded-md bg-white/5 px-3 py-1 text-xs text-slate-400">backoffice &middot; planning</span>
+            </div>
+            <div class="aspect-[16/9]">
+              <img src="img/kustermans-2.jpg" alt="Weekplanning en route (klantdata afgedekt)" class="h-full w-full object-cover object-top">
+            </div>
+          </div>
+        </div>
+        <!-- Browser-mockup: kustermans-3 (controle + AI-assistent) -->
+        <div class="reveal mt-6 overflow-hidden rounded-2xl border border-emerald-400/20 bg-slate-900/60 shadow-2xl shadow-slate-950/50">
+          <div class="flex items-center gap-2 border-b border-white/5 bg-slate-950/60 px-4 py-3">
+            <span class="h-3 w-3 rounded-full bg-rose-400/70"></span>
+            <span class="h-3 w-3 rounded-full bg-amber-400/70"></span>
+            <span class="h-3 w-3 rounded-full bg-emerald-400/70"></span>
+            <span class="ml-3 truncate rounded-md bg-white/5 px-3 py-1 text-xs text-slate-400">backoffice &middot; controle &amp; AI-assistent</span>
+          </div>
+          <div class="aspect-[1266/1300]">
+            <img src="img/kustermans-3.jpg" alt="Controle en AI-assistent (data afgedekt)" class="h-full w-full object-cover object-top">
+          </div>
+        </div>
+      </div>
+      <div class="order-1 lg:order-2 lg:col-span-5">
+        <span class="reveal text-xs font-semibold uppercase tracking-[0.2em] text-electric-400">Core &middot; Het operationele fundament</span>
+        <h2 class="reveal mt-3 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Eén systeem voor kantoor én buitendienst</h2>
+        <p class="reveal mt-5 text-slate-300">Voor een reinigingsbedrijf bouwden we een complete
+          backoffice: offertes, facturen met iDEAL, weekplanning met route, controle van werk en
+          een inzichten-dashboard. De buitendienst werkt in een eigen portaal.</p>
+        <ul class="reveal mt-6 space-y-3 text-slate-300">
+          <li class="flex gap-3"><span class="mt-1 text-emerald-400">&check;</span><span>Offertes &amp; facturen met iDEAL op één plek</span></li>
+          <li class="flex gap-3"><span class="mt-1 text-emerald-400">&check;</span><span>Weekplanning met routes en wijken</span></li>
+          <li class="flex gap-3"><span class="mt-1 text-emerald-400">&check;</span><span>Rol-gebaseerde toegang: buitendienst ziet de planning, niet de financiën</span></li>
+        </ul>
+        <p class="reveal mt-5 rounded-xl border border-white/5 bg-slate-900/50 px-5 py-4 text-sm text-slate-400">
+          Privacy: klantgegevens en cijfers op deze schermen zijn afgedekt — alleen de werking is te zien.
+        </p>
+      </div>
+    </div>
+
+    <!-- Werknemersportaal (buitendienst) -->
+    <div class="mt-20">
+      <div class="mx-auto max-w-2xl text-center">
+        <span class="reveal text-xs font-semibold uppercase tracking-[0.2em] text-electric-400">Core &middot; Werknemersportaal</span>
+        <h3 class="reveal mt-3 font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">De buitendienst op zak</h3>
+        <p class="reveal mt-4 text-slate-400">Een eigen app-omgeving voor het team: alleen de dagplanning,
+          de dagstart en de review-QR — nooit de financiën of het klantenbestand. Rol-gebaseerde toegang in de praktijk.</p>
+      </div>
+      <div class="reveal mt-12 grid grid-cols-1 gap-10 sm:grid-cols-3">
+        <!-- Telefoon-mockup: portal-1.png (dagstart & dagverslag, mobiel) -->
+        <div class="mx-auto w-full max-w-[240px]">
+          <div class="overflow-hidden rounded-[2rem] border-4 border-slate-800 bg-slate-900 shadow-2xl shadow-slate-950/50">
+            <div class="aspect-[9/19]">
+              <img src="img/portal-1.jpg" alt="Dagstart en dagverslag in het portaal" class="h-full w-full object-cover object-top">
+            </div>
+          </div>
+          <p class="mt-3 text-center text-xs text-slate-500">Dagstart &amp; dagverslag</p>
+        </div>
+        <!-- Telefoon-mockup: portal-2.png (review-QR, mobiel) -->
+        <div class="mx-auto w-full max-w-[240px]">
+          <div class="overflow-hidden rounded-[2rem] border-4 border-slate-800 bg-slate-900 shadow-2xl shadow-slate-950/50">
+            <div class="aspect-[9/19]">
+              <img src="img/portal-2.jpg" alt="Review-QR ter plekke (geredigeerd)" class="h-full w-full object-cover object-top">
+            </div>
+          </div>
+          <p class="mt-3 text-center text-xs text-slate-500">Review-QR ter plekke</p>
+        </div>
+        <!-- Telefoon-mockup: portal-3.png (assistent, mobiel) -->
+        <div class="mx-auto w-full max-w-[240px]">
+          <div class="overflow-hidden rounded-[2rem] border-4 border-slate-800 bg-slate-900 shadow-2xl shadow-slate-950/50">
+            <div class="aspect-[9/19]">
+              <img src="img/portal-3.jpg" alt="Meewerkende assistent in het portaal" class="h-full w-full object-cover object-top">
+            </div>
+          </div>
+          <p class="mt-3 text-center text-xs text-slate-500">Assistent voor onderweg</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3. AGENTS · AUTOMATISERING ================= -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <span class="reveal text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400">Agents &middot; De digitale workforce</span>
+      <h2 class="reveal mt-3 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Werk dat zichzelf doet</h2>
+      <p class="reveal mt-5 text-lg text-slate-400">Agents die meedraaien in het systeem en taken
+        overnemen die anders elke dag handmatig zouden gebeuren.</p>
+    </div>
+
+    <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="reveal rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-7">
+        <span class="grid h-11 w-11 place-items-center rounded-xl bg-emerald-400/10 text-emerald-400 ring-1 ring-emerald-400/20">
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7l2 2 4-4"/></svg>
+        </span>
+        <h3 class="mt-5 font-display text-lg font-semibold text-white">Van planning tot factuur</h3>
+        <p class="mt-2 text-sm text-slate-400">De hele keten kan een agent draaien: van inplannen en
+          bevestigen tot het automatisch opmaken én versturen van de factuur — zonder handwerk.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/50 p-7">
+        <span class="grid h-11 w-11 place-items-center rounded-xl bg-emerald-400/10 text-emerald-400 ring-1 ring-emerald-400/20">
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v5l3 2M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </span>
+        <h3 class="mt-5 font-display text-lg font-semibold text-white">Verjaardagsmail &amp; -korting</h3>
+        <p class="mt-2 text-sm text-slate-400">Het systeem ziet welke klanten jarig zijn en verstuurt
+          automatisch een felicitatie met korting — een moment dat anders verloren gaat.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/50 p-7">
+        <span class="grid h-11 w-11 place-items-center rounded-xl bg-emerald-400/10 text-emerald-400 ring-1 ring-emerald-400/20">
+          <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.157 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.207zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.247-.694.247-1.289.173-1.413z"/></svg>
+        </span>
+        <h3 class="mt-5 font-display text-lg font-semibold text-white">WhatsApp-agents</h3>
+        <p class="mt-2 text-sm text-slate-400">Aankondigingen, betaalverzoeken en standaardvragen
+          gaan automatisch als kant-en-klaar WhatsApp-bericht de deur uit.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/50 p-7">
+        <span class="grid h-11 w-11 place-items-center rounded-xl bg-emerald-400/10 text-emerald-400 ring-1 ring-emerald-400/20">
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M8 10h8M8 14h5m-9 6l3-3h9a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a1 1 0 001.5.87L7 17"/></svg>
+        </span>
+        <h3 class="mt-5 font-display text-lg font-semibold text-white">AI-assistent</h3>
+        <p class="mt-2 text-sm text-slate-400">Gekoppeld aan de planning: stel onderweg een vraag
+          ("wie is aan de beurt?") en de assistent haalt het direct uit de database.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="relative py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-slate-900/60 to-slate-950 p-10 text-center sm:p-14">
+      <h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Zo'n systeem voor jouw bedrijf?</h2>
+      <p class="mx-auto mt-4 max-w-xl text-lg text-slate-300">Vertel waar jouw handwerk zit. We
+        bouwen de infrastructuur eronder — van voordeur tot agents.</p>
+      <a href="index.html#contact" class="mt-8 inline-flex items-center justify-center gap-2 rounded-xl bg-electric-500 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-400">
+        Boek een Vrijblijvend Adviesgesprek
+        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m0 0l-6-6m6 6l-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="border-t border-white/5 py-12">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+      <a href="index.html" class="flex items-center gap-3" aria-label="Stam Core home">
+        <span class="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-electric-400 to-emerald-400 font-display text-sm font-bold text-slate-950">SC</span>
+        <span class="font-display text-base font-bold tracking-tight text-white">Stam Core</span>
+      </a>
+      <p class="text-sm text-slate-500">Stam Core | Business Automation &copy; 2026</p>
+      <div class="flex items-center gap-5">
+        <div class="flex items-center gap-3" aria-label="Volg Stam Core">
+          <a href="https://www.facebook.com/profile.php?id=61590963702089" target="_blank" rel="noopener" aria-label="Facebook" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 transition hover:border-white/30 hover:text-white"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/stam.core/" target="_blank" rel="noopener" aria-label="Instagram" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 transition hover:border-white/30 hover:text-white"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.linkedin.com/company/stam-core" target="_blank" rel="noopener" aria-label="LinkedIn" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 transition hover:border-white/30 hover:text-white"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+        <a href="privacy.html" class="text-sm font-medium text-slate-400 transition hover:text-white">Privacy</a>
+        <a href="index.html#contact" class="text-sm font-medium text-slate-300 transition hover:text-white">Boek een adviesgesprek</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach((el) => io.observe(el));
+  } else {
+    reveals.forEach((el) => el.classList.add('in'));
+  }
+</script>
+
+</body>
+</html>

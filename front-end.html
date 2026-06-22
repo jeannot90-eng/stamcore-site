@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website &amp; boekingssysteem laten maken | Stam Core Front-End</title>
+<meta name="description" content="Een hypermoderne, lokaal vindbare website met online boekingssysteem die bezoekers omzet in afspraken. Geen visitekaartje — een conversiemachine die je bezit.">
+<meta name="theme-color" content="#020617">
+<link rel="canonical" href="https://stam-core.nl/front-end.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+
+<meta property="og:title" content="Website &amp; boekingssysteem laten maken — Stam Core">
+<meta property="og:description" content="Een lokaal vindbare website met online boeken die bezoekers omzet in afspraken. Geen visitekaartje — een conversiemachine.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://stam-core.nl/front-end.html">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:image" content="https://stam-core.nl/img/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Website &amp; boekingssysteem laten maken — Stam Core">
+<meta name="twitter:description" content="Een lokaal vindbare website met online boeken die bezoekers omzet in afspraken.">
+<meta name="twitter:image" content="https://stam-core.nl/img/og-default.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          display: ['"Space Grotesk"', 'Inter', 'sans-serif'],
+        },
+        colors: { electric: { 400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7' } },
+      },
+    },
+  };
+</script>
+<style>
+  html { -webkit-font-smoothing: antialiased; }
+  body { background-color: #020617; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  .glow-grid { background-image: radial-gradient(60rem 40rem at 50% -10%, rgba(14,165,233,.16), transparent 60%), radial-gradient(40rem 30rem at 85% 10%, rgba(16,185,129,.10), transparent 60%); }
+  .hairline { background: linear-gradient(90deg, transparent, rgba(148,163,184,.25), transparent); }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Website & boekingssysteem laten maken",
+      "serviceType": "Webdesign en online boekingssysteem",
+      "url": "https://stam-core.nl/front-end.html",
+      "image": "https://stam-core.nl/img/og-default.jpg",
+      "description": "Hypermoderne, lokaal SEO-geoptimaliseerde websites met online boekingssysteem die leads vangen en bezoekers omzetten in afspraken.",
+      "areaServed": "NL",
+      "provider": { "@type": "Organization", "name": "Stam Core", "url": "https://stam-core.nl/" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stam-core.nl/" },
+        { "@type": "ListItem", "position": 2, "name": "Front-End", "item": "https://stam-core.nl/front-end.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Wat kost een website met boekingssysteem?", "acceptedAnswer": { "@type": "Answer", "text": "Op aanvraag. We kijken eerst naar wat je nodig hebt en maken dan een voorstel. Je betaalt voor een permanente asset die van jou is, niet voor een maandabonnement." } },
+        { "@type": "Question", "name": "Van wie is de website?", "acceptedAnswer": { "@type": "Answer", "text": "Van jou. Je bouwt een digitaal bezit op dat je houdt — geen huur, geen retainer die alles stopzet zodra je stopt met betalen." } },
+        { "@type": "Question", "name": "Kunnen klanten 24/7 zelf boeken?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. We koppelen een online boekingssysteem aan je beschikbaarheid, zodat klanten zelf plannen — gekoppeld aan een beheersysteem voor aanvragen, betaalverzoeken en automatische reviews." } },
+        { "@type": "Question", "name": "Is de website goed vindbaar in Google?", "acceptedAnswer": { "@type": "Answer", "text": "We bouwen lokaal SEO-geoptimaliseerd: titels, meta, koppen, snelheid en structuur kloppen, en we sluiten je diensten aan op je werkgebied. SEO is een marathon; we leggen de juiste basis." } },
+        { "@type": "Question", "name": "Werkt de site op mobiel?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, volledig responsief — de meeste bezoekers komen via hun telefoon, dus daar bouwen we vanaf het begin voor." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="font-sans text-slate-200 antialiased selection:bg-electric-500/30 selection:text-white">
+
+<!-- HEADER -->
+<header class="fixed inset-x-0 top-0 z-50">
+  <div class="mx-auto max-w-7xl px-6">
+    <nav class="mt-4 flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/70 px-5 py-3 backdrop-blur-xl" aria-label="Hoofdmenu">
+      <a href="index.html" class="flex items-center gap-3" aria-label="Stam Core home">
+        <span class="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-electric-400 to-emerald-400 font-display text-sm font-bold text-slate-950 shadow-lg shadow-electric-500/20">SC</span>
+        <span class="leading-tight">
+          <span class="block font-display text-lg font-bold tracking-tight text-white">Stam Core</span>
+          <span class="block text-[11px] font-medium uppercase tracking-[0.2em] text-slate-400">Business Automation</span>
+        </span>
+      </a>
+      <div class="hidden items-center gap-7 text-sm font-medium text-slate-300 md:flex">
+        <a class="text-white" href="front-end.html">Front-End</a>
+        <a class="transition hover:text-white" href="core.html">Core</a>
+        <a class="transition hover:text-white" href="agents.html">Agents</a>
+        <a class="transition hover:text-white" href="werk.html">Ons werk</a>
+        <a class="transition hover:text-white" href="/kennis/">Kennis</a>
+      </div>
+      <a href="index.html#contact" class="rounded-lg bg-white px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-electric-400">Adviesgesprek</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="glow-grid relative overflow-hidden pt-40 pb-16 sm:pt-48 sm:pb-20">
+  <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,transparent,#020617)]"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-3xl text-center">
+      <span class="reveal inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-electric-400">Stam Core &middot; Front-End</span>
+      <h1 class="reveal mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl">
+        De digitale voordeur die <span class="bg-gradient-to-r from-electric-400 to-emerald-400 bg-clip-text text-transparent">zélf afspraken aanneemt</span>
+      </h1>
+      <p class="reveal mx-auto mt-6 max-w-2xl text-lg text-slate-300 sm:text-xl">
+        Een hypermoderne, lokaal vindbare website met online boekingssysteem. Geen
+        visitekaartje dat stilstaat — een conversiemachine die leads vangt en bezoekers
+        omzet in afspraken, 24/7. En het is van jou.
+      </p>
+      <div class="reveal mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <a href="index.html#contact" class="inline-flex w-full items-center justify-center rounded-xl bg-electric-500 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-400 sm:w-auto">Boek een Vrijblijvend Adviesgesprek</a>
+        <a href="werk.html" class="inline-flex w-full items-center justify-center rounded-xl border border-white/15 bg-white/5 px-7 py-4 text-base font-semibold text-white transition hover:bg-white/10 sm:w-auto">Bekijk een voorbeeld</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEEM -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+      <div>
+        <span class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-electric-400">Het probleem</span>
+        <h2 class="reveal mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Een vakman zonder online deur</h2>
+        <p class="reveal mt-5 text-lg text-slate-300">
+          Je bent goed in je vak, maar online ben je lastig te vinden. Afspraken lopen via
+          de telefoon en de mail, je bent 's avonds nog aan het terugbellen, en er is geen
+          plek waar klanten gewoon zelf kunnen boeken. Elke gemiste oproep is een gemiste klant.
+        </p>
+      </div>
+      <div class="reveal grid gap-4">
+        <div class="flex gap-3 rounded-xl border border-white/5 bg-slate-900/40 px-5 py-4"><span class="mt-0.5 text-rose-400/80">—</span><span class="text-slate-300">Niet of slecht vindbaar in Google.</span></div>
+        <div class="flex gap-3 rounded-xl border border-white/5 bg-slate-900/40 px-5 py-4"><span class="mt-0.5 text-rose-400/80">—</span><span class="text-slate-300">Afspraken alleen telefonisch en via mail — veel heen-en-weer.</span></div>
+        <div class="flex gap-3 rounded-xl border border-white/5 bg-slate-900/40 px-5 py-4"><span class="mt-0.5 text-rose-400/80">—</span><span class="text-slate-300">Geen plek waar klanten 24/7 zelf een afspraak maken.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AANPAK / ONDERDELEN -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <span class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-electric-400">Onze aanpak</span>
+      <h2 class="reveal mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Een voordeur die werkt terwijl jij werkt</h2>
+      <p class="reveal mt-5 text-lg text-slate-400">We bouwen geen folder, maar een systeem. De website is de voorkant; daarachter zit een beheersysteem dat het werk overneemt.</p>
+    </div>
+    <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/50 p-7">
+        <h3 class="font-display text-lg font-semibold text-white">Online boekingssysteem</h3>
+        <p class="mt-2 text-sm text-slate-400">Klanten plannen 24/7 zelf, gekoppeld aan jouw beschikbaarheid met uitloop tussen afspraken.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/50 p-7">
+        <h3 class="font-display text-lg font-semibold text-white">Lokaal vindbaar</h3>
+        <p class="mt-2 text-sm text-slate-400">SEO-geoptimaliseerd voor je werkgebied: titels, structuur, snelheid en koppen die kloppen.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/50 p-7">
+        <h3 class="font-display text-lg font-semibold text-white">Beheersysteem</h3>
+        <p class="mt-2 text-sm text-slate-400">Aanvragen bevestigen, verzetten of herhalen vanaf één scherm — geen losse appjes meer.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/50 p-7">
+        <h3 class="font-display text-lg font-semibold text-white">Betaalverzoeken</h3>
+        <p class="mt-2 text-sm text-slate-400">Met één tik een betaalverzoek sturen, ook via WhatsApp. Sneller betaald, minder gedoe.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/50 p-7">
+        <h3 class="font-display text-lg font-semibold text-white">Automatische reviews</h3>
+        <p class="mt-2 text-sm text-slate-400">Na afloop vraagt het systeem zelf om een review — bouwt je vindbaarheid en vertrouwen op.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/50 p-7">
+        <h3 class="font-display text-lg font-semibold text-white">Conversiegericht ontwerp</h3>
+        <p class="mt-2 text-sm text-slate-400">Snel, strak en gericht op één ding: van bezoeker naar afspraak.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-slate-900/60 to-slate-950 p-8 sm:p-12">
+      <span class="text-xs font-semibold uppercase tracking-[0.2em] text-electric-400">Uit de praktijk</span>
+      <h2 class="mt-3 font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">Massagepraktijk Ali Macar</h2>
+      <p class="mt-4 max-w-2xl text-slate-300">Een vakman zonder online deur kreeg een boekingssite waar klanten 24/7 zelf plannen — gekoppeld aan een beheersysteem voor aanvragen, agenda, betaalverzoeken en automatische reviews. Van handmatig plannen naar een voordeur die zelf afspraken aanneemt.</p>
+      <a href="werk.html" class="mt-6 inline-flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">Bekijk de case &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-3xl px-6">
+    <h2 class="reveal font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Veelgestelde vragen</h2>
+    <div class="mt-10 space-y-4">
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/40 p-6">
+        <h3 class="font-display text-lg font-semibold text-white">Wat kost een website met boekingssysteem?</h3>
+        <p class="mt-2 text-slate-400">Op aanvraag. We kijken eerst naar wat je nodig hebt en maken dan een voorstel. Je betaalt voor een permanente asset die van jou is, niet voor een maandabonnement.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/40 p-6">
+        <h3 class="font-display text-lg font-semibold text-white">Van wie is de website?</h3>
+        <p class="mt-2 text-slate-400">Van jou. Je bouwt een digitaal bezit op dat je houdt — geen huur, geen retainer die alles stopzet zodra je stopt met betalen.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/40 p-6">
+        <h3 class="font-display text-lg font-semibold text-white">Kunnen klanten 24/7 zelf boeken?</h3>
+        <p class="mt-2 text-slate-400">Ja. We koppelen een online boekingssysteem aan je beschikbaarheid, met een beheersysteem voor aanvragen, betaalverzoeken en automatische reviews erachter.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/40 p-6">
+        <h3 class="font-display text-lg font-semibold text-white">Is de website goed vindbaar in Google?</h3>
+        <p class="mt-2 text-slate-400">We bouwen lokaal SEO-geoptimaliseerd en sluiten je diensten aan op je werkgebied. SEO is een marathon, geen knop — we leggen de juiste basis en bouwen die uit.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/40 p-6">
+        <h3 class="font-display text-lg font-semibold text-white">Werkt de site op mobiel?</h3>
+        <p class="mt-2 text-slate-400">Ja, volledig responsief. De meeste bezoekers komen via hun telefoon, dus daar bouwen we vanaf het begin voor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANDERE PIJLERS -->
+<section class="relative py-16">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <h2 class="font-display text-xl font-bold text-white">De andere pijlers</h2>
+    <div class="mt-6 grid gap-6 sm:grid-cols-2">
+      <a href="core.html" class="group rounded-2xl border border-white/5 bg-slate-900/40 p-7 transition hover:border-electric-500/30">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-electric-400">Core</p>
+        <h3 class="mt-2 font-display text-lg font-semibold text-white">Het operationele fundament &rarr;</h3>
+        <p class="mt-2 text-sm text-slate-400">Maatwerk software die je administratie automatiseert.</p>
+      </a>
+      <a href="agents.html" class="group rounded-2xl border border-emerald-400/20 bg-slate-900/40 p-7 transition hover:border-emerald-400/40">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400">Agents</p>
+        <h3 class="mt-2 font-display text-lg font-semibold text-white">De digitale workforce &rarr;</h3>
+        <p class="mt-2 text-sm text-slate-400">AI-agents die 24/7 werk uit handen nemen.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="relative py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-slate-900/60 to-slate-950 p-10 text-center sm:p-14">
+      <h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Klaar voor een voordeur die werkt?</h2>
+      <p class="mx-auto mt-4 max-w-xl text-lg text-slate-300">Vertel waar jouw klanten je nu missen. We bouwen de voordeur die ze binnenhaalt.</p>
+      <a href="index.html#contact" class="mt-8 inline-flex items-center justify-center rounded-xl bg-electric-500 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-400">Boek een Vrijblijvend Adviesgesprek</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/5 py-12">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-8 sm:grid-cols-3">
+      <div>
+        <a href="index.html" class="flex items-center gap-3" aria-label="Stam Core home">
+          <span class="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-electric-400 to-emerald-400 font-display text-sm font-bold text-slate-950">SC</span>
+          <span class="font-display text-base font-bold tracking-tight text-white">Stam Core</span>
+        </a>
+        <p class="mt-3 text-sm text-slate-500">Business Automation. Wij bouwen permanente digitale assets.</p>
+        <div class="mt-4 flex items-center gap-3" aria-label="Volg Stam Core">
+          <a href="https://www.facebook.com/profile.php?id=61590963702089" target="_blank" rel="noopener" aria-label="Facebook" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 transition hover:border-white/30 hover:text-white"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/stam.core/" target="_blank" rel="noopener" aria-label="Instagram" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 transition hover:border-white/30 hover:text-white"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.linkedin.com/company/stam-core" target="_blank" rel="noopener" aria-label="LinkedIn" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 transition hover:border-white/30 hover:text-white"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold text-white">Diensten</h4>
+        <ul class="mt-3 space-y-2 text-sm text-slate-400">
+          <li><a class="transition hover:text-white" href="front-end.html">Front-End</a></li>
+          <li><a class="transition hover:text-white" href="core.html">Core</a></li>
+          <li><a class="transition hover:text-white" href="agents.html">Agents</a></li>
+          <li><a class="transition hover:text-white" href="werk.html">Ons werk</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold text-white">Contact</h4>
+        <ul class="mt-3 space-y-2 text-sm text-slate-400">
+          <li><a class="transition hover:text-white" href="index.html#contact">Adviesgesprek</a></li>
+          <li><a class="transition hover:text-white" href="mailto:info@stam-core.nl">info@stam-core.nl</a></li>
+          <li><a class="transition hover:text-white" href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-10 border-t border-white/5 pt-6 text-sm text-slate-500">Stam Core | Business Automation &copy; 2026</div>
+  </div>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => { entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
+    reveals.forEach((el) => io.observe(el));
+  } else { reveals.forEach((el) => el.classList.add('in')); }
+</script>
+
+</body>
+</html>
