@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stam Voice &amp; Stam Chatbot — AI-assistenten die opnemen | Stam Core</title>
+<meta name="description" content="Stam Voice neemt de telefoon op wanneer jij niet kunt; Stam Chatbot doet hetzelfde op je website. Een vloeiend Nederlands sprekende AI die de beller geruststelt, doorvraagt en de melding direct in je dashboard zet. Modulair, als transparant maandelijks all-in abonnement.">
+<meta name="theme-color" content="#020617">
+<link rel="canonical" href="https://stam-core.nl/ai-assistenten.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+
+<meta property="og:title" content="Stam Voice &amp; Stam Chatbot — AI-assistenten die opnemen">
+<meta property="og:description" content="Je telefoon gaat terwijl je op de ladder staat. Vanaf nu neemt iemand anders op. Een AI-assistent die opneemt, doorvraagt en de melding in je dashboard zet.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://stam-core.nl/ai-assistenten.html">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:image" content="https://stam-core.nl/img/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Stam Voice &amp; Stam Chatbot — AI-assistenten die opnemen">
+<meta name="twitter:description" content="Een AI-assistent die opneemt wanneer jij niet kunt, doorvraagt en de melding in je dashboard zet.">
+<meta name="twitter:image" content="https://stam-core.nl/img/og-default.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/app.css">
+<style>
+  html { -webkit-font-smoothing: antialiased; }
+  body { background-color: #020617; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  .glow-grid { background-image: radial-gradient(60rem 40rem at 50% -10%, rgba(56,189,248,.16), transparent 60%), radial-gradient(40rem 30rem at 85% 10%, rgba(16,185,129,.10), transparent 60%); }
+  .hairline { background: linear-gradient(90deg, transparent, rgba(148,163,184,.25), transparent); }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Stam Voice & Stam Chatbot — AI-telefoon- en chatassistent",
+      "serviceType": "AI-telefoonbeantwoording en chatbot voor het MKB",
+      "url": "https://stam-core.nl/ai-assistenten.html",
+      "image": "https://stam-core.nl/img/og-default.jpg",
+      "description": "Stam Voice neemt de telefoon op bij overloop of buiten kantooruren; Stam Chatbot beantwoordt vragen op de website. Beide noteren adres en urgentie en zetten de melding direct in het Stam Core-dashboard.",
+      "areaServed": "NL",
+      "provider": { "@type": "Organization", "name": "Stam Core", "url": "https://stam-core.nl/" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stam-core.nl/" },
+        { "@type": "ListItem", "position": 2, "name": "Agents", "item": "https://stam-core.nl/agents.html" },
+        { "@type": "ListItem", "position": 3, "name": "AI-assistenten", "item": "https://stam-core.nl/ai-assistenten.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Wat doet Stam Voice precies?", "acceptedAnswer": { "@type": "Answer", "text": "Stam Voice is een vloeiend Nederlands sprekende AI-telefoonassistent die de telefoon opneemt wanneer jij niet kunt — bij overloop na een aantal keer overgaan, of buiten kantooruren. De assistent stelt de beller gerust, vraagt door, noteert adres en urgentie en zet de melding direct in je dashboard." } },
+        { "@type": "Question", "name": "Wat is het verschil tussen Stam Voice en Stam Chatbot?", "acceptedAnswer": { "@type": "Answer", "text": "Dezelfde intelligentie op twee kanalen. Stam Voice dekt de telefoon, Stam Chatbot dekt je website. Samen vang je elke binnenkomende vraag op, ook als je zelf aan het werk bent." } },
+        { "@type": "Question", "name": "Hoe zit het met de kosten van de AI-assistenten?", "acceptedAnswer": { "@type": "Answer", "text": "Het fundament (website en backoffice) bouw je één keer en is daarna van jou. De AI-modules Stam Voice en Stam Chatbot draaien als een transparant maandelijks all-in abonnement: techniek, telefonie/AI-gebruik en updates zijn inbegrepen. Geen vage marketing-retainers." } },
+        { "@type": "Question", "name": "Is dit AVG-proof en wordt er opgenomen?", "acceptedAnswer": { "@type": "Answer", "text": "We werken volgens de AVG. Bij telefonie en chat melden we transparant dat er een AI-assistent meeluistert/verwerkt, en we verwerken gegevens in de EU waar dat kan. We tonen of bewaren geen klantdata zonder grondslag." } },
+        { "@type": "Question", "name": "Kan ik het eerst zien werken?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. We plannen een live demo op maat, afgestemd op jouw vak en je veelvoorkomende telefoontjes." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="font-sans text-slate-200 antialiased selection:bg-electric-400/30 selection:text-white">
+
+<!-- HEADER -->
+<header class="fixed inset-x-0 top-0 z-50">
+  <div class="mx-auto max-w-7xl px-6">
+    <nav class="mt-4 flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/70 px-5 py-3 backdrop-blur-xl" aria-label="Hoofdmenu">
+      <a href="index.html" class="flex items-center gap-3" aria-label="Stam Core home">
+        <span class="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-electric-400 to-emerald-400 font-display text-sm font-bold text-slate-950 shadow-lg shadow-electric-500/20">SC</span>
+        <span class="leading-tight">
+          <span class="block font-display text-lg font-bold tracking-tight text-white">Stam Core</span>
+          <span class="block text-[11px] font-medium uppercase tracking-[0.2em] text-slate-400">Business Operating System</span>
+        </span>
+      </a>
+      <div class="hidden items-center gap-7 text-sm font-medium text-slate-300 md:flex">
+        <a class="transition hover:text-white" href="front-end.html">Front-End</a>
+        <a class="transition hover:text-white" href="core.html">Core</a>
+        <a class="transition hover:text-white" href="agents.html">Agents</a>
+        <a class="text-white" href="ai-assistenten.html">AI-assistenten</a>
+        <a class="transition hover:text-white" href="werk.html">Ons werk</a>
+        <a class="transition hover:text-white" href="/kennis/">Kennis</a>
+      </div>
+      <a href="index.html?utm_source=site&utm_medium=ai-assistenten&utm_campaign=demo&utm_content=nav#contact" class="rounded-lg bg-white px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-electric-400">Plan een demo</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="glow-grid relative overflow-hidden pt-40 pb-16 sm:pt-48 sm:pb-20">
+  <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,transparent,#020617)]"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-3xl text-center">
+      <span class="reveal inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-electric-400">Stam Voice &middot; Stam Chatbot</span>
+      <h1 class="reveal mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl">
+        Je telefoon gaat terwijl je op de ladder staat. <span class="bg-gradient-to-r from-electric-400 to-emerald-400 bg-clip-text text-transparent">Vanaf nu neemt iemand anders op.</span>
+      </h1>
+      <p class="reveal mx-auto mt-6 max-w-2xl text-lg text-slate-300 sm:text-xl">
+        Een vloeiend Nederlands sprekende AI-assistent op je telefoon én je website.
+        Hij neemt op wanneer jij niet kunt, stelt de beller gerust, vraagt door en zet
+        de melding direct in je dashboard. Geen gemiste oproep meer.
+      </p>
+      <div class="reveal mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <a href="index.html?utm_source=site&utm_medium=ai-assistenten&utm_campaign=demo&utm_content=hero#contact" class="inline-flex w-full items-center justify-center rounded-xl bg-electric-500 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-400 sm:w-auto">Plan een live demo</a>
+        <a href="#hoe-het-werkt" class="inline-flex w-full items-center justify-center rounded-xl border border-white/15 bg-white/5 px-7 py-4 text-base font-semibold text-white transition hover:bg-white/10 sm:w-auto">Hoe het werkt</a>
+      </div>
+      <p class="reveal mt-5 font-mono text-[11px] uppercase tracking-[0.2em] text-slate-500">Net succesvol getest &middot; live showcase</p>
+    </div>
+  </div>
+</section>
+
+<!-- HET PROBLEEM -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+      <div>
+        <span class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-electric-400">Het probleem</span>
+        <h2 class="reveal mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Een gemiste oproep is een gemiste opdracht</h2>
+        <p class="reveal mt-5 text-lg text-slate-300">
+          Je staat op een dak, zit onder een keukenblok of bent met je handen in het werk.
+          De telefoon gaat — en je kunt niet opnemen. De beller wacht niet: hij belt de
+          volgende in de lijst. Precies daar lekt er omzet weg, elke week opnieuw.
+        </p>
+        <p class="reveal mt-4 text-sm text-slate-500">
+          Internationale benchmark, ter illustratie van de orde van grootte (geen NL-cijfer):
+        </p>
+      </div>
+      <div class="reveal grid gap-4">
+        <div class="rounded-2xl border border-white/5 bg-slate-900/40 px-6 py-6">
+          <p class="font-display text-4xl font-bold text-white">62%</p>
+          <p class="mt-1 text-slate-300">van de zakelijke oproepen blijft onbeantwoord.</p>
+        </div>
+        <div class="rounded-2xl border border-white/5 bg-slate-900/40 px-6 py-6">
+          <p class="font-display text-4xl font-bold text-white">85%</p>
+          <p class="mt-1 text-slate-300">van de bellers belt niet terug — maar belt een concurrent.</p>
+        </div>
+        <p class="px-1 font-mono text-[11px] uppercase tracking-[0.16em] text-slate-500">Bron: SchedulingKit / Aira, 2026 (internationaal)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAM VOICE — HOE HET WERKT -->
+<section id="hoe-het-werkt" class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <span class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-electric-400">Stam Voice</span>
+      <h2 class="reveal mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Hoe het werkt — in vier stappen</h2>
+      <p class="reveal mt-5 text-lg text-slate-400">Stam Voice springt in bij overloop (na een aantal keer overgaan) of buiten kantooruren. Jij hoeft niets te doen.</p>
+    </div>
+    <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      <div class="reveal rounded-2xl border border-electric-400/20 bg-slate-900/50 p-7">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-electric-400">Stap 1</p>
+        <h3 class="mt-3 font-display text-lg font-semibold text-white">De telefoon gaat</h3>
+        <p class="mt-2 text-sm text-slate-400">Je neemt niet op binnen X keer overgaan, of het is buiten kantooruren. De oproep loopt over naar Stam Voice.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-electric-400/20 bg-slate-900/50 p-7">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-electric-400">Stap 2</p>
+        <h3 class="mt-3 font-display text-lg font-semibold text-white">De AI neemt op</h3>
+        <p class="mt-2 text-sm text-slate-400">Een vloeiend Nederlands sprekende assistent neemt op, stelt zich voor en stelt de beller gerust — rustig en menselijk.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-electric-400/20 bg-slate-900/50 p-7">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-electric-400">Stap 3</p>
+        <h3 class="mt-3 font-display text-lg font-semibold text-white">Vraagt door &amp; noteert</h3>
+        <p class="mt-2 text-sm text-slate-400">Wat is er aan de hand, waar, en hoe urgent? De assistent noteert adres en urgentie en kwalificeert de aanvraag.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-electric-400/20 bg-slate-900/50 p-7">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-electric-400">Stap 4</p>
+        <h3 class="mt-3 font-display text-lg font-semibold text-white">Melding in je dashboard</h3>
+        <p class="mt-2 text-sm text-slate-400">De complete melding staat direct in je Stam Core-dashboard. Jij belt terug wanneer het past — met alle info al op zak.</p>
+      </div>
+    </div>
+
+    <!-- Illustratief voorbeeld -->
+    <div class="reveal mt-10 overflow-hidden rounded-3xl border border-electric-400/20 bg-gradient-to-b from-electric-500/5 to-slate-950 p-8 sm:p-10">
+      <span class="font-mono text-[11px] uppercase tracking-[0.2em] text-electric-400">Voorbeeld &middot; ter illustratie (geen echte klant)</span>
+      <p class="mt-4 max-w-3xl text-lg text-slate-200">
+        Een installateur is klaar voor vandaag. Om <span class="font-semibold text-white">21:30</span> belt iemand met een
+        <span class="font-semibold text-white">gesprongen leiding</span>. In plaats van de voicemail krijgt de beller Stam Voice:
+        de assistent stelt gerust, vraagt naar het adres en hoe erg het lekt, en noteert dat het urgent is. Twee minuten later
+        ziet de installateur de melding in zijn dashboard — en kan hij bewust kiezen of hij er vanavond nog op afgaat.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- STAM CHATBOT -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+      <div>
+        <span class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-electric-400">Stam Chatbot</span>
+        <h2 class="reveal mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Dezelfde intelligentie, nu op je website</h2>
+        <p class="reveal mt-5 text-lg text-slate-300">
+          Bezoekers stellen 's avonds of in het weekend hun vraag in de chat. Stam Chatbot
+          beantwoordt, kwalificeert de lead en zet de melding — net als Stam Voice — direct in
+          je dashboard. Telefoon én website: samen is elk binnenkomend kanaal gedekt.
+        </p>
+        <ul class="reveal mt-6 space-y-3 text-slate-300">
+          <li class="flex gap-3"><span class="mt-1 text-electric-400">&#10003;</span><span>Beantwoordt veelgestelde vragen 24/7.</span></li>
+          <li class="flex gap-3"><span class="mt-1 text-electric-400">&#10003;</span><span>Kwalificeert leads en noteert contactgegevens.</span></li>
+          <li class="flex gap-3"><span class="mt-1 text-electric-400">&#10003;</span><span>Elke melding rechtstreeks in het Stam Core-dashboard.</span></li>
+        </ul>
+        <p class="reveal mt-6 text-sm text-slate-500">Rechtsonder in beeld kun je de chatassistent direct uitproberen.</p>
+      </div>
+      <div class="reveal rounded-3xl border border-white/10 bg-slate-900/40 p-8">
+        <div class="flex items-center gap-3">
+          <span class="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-electric-400 to-emerald-400 font-display text-sm font-bold text-slate-950">SC</span>
+          <div><p class="font-display font-semibold text-white">Stam Chatbot</p><p class="text-xs text-emerald-400">online</p></div>
+        </div>
+        <div class="mt-5 space-y-3">
+          <div class="max-w-[85%] rounded-2xl rounded-bl-sm bg-slate-800/70 px-4 py-3 text-sm text-slate-200">Goedenavond! Waarmee kan ik je helpen?</div>
+          <div class="ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-electric-500/90 px-4 py-3 text-sm text-white">Lekkage in de badkamer, kan iemand morgen langskomen?</div>
+          <div class="max-w-[90%] rounded-2xl rounded-bl-sm bg-slate-800/70 px-4 py-3 text-sm text-slate-200">Vervelend! Wat is het adres, en zal ik je laten terugbellen? Ik zet 'm meteen door als urgent.</div>
+        </div>
+        <p class="mt-4 font-mono text-[11px] uppercase tracking-[0.18em] text-slate-500">Voorbeeldgesprek &middot; ter illustratie</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODULAIR & PRIJS -->
+<section id="prijs" class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <span class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-electric-400">Modulair &amp; eerlijk geprijsd</span>
+      <h2 class="reveal mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Je fundament bezit je. De assistenten huur je transparant.</h2>
+      <p class="reveal mt-5 text-lg text-slate-400">Geen vage marketing-retainers. We zijn overal eerlijk over de doorlopende kosten.</p>
+    </div>
+    <div class="mt-14 grid gap-6 lg:grid-cols-2">
+      <div class="reveal rounded-3xl border border-white/10 bg-slate-900/40 p-8 sm:p-10">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-slate-400">Het fundament</p>
+        <h3 class="mt-3 font-display text-xl font-semibold text-white">Eenmalig gebouwd, daarna van jou</h3>
+        <p class="mt-3 text-slate-400">Je website (Front-End) en je backoffice (Core) bouw je één keer. Dat is en blijft jouw digitale bezit — geen huur, geen retainer die alles stopzet zodra je stopt met betalen.</p>
+      </div>
+      <div class="reveal rounded-3xl border border-electric-400/30 bg-gradient-to-b from-electric-500/10 to-slate-950 p-8 sm:p-10">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-electric-400">De AI-modules</p>
+        <h3 class="mt-3 font-display text-xl font-semibold text-white">Vast maandelijks all-in</h3>
+        <p class="mt-3 text-slate-300">Stam Voice &amp; Stam Chatbot draaien als een transparant maandabonnement. <span class="text-white">Techniek, telefonie/AI-gebruik en updates zijn inbegrepen</span> — één vast bedrag, geen verrassingen.</p>
+        <p class="mt-4 rounded-xl border border-white/5 bg-slate-950/50 px-5 py-4 text-sm text-slate-400">Ter vergelijking: een fulltime telefoniste of menselijke antwoordservice kost internationaal al snel <span class="font-semibold text-slate-200">~$44k&ndash;$60k per jaar</span> (bron: internationale loon-/servicebenchmarks, 2026). Een AI-assistent die 24/7 doorwerkt zit daar ruim onder — zonder dat we beloven dat 'ie een mens volledig vervangt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEWIJS -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="overflow-hidden rounded-3xl border border-emerald-400/20 bg-gradient-to-b from-emerald-500/5 to-slate-950 p-8 sm:p-12">
+      <span class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400">Uit de praktijk</span>
+      <h2 class="mt-3 font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">We bouwden het eerst voor onszelf</h2>
+      <p class="mt-4 max-w-3xl text-slate-300">
+        Onze eigen geautomatiseerde schoonmaakonderneming draait op dit platform: planning,
+        facturatie met iDEAL, WhatsApp-automatisering en de AI-assistenten. We testen niets op
+        jou wat we niet eerst zelf in productie draaien. Dit is geen belofte voor later — het draait.
+      </p>
+      <p class="mt-4 font-mono text-[11px] uppercase tracking-[0.18em] text-slate-500">Echte screenshots &amp; opnames volgen</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="demo" class="relative py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="overflow-hidden rounded-3xl border border-electric-400/20 bg-gradient-to-b from-slate-900/60 to-slate-950 p-10 text-center sm:p-14">
+      <h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Plan een live demo op maat</h2>
+      <p class="mx-auto mt-4 max-w-xl text-lg text-slate-300">We laten Stam Voice &amp; Stam Chatbot zien op jouw vak en je veelvoorkomende telefoontjes. Dan zie je precies wat er blijft hangen — en wat er voortaan wordt opgevangen.</p>
+      <a href="index.html?utm_source=site&utm_medium=ai-assistenten&utm_campaign=demo&utm_content=cta-blok#contact" class="mt-8 inline-flex items-center justify-center rounded-xl bg-electric-500 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-400">Plan een live demo</a>
+      <p class="mx-auto mt-6 max-w-lg text-xs text-slate-500">Bij telefonie en chat luistert/verwerkt een AI-assistent mee; we verwerken gegevens in de EU waar dat kan. Lees onze <a href="privacy.html" class="underline transition hover:text-slate-300">privacyverklaring</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-3xl px-6">
+    <h2 class="reveal font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Veelgestelde vragen</h2>
+    <div class="mt-10 space-y-4">
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/40 p-6">
+        <h3 class="font-display text-lg font-semibold text-white">Wat doet Stam Voice precies?</h3>
+        <p class="mt-2 text-slate-400">Stam Voice neemt de telefoon op wanneer jij niet kunt — bij overloop na een aantal keer overgaan, of buiten kantooruren. De assistent stelt de beller gerust, vraagt door, noteert adres en urgentie en zet de melding direct in je dashboard.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/40 p-6">
+        <h3 class="font-display text-lg font-semibold text-white">Wat is het verschil tussen Stam Voice en Stam Chatbot?</h3>
+        <p class="mt-2 text-slate-400">Dezelfde intelligentie op twee kanalen. Stam Voice dekt de telefoon, Stam Chatbot dekt je website. Samen vang je elke binnenkomende vraag op.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/40 p-6">
+        <h3 class="font-display text-lg font-semibold text-white">Hoe zit het met de kosten?</h3>
+        <p class="mt-2 text-slate-400">Het fundament (website en backoffice) bouw je één keer en is daarna van jou. De AI-modules draaien als een transparant maandelijks all-in abonnement: techniek, telefonie/AI-gebruik en updates inbegrepen. Geen vage marketing-retainers.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/40 p-6">
+        <h3 class="font-display text-lg font-semibold text-white">Is dit AVG-proof en wordt er opgenomen?</h3>
+        <p class="mt-2 text-slate-400">We werken volgens de AVG. Bij telefonie en chat melden we transparant dat een AI-assistent meeluistert/verwerkt, en we verwerken gegevens in de EU waar dat kan. We tonen of bewaren geen klantdata zonder grondslag.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/40 p-6">
+        <h3 class="font-display text-lg font-semibold text-white">Kan ik het eerst zien werken?</h3>
+        <p class="mt-2 text-slate-400">Ja. We plannen een live demo op maat, afgestemd op jouw vak en je veelvoorkomende telefoontjes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANDERE PIJLERS -->
+<section class="relative py-16">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <h2 class="font-display text-xl font-bold text-white">De drie pijlers</h2>
+    <div class="mt-6 grid gap-6 sm:grid-cols-3">
+      <a href="front-end.html" class="group rounded-2xl border border-white/5 bg-slate-900/40 p-7 transition hover:border-electric-500/30">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-electric-400">Front-End</p>
+        <h3 class="mt-2 font-display text-lg font-semibold text-white">De digitale voordeur &rarr;</h3>
+        <p class="mt-2 text-sm text-slate-400">Websites met online boeken die converteren.</p>
+      </a>
+      <a href="core.html" class="group rounded-2xl border border-white/5 bg-slate-900/40 p-7 transition hover:border-electric-500/30">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-electric-400">Core</p>
+        <h3 class="mt-2 font-display text-lg font-semibold text-white">Het operationele fundament &rarr;</h3>
+        <p class="mt-2 text-sm text-slate-400">Maatwerk software die je administratie automatiseert.</p>
+      </a>
+      <a href="agents.html" class="group rounded-2xl border border-white/5 bg-slate-900/40 p-7 transition hover:border-emerald-500/30">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-400">Agents</p>
+        <h3 class="mt-2 font-display text-lg font-semibold text-white">Personeel dat nooit slaapt &rarr;</h3>
+        <p class="mt-2 text-sm text-slate-400">Autonome AI-agents, ingebed in je software.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/5 py-12">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-8 sm:grid-cols-3">
+      <div>
+        <a href="index.html" class="flex items-center gap-3" aria-label="Stam Core home">
+          <span class="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-electric-400 to-emerald-400 font-display text-sm font-bold text-slate-950">SC</span>
+          <span class="font-display text-base font-bold tracking-tight text-white">Stam Core</span>
+        </a>
+        <p class="mt-3 text-sm text-slate-500">Business Operating System. Wij bouwen permanente digitale assets.</p>
+        <div class="mt-4 flex items-center gap-3" aria-label="Volg Stam Core">
+          <a href="https://www.facebook.com/profile.php?id=61590963702089" target="_blank" rel="noopener" aria-label="Facebook" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 transition hover:border-white/30 hover:text-white"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/stam.core/" target="_blank" rel="noopener" aria-label="Instagram" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 transition hover:border-white/30 hover:text-white"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.linkedin.com/company/stam-core" target="_blank" rel="noopener" aria-label="LinkedIn" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 transition hover:border-white/30 hover:text-white"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold text-white">Diensten</h4>
+        <ul class="mt-3 space-y-2 text-sm text-slate-400">
+          <li><a class="transition hover:text-white" href="front-end.html">Front-End</a></li>
+          <li><a class="transition hover:text-white" href="core.html">Core</a></li>
+          <li><a class="transition hover:text-white" href="agents.html">Agents</a></li>
+          <li><a class="transition hover:text-white" href="ai-assistenten.html">AI-assistenten</a></li>
+          <li><a class="transition hover:text-white" href="werk.html">Ons werk</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold text-white">Contact</h4>
+        <ul class="mt-3 space-y-2 text-sm text-slate-400">
+          <li><a class="transition hover:text-white" href="index.html#contact">Plan een demo</a></li>
+          <li><a class="transition hover:text-white" href="mailto:info@stam-core.nl">info@stam-core.nl</a></li>
+          <li><a class="transition hover:text-white" href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-10 border-t border-white/5 pt-6 text-sm text-slate-500">Stam Core | Business Operating System &copy; 2026</div>
+  </div>
+</footer>
+
+<!-- ════════ STAM CHATBOT WIDGET (ElevenLabs) + nette fallback ════════ -->
+<!-- Vervang AGENT_ID_HIER door de echte ElevenLabs agent-id. -->
+<elevenlabs-convai agent-id="AGENT_ID_HIER"></elevenlabs-convai>
+<script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+<!-- Fallback als de chatbot (nog) niet laadt: een nette knop rechtsonder. -->
+<a id="chat-fallback" href="index.html?utm_source=site&utm_medium=ai-assistenten&utm_campaign=demo&utm_content=chat-fallback#contact"
+   style="position:fixed;right:20px;bottom:20px;z-index:40;display:none;align-items:center;gap:8px;background:#0ea5e9;color:#fff;font:600 14px/1 Inter,system-ui,sans-serif;padding:13px 18px;border-radius:999px;box-shadow:0 8px 24px rgba(14,165,233,.35);text-decoration:none">
+  💬 Stel je vraag
+</a>
+
+<script>
+  // Reveal-animaties
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => { entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
+    reveals.forEach((el) => io.observe(el));
+  } else { reveals.forEach((el) => el.classList.add('in')); }
+
+  // Chatbot-fallback: laadt de ElevenLabs-widget niet binnen 4s, toon dan de knop.
+  (function () {
+    setTimeout(function () {
+      var widget = document.querySelector('elevenlabs-convai');
+      var geladen = widget && widget.shadowRoot; // de widget rendert in een shadow-root
+      if (!geladen) { var fb = document.getElementById('chat-fallback'); if (fb) fb.style.display = 'inline-flex'; }
+    }, 4000);
+  })();
+</script>
+
+</body>
+</html>
