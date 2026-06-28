@@ -95,4 +95,15 @@
   function probeer() { if (koppelChatbot() || pogingen++ > 15) return; setTimeout(probeer, 1000); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", probeer);
   else probeer();
+
+  // ── 4) Herkomst in (verborgen) formuliervelden zetten ───────────────────────
+  // Zo wordt een contactformulier-lead aan de juiste referrer gekoppeld.
+  function vulFormulieren() {
+    var bron = window.stamcoreHerkomst();
+    var velden = document.querySelectorAll('input[name="herkomst"]');
+    for (var i = 0; i < velden.length; i++) velden[i].value = bron;
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", vulFormulieren);
+  else vulFormulieren();
+  document.addEventListener("submit", vulFormulieren, true); // ook vlak vóór verzenden
 })();
