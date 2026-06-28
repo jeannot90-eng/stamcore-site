@@ -2,3 +2,8 @@
 # Statische site: geen build-stap, publiceer de hele map.
 [build]
   publish = "."
+
+# Serverless functions (o.a. submission-created: koppelt formulier-inzendingen
+# automatisch aan de acquisitiemachine).
+[functions]
+  directory = "netlify/functions"
