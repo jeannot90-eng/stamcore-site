@@ -41,6 +41,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://stam-core.nl/kennis/offerte-tot-factuur-automatiseren.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://stam-core.nl/kennis/ai-agent-voor-je-bedrijf.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
