@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kennis — artikelen over business automation | Stam Core</title>
-<meta name="description" content="Praktische artikelen over business automation, klantportalen, websites die converteren en AI-agents. Leer hoe je je bedrijf zichzelf laat draaien — door Stam Core.">
+<title>Kennis: artikelen voor servicebedrijven | Stam Core</title>
+<meta name="description" content="Praktische artikelen voor servicebedrijven: gevonden worden in je regio, websites die aanvragen opleveren, klantportalen en AI-agents. Door Stam Core.">
 <meta name="theme-color" content="#020617">
 <link rel="canonical" href="https://stam-core.nl/kennis/">
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Kennis — artikelen over business automation | Stam Core">
-<meta property="og:description" content="Praktische artikelen over business automation, klantportalen en AI-agents. Door Stam Core.">
+<meta property="og:title" content="Kennis: artikelen voor servicebedrijven | Stam Core">
+<meta property="og:description" content="Praktische artikelen voor servicebedrijven over vindbaarheid, websites en AI. Door Stam Core.">
 <meta property="og:url" content="https://stam-core.nl/kennis/">
 <meta property="og:image" content="https://stam-core.nl/img/og-default.jpg">
 <meta property="og:locale" content="nl_NL">
@@ -36,7 +36,7 @@
   "@type": "Blog",
   "@id": "https://stam-core.nl/kennis/#blog",
   "name": "Kennis — Stam Core",
-  "description": "Artikelen over business automation, klantportalen, websites en AI-agents.",
+  "description": "Artikelen voor servicebedrijven over lokale vindbaarheid, websites, klantportalen en AI-agents.",
   "url": "https://stam-core.nl/kennis/",
   "publisher": { "@type": "Organization", "name": "Stam Core", "url": "https://stam-core.nl/", "logo": "https://stam-core.nl/favicon.svg" },
   "blogPost": [
@@ -55,56 +55,85 @@
 <body class="font-sans text-slate-200 antialiased selection:bg-electric-500/30 selection:text-white">
 
 <!-- ================= HEADER ================= -->
-<header id="top" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+<!-- partial:header -->
+<header id="top" class="fixed inset-x-0 top-0 z-50 transition-all duration-300" data-header>
   <div class="mx-auto max-w-7xl px-6">
     <nav class="mt-4 flex items-center justify-between rounded-2xl border border-white/5 bg-slate-950/60 px-5 py-3 backdrop-blur-xl transition-all duration-300" aria-label="Hoofdmenu" data-navbar>
       <a href="/" class="group flex items-center gap-3" aria-label="Stam Core home">
         <span class="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-electric-400 to-emerald-400 font-display text-sm font-bold text-slate-950 shadow-lg shadow-electric-500/20">SC</span>
         <span class="leading-tight">
           <span class="block font-display text-lg font-bold tracking-tight text-white">Stam Core</span>
-          <span class="block text-[11px] font-medium uppercase tracking-[0.2em] text-slate-400">Business Automation</span>
+          <span class="block text-[11px] font-medium uppercase tracking-[0.2em] text-slate-400">Websites &amp; lokale SEO</span>
         </span>
       </a>
-      <ul class="hidden items-center gap-8 text-sm font-medium text-slate-300 lg:flex">
-        <li><a class="transition hover:text-white" href="/#framework">Het systeem</a></li>
-        <li><a class="transition hover:text-white" href="/#cases">Bewijs</a></li>
-        <li><a class="transition hover:text-white" href="/werk.html">Ons werk</a></li>
-        <li><a class="text-white" href="/kennis/" aria-current="page">Kennis</a></li>
+
+      <ul class="hidden items-center gap-5 text-sm font-medium text-slate-300 lg:flex xl:gap-7">
+        <li><a class="transition hover:text-white" href="/#aanpak">Aanpak</a></li>
+        <li><a class="transition hover:text-white" href="/prijzen">Prijzen</a></li>
+        <li><a class="transition hover:text-white" href="/#cases">Cases</a></li>
+        <li><a class="transition hover:text-white" href="/#branches">Branches</a></li>
+        <li><a class="transition hover:text-white" href="/kennis/">Kennis</a></li>
         <li><a class="transition hover:text-white" href="/#oprichter">Oprichter</a></li>
+        <li>
+          <details class="relative" data-more-menu>
+            <summary class="flex cursor-pointer list-none items-center gap-1 transition hover:text-white [&::-webkit-details-marker]:hidden">
+              Meer
+              <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="absolute right-0 mt-4 w-64 rounded-2xl border border-white/10 bg-slate-950/95 p-2 shadow-lg shadow-slate-950/50 backdrop-blur-xl">
+              <a class="block rounded-lg px-4 py-2.5 transition hover:bg-white/5 hover:text-white" href="/front-end.html">Website &amp; online boeken</a>
+              <a class="block rounded-lg px-4 py-2.5 transition hover:bg-white/5 hover:text-white" href="/core.html">Core &middot; klantportaal &amp; planning</a>
+              <a class="block rounded-lg px-4 py-2.5 transition hover:bg-white/5 hover:text-white" href="/agents.html">Agents &middot; AI die meewerkt</a>
+              <a class="block rounded-lg px-4 py-2.5 transition hover:bg-white/5 hover:text-white" href="/ai-assistenten.html">AI-assistenten</a>
+              <a class="block rounded-lg px-4 py-2.5 transition hover:bg-white/5 hover:text-white" href="/werk.html">Ons werk</a>
+            </div>
+          </details>
+        </li>
       </ul>
+
       <div class="flex items-center gap-3">
-        <a href="/#contact" class="hidden rounded-lg bg-white px-4 py-2 text-sm font-semibold text-slate-950 shadow-sm transition hover:bg-electric-400 sm:inline-block">Adviesgesprek</a>
+        <a href="/#contact" class="hidden rounded-lg bg-white px-4 py-2 text-sm font-semibold text-slate-950 shadow-sm transition hover:bg-electric-400 sm:inline-block">Plan een gesprek</a>
         <button type="button" class="grid h-10 w-10 place-items-center rounded-lg border border-white/10 text-slate-200 lg:hidden" aria-label="Menu openen" aria-expanded="false" data-menu-btn>
           <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
         </button>
       </div>
     </nav>
-    <div class="mt-2 hidden overflow-hidden rounded-2xl border border-white/5 bg-slate-950/90 backdrop-blur-xl lg:hidden" data-mobile-menu>
+
+    <!-- Mobiel menu -->
+    <div class="mt-2 hidden max-h-[calc(100vh-7rem)] overflow-y-auto rounded-2xl border border-white/5 bg-slate-950/95 backdrop-blur-xl lg:hidden" data-mobile-menu>
       <div class="flex flex-col p-2 text-sm font-medium text-slate-200">
-        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/#framework">Het systeem</a>
-        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/#cases">Bewijs</a>
-        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/werk.html">Ons werk</a>
+        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/#aanpak">Aanpak</a>
+        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/prijzen">Prijzen</a>
+        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/#cases">Cases</a>
+        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/#branches">Branches</a>
         <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/kennis/">Kennis</a>
         <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/#oprichter">Oprichter</a>
-        <a class="mt-1 rounded-lg bg-electric-500 px-4 py-3 text-center font-semibold text-white" href="/#contact">Boek een adviesgesprek</a>
+        <p class="px-4 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">Verder bouwen</p>
+        <a class="rounded-lg px-4 py-3 text-slate-300 transition hover:bg-white/5" href="/front-end.html">Website &amp; online boeken</a>
+        <a class="rounded-lg px-4 py-3 text-slate-300 transition hover:bg-white/5" href="/core.html">Core</a>
+        <a class="rounded-lg px-4 py-3 text-slate-300 transition hover:bg-white/5" href="/agents.html">Agents</a>
+        <a class="rounded-lg px-4 py-3 text-slate-300 transition hover:bg-white/5" href="/ai-assistenten.html">AI-assistenten</a>
+        <a class="rounded-lg px-4 py-3 text-slate-300 transition hover:bg-white/5" href="/werk.html">Ons werk</a>
+        <a class="mt-1 rounded-lg bg-electric-500 px-4 py-3 text-center font-semibold text-white" href="/#contact">Plan een gesprek</a>
       </div>
     </div>
   </div>
 </header>
+<!-- /partial:header -->
 
 <main>
 <!-- ================= HERO ================= -->
 <section class="glow-grid relative overflow-hidden pt-40 pb-16 sm:pt-48 sm:pb-20">
   <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,transparent,#020617)]"></div>
   <div class="mx-auto max-w-4xl px-6 text-center">
-    <span class="reveal inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-slate-300">
+    <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-slate-300">
       <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span> Kennis
     </span>
-    <h1 class="reveal mt-7 font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl">
+    <h1 class="mt-7 font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-5xl">
       Hoe je je bedrijf <span class="bg-gradient-to-r from-electric-400 to-emerald-400 bg-clip-text text-transparent">zichzelf laat draaien</span>
     </h1>
-    <p class="reveal mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
-      Praktische artikelen over business automation, klantportalen, conversiegerichte
+    <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300">
+      Praktische artikelen voor servicebedrijven over lokale vindbaarheid, conversiegerichte
       websites en AI-agents — zonder jargon, met de blik van een bouwer.
     </p>
   </div>
@@ -158,7 +187,7 @@
     <h2 class="font-display text-2xl font-bold text-white sm:text-3xl">Benieuwd wat dit voor jóuw bedrijf betekent?</h2>
     <p class="mx-auto mt-3 max-w-xl text-slate-300">Geen verkooppraat — gewoon een eerlijk gesprek over wat er bij jou te automatiseren valt.</p>
     <a href="/#contact" class="mt-7 inline-flex items-center justify-center gap-2 rounded-xl bg-electric-500 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-400">
-      Boek een vrijblijvend adviesgesprek
+      Plan een gesprek
       <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m0 0l-6-6m6 6l-6 6"/></svg>
     </a>
   </div>
@@ -173,7 +202,7 @@
         <span class="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-electric-400 to-emerald-400 font-display text-sm font-bold text-slate-950">SC</span>
         <span class="font-display text-base font-bold tracking-tight text-white">Stam Core</span>
       </a>
-      <p class="text-sm text-slate-500">Stam Core | Business Automation &copy; 2026</p>
+      <p class="text-sm text-slate-500">Stam Core | Websites &amp; lokale SEO &copy; 2026</p>
       <div class="flex items-center gap-5">
         <div class="flex items-center gap-3" aria-label="Volg Stam Core">
           <a href="https://www.facebook.com/profile.php?id=61590963702089" target="_blank" rel="noopener" aria-label="Facebook" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 transition hover:border-white/30 hover:text-white"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
@@ -182,7 +211,7 @@
         </div>
         <a href="/kennis/" class="text-sm font-medium text-slate-400 transition hover:text-white">Kennis</a>
         <a href="/privacy.html" class="text-sm font-medium text-slate-400 transition hover:text-white">Privacy</a>
-        <a href="/#contact" class="text-sm font-medium text-slate-300 transition hover:text-white">Boek een adviesgesprek</a>
+        <a href="/#contact" class="text-sm font-medium text-slate-300 transition hover:text-white">Plan een gesprek</a>
       </div>
     </div>
   </div>
