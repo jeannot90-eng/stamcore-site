@@ -9,7 +9,8 @@
    2. Per pijlerpagina (bijv. website-glazenwasser.html) het blok met plaatspagina's
       bijwerken tussen <!-- PLAATSEN:START --> en <!-- PLAATSEN:END -->.
    3. Gedeelde blokken (header/footer/scripts uit templates/partials/) invullen in
-      elke pagina met <!-- partial:naam --> … <!-- /partial:naam -->.
+      elke pagina met <!-- partial:naam --> … <!-- /partial:naam -->, en assets/app.css
+      inline zetten in elke pagina (draai daarom eerst build:css).
    4. sitemap.xml bijwerken tussen <!-- GENERATED:START --> en <!-- GENERATED:END -->.
 
    Gebruik:
@@ -164,6 +165,15 @@ const fillPartials = (src) => src.replace(/<!-- partial:(\w+) -->[\s\S]*?<!-- \/
 });
 const template = fillPartials(read('templates/branche-plaats.html'));
 
+// CSS inline in elke pagina: scheelt een render-blokkerend verzoek (sneller eerste beeld op mobiel).
+// Een pagina mag <link rel="stylesheet" href="/assets/app.css"> bevatten; die wordt omgezet naar
+// <!-- css:app --><style>…</style><!-- /css:app --> en bij elke run ververst. Draai dus eerst build:css.
+const CSS_LINK = '<link rel="stylesheet" href="/assets/app.css">';
+const appCss = read('assets/app.css').trim();
+const inlineCss = (src) => src
+  .replace(CSS_LINK, '<!-- css:app --><!-- /css:app -->')
+  .replace(/<!-- css:app -->[\s\S]*?<!-- \/css:app -->/, () => `<!-- css:app --><style>${appCss}</style><!-- /css:app -->`);
+
 function buildPage(p) {
   const info = pageInfo(p);
   const n = info.niche;
@@ -224,14 +234,14 @@ const liveFiles = new Set();
 for (const p of live) {
   const info = pageInfo(p);
   liveFiles.add(info.file);
-  write(info.file, buildPage(p));
+  write(info.file, inlineCss(buildPage(p)));
   console.log(`✓ ${info.url}`);
 }
 if (PREVIEW) {
   for (const p of concept) {
     if (!niches[p.niche]) continue;
     const info = pageInfo(p);
-    write(path.join('_preview', info.file), buildPage(p).replace('<head>', '<head>\n<meta name="robots" content="noindex">'));
+    write(path.join('_preview', info.file), inlineCss(buildPage(p)).replace('<head>', '<head>\n<meta name="robots" content="noindex">'));
     console.log(`◌ concept → _preview/${info.file}`);
   }
 }
@@ -269,7 +279,7 @@ ${items.map((p) => `      <li><a href="${pageInfo(p).url}" class="inline-block r
   if (out !== src) write(n.pijlerBestand, out);
 }
 
-// ── 4. Partials in alle pagina's met markers ───────────────────────────────────
+// ── 4. Partials en inline CSS in alle pagina's ─────────────────────────────────
 const pageFiles = [
   ...fs.readdirSync(ROOT).filter((f) => f.endsWith('.html')),
   ...fs.readdirSync(path.join(ROOT, 'kennis')).filter((f) => f.endsWith('.html')).map((f) => `kennis/${f}`),
@@ -277,11 +287,10 @@ const pageFiles = [
 let synced = 0;
 for (const f of pageFiles) {
   const src = read(f);
-  if (!src.includes('<!-- partial:')) continue;
-  const out = fillPartials(src);
+  const out = inlineCss(src.includes('<!-- partial:') ? fillPartials(src) : src);
   if (out !== src) { write(f, out); synced++; }
 }
-if (synced) console.log(`↻ gedeelde blokken bijgewerkt in ${synced} pagina('s)`);
+if (synced) console.log(`↻ gedeelde blokken / inline CSS bijgewerkt in ${synced} pagina('s)`);
 
 // ── 5. Sitemap ──────────────────────────────────────────────────────────────
 const today = new Date().toISOString().slice(0, 10);
