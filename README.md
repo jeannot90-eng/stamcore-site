@@ -89,3 +89,4 @@ Deploy niet zolang er nog `[[INVULLEN]]` op een pagina staat.
 - Google Fonts laden niet-blokkerend (`rel="preload"` + `onload`), alleen de gewichten die gebruikt worden (Space Grotesk 600/700, Inter 400–700).
 - De CSS staat inline in elke pagina (tussen `<!-- css:app -->` en `<!-- /css:app -->`), zodat er geen render-blokkerend CSS-verzoek is. `assets/app.css` blijft de bron. Tailwind slaat het inline blok over bij het scannen.
 - `/templates/*`, `/data/*` en `/scripts/*` geven via `_redirects` een 404.
+- Fonts (Inter en Space Grotesk, SIL Open Font License) staan zelf-gehost in `assets/fonts/` en worden voorgeladen; geen verbinding met Google Fonts meer.
