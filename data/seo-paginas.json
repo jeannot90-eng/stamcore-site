@@ -1,0 +1,43 @@
+{
+  "niches": {
+    "glazenwasser": {
+      "enkelvoud": "glazenwasser",
+      "meervoud": "glazenwassers",
+      "pijlerUrl": "/website-glazenwasser",
+      "pijlerBestand": "website-glazenwasser.html",
+      "pijlerTitel": "Website voor glazenwassers"
+    }
+  },
+  "paginas": [
+    {
+      "status": "concept",
+      "niche": "glazenwasser",
+      "plaats": "Tilburg",
+      "title": "Website voor glazenwassers in Tilburg | Stam Core",
+      "meta": "[[INVULLEN: unieke meta description voor Tilburg, ca. 150 tekens]]",
+      "h1": "[[INVULLEN: unieke H1 voor Tilburg]]",
+      "intro": [
+        "[[INVULLEN: unieke intro-alinea 1 over Tilburg]]",
+        "[[INVULLEN: unieke intro-alinea 2 over Tilburg]]"
+      ],
+      "scan": {
+        "zoekterm": "glazenwasser Tilburg",
+        "datum": "[[INVULLEN: maand + jaar van de scan]]",
+        "samenvatting": "[[INVULLEN: wat de scan laat zien]]",
+        "bedrijven": [
+          { "naam": "[[INVULLEN]]", "reviews": 0, "score": 0 },
+          { "naam": "[[INVULLEN]]", "reviews": 0, "score": 0 },
+          { "naam": "[[INVULLEN]]", "reviews": 0, "score": 0 }
+        ],
+        "kansen": ["[[INVULLEN: kans 1]]", "[[INVULLEN: kans 2]]"]
+      },
+      "wijken": ["[[INVULLEN]]", "[[INVULLEN]]", "[[INVULLEN]]"],
+      "beschikbaarheid": "[[OPTIONEEL: bijv. Nog beschikbaar voor één glazenwasser in Tilburg — of leeg laten]]",
+      "faq": [
+        { "vraag": "[[INVULLEN]]", "antwoord": "[[INVULLEN]]" },
+        { "vraag": "[[INVULLEN]]", "antwoord": "[[INVULLEN]]" },
+        { "vraag": "[[INVULLEN]]", "antwoord": "[[INVULLEN]]" }
+      ]
+    }
+  ]
+}

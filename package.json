@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "description": "Stam Core website — statische site. CSS gebouwd met Tailwind (geen runtime-CDN).",
   "scripts": {
-    "build:css": "tailwindcss -i src/input.css -o assets/app.css --minify"
+    "build:css": "tailwindcss -i src/input.css -o assets/app.css --minify",
+    "generate": "node scripts/generate.mjs",
+    "build": "npm run build:css && node scripts/generate.mjs"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.13"

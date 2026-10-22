@@ -1,0 +1,55 @@
+<header id="top" class="fixed inset-x-0 top-0 z-50 transition-all duration-300" data-header>
+  <div class="mx-auto max-w-7xl px-6">
+    <nav class="mt-4 flex items-center justify-between rounded-2xl border border-white/5 bg-slate-950/60 px-5 py-3 backdrop-blur-xl transition-all duration-300" aria-label="Hoofdmenu" data-navbar>
+      <a href="/" class="group flex items-center gap-3" aria-label="Stam Core home">
+        <span class="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-electric-400 to-emerald-400 font-display text-sm font-bold text-slate-950 shadow-lg shadow-electric-500/20">SC</span>
+        <span class="leading-tight">
+          <span class="block font-display text-lg font-bold tracking-tight text-white">Stam Core</span>
+          <span class="block text-[11px] font-medium uppercase tracking-[0.2em] text-slate-400">Websites &amp; lokale SEO</span>
+        </span>
+      </a>
+
+      <ul class="hidden items-center gap-5 text-sm font-medium text-slate-300 lg:flex xl:gap-7">
+        <li><a class="transition hover:text-white" href="/#aanpak">Aanpak</a></li>
+        <li><a class="transition hover:text-white" href="/prijzen">Prijzen</a></li>
+        <li><a class="transition hover:text-white" href="/#cases">Cases</a></li>
+        <li><a class="transition hover:text-white" href="/#branches">Branches</a></li>
+        <li><a class="transition hover:text-white" href="/#oprichter">Oprichter</a></li>
+        <li>
+          <details class="relative" data-more-menu>
+            <summary class="flex cursor-pointer list-none items-center gap-1 transition hover:text-white [&::-webkit-details-marker]:hidden">
+              Meer
+              <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="absolute right-0 mt-4 w-64 rounded-2xl border border-white/10 bg-slate-950/95 p-2 shadow-lg shadow-slate-950/50 backdrop-blur-xl">
+              <a class="block rounded-lg px-4 py-2.5 transition hover:bg-white/5 hover:text-white" href="/front-end.html">Website &amp; online boeken</a>
+              <a class="block rounded-lg px-4 py-2.5 transition hover:bg-white/5 hover:text-white" href="/werk.html">Ons werk</a>
+            </div>
+          </details>
+        </li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+        <a href="/#contact" class="hidden rounded-lg bg-white px-4 py-2 text-sm font-semibold text-slate-950 shadow-sm transition hover:bg-electric-400 sm:inline-block">Plan een gesprek</a>
+        <button type="button" class="grid h-10 w-10 place-items-center rounded-lg border border-white/10 text-slate-200 lg:hidden" aria-label="Menu openen" aria-expanded="false" data-menu-btn>
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobiel menu -->
+    <div class="mt-2 hidden max-h-[calc(100vh-7rem)] overflow-y-auto rounded-2xl border border-white/5 bg-slate-950/95 backdrop-blur-xl lg:hidden" data-mobile-menu>
+      <div class="flex flex-col p-2 text-sm font-medium text-slate-200">
+        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/#aanpak">Aanpak</a>
+        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/prijzen">Prijzen</a>
+        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/#cases">Cases</a>
+        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/#branches">Branches</a>
+        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/#oprichter">Oprichter</a>
+        <p class="px-4 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">Meer</p>
+        <a class="rounded-lg px-4 py-3 text-slate-300 transition hover:bg-white/5" href="/front-end.html">Website &amp; online boeken</a>
+        <a class="rounded-lg px-4 py-3 text-slate-300 transition hover:bg-white/5" href="/werk.html">Ons werk</a>
+        <a class="mt-1 rounded-lg bg-electric-500 px-4 py-3 text-center font-semibold text-white" href="/#contact">Plan een gesprek</a>
+      </div>
+    </div>
+  </div>
+</header>
