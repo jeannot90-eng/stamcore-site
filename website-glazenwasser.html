@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website voor glazenwassers | Stam Core</title>
+<meta name="description" content="Website voor je glazenwassersbedrijf, gebouwd door een glazenwasser. Gevonden worden per plaats en in Google Maps, rondes vullen en vaste klanten. Vanaf €350.">
+<meta name="theme-color" content="#020617">
+<link rel="canonical" href="https://stam-core.nl/website-glazenwasser">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/favicon.svg">
+
+<meta property="og:title" content="Website voor glazenwassers | Stam Core">
+<meta property="og:description" content="Een website die glazenwassers nieuwe klanten oplevert — gebouwd door een glazenwasser. Lokale pagina's per plaats, Google Bedrijfsprofiel en een reviewmotor.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://stam-core.nl/website-glazenwasser">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:image" content="https://stam-core.nl/img/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Website voor glazenwassers | Stam Core">
+<meta name="twitter:description" content="Een website die glazenwassers nieuwe klanten oplevert — gebouwd door een glazenwasser.">
+<meta name="twitter:image" content="https://stam-core.nl/img/og-default.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://stam-core.nl/website-glazenwasser#service",
+      "name": "Website en lokale SEO voor glazenwassers",
+      "serviceType": "Website laten maken voor glazenwassers",
+      "description": "Een website, lokale pagina's per plaats, een ingericht Google Bedrijfsprofiel en een reviewmotor voor glazenwassersbedrijven. Gebouwd door een ondernemer die zelf een glazenwassersbedrijf runt.",
+      "url": "https://stam-core.nl/website-glazenwasser",
+      "provider": { "@id": "https://stam-core.nl/#organization" },
+      "areaServed": "NL",
+      "audience": { "@type": "BusinessAudience", "name": "Glazenwassers en glasbewassingsbedrijven" },
+      "offers": [
+        { "@id": "https://stam-core.nl/prijzen#website" },
+        { "@id": "https://stam-core.nl/prijzen#lokale-seo" }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stam-core.nl/" },
+        { "@type": "ListItem", "position": 2, "name": "Website voor glazenwassers", "item": "https://stam-core.nl/website-glazenwasser" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Wat kost een website voor een glazenwasser?", "acceptedAnswer": { "@type": "Answer", "text": "€350 eenmalig plus €300 per jaar voor hosting en onderhoud. Daarin zitten een huisstijl-light, een website met meerdere pagina's, de eerste locatiepagina's, een ingericht Google Bedrijfsprofiel en een review-link met QR-code. Lokale SEO is optioneel: €199 per maand, maandelijks opzegbaar." } },
+        { "@type": "Question", "name": "Ik heb al genoeg klanten via mond-tot-mond. Waarom een website?", "acceptedAnswer": { "@type": "Answer", "text": "Mond-tot-mond is goud waard, maar je bepaalt zelf niet wanneer het komt. Een website met pagina's per plaats en een goed Bedrijfsprofiel zorgt dat je ook gevonden wordt door mensen die je nog niet kennen, precies in de wijken waar je al rijdt. En wie via mond-tot-mond over je hoort, zoekt je daarna meestal toch even op." } },
+        { "@type": "Question", "name": "Kunnen klanten via de website een abonnement afsluiten?", "acceptedAnswer": { "@type": "Answer", "text": "Ja, met de optionele boekings- of abonnementsmodule kunnen klanten online boeken of een vast abonnement afsluiten, met betaling via Mollie." } },
+        { "@type": "Question", "name": "Werkt dit ook als ik in meerdere plaatsen werk?", "acceptedAnswer": { "@type": "Answer", "text": "Juist dan. Voor elke plaats waar je rondes rijdt maken we een eigen pagina, met de wijken waar je komt en de diensten die je daar levert. Zo kan Google je per plaats laten zien." } },
+        { "@type": "Question", "name": "Doen jullie ook glazenwassers bij mij in de buurt?", "acceptedAnswer": { "@type": "Answer", "text": "Ja. We werken op afstand, dus waar je bedrijf zit maakt niet uit. In een eerste gesprek kijken we samen hoe je er in jouw plaatsen voor staat en wat er te halen is." } },
+        { "@type": "Question", "name": "Van wie is de website?", "acceptedAnswer": { "@type": "Answer", "text": "Van jou. Website, domein, teksten en alle pagina's blijven jouw eigendom, ook als je stopt met lokale SEO." } }
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/app.css">
+<style>
+  html { -webkit-font-smoothing: antialiased; }
+  body { background-color: #020617; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  .glow-grid {
+    background-image:
+      radial-gradient(60rem 40rem at 50% -10%, rgba(14,165,233,.16), transparent 60%),
+      radial-gradient(40rem 30rem at 85% 10%, rgba(16,185,129,.10), transparent 60%);
+  }
+  .hairline { background: linear-gradient(90deg, transparent, rgba(148,163,184,.25), transparent); }
+  .card-sheen { background:
+      linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0)),
+      rgba(15,23,42,.55); }
+</style>
+</head>
+
+<body class="font-sans text-slate-200 antialiased selection:bg-electric-500/30 selection:text-white">
+
+<!-- partial:header -->
+<header id="top" class="fixed inset-x-0 top-0 z-50 transition-all duration-300" data-header>
+  <div class="mx-auto max-w-7xl px-6">
+    <nav class="mt-4 flex items-center justify-between rounded-2xl border border-white/5 bg-slate-950/60 px-5 py-3 backdrop-blur-xl transition-all duration-300" aria-label="Hoofdmenu" data-navbar>
+      <a href="/" class="group flex items-center gap-3" aria-label="Stam Core home">
+        <span class="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-electric-400 to-emerald-400 font-display text-sm font-bold text-slate-950 shadow-lg shadow-electric-500/20">SC</span>
+        <span class="leading-tight">
+          <span class="block font-display text-lg font-bold tracking-tight text-white">Stam Core</span>
+          <span class="block text-[11px] font-medium uppercase tracking-[0.2em] text-slate-400">Websites &amp; lokale SEO</span>
+        </span>
+      </a>
+
+      <ul class="hidden items-center gap-5 text-sm font-medium text-slate-300 lg:flex xl:gap-7">
+        <li><a class="transition hover:text-white" href="/#aanpak">Aanpak</a></li>
+        <li><a class="transition hover:text-white" href="/prijzen">Prijzen</a></li>
+        <li><a class="transition hover:text-white" href="/#cases">Cases</a></li>
+        <li><a class="transition hover:text-white" href="/#branches">Branches</a></li>
+        <li><a class="transition hover:text-white" href="/kennis/">Kennis</a></li>
+        <li><a class="transition hover:text-white" href="/#oprichter">Oprichter</a></li>
+        <li>
+          <details class="relative" data-more-menu>
+            <summary class="flex cursor-pointer list-none items-center gap-1 transition hover:text-white [&::-webkit-details-marker]:hidden">
+              Meer
+              <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+            </summary>
+            <div class="absolute right-0 mt-4 w-64 rounded-2xl border border-white/10 bg-slate-950/95 p-2 shadow-lg shadow-slate-950/50 backdrop-blur-xl">
+              <a class="block rounded-lg px-4 py-2.5 transition hover:bg-white/5 hover:text-white" href="/front-end.html">Website &amp; online boeken</a>
+              <a class="block rounded-lg px-4 py-2.5 transition hover:bg-white/5 hover:text-white" href="/core.html">Core &middot; klantportaal &amp; planning</a>
+              <a class="block rounded-lg px-4 py-2.5 transition hover:bg-white/5 hover:text-white" href="/agents.html">Agents &middot; AI die meewerkt</a>
+              <a class="block rounded-lg px-4 py-2.5 transition hover:bg-white/5 hover:text-white" href="/ai-assistenten.html">AI-assistenten</a>
+              <a class="block rounded-lg px-4 py-2.5 transition hover:bg-white/5 hover:text-white" href="/werk.html">Ons werk</a>
+            </div>
+          </details>
+        </li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+        <a href="/#contact" class="hidden rounded-lg bg-white px-4 py-2 text-sm font-semibold text-slate-950 shadow-sm transition hover:bg-electric-400 sm:inline-block">Plan een gesprek</a>
+        <button type="button" class="grid h-10 w-10 place-items-center rounded-lg border border-white/10 text-slate-200 lg:hidden" aria-label="Menu openen" aria-expanded="false" data-menu-btn>
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobiel menu -->
+    <div class="mt-2 hidden max-h-[calc(100vh-7rem)] overflow-y-auto rounded-2xl border border-white/5 bg-slate-950/95 backdrop-blur-xl lg:hidden" data-mobile-menu>
+      <div class="flex flex-col p-2 text-sm font-medium text-slate-200">
+        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/#aanpak">Aanpak</a>
+        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/prijzen">Prijzen</a>
+        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/#cases">Cases</a>
+        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/#branches">Branches</a>
+        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/kennis/">Kennis</a>
+        <a class="rounded-lg px-4 py-3 transition hover:bg-white/5" href="/#oprichter">Oprichter</a>
+        <p class="px-4 pb-1 pt-4 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-500">Verder bouwen</p>
+        <a class="rounded-lg px-4 py-3 text-slate-300 transition hover:bg-white/5" href="/front-end.html">Website &amp; online boeken</a>
+        <a class="rounded-lg px-4 py-3 text-slate-300 transition hover:bg-white/5" href="/core.html">Core</a>
+        <a class="rounded-lg px-4 py-3 text-slate-300 transition hover:bg-white/5" href="/agents.html">Agents</a>
+        <a class="rounded-lg px-4 py-3 text-slate-300 transition hover:bg-white/5" href="/ai-assistenten.html">AI-assistenten</a>
+        <a class="rounded-lg px-4 py-3 text-slate-300 transition hover:bg-white/5" href="/werk.html">Ons werk</a>
+        <a class="mt-1 rounded-lg bg-electric-500 px-4 py-3 text-center font-semibold text-white" href="/#contact">Plan een gesprek</a>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- /partial:header -->
+
+<!-- ================= HERO ================= -->
+<section class="glow-grid relative overflow-hidden pt-40 pb-20 sm:pt-48 sm:pb-24">
+  <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,transparent,#020617)]"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <nav aria-label="Broodkruimel" class="text-center text-sm text-slate-400">
+      <a href="/" class="transition hover:text-white">Home</a> <span class="px-1 text-slate-600">/</span> <span class="text-slate-300">Website voor glazenwassers</span>
+    </nav>
+    <div class="mx-auto mt-6 max-w-4xl text-center">
+      <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-slate-300">
+        <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+        Gebouwd door een glazenwasser
+      </span>
+      <h1 class="mt-7 font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl">
+        Een website die glazenwassers <span class="bg-gradient-to-r from-electric-400 to-emerald-400 bg-clip-text text-transparent">nieuwe klanten oplevert</span>
+      </h1>
+      <p class="mx-auto mt-7 max-w-2xl text-lg leading-relaxed text-slate-300 sm:text-xl">
+        Ik run al meer dan zes jaar mijn eigen glazenwassersbedrijf. Het systeem waarmee ik
+        mijn rondes vul — een website, pagina's per plaats, een Bedrijfsprofiel dat klopt en
+        een reviewmotor — bouw ik nu ook voor andere glazenwassers.
+      </p>
+      <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <a href="/#contact" class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-electric-500 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-400 sm:w-auto">Plan een gesprek</a>
+        <a href="https://wa.me/31162560125?text=Hoi%20Jeannot%2C%20ik%20ben%20glazenwasser%20en%20wil%20graag%20meer%20weten%20over%20een%20website%20en%20lokale%20vindbaarheid." target="_blank" rel="noopener" class="inline-flex w-full items-center justify-center rounded-xl border border-white/15 bg-white/5 px-7 py-4 text-base font-semibold text-white transition hover:bg-white/10 sm:w-auto">App via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HERKENBAAR ================= -->
+<section class="relative py-20 sm:py-24">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <span class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-electric-400">Herkenbaar?</span>
+      <h2 class="reveal mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Het vak is niet het probleem. De gaten in je rondes wel.</h2>
+      <p class="reveal mt-5 text-lg text-slate-400">Een glazenwassersbedrijf draait op vaste klanten in vaste straten. Dat maakt dit vak anders dan bijna elke andere branche — en dus ook wat je website moet doen.</p>
+    </div>
+
+    <div class="mt-14 grid gap-6 md:grid-cols-2">
+      <div class="reveal rounded-3xl border border-white/5 bg-slate-900/40 p-8">
+        <h3 class="font-display text-xl font-semibold text-white">Rondes met gaten</h3>
+        <p class="mt-3 text-slate-400">Een ronde verdient pas echt als de straat vol zit. Drie klanten in een wijk betekent rijden, parkeren en ladder op voor drie adressen. Tien klanten in dezelfde wijk is een hele andere dag. Je wilt dus niet zomaar nieuwe klanten, je wilt nieuwe klanten <em>in de wijken waar je al komt</em>.</p>
+      </div>
+      <div class="reveal rounded-3xl border border-white/5 bg-slate-900/40 p-8">
+        <h3 class="font-display text-xl font-semibold text-white">Het seizoen</h3>
+        <p class="mt-3 text-slate-400">In het voorjaar wil iedereen tegelijk schone ramen en kun je de vraag nauwelijks bijhouden. In de winter, met vorst en korte dagen, wordt het stil. Wie in het drukke seizoen vaste abonnementen binnenhaalt, heeft het hele jaar door werk.</p>
+      </div>
+      <div class="reveal rounded-3xl border border-white/5 bg-slate-900/40 p-8">
+        <h3 class="font-display text-xl font-semibold text-white">Mond-tot-mond heeft een plafond</h3>
+        <p class="mt-3 text-slate-400">De buurvrouw die je aanraadt is goud waard. Maar je bepaalt niet wanneer ze het doet, en het stopt bij de grens van de wijk. Een nieuwe plaats erbij pakken lukt zo bijna niet. En wie over je hoort, zoekt je daarna toch even op — vindt hij dan niets, dan belt hij de volgende.</p>
+      </div>
+      <div class="reveal rounded-3xl border border-white/5 bg-slate-900/40 p-8">
+        <h3 class="font-display text-xl font-semibold text-white">De concurrentie staat in Maps</h3>
+        <p class="mt-3 text-slate-400">Zoek eens op "glazenwasser" plus je eigen plaatsnaam. De drie bedrijven die Google Maps bovenaan laat zien, krijgen de telefoontjes. Dat zijn lang niet altijd de beste glazenwassers — wel de bedrijven met een compleet profiel, reviews en een website die Google begrijpt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WAAROM EEN GLAZENWASSER ================= -->
+<section class="relative py-20 sm:py-24">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-4xl px-6">
+    <span class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-electric-400">Waarom dit anders is</span>
+    <h2 class="reveal mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Geen webbureau dat moet leren wat een osmosesysteem is</h2>
+    <div class="reveal mt-6 space-y-4 text-lg leading-relaxed text-slate-300">
+      <p>De meeste webbouwers maken voor een glazenwasser dezelfde site als voor een kapper of een advocaat: een homepage, een pagina "diensten" en een contactformulier. Mooi, maar het levert weinig op. Ze weten niet dat een klant wil weten óf je in zijn straat komt, hoe vaak je langskomt en wat het ongeveer kost.</p>
+      <p>Ik sta zelf met de telescoopsteel aan de gevel. Ik weet dat particulieren vooral willen weten wanneer je komt en of ze thuis moeten zijn. Dat een VvE of winkelier een vaste frequentie en één factuur wil. Dat zonnepanelen, dakgoten en kozijnen goede extra omzet zijn, maar alleen als mensen weten dat je het doet. En dat je een review het beste vraagt op het moment dat de ramen nog glimmen, niet een week later.</p>
+      <p>Dat zit allemaal in de manier waarop ik jouw website opbouw: per dienst, per plaats en gericht op vaste klanten.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HET SYSTEEM ================= -->
+<section class="relative py-20 sm:py-24">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <span class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-electric-400">Het systeem</span>
+      <h2 class="reveal mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Vier onderdelen, ingericht voor glazenwassers</h2>
+    </div>
+    <ol class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      <li class="reveal flex flex-col rounded-3xl border border-white/5 card-sheen p-8">
+        <span class="font-display text-4xl font-bold text-electric-500/40">01</span>
+        <h3 class="mt-4 font-display text-xl font-bold text-white">Website</h3>
+        <p class="mt-3 text-slate-400">Je diensten apart uitgelegd (ramen, zonnepanelen, dakgoten, kozijnen), je werkgebied duidelijk in beeld en een aanvraag die in een minuut klaar is: adres, soort woning, gewenste frequentie.</p>
+      </li>
+      <li class="reveal flex flex-col rounded-3xl border border-white/5 card-sheen p-8">
+        <span class="font-display text-4xl font-bold text-electric-500/40">02</span>
+        <h3 class="mt-4 font-display text-xl font-bold text-white">Pagina's per plaats</h3>
+        <p class="mt-3 text-slate-400">Een eigen pagina voor "glazenwasser Breda" of "zonnepanelen reinigen Tilburg", met de wijken en kernen waar je echt rijdt. Zo vult Google je rondes, in plaats van je de andere kant van de provincie in te sturen.</p>
+      </li>
+      <li class="reveal flex flex-col rounded-3xl border border-white/5 card-sheen p-8">
+        <span class="font-display text-4xl font-bold text-electric-500/40">03</span>
+        <h3 class="mt-4 font-display text-xl font-bold text-white">Google Bedrijfsprofiel</h3>
+        <p class="mt-3 text-slate-400">Werkgebied ingesteld, alle diensten erin, foto's van je bus en je werk, en regelmatig een post. Een compleet profiel is de basis om in Maps mee te tellen.</p>
+      </li>
+      <li class="reveal flex flex-col rounded-3xl border border-emerald-400/20 card-sheen p-8">
+        <span class="font-display text-4xl font-bold text-emerald-400/40">04</span>
+        <h3 class="mt-4 font-display text-xl font-bold text-white">Reviewmotor</h3>
+        <p class="mt-3 text-slate-400">Een vaste review-link en een QR-code die je op de bus, de factuur of een kaartje in de brievenbus zet. Vraag de review op het moment dat de ramen nog glimmen.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= WAT ERIN MOET ================= -->
+<section class="relative py-20 sm:py-24">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-12 lg:grid-cols-2 lg:items-start">
+      <div>
+        <span class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-electric-400">Checklist</span>
+        <h2 class="reveal mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Wat een glazenwasserswebsite moet hebben</h2>
+        <p class="reveal mt-5 text-lg text-slate-400">Leg je eigen website eens naast dit lijstje. Mist er meer dan twee, dan laat je klanten liggen.</p>
+      </div>
+      <ul class="reveal space-y-3">
+        <li class="flex gap-3 rounded-xl border border-white/5 bg-slate-900/40 px-5 py-4"><span class="text-emerald-400">&check;</span><span class="text-slate-300">Binnen drie seconden duidelijk in welke plaatsen en wijken je komt.</span></li>
+        <li class="flex gap-3 rounded-xl border border-white/5 bg-slate-900/40 px-5 py-4"><span class="text-emerald-400">&check;</span><span class="text-slate-300">Een aanvraag of offerte die op de telefoon in een minuut klaar is.</span></li>
+        <li class="flex gap-3 rounded-xl border border-white/5 bg-slate-900/40 px-5 py-4"><span class="text-emerald-400">&check;</span><span class="text-slate-300">Uitleg over frequentie: elke 4, 6 of 8 weken, en of de klant thuis moet zijn.</span></li>
+        <li class="flex gap-3 rounded-xl border border-white/5 bg-slate-900/40 px-5 py-4"><span class="text-emerald-400">&check;</span><span class="text-slate-300">Elke dienst een eigen pagina: ramen, zonnepanelen, dakgoten, kozijnen, zakelijk.</span></li>
+        <li class="flex gap-3 rounded-xl border border-white/5 bg-slate-900/40 px-5 py-4"><span class="text-emerald-400">&check;</span><span class="text-slate-300">Echte foto's van jouw bus en jouw werk, geen stockfoto van een wolkenkrabber.</span></li>
+        <li class="flex gap-3 rounded-xl border border-white/5 bg-slate-900/40 px-5 py-4"><span class="text-emerald-400">&check;</span><span class="text-slate-300">Reviews zichtbaar, en een makkelijke manier om er een achter te laten.</span></li>
+        <li class="flex gap-3 rounded-xl border border-white/5 bg-slate-900/40 px-5 py-4"><span class="text-emerald-400">&check;</span><span class="text-slate-300">Een WhatsApp-knop — veel klanten appen liever dan dat ze bellen.</span></li>
+        <li class="flex gap-3 rounded-xl border border-white/5 bg-slate-900/40 px-5 py-4"><span class="text-emerald-400">&check;</span><span class="text-slate-300">Snel op mobiel, ook met slecht bereik.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CASE ================= -->
+<section class="relative py-20 sm:py-24">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="reveal grid gap-8 rounded-3xl border border-electric-500/30 bg-gradient-to-br from-electric-500/10 to-slate-900/40 p-8 sm:p-10 lg:grid-cols-12 lg:items-center">
+      <div class="lg:col-span-7">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-electric-400">Case &middot; glasbewassing</p>
+        <h2 class="mt-2 font-display text-2xl font-bold text-white sm:text-3xl">Clean up support Nederland</h2>
+        <p class="mt-4 text-slate-300">Van der Zee Glasbewassing werd Clean up support Nederland. We maakten een nieuw logo en een huisstijl in zwart en neon-limoengroen met squeegee-iconografie, en een website met meerdere pagina's.</p>
+        <p class="mt-3 text-slate-300">Daaronder: lokale pagina's per dienst en plaats, zoals glasbewassing en glazenwasser in Amersfoort, een ingericht Google Bedrijfsprofiel en een reviewmotor. De eerste nieuwe Google-reviews kwamen binnen, de site werd kort na livegang geïndexeerd en Google toont sitelinks op de merknaam. Het doorlopende SEO-traject loopt.</p>
+        <p class="mt-4 rounded-xl border border-dashed border-white/15 px-4 py-3 text-sm text-slate-400">[[INVULLEN: aantal aanvragen / Maps-positie / quote klant]]</p>
+        <a href="/werk.html#cleanup" class="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-electric-400 transition hover:gap-2 hover:text-white">Lees de hele case &rarr;</a>
+      </div>
+      <div class="lg:col-span-5">
+        <div class="rounded-2xl border border-white/10 bg-slate-950/60 p-6">
+          <p class="text-xs text-slate-500">Lighthouse-scores na livegang</p>
+          <div class="mt-4 grid grid-cols-2 gap-3">
+            <div class="rounded-lg border border-white/5 bg-white/5 px-4 py-3"><p class="font-display text-2xl font-bold text-white">100</p><p class="text-xs text-slate-400">SEO</p></div>
+            <div class="rounded-lg border border-white/5 bg-white/5 px-4 py-3"><p class="font-display text-2xl font-bold text-white">100</p><p class="text-xs text-slate-400">Best Practices</p></div>
+            <div class="rounded-lg border border-white/5 bg-white/5 px-4 py-3"><p class="font-display text-2xl font-bold text-white">94</p><p class="text-xs text-slate-400">Toegankelijkheid</p></div>
+            <div class="rounded-lg border border-electric-500/20 bg-electric-500/10 px-4 py-3"><p class="font-display text-2xl font-bold text-white">99 / 89</p><p class="text-xs text-slate-400">Prestaties desktop / mobiel</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRIJZEN ================= -->
+<section class="relative py-20 sm:py-24">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <span class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-electric-400">Prijzen</span>
+      <h2 class="reveal mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Wat het kost</h2>
+      <p class="reveal mt-5 text-lg text-slate-400">Reken zelf maar: wat levert één vaste klant met een abonnement je per jaar op? Alle bedragen [[INVULLEN: excl. of incl. btw]].</p>
+    </div>
+    <div class="mt-12 grid gap-6 md:grid-cols-2">
+      <div class="reveal rounded-3xl border border-white/5 card-sheen p-8">
+        <h3 class="font-display text-2xl font-bold text-white">Website</h3>
+        <p class="mt-3 font-display text-4xl font-bold text-white">€350 <span class="text-base font-semibold text-slate-400">eenmalig</span></p>
+        <p class="mt-1 text-slate-400">+ €300 per jaar hosting &amp; onderhoud</p>
+        <p class="mt-4 text-slate-300">Huisstijl-light, website met meerdere pagina's, de eerste plaatspagina's, Google Bedrijfsprofiel ingericht en een review-link met QR-code voor op de bus.</p>
+      </div>
+      <div class="reveal rounded-3xl border border-electric-500/30 bg-gradient-to-b from-electric-500/10 to-emerald-500/5 p-8">
+        <h3 class="font-display text-2xl font-bold text-white">Lokale SEO</h3>
+        <p class="mt-3 font-display text-4xl font-bold text-white">€199 <span class="text-base font-semibold text-slate-400">per maand</span></p>
+        <p class="mt-1 text-slate-300">maandelijks opzegbaar</p>
+        <p class="mt-4 text-slate-200">Elke maand nieuwe pagina's voor de plaatsen en diensten waar je wilt groeien, posts en onderhoud op je Bedrijfsprofiel, reviewverzoeken en een maandrapport.</p>
+      </div>
+    </div>
+    <p class="reveal mt-8 text-center"><a href="/prijzen" class="text-sm font-semibold text-electric-400 transition hover:text-white">Alle prijzen, de boekingsmodule en wat er precies in zit &rarr;</a></p>
+  </div>
+</section>
+
+<!-- PLAATSEN:START --><!-- PLAATSEN:END -->
+
+<!-- ================= FAQ ================= -->
+<section class="relative py-20 sm:py-24">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-3xl px-6">
+    <h2 class="reveal font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Veelgestelde vragen van glazenwassers</h2>
+    <div class="mt-10 space-y-4">
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/40 p-6">
+        <h3 class="font-display text-lg font-semibold text-white">Wat kost een website voor een glazenwasser?</h3>
+        <p class="mt-2 text-slate-400">€350 eenmalig plus €300 per jaar voor hosting en onderhoud. Daarin zitten een huisstijl-light, een website met meerdere pagina's, de eerste locatiepagina's, een ingericht Google Bedrijfsprofiel en een review-link met QR-code. Lokale SEO is optioneel: €199 per maand, maandelijks opzegbaar.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/40 p-6">
+        <h3 class="font-display text-lg font-semibold text-white">Ik heb al genoeg klanten via mond-tot-mond. Waarom een website?</h3>
+        <p class="mt-2 text-slate-400">Mond-tot-mond is goud waard, maar je bepaalt zelf niet wanneer het komt. Een website met pagina's per plaats en een goed Bedrijfsprofiel zorgt dat je ook gevonden wordt door mensen die je nog niet kennen, precies in de wijken waar je al rijdt. En wie via mond-tot-mond over je hoort, zoekt je daarna meestal toch even op.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/40 p-6">
+        <h3 class="font-display text-lg font-semibold text-white">Kunnen klanten via de website een abonnement afsluiten?</h3>
+        <p class="mt-2 text-slate-400">Ja, met de optionele boekings- of abonnementsmodule kunnen klanten online boeken of een vast abonnement afsluiten, met betaling via Mollie.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/40 p-6">
+        <h3 class="font-display text-lg font-semibold text-white">Werkt dit ook als ik in meerdere plaatsen werk?</h3>
+        <p class="mt-2 text-slate-400">Juist dan. Voor elke plaats waar je rondes rijdt maken we een eigen pagina, met de wijken waar je komt en de diensten die je daar levert. Zo kan Google je per plaats laten zien.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/40 p-6">
+        <h3 class="font-display text-lg font-semibold text-white">Doen jullie ook glazenwassers bij mij in de buurt?</h3>
+        <p class="mt-2 text-slate-400">Ja. We werken op afstand, dus waar je bedrijf zit maakt niet uit. In een eerste gesprek kijken we samen hoe je er in jouw plaatsen voor staat en wat er te halen is.</p>
+      </div>
+      <div class="reveal rounded-2xl border border-white/5 bg-slate-900/40 p-6">
+        <h3 class="font-display text-lg font-semibold text-white">Van wie is de website?</h3>
+        <p class="mt-2 text-slate-400">Van jou. Website, domein, teksten en alle pagina's blijven jouw eigendom, ook als je stopt met lokale SEO.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="relative py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-slate-900/60 to-slate-950 p-10 text-center sm:p-14">
+      <h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Even sparren, van glazenwasser tot glazenwasser?</h2>
+      <p class="mx-auto mt-4 max-w-xl text-lg text-slate-300">Vertel in welke plaatsen je rijdt. Dan kijk ik met je mee hoe je er nu voor staat in Google Maps en waar de snelste winst zit.</p>
+      <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <a href="/#contact" class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-electric-500 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-400 sm:w-auto">Plan een gesprek</a>
+        <a href="https://wa.me/31162560125?text=Hoi%20Jeannot%2C%20ik%20ben%20glazenwasser%20en%20wil%20graag%20meer%20weten%20over%20een%20website%20en%20lokale%20vindbaarheid." target="_blank" rel="noopener" class="inline-flex w-full items-center justify-center rounded-xl border border-white/15 bg-white/5 px-7 py-4 text-base font-semibold text-white transition hover:bg-white/10 sm:w-auto">App via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- partial:footer -->
+<footer class="border-t border-white/5 py-14">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <a href="/" class="flex items-center gap-3" aria-label="Stam Core home">
+          <span class="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-electric-400 to-emerald-400 font-display text-sm font-bold text-slate-950">SC</span>
+          <span class="font-display text-base font-bold tracking-tight text-white">Stam Core</span>
+        </a>
+        <p class="mt-4 text-sm leading-relaxed text-slate-400">Websites en lokale SEO voor servicebedrijven. Gebouwd door een ondernemer die zelf een servicebedrijf runt.</p>
+        <p class="mt-4 text-sm leading-relaxed text-slate-400">Oosterhout (NB)<br>KvK [[INVULLEN: KvK-nummer]]</p>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Aanbod</p>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a class="text-slate-300 transition hover:text-white" href="/prijzen">Prijzen</a></li>
+          <li><a class="text-slate-300 transition hover:text-white" href="/front-end.html">Website &amp; online boeken</a></li>
+          <li><a class="text-slate-300 transition hover:text-white" href="/website-glazenwasser">Website voor glazenwassers</a></li>
+          <li><a class="text-slate-300 transition hover:text-white" href="/werk.html">Ons werk</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Verder bouwen</p>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a class="text-slate-300 transition hover:text-white" href="/core.html">Core &middot; klantportaal &amp; planning</a></li>
+          <li><a class="text-slate-300 transition hover:text-white" href="/agents.html">Agents</a></li>
+          <li><a class="text-slate-300 transition hover:text-white" href="/ai-assistenten.html">AI-assistenten</a></li>
+          <li><a class="text-slate-300 transition hover:text-white" href="/kennis/">Kennis</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">Contact</p>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a class="text-slate-300 transition hover:text-white" href="tel:+31162560125">0162 560 125</a></li>
+          <li><a class="text-slate-300 transition hover:text-white" href="mailto:info@stam-core.nl">info@stam-core.nl</a></li>
+          <li><a class="text-slate-300 transition hover:text-white" href="/#contact">Plan een gesprek</a></li>
+        </ul>
+        <div class="mt-5 flex items-center gap-3" aria-label="Volg Stam Core">
+          <a href="https://www.facebook.com/profile.php?id=61590963702089" target="_blank" rel="noopener" aria-label="Facebook" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 transition hover:border-white/30 hover:text-white"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/stam.core/" target="_blank" rel="noopener" aria-label="Instagram" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 transition hover:border-white/30 hover:text-white"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.linkedin.com/company/stam-core" target="_blank" rel="noopener" aria-label="LinkedIn" class="grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-slate-400 transition hover:border-white/30 hover:text-white"><svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-8 text-sm text-slate-400 sm:flex-row">
+      <p>Stam Core | Websites &amp; lokale SEO &copy; 2026</p>
+      <a href="/privacy.html" class="transition hover:text-white">Privacy</a>
+    </div>
+  </div>
+</footer>
+<!-- /partial:footer -->
+
+<!-- partial:scripts -->
+<script>
+  // Header: subtiele schaduw/achtergrond zodra je scrolt
+  const navbar = document.querySelector('[data-navbar]');
+  const onScroll = () => {
+    if (window.scrollY > 16) {
+      navbar.classList.add('border-white/10', 'shadow-lg', 'shadow-slate-950/50');
+    } else {
+      navbar.classList.remove('border-white/10', 'shadow-lg', 'shadow-slate-950/50');
+    }
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Mobiel menu open/dicht
+  const menuBtn = document.querySelector('[data-menu-btn]');
+  const mobileMenu = document.querySelector('[data-mobile-menu]');
+  menuBtn.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('hidden') === false;
+    menuBtn.setAttribute('aria-expanded', String(open));
+  });
+  mobileMenu.querySelectorAll('a').forEach((a) => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // "Meer"-menu: dicht bij klik ernaast of op Escape
+  const moreMenu = document.querySelector('[data-more-menu]');
+  if (moreMenu) {
+    document.addEventListener('click', (e) => { if (!moreMenu.contains(e.target)) moreMenu.open = false; });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') moreMenu.open = false; });
+  }
+
+  // Reveal-on-scroll
+  const reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach((el) => io.observe(el));
+  } else {
+    reveals.forEach((el) => el.classList.add('in'));
+  }
+</script>
+
+<!-- Stam Chatbot (ElevenLabs) -->
+<elevenlabs-convai agent-id="agent_2501kw01jf0eezdvz4bv2tyqm39r"></elevenlabs-convai>
+<script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+<script src="/capture.js" defer></script>
+<!-- /partial:scripts -->
+</body>
+</html>
