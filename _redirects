@@ -5,3 +5,8 @@
 #   /website-glazenwasser-den-bosch    /website-glazenwasser-s-hertogenbosch    301
 #
 # Netlify serveert "/prijzen" automatisch uit prijzen.html; daar is geen regel voor nodig.
+
+# Bronbestanden voor de generator horen niet als pagina bereikbaar te zijn.
+/templates/*   /404   404!
+/data/*        /404   404!
+/scripts/*     /404   404!

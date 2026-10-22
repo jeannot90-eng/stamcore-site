@@ -84,3 +84,6 @@ Deploy niet zolang er nog `[[INVULLEN]]` op een pagina staat.
 
 - Afbeeldingen als WebP met `width`/`height`, `loading="lazy"` en `decoding="async"`. De originele `.jpg`'s blijven staan als bron (en `og-default.jpg` voor social).
 - Geen nieuwe JavaScript-libraries. Doel: Lighthouse mobiel ≥ 90.
+- Google Fonts laden niet-blokkerend (`rel="preload"` + `onload`), alleen de gewichten die gebruikt worden (Space Grotesk 600/700, Inter 400–700).
+- De ElevenLabs-chatbot laadt zijn script pas bij de eerste scroll/tik/toets of 4 s na het laden. Uitzondering: `ai-assistenten.html`, de demopagina, laadt hem direct.
+- `/templates/*`, `/data/*` en `/scripts/*` geven via `_redirects` een 404.
