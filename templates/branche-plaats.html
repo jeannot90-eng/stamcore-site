@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="stamcore-generate">
+<!-- Gegenereerd door scripts/generate.mjs uit data/seo-paginas.json. Niet met de hand bewerken: pas het record aan en draai `npm run generate`. -->
+<title>{{title}}</title>
+<meta name="description" content="{{meta}}">
+<meta name="theme-color" content="#020617">
+<link rel="canonical" href="{{canonical}}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/favicon.svg">
+
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{meta}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:image" content="https://stam-core.nl/img/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{{meta}}">
+<meta name="twitter:image" content="https://stam-core.nl/img/og-default.jpg">
+
+<script type="application/ld+json">
+{{{jsonld}}}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/app.css">
+<style>
+  html { -webkit-font-smoothing: antialiased; }
+  body { background-color: #020617; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  .glow-grid {
+    background-image:
+      radial-gradient(60rem 40rem at 50% -10%, rgba(14,165,233,.16), transparent 60%),
+      radial-gradient(40rem 30rem at 85% 10%, rgba(16,185,129,.10), transparent 60%);
+  }
+  .hairline { background: linear-gradient(90deg, transparent, rgba(148,163,184,.25), transparent); }
+  .card-sheen { background:
+      linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0)),
+      rgba(15,23,42,.55); }
+</style>
+</head>
+
+<body class="font-sans text-slate-200 antialiased selection:bg-electric-500/30 selection:text-white">
+
+<!-- partial:header --><!-- /partial:header -->
+
+<!-- ================= HERO + UNIEKE INTRO ================= -->
+<section class="glow-grid relative overflow-hidden pt-40 pb-16 sm:pt-48 sm:pb-20">
+  <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,transparent,#020617)]"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <nav aria-label="Broodkruimel" class="text-center text-sm text-slate-400">
+      <a href="/" class="transition hover:text-white">Home</a> <span class="px-1 text-slate-600">/</span>
+      <a href="{{pijlerUrl}}" class="transition hover:text-white">{{pijlerTitel}}</a> <span class="px-1 text-slate-600">/</span>
+      <span class="text-slate-300">{{plaats}}</span>
+    </nav>
+    <div class="mx-auto mt-6 max-w-4xl text-center">
+      {{{beschikbaarheidHtml}}}
+      <h1 class="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl">{{h1}}</h1>
+      <div class="mx-auto mt-7 max-w-2xl space-y-4 text-left text-lg leading-relaxed text-slate-300 sm:text-center">
+        {{{introHtml}}}
+      </div>
+      <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <a href="/#contact" class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-electric-500 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-400 sm:w-auto">Vraag een gratis lokale scan aan</a>
+        <a href="{{whatsappUrl}}" target="_blank" rel="noopener" class="inline-flex w-full items-center justify-center rounded-xl border border-white/15 bg-white/5 px-7 py-4 text-base font-semibold text-white transition hover:bg-white/10 sm:w-auto">App via WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= UNIEK: LOKALE CONCURRENTIESCAN ================= -->
+<section id="scan" class="relative py-20 sm:py-24">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-12 lg:grid-cols-12 lg:items-start">
+      <div class="lg:col-span-5">
+        <span class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-electric-400">Lokale concurrentiescan</span>
+        <h2 class="reveal mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Wie staat er bovenaan in {{plaats}}?</h2>
+        <p class="reveal mt-5 text-lg text-slate-400">{{scanSamenvatting}}</p>
+        <p class="reveal mt-4 text-sm text-slate-500">Zoekopdracht "{{scanZoekterm}}" in Google Maps, bekeken in {{scanDatum}}.</p>
+      </div>
+      <div class="min-w-0 lg:col-span-7">
+        <div class="reveal overflow-x-auto rounded-2xl border border-white/10 bg-slate-950/60">
+          <table class="w-full text-left text-sm">
+            <thead class="border-b border-white/5 text-xs uppercase tracking-[0.15em] text-slate-500">
+              <tr><th class="px-3 py-3 sm:px-5 font-semibold">#</th><th class="px-3 py-3 sm:px-5 font-semibold">Bedrijf</th><th class="px-3 py-3 sm:px-5 text-right font-semibold">Reviews</th><th class="px-3 py-3 sm:px-5 text-right font-semibold">Score</th></tr>
+            </thead>
+            <tbody class="divide-y divide-white/5 text-slate-300">
+              {{{scanRijen}}}
+            </tbody>
+          </table>
+        </div>
+        <div class="reveal mt-6 rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-6">
+          <p class="font-semibold text-white">Kansen in {{plaats}}</p>
+          <ul class="mt-3 space-y-2 text-slate-300">
+            {{{kansenHtml}}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= UNIEK: WIJKEN & KERNEN ================= -->
+<section class="relative py-20 sm:py-24">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-4xl px-6 text-center">
+    <span class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-electric-400">Werkgebied</span>
+    <h2 class="reveal mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Wijken en kernen in {{plaats}}</h2>
+    <p class="reveal mx-auto mt-5 max-w-2xl text-lg text-slate-400">Klanten zoeken niet alleen op de plaatsnaam, maar ook op hun eigen wijk of dorp. Daarom nemen we de wijken mee waar jij rijdt.</p>
+    <ul class="reveal mt-10 flex flex-wrap justify-center gap-3">
+      {{{wijkenHtml}}}
+    </ul>
+  </div>
+</section>
+
+<!-- ================= VAST: HET SYSTEEM ================= -->
+<section class="relative py-20 sm:py-24">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <span class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-electric-400">Het systeem</span>
+      <h2 class="reveal mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Zo word je gevonden in {{plaats}}</h2>
+    </div>
+    <ol class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      <li class="reveal rounded-3xl border border-white/5 card-sheen p-8">
+        <span class="font-display text-4xl font-bold text-electric-500/40">01</span>
+        <h3 class="mt-4 font-display text-xl font-bold text-white">Website</h3>
+        <p class="mt-3 text-slate-400">Een snelle, mobiele voordeur waar klanten direct een aanvraag doen, bellen of appen.</p>
+      </li>
+      <li class="reveal rounded-3xl border border-white/5 card-sheen p-8">
+        <span class="font-display text-4xl font-bold text-electric-500/40">02</span>
+        <h3 class="mt-4 font-display text-xl font-bold text-white">Lokale pagina's</h3>
+        <p class="mt-3 text-slate-400">Een pagina per dienst voor {{plaats}} en de omliggende kernen, zodat Google weet waar je werkt.</p>
+      </li>
+      <li class="reveal rounded-3xl border border-white/5 card-sheen p-8">
+        <span class="font-display text-4xl font-bold text-electric-500/40">03</span>
+        <h3 class="mt-4 font-display text-xl font-bold text-white">Google Bedrijfsprofiel</h3>
+        <p class="mt-3 text-slate-400">Compleet ingericht met diensten, werkgebied en foto's, en elke maand bijgehouden.</p>
+      </li>
+      <li class="reveal rounded-3xl border border-emerald-400/20 card-sheen p-8">
+        <span class="font-display text-4xl font-bold text-emerald-400/40">04</span>
+        <h3 class="mt-4 font-display text-xl font-bold text-white">Reviewmotor</h3>
+        <p class="mt-3 text-slate-400">Een vaste review-link en QR-code, zodat elke tevreden klant in één tik een review achterlaat.</p>
+      </li>
+    </ol>
+    <p class="reveal mt-10 text-center"><a href="{{pijlerUrl}}" class="text-sm font-semibold text-electric-400 transition hover:text-white">Lees de volledige aanpak voor {{nicheMeervoud}} &rarr;</a></p>
+  </div>
+</section>
+
+<!-- ================= VAST: PRIJZEN ================= -->
+<section class="relative py-20 sm:py-24">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="grid gap-6 md:grid-cols-2">
+      <div class="reveal rounded-3xl border border-white/5 card-sheen p-8">
+        <h2 class="font-display text-2xl font-bold text-white">Website</h2>
+        <p class="mt-3 font-display text-4xl font-bold text-white">€350 <span class="text-base font-semibold text-slate-400">eenmalig</span></p>
+        <p class="mt-1 text-slate-400">+ €300 per jaar hosting &amp; onderhoud</p>
+      </div>
+      <div class="reveal rounded-3xl border border-electric-500/30 bg-gradient-to-b from-electric-500/10 to-emerald-500/5 p-8">
+        <h2 class="font-display text-2xl font-bold text-white">Lokale SEO</h2>
+        <p class="mt-3 font-display text-4xl font-bold text-white">€199 <span class="text-base font-semibold text-slate-400">per maand</span></p>
+        <p class="mt-1 text-slate-300">maandelijks opzegbaar &middot; alles wat we bouwen blijft van jou</p>
+      </div>
+    </div>
+    <p class="reveal mt-8 text-center"><a href="/prijzen" class="text-sm font-semibold text-electric-400 transition hover:text-white">Bekijk alle prijzen &rarr;</a></p>
+  </div>
+</section>
+
+<!-- ================= VAST: CASE ================= -->
+<section class="relative py-20 sm:py-24">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-4xl px-6">
+    <div class="reveal rounded-3xl border border-white/5 bg-slate-900/40 p-8 sm:p-10">
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-electric-400">Case</p>
+      <h2 class="mt-2 font-display text-2xl font-bold text-white">Clean up support Nederland</h2>
+      <p class="mt-4 text-slate-300">Rebranding, een website met meerdere pagina's, lokale pagina's per dienst en plaats, een ingericht Bedrijfsprofiel en een reviewmotor. Kort na livegang geïndexeerd, met sitelinks op de merknaam.</p>
+      <a href="/werk.html#cleanup" class="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-electric-400 transition hover:gap-2 hover:text-white">Lees de hele case &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= UNIEK: FAQ ================= -->
+<section class="relative py-20 sm:py-24">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-3xl px-6">
+    <h2 class="reveal font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Veelgestelde vragen</h2>
+    <div class="mt-10 space-y-4">
+      {{{faqHtml}}}
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA: GRATIS LOKALE SCAN ================= -->
+<section class="relative py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-slate-900/60 to-slate-950 p-10 text-center sm:p-14">
+      <h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Gratis lokale scan voor {{plaats}}</h2>
+      <p class="mx-auto mt-4 max-w-xl text-lg text-slate-300">Ik kijk hoe je er nu voor staat in Google Maps in {{plaats}}, wie je voor is en waar de snelste winst zit. Vrijblijvend, van ondernemer tot ondernemer.</p>
+      <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <a href="/#contact" class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-electric-500 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-400 sm:w-auto">Vraag de scan aan</a>
+        <a href="{{whatsappUrl}}" target="_blank" rel="noopener" class="inline-flex w-full items-center justify-center rounded-xl border border-white/15 bg-white/5 px-7 py-4 text-base font-semibold text-white transition hover:bg-white/10 sm:w-auto">App via WhatsApp</a>
+      </div>
+      <p class="mt-8 text-sm text-slate-500"><a href="{{pijlerUrl}}" class="transition hover:text-white">&larr; Terug naar {{pijlerTitel}}</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- partial:footer --><!-- /partial:footer -->
+
+<!-- partial:scripts --><!-- /partial:scripts -->
+</body>
+</html>

@@ -1,6 +1,6 @@
 /** Tailwind-config voor de gecompileerde CSS (vervangt de CDN-versie). */
 module.exports = {
-  content: ['./*.html', './kennis/*.html'],
+  content: ['./*.html', './kennis/*.html', './templates/**/*.html', './scripts/*.mjs'],
   safelist: ['border-white/10', 'shadow-lg', 'shadow-slate-950/50'],
   theme: {
     extend: {

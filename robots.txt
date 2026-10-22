@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /_preview/
+Disallow: /templates/
+Disallow: /data/
+Disallow: /scripts/
 
 Sitemap: https://stam-core.nl/sitemap.xml

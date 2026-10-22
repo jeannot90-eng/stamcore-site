@@ -1,0 +1,7 @@
+# Stam Core — Netlify redirects
+# Regel: bestaande URL's blijven werken. Moet een URL toch veranderen, zet hier een 301:
+#   /oude-url    /nieuwe-url    301
+# Voorbeeld (alleen nodig als een plaatspagina ooit een andere slug krijgt):
+#   /website-glazenwasser-den-bosch    /website-glazenwasser-s-hertogenbosch    301
+#
+# Netlify serveert "/prijzen" automatisch uit prijzen.html; daar is geen regel voor nodig.

@@ -45,4 +45,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- Branche × plaats-pagina's: beheerd door scripts/generate.mjs, niet met de hand bewerken -->
+  <!-- GENERATED:START -->
+  <!-- GENERATED:END -->
 </urlset>
