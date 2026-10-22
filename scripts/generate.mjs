@@ -282,7 +282,9 @@ ${items.map((p) => `      <li><a href="${pageInfo(p).url}" class="inline-block r
 // ── 4. Partials en inline CSS in alle pagina's ─────────────────────────────────
 const pageFiles = [
   ...fs.readdirSync(ROOT).filter((f) => f.endsWith('.html')),
-  ...fs.readdirSync(path.join(ROOT, 'kennis')).filter((f) => f.endsWith('.html')).map((f) => `kennis/${f}`),
+  ...(fs.existsSync(path.join(ROOT, 'kennis'))
+    ? fs.readdirSync(path.join(ROOT, 'kennis')).filter((f) => f.endsWith('.html')).map((f) => `kennis/${f}`)
+    : []),
 ];
 let synced = 0;
 for (const f of pageFiles) {

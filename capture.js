@@ -2,9 +2,9 @@
    Stam Core — herkomst-opvanger (referral + UTM) voor stam-core.nl
    - Registreert WAAR een bezoeker vandaan komt (?ref= / ?utm_) in Supabase.
    - Onthoudt de herkomst (FIRST-TOUCH, 30 dagen) in de browser, zodat 'ie ook
-     beschikbaar is als de bezoeker doorklikt (bv. /kennis) of later terugkomt.
-   - Geeft de herkomst mee aan de ElevenLabs-chatbot, zodat een chat-lead aan de
-     juiste referrer wordt gekoppeld.
+     beschikbaar is als de bezoeker doorklikt of later terugkomt.
+   - Zet de herkomst in het contactformulier, zodat een lead aan de juiste
+     referrer wordt gekoppeld.
    AVG: GEEN persoonsgegevens — alleen herkomst (bron/campagne/pagina). Geen
    cookies van derden; alleen localStorage in de eigen browser.
 =========================================================================== */
@@ -35,7 +35,7 @@
     if (h.utm_source) return h.utm_source + (h.utm_campaign ? " · " + h.utm_campaign : "");
     return "";
   }
-  // Voor een contactformulier of de chatbot: leesbare bron-tekst (of "").
+  // Voor het contactformulier: leesbare bron-tekst (of "").
   window.stamcoreHerkomst = function () { return bronTekst(bewaardeHerkomst()); };
 
   // ── 2) Nieuwe herkomst in de URL? First-touch vastleggen + 1x per sessie loggen
@@ -74,29 +74,7 @@
     }
   }
 
-  // ── 3) Herkomst meegeven aan de ElevenLabs-chatbot (dynamic variable) ───────
-  // Zo komt 'ie in de post-call data en kan de lead-ingest 'm op de lead zetten.
-  function koppelChatbot() {
-    var bron = window.stamcoreHerkomst();
-    if (!bron) return false;
-    var w = document.querySelector("elevenlabs-convai");
-    if (!w) return false;
-    try {
-      var dv = {};
-      try { dv = JSON.parse(w.getAttribute("dynamic-variables") || "{}"); } catch (e) { dv = {}; }
-      if (dv.herkomst === bron) return true;   // al gezet
-      dv.herkomst = bron;
-      w.setAttribute("dynamic-variables", JSON.stringify(dv));
-      return true;
-    } catch (e) { return false; }
-  }
-  // De widget kan async laden; even doorproberen tot 'ie er is (max ~15s).
-  var pogingen = 0;
-  function probeer() { if (koppelChatbot() || pogingen++ > 15) return; setTimeout(probeer, 1000); }
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", probeer);
-  else probeer();
-
-  // ── 4) Herkomst in (verborgen) formuliervelden zetten ───────────────────────
+  // ── 3) Herkomst in (verborgen) formuliervelden zetten ───────────────────────
   // Zo wordt een contactformulier-lead aan de juiste referrer gekoppeld.
   function vulFormulieren() {
     var bron = window.stamcoreHerkomst();

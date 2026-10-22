@@ -23,7 +23,7 @@ npm run build        # = npm run build:css + npm run generate (in die volgorde)
 | Branche × plaats | `/website-{niche}-{plaats}` | `/website-glazenwasser-tilburg` | **gegenereerd** uit `data/seo-paginas.json` |
 
 - Nieuwe pagina's zijn **zonder `.html`** (Netlify serveert `/prijzen` uit `prijzen.html`). Canonical, sitemap en interne links gebruiken ook de versie zonder `.html`.
-- Bestaande pagina's (`/front-end.html`, `/core.html`, `/agents.html`, `/ai-assistenten.html`, `/werk.html`, `/privacy.html`, `/kennis/…`) houden hun huidige URL.
+- Bestaande pagina's (`/front-end.html`, `/core.html`, `/werk.html`, `/privacy.html`) houden hun huidige URL. De verwijderde AI-pagina's en kennisartikelen hebben een redirect in `_redirects`; `/kennis/` tijdelijk (302), omdat er later nieuwe artikelen komen.
 - Plaatsnamen worden automatisch een slug: kleine letters, geen accenten of apostrofs, spaties worden `-` (`'s-Hertogenbosch` → `s-hertogenbosch`).
 - Moet een URL ooit veranderen: zet een 301 in `_redirects`.
 
@@ -70,7 +70,7 @@ Een record dat niet meer `live` is, wordt bij de volgende `npm run generate` ver
 
 ## Gedeelde blokken
 
-`templates/partials/header.html`, `footer.html` en `scripts.html` zijn de bron voor de nieuwe header, footer en scripts. Elke pagina met `<!-- partial:naam --> … <!-- /partial:naam -->` krijgt bij `npm run generate` de actuele versie (nu: home, prijzen, de pijler(s), de kennispagina's (alleen de header) en alle plaatspagina's). De oudere pagina's (`front-end`, `core`, `agents`, `ai-assistenten`, `werk`, `privacy`) hebben nog hun eigen header en footer.
+`templates/partials/header.html`, `footer.html` en `scripts.html` zijn de bron voor de nieuwe header, footer en scripts. Elke pagina met `<!-- partial:naam --> … <!-- /partial:naam -->` krijgt bij `npm run generate` de actuele versie (nu: home, prijzen, de pijler(s) en alle plaatspagina's). De oudere pagina's (`front-end`, `core`, `werk`, `privacy`) hebben nog hun eigen header en footer.
 
 ## Placeholders
 
@@ -88,5 +88,4 @@ Deploy niet zolang er nog `[[INVULLEN]]` op een pagina staat.
 - Geen nieuwe JavaScript-libraries. Doel: Lighthouse mobiel ≥ 90.
 - Google Fonts laden niet-blokkerend (`rel="preload"` + `onload`), alleen de gewichten die gebruikt worden (Space Grotesk 600/700, Inter 400–700).
 - De CSS staat inline in elke pagina (tussen `<!-- css:app -->` en `<!-- /css:app -->`), zodat er geen render-blokkerend CSS-verzoek is. `assets/app.css` blijft de bron. Tailwind slaat het inline blok over bij het scannen.
-- De ElevenLabs-chatbot staat alleen nog op `ai-assistenten.html` (de demopagina van Stam Chatbot).
 - `/templates/*`, `/data/*` en `/scripts/*` geven via `_redirects` een 404.
