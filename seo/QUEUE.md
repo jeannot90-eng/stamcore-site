@@ -12,9 +12,9 @@ Claude pakt bij "maak de volgende stadspagina" de bovenste stad die nog niet liv
 | stad | s-hertogenbosch | live | 2026-10-24 |
 | stad | helmond | live | 2026-10-24 |
 | stad | roosendaal | live | 2026-10-24 |
-| stad | bergen-op-zoom | klaar-voor-bouw | |
-| stad | waalwijk | klaar-voor-bouw | |
-| stad | oss | klaar-voor-bouw | |
+| stad | bergen-op-zoom | live | 2026-10-24 |
+| stad | waalwijk | live | 2026-10-24 |
+| stad | oss | live | 2026-10-24 |
 
 ## Kennisartikelen (golf 1)
 

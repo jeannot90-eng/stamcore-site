@@ -1,0 +1,82 @@
+{
+  "stad": "Waalwijk",
+  "slug": "waalwijk",
+  "niche": "glazenwasser",
+  "status": "live",
+  "title": "Website glazenwasser Waalwijk | Stam Core",
+  "meta": "Glazenwasser in Waalwijk? In de top 3 van Google Maps staat zelfs een vergelijkingssite. Zo vind je klanten in Besoijen, Sprang-Capelle en Waspik.",
+  "h1": "Glazenwasser in Waalwijk en de Langstraat: hier zit de ruimte",
+  "intro": [
+    "De gemeente Waalwijk telt ruim 51.000 inwoners, verdeeld over de stad Waalwijk en de dorpen Sprang-Capelle en Waspik. Ze ligt in de Langstraat, aan de Bergsche Maas.",
+    "Opvallend in Google Maps: in de top 3 staat een vergelijkingssite voor schoonmaakbedrijven, geen glazenwasser. Er is dus plek voor een glazenwasser die het online goed regelt."
+  ],
+  "wijken": [
+    "Centrum",
+    "Besoijen",
+    "Baardwijk",
+    "Zanddonk",
+    "Bloemenoord",
+    "Meerdijk",
+    "Laageinde",
+    "De Hoef",
+    "Landgoed Driessen",
+    "Sprang-Capelle",
+    "Waspik"
+  ],
+  "wijken_tekst": [
+    "Waalwijk zelf bestaat uit wijken als Besoijen, Baardwijk, Bloemenoord en Landgoed Driessen. Daarnaast liggen Sprang-Capelle en Waspik, dorpen waar mensen eerder \"glazenwasser Waspik\" typen dan de naam van de gemeente.",
+    "Met een pagina per wijk en dorp maak je je werkgebied concreet. Zeker in een gemeente met drie kernen houdt dat je rondes logisch: Sprang-Capelle op de ene dag, de wijken van Waalwijk op de andere."
+  ],
+  "kenmerken": [
+    "Het zakelijke hart van Waalwijk ligt in het noorden, bij de haven, met een uitgestrekt bedrijventerrein eromheen. Veel bedrijven hebben zich rond dat havengebied gevestigd. Voor een glazenwasser is dat een kans op vaste zakelijke rondes: kantoorgevels en bedrijfspanden dicht bij elkaar, met afspraken per maand in plaats van per keer. Bedrijven waarderen een vaste dag en een vaste prijs per beurt. Leg dat vast in een afspraak voor het hele jaar, dan weet je maanden vooruit wat er binnenkomt, ook in de rustige wintermaanden.",
+    "De bedrijvigheid zit hier diep. Waalwijk was een schoenenstad: rond 1960 stonden er 31 schoenfabrieken die samen 3,75 miljoen paar per jaar maakten. Na 1965 verhuisde het meeste werk naar lagelonenlanden, en het SchoenenKwartier houdt die geschiedenis nu levend.",
+    "Wil je hier groeien, dan heb je twee ingangen nodig: een zakelijke pagina voor het havengebied en pagina's voor de wijken en dorpen waar je particulieren hebt. Zo vindt een facilitair manager je net zo makkelijk als een bewoner van Besoijen."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Kunnen Sprang-Capelle en Waspik ook op mijn website?",
+      "antwoord": "Graag zelfs. Ze horen bij de gemeente Waalwijk, maar mensen zoeken er op hun dorpsnaam. Een eigen pagina per dorp laat zien dat je er echt komt."
+    },
+    {
+      "vraag": "Er staat een vergelijkingssite in de top 3. Hoe kan dat?",
+      "antwoord": "Google laat soms bedrijven zien die zelf geen glazenwasser zijn, als hun profiel en pagina's goed op orde zijn. Voor jou betekent het vooral dat de glazenwassers hier online nog weinig doen. Precies daar zit de ruimte."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "afstand",
+    "eigendom"
+  ],
+  "cta_tekst": "Ik bekijk \"glazenwasser Waalwijk\" en de wijken en dorpen waar jij rijdt, en zet jouw profiel tegenover de top 3. Je krijgt je positie, hoe je reviews zich verhouden tot hun gemiddelde en de drie snelste verbeteringen. Vrijblijvend en gratis.",
+  "nabije_steden": [
+    "tilburg",
+    "s-hertogenbosch",
+    "oss"
+  ],
+  "scan": "scans/waalwijk.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente Waalwijk: 51.638 inwoners op 1 januari 2026 (CBS); woonplaatsen Waalwijk, Sprang-Capelle, Waspik",
+      "bron": "https://nl.wikipedia.org/wiki/Waalwijk_(gemeente)"
+    },
+    {
+      "feit": "Waalwijk ligt in de Langstraat aan de Bergsche Maas; wijken Baardwijk, Besoijen, Zanddonk, Bloemenoord, Meerdijk, Laageinde, De Hoef, Landgoed Driessen",
+      "bron": "https://nl.wikipedia.org/wiki/Waalwijk_(stad)"
+    },
+    {
+      "feit": "Haven in het noorden met uitgestrekt bedrijventerrein; veel bedrijven rond het havengebied",
+      "bron": "https://nl.wikipedia.org/wiki/Waalwijk_(stad)"
+    },
+    {
+      "feit": "Rond 1960 31 schoenfabrieken, 3.750.000 paar per jaar; na 1965 grotendeels naar lagelonenlanden; SchoenenKwartier (Nederlands Leder en Schoenen Museum)",
+      "bron": "https://nl.wikipedia.org/wiki/Waalwijk_(stad)"
+    }
+  ],
+  "gepubliceerd": "2026-10-24",
+  "gewijzigd": "2026-10-24",
+  "kansvarianten": {
+    "plaats": 2,
+    "reageert": 0,
+    "reviewsLaag": 0
+  }
+}

@@ -37,12 +37,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://stam-core.nl/website-glazenwasser-bergen-op-zoom</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://stam-core.nl/website-glazenwasser-eindhoven</loc>
     <lastmod>2026-10-24</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://stam-core.nl/website-glazenwasser-helmond</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stam-core.nl/website-glazenwasser-oss</loc>
     <lastmod>2026-10-24</lastmod>
     <priority>0.7</priority>
   </url>
@@ -58,6 +68,11 @@
   </url>
   <url>
     <loc>https://stam-core.nl/website-glazenwasser-tilburg</loc>
+    <lastmod>2026-10-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stam-core.nl/website-glazenwasser-waalwijk</loc>
     <lastmod>2026-10-24</lastmod>
     <priority>0.7</priority>
   </url>

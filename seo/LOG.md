@@ -11,6 +11,7 @@
 | 2026-10-24 | Review steden 1–3: kansen-varianten, check dubbele zinnen, kenmerken zonder skelet, feiten gecorrigeerd, alles-opnieuw-bouwen met auto-lastmod | tilburg · eindhoven · s-hertogenbosch | seo: review steden 1–3 verwerkt |
 | 2026-10-24 | Stadspagina's Helmond en Roosendaal live; kansvarianten vastgelegd per stad; samenvattingszin scanblok gerepareerd (woordvolgorde) | https://stam-core.nl/website-glazenwasser-helmond · https://stam-core.nl/website-glazenwasser-roosendaal | seo: stadspagina's helmond en roosendaal |
 | 2026-10-24 | Review Helmond/Roosendaal verwerkt (bronvermeldingen, wijknamen in kansen, FAQ's, Tilburg-bedrijven met bron) | alle stadspagina's | seo: review helmond/roosendaal verwerkt |
+| 2026-10-24 | Stadspagina's Bergen op Zoom, Waalwijk en Oss live: golf 1 compleet (8 steden) | https://stam-core.nl/website-glazenwasser-bergen-op-zoom · https://stam-core.nl/website-glazenwasser-waalwijk · https://stam-core.nl/website-glazenwasser-oss | seo: stadspagina's bergen op zoom, waalwijk, oss |
 
 ## Indexering aangevraagd (Search Console)
 

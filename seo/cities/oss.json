@@ -1,0 +1,87 @@
+{
+  "stad": "Oss",
+  "slug": "oss",
+  "niche": "glazenwasser",
+  "status": "live",
+  "title": "Website glazenwasser Oss | Stam Core",
+  "meta": "Glazenwasser in Oss? Geen van de drie bovenaan in Google Maps reageert op reviews. Zo vind je klanten in Ussen, Ruwaard, Berghem en de dorpen rond Oss.",
+  "h1": "Glazenwasser in Oss? Zo pak je Ussen, Ruwaard en de dorpen",
+  "intro": [
+    "De gemeente Oss telt ruim 95.000 inwoners. Bijna 60.000 daarvan wonen in de stad zelf; de rest woont in Berghem, Geffen, Ravenstein, Lith en een reeks kleinere dorpen.",
+    "In Google Maps heeft één bedrijf bovenaan veel reviews, de andere twee nauwelijks. Hieronder zie je waar dat ruimte laat."
+  ],
+  "wijken": [
+    "Centrum",
+    "Schadewijk",
+    "Oss-Zuid",
+    "Krinkelhoek",
+    "Ruwaard",
+    "Ussen",
+    "Berghem",
+    "Geffen",
+    "Ravenstein",
+    "Lith",
+    "Megen"
+  ],
+  "wijken_tekst": [
+    "Een gemeente met meer dan twintig woonplaatsen vraagt om keuzes. Berghem is met ruim 11.000 inwoners het grootste dorp, Geffen en Ravenstein volgen. In de stad zelf zijn Ussen, Ruwaard en Schadewijk duidelijke blokken.",
+    "Kies de kernen waar je al klanten hebt en geef die elk een pagina. Dan groeit je klantenbestand waar je toch al rijdt, in plaats van dat je voor één adres naar Megen moet."
+  ],
+  "kenmerken": [
+    "Oss is gebouwd op industrie. De margarinefabrikanten Van den Bergh en Jurgens zetten de stad op de kaart, en Organon is nu de grootste werkgever. De medisch-farmaceutische sector telt ongeveer 5.500 werknemers, verdeeld over zo'n twintig bedrijven. Laboratoria en kantoren hebben hun eigen eisen aan planning en hygiëne, en ze willen een vaste partner in plaats van een losse beurt.",
+    "Dat werk zit verspreid over een flink aantal bedrijventerreinen, van Vorstengrafdonk en De Geer tot het havengebied Elzenburg, Moleneind en Danenhoef. Wie daar een paar klanten heeft, kan er een zakelijke ronde omheen bouwen. Een vaste dag per terrein houdt die ronde overzichtelijk, en één tevreden bedrijf kent vaak de buren. Zo groeit zakelijk werk stap voor stap, zonder dat je ervoor de hele gemeente door moet.",
+    "Particulier in de dorpen, zakelijk op de terreinen: geef ze op je site elk hun eigen plek, dan weet elke klant meteen dat je er ook voor hem of haar bent."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Mijn klanten zitten vooral in Berghem en Geffen. Kan ik daar mee beginnen?",
+      "antwoord": "Dat is zelfs de beste start. Begin bij de kernen waar je al rijdt, met een pagina per dorp, en breid uit naar de stad of andere dorpen als je daar klanten bij wilt."
+    },
+    {
+      "vraag": "Heeft lokale SEO zin als één bedrijf bovenaan al heel veel reviews heeft?",
+      "antwoord": "Ja, maar kies waar je begint. Op de stadsnaam haal je zo'n bedrijf niet snel in. Op de naam van een dorp of wijk ligt het anders, en daar kun je met een pagina die echt over die plek gaat terrein winnen terwijl je reviews groeien."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "teksten",
+    "glazenwasser"
+  ],
+  "cta_tekst": "Ik zoek op \"glazenwasser Oss\" en op de dorpen en wijken waar jij werkt, van Berghem tot Ussen, en leg jouw profiel naast de top 3. Je krijgt je positie, je reviews tegenover hun gemiddelde en drie punten waar je direct mee verder kunt. Zonder kosten.",
+  "nabije_steden": [
+    "s-hertogenbosch",
+    "helmond",
+    "waalwijk",
+    "eindhoven"
+  ],
+  "scan": "scans/oss.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente Oss: 95.540 inwoners op 1 januari 2026 (CBS)",
+      "bron": "https://nl.wikipedia.org/wiki/Oss_(gemeente)"
+    },
+    {
+      "feit": "Woonplaatsen 2023: Oss 59.740, Berghem 11.100, Geffen 5.095, Ravenstein 3.175, Lith 3.165, Megen 1.720 (21 woonplaatsen in totaal)",
+      "bron": "https://nl.wikipedia.org/wiki/Oss_(gemeente)"
+    },
+    {
+      "feit": "Wijken: Centrum, Schadewijk, Oss-Zuid, Krinkelhoek, Ruwaard, Ussen",
+      "bron": "https://nl.wikipedia.org/wiki/Oss"
+    },
+    {
+      "feit": "Margarinefabrikanten Arnold van den Bergh en Anton Jurgens; Organon grootste werkgever; medisch-farmaceutische sector ca. 5.500 werknemers in 20 bedrijven",
+      "bron": "https://nl.wikipedia.org/wiki/Oss"
+    },
+    {
+      "feit": "Bedrijventerreinen o.a. Vorstengrafdonk, De Geer I en II, Elzenburg (haven), Moleneind, Danenhoef",
+      "bron": "https://nl.wikipedia.org/wiki/Oss"
+    }
+  ],
+  "gepubliceerd": "2026-10-24",
+  "gewijzigd": "2026-10-24",
+  "kansvarianten": {
+    "plaats": 1,
+    "reageert": 4,
+    "reviewsHoog": 1
+  }
+}

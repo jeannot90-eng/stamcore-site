@@ -1,0 +1,83 @@
+{
+  "stad": "Bergen op Zoom",
+  "slug": "bergen-op-zoom",
+  "niche": "glazenwasser",
+  "status": "live",
+  "title": "Website glazenwasser Bergen op Zoom | Stam Core",
+  "meta": "Glazenwasser in Bergen op Zoom? Bovenaan in Google Maps reageert niemand op reviews. Zo vind je klanten in de binnenstad, Halsteren en Lepelstraat.",
+  "h1": "Bergen op Zoom: zo val je als glazenwasser op in Google Maps",
+  "intro": [
+    "Bergen op Zoom is een oude vestingstad, en de gemeente telt ruim 70.000 inwoners. Naast de stad zelf horen Halsteren en Lepelstraat erbij, elk met eigen wijken en eigen klanten.",
+    "De glazenwassers bovenaan in Maps doen hier weinig met hun profiel. Wat dat voor jou betekent, zie je hieronder."
+  ],
+  "wijken": [
+    "Centrum",
+    "Het Fort",
+    "Zeekant",
+    "Bergse Plaat",
+    "De Markiezaten",
+    "Noordgeest",
+    "Meilust",
+    "Tuinwijk",
+    "Warande",
+    "Gageldonk",
+    "Halsteren",
+    "Lepelstraat"
+  ],
+  "wijken_tekst": [
+    "De gemeente valt uiteen in herkenbare delen: de oude stad binnen de voormalige vesting, wijken als Gageldonk en Warande aan de oostkant, de Bergse Plaat aan de westkant, en Halsteren, dat met ruim 12.000 inwoners een kern op zich is.",
+    "In Halsteren en Lepelstraat zoeken mensen op hun dorpsnaam. Een pagina voor elk deel waar je komt, maakt je ronde compacter: klanten bij elkaar in plaats van verspreid over de hele gemeente."
+  ],
+  "kenmerken": [
+    "Wie in Bergen op Zoom ramen wast, komt vroeg of laat in de binnenstad terecht. De stad telt bijna 500 rijks- en gemeentemonumenten, een deel van het centrum is beschermd stadsgezicht, en rond de Grote Markt staan het Markiezenhof, een gotisch stadspaleis, en de Sint-Gertrudiskerk met haar toren, de Peperbus. Monumentale panden vragen om voorzichtig werken en goede afspraken met de eigenaar; dat laat je op je pagina zien met foto's van je eigen werk daar.",
+    "Aan de andere kant van het spectrum staat de Theodorushaven, aangelegd tussen 1959 en 1964, die de stad een eigen industriehaven gaf. Bedrijfspanden in dat gebied zijn zakelijk werk met vaste afspraken, een heel andere klant dan een bewoner in Noordgeest. Plan zulke klanten op vaste doordeweekse momenten, zodat ze je particuliere rondes niet in de weg zitten.",
+    "Een binnenstad vol monumenten en een havengebied vol bedrijfspanden: zet ze op je site naast elkaar, elk met een eigen aanpak."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Kan Halsteren een eigen pagina krijgen, los van Bergen op Zoom?",
+      "antwoord": "Ja. Halsteren hoort bij de gemeente, maar heeft ruim 12.000 inwoners en een eigen centrum. Mensen daar zoeken op \"glazenwasser Halsteren\", dus een eigen pagina sluit daar beter op aan."
+    },
+    {
+      "vraag": "Ik werk veel in de binnenstad. Moet dat apart op mijn site?",
+      "antwoord": "Dat is slim. Eigenaren van monumentale panden willen zien dat je zorgvuldig werkt voordat ze bellen. Een pagina over de binnenstad, met foto's van je eigen werk daar, geeft dat vertrouwen."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "eigendom",
+    "teksten"
+  ],
+  "cta_tekst": "Ik zoek op \"glazenwasser Bergen op Zoom\" en op Halsteren en de wijken waar jij komt, en vergelijk jouw profiel met de drie bovenaan. Je krijgt je positie, je reviews naast hun gemiddelde en drie concrete stappen om op te vallen. Kosteloos.",
+  "nabije_steden": [
+    "roosendaal",
+    "tilburg",
+    "s-hertogenbosch"
+  ],
+  "scan": "scans/bergen-op-zoom.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente ruim 70.000 inwoners (70.000 op 25 juli 2024; 70.693 op 1 januari 2026)",
+      "bron": "https://nl.wikipedia.org/wiki/Bergen_op_Zoom_(gemeente)"
+    },
+    {
+      "feit": "Kernen: stad Bergen op Zoom (54.440, 2023), Halsteren (12.480), Lepelstraat (1.945); wijken o.a. Centrum, Het Fort, Zeekant, Bergse Plaat, De Markiezaten, Noordgeest, Meilust, Tuinwijk, Warande, Gageldonk; Halsteren heeft een wijk Centrum",
+      "bron": "https://nl.wikipedia.org/wiki/Bergen_op_Zoom_(gemeente)"
+    },
+    {
+      "feit": "Vestingstad; bijna 500 rijks- en gemeentemonumenten; deel van het centrum rijksbeschermd gezicht; Markiezenhof (Brabants-gotisch stadspaleis); Sint-Gertrudiskerk met toren de Peperbus aan de Grote Markt",
+      "bron": "https://nl.wikipedia.org/wiki/Bergen_op_Zoom"
+    },
+    {
+      "feit": "Theodorushaven aangelegd 1959–1964",
+      "bron": "https://nl.wikipedia.org/wiki/Bergen_op_Zoom"
+    }
+  ],
+  "gepubliceerd": "2026-10-24",
+  "gewijzigd": "2026-10-24",
+  "kansvarianten": {
+    "plaats": 0,
+    "reageert": 3,
+    "reviewsLaag": 4
+  }
+}
