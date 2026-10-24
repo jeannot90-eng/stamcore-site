@@ -79,6 +79,7 @@ const resolvePool = (niche, refs) => refs.map((r) => {
 const pillCls = 'inline-block rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-slate-200 transition hover:border-electric-500/40 hover:text-white';
 
 // ── 1. Steden valideren ─────────────────────────────────────────────────────
+const SCAN_COLS = ['datum', 'stad', 'zoekterm', 'positie', 'reviews', 'score', 'eigen_website', 'plaatspaginas', 'reageert_op_reviews', 'fotos'];
 const REQUIRED = ['stad', 'slug', 'niche', 'status', 'title', 'meta', 'h1', 'intro', 'wijken', 'wijken_tekst', 'kenmerken', 'faq_stad', 'faq_pool', 'cta_tekst', 'nabije_steden', 'scan', 'bronnen'];
 const live = [];
 const concept = [];
@@ -95,6 +96,8 @@ for (const c of cities) {
   if (c.status === 'live' && !hasScan) { errors.push(`${label}: staat op live maar ${scanPath} ontbreekt. Zet hem in QUEUE.md op wacht-op-scan.`); continue; }
   const rows = parseScan(hasScan ? scanPath : 'seo/scans/_voorbeeld.csv');
   if (rows.length < 3) errors.push(`${scanPath}: minimaal 3 rijen (top 3) nodig, nu ${rows.length}`);
+  const missingCols = SCAN_COLS.filter((k) => !(k in (rows[0] || {})));
+  if (missingCols.length) { errors.push(`${scanPath}: kolommen ontbreken: ${missingCols.join(', ')} (zie scans/_TEMPLATE.csv)`); continue; }
   const rec = { c, niche, info: cityInfo(c, niche), scan: analyseScan(rows, c.stad), voorbeeld: !hasScan };
   if (rec.voorbeeld) rec.scan.zoekterm = fillTokens(niche.zoekterm, { stad: c.stad.toLowerCase() });
   (c.status === 'live' ? live : concept).push(rec);
@@ -163,8 +166,8 @@ function buildCity({ c, niche, info, scan, voorbeeld }, isPreview) {
       tegel(scan.gemScore ?? '—', 'gemiddelde score'),
       tegel(`${t.website}/${scan.n}`, 'met eigen website'),
       tegel(`${t.plaats}/${scan.n}`, "met pagina's per wijk of kern"),
-      tegel(`${t.posts}/${scan.n}`, 'postte de afgelopen 30 dagen'),
-      tegel(`${t.fotos}/${scan.n}`, "met foto's van eigen werk"),
+      tegel(`${t.reageert}/${scan.n}`, 'reageert op reviews'),
+      tegel(scan.gemFotos, "gemiddeld aantal foto's"),
     ].join('\n          '),
     kansenHtml: scan.kansen.map((k) => `<li class="flex gap-3"><span class="text-emerald-400">+</span><span>${esc(k)}</span></li>`).join('\n            '),
     wijkenHtml: c.wijken.map((w) => `<li class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200">${esc(w)}</li>`).join('\n      '),

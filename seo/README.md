@@ -20,7 +20,7 @@ npm run build        # = build:css + seo:all (draai dit als je Tailwind-klassen 
 | `config.json` | Prijzen en voorwaarden, contactgegevens, case-feiten (Lighthouse), uitgesloten steden (incl. kernen), verboden woorden, vaste pagina's voor de sitemap. **Prijzen alleen hier wijzigen.** |
 | `niches/glazenwasser.json` | Niche-brede inhoud: systeemblok, FAQ-pool, FAQ van de SEO-pijler. |
 | `cities/{slug}.json` | Eén stadspagina (velden: zie hieronder). |
-| `scans/{slug}.csv` | Maps-scan door Jeannot. Formaat: `scans/_TEMPLATE.csv`. `scans/_voorbeeld.csv` is nep-data, alleen voor de preview. |
+| `scans/{slug}.csv` | Maps-scan, door Claude in de browser (zie SEO-PLAN.md §5). Formaat: `scans/_TEMPLATE.csv`. `scans/_voorbeeld.csv` is nep-data, alleen voor de preview. |
 | `articles/{slug}.md` | Kennisartikel (Markdown + frontmatter). |
 | `templates/city.html`, `seo-pijler.html`, `article.html` | Templates. `{{veld}}` = tekst (ge-escaped), `{{{veld}}}` = HTML. |
 | `scripts/` | `lib.mjs` (gedeeld), `build.mjs`, `check.mjs`, `sitemap.mjs`. Geen dependencies. |
@@ -65,9 +65,11 @@ De unieke blokken staan in de HTML tussen `<!-- uniek -->` en `<!-- /uniek -->`;
 ### Kansen uit de scan (automatisch, nooit beloftes)
 
 - ≥ 2 zonder plaatspagina's → kans op pagina's per wijk/kern
-- ≥ 2 zonder posts in 30 dagen → weinig activiteit op de profielen
+- ≥ 2 die niet reageren op reviews → reageren op reviews
 - gemiddeld < 30 reviews → reviewroutine; ≥ 30 → eerst pagina's en profiel, reviews laten groeien
-- aanvulling tot 3: weinig eigen foto's, geen eigen website
+- aanvulling tot 3: ≥ 2 met minder dan 10 foto's, geen eigen website
+
+Tegels op de pagina: gemiddeld aantal reviews, gemiddelde score, eigen website x/3, plaatspagina's x/3, reageert op reviews x/3, gemiddeld aantal foto's.
 
 ## Kennisartikel
 
@@ -95,3 +97,4 @@ Let op: `_redirects` stuurt `/kennis` en `/kennis/` (alleen die twee) tijdelijk 
 Wat Jeannot bij reviews heeft besloten. Dit geldt voor alle volgende pagina's.
 
 - **2026-10-24:** `/seo-glazenwasser` en Tilburg zonder wijzigingen goedgekeurd. De opbouw en toon van [`cities/tilburg.json`](cities/tilburg.json) zijn het template voor alle volgende stadspagina's. Tilburg gaat pas live zodra `scans/tilburg.csv` er is.
+- **2026-10-24:** Claude doet de Maps-scan zelf via de browser. Kolommen `posts_laatste_30d` en `fotos_eigen_werk` vervangen door `reageert_op_reviews` en `fotos`, omdat posts en eigen-vs-klantfoto's niet zichtbaar zijn zonder in te loggen. Gesponsorde resultaten tellen niet mee.

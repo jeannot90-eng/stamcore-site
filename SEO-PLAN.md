@@ -168,19 +168,22 @@ De "insteek" is een richting, geen feit. Verifieer alles voordat je het gebruikt
 
 ---
 
-## 5. Maps-scan (aangeleverd door Jeannot)
+## 5. Maps-scan (door Claude, via de browser)
 
-Jeannot vult per stad `seo/scans/{stad}.csv` in. Dat kost ongeveer 10 minuten: zoeken op "glazenwasser {stad}" in Google Maps en de top 3 bekijken.
+> **Gewijzigd op 2026-10-24 (besluit Jeannot):** Claude doet de scan zelf in de browser, als onderdeel van het bouwen van een stadspagina. Posts zijn niet zichtbaar zonder in te loggen en eigen foto's zijn niet te onderscheiden van klantfoto's; daarom zijn `posts_laatste_30d` en `fotos_eigen_werk` vervangen door `reageert_op_reviews` en `fotos` (aantal). Bij opschalen naar honderden plaatsen: overstappen op de Google Places API.
+
+Claude vult per stad `seo/scans/{stad}.csv` in: zoeken op "glazenwasser {stad}" in Google Maps (niet ingelogd, cookies afgewezen), de eerste 3 **organische** resultaten bekijken (gesponsorde overslaan), en op hun websites controleren of er pagina's per wijk of plaats zijn.
 
 **CSV-formaat** (één rij per bedrijf; geen namen):
 ```csv
-datum,stad,zoekterm,positie,reviews,score,eigen_website,plaatspaginas,posts_laatste_30d,fotos_eigen_werk
-2026-10-23,Tilburg,glazenwasser tilburg,1,0,0,ja,nee,nee,ja
+datum,stad,zoekterm,positie,reviews,score,eigen_website,plaatspaginas,reageert_op_reviews,fotos
+2026-10-24,Tilburg,glazenwasser tilburg,1,19,4.7,ja,nee,ja,9
 ```
 - `positie`: 1–3
 - `reviews`: aantal reviews (getal)
 - `score`: gemiddelde score (bijv. 4.8)
-- `eigen_website`, `plaatspaginas`, `posts_laatste_30d`, `fotos_eigen_werk`: `ja` / `nee`
+- `eigen_website`, `plaatspaginas`, `reageert_op_reviews`: `ja` / `nee`
+- `fotos`: aantal foto's op het profiel (getal)
 
 Maak `seo/scans/_TEMPLATE.csv` aan met de header en één voorbeeldrij die duidelijk als voorbeeld gemarkeerd is.
 
@@ -188,11 +191,12 @@ Maak `seo/scans/_TEMPLATE.csv` aan met de header en één voorbeeldrij die duide
 - Bereken gemiddelden (reviews, score) en tellingen ("2 van de 3 hebben geen plaatspagina's").
 - Leid er automatisch 2–3 kansen uit af, met regels zoals:
   - `plaatspaginas = nee` bij ≥ 2 bedrijven → kans: "de meeste bedrijven bovenaan hebben geen pagina's per wijk of kern";
-  - `posts_laatste_30d = nee` bij ≥ 2 → kans: "weinig activiteit op de profielen";
+  - `reageert_op_reviews = nee` bij ≥ 2 → kans: "de meeste reageren niet op hun reviews";
+  - `fotos` < 10 bij ≥ 2 → kans: "weinig foto's op de profielen";
   - gemiddeld < 30 reviews → kans: "met een vaste reviewroutine is het gat te overbruggen in maanden, niet jaren". Formuleer dit altijd zonder garantie.
 - Toon altijd: "Gemeten op {datum} via een zoekopdracht in Google Maps. Resultaten verschillen per locatie en per moment."
 
-**Ontbreekt de scan?** Dan wordt de stadspagina **niet** gepubliceerd. Zet hem in `QUEUE.md` op status `wacht-op-scan` en meld dat aan Jeannot.
+**Lukt de scan niet** (bijv. Google toont een CAPTCHA of geen resultaten)? Dan wordt de stadspagina **niet** gepubliceerd. Zet hem in `QUEUE.md` op status `wacht-op-scan` en meld dat aan Jeannot.
 
 ---
 
@@ -253,7 +257,7 @@ Maak `seo/scans/_TEMPLATE.csv` aan met de header en één voorbeeldrij die duide
 
 ### 8.2 Elke volgende stadspagina (zelfstandig)
 Als Jeannot zegt "maak de volgende stadspagina" of "verwerk de nieuwe scans":
-1. Pak de bovenste stad uit `QUEUE.md` met status `klaar-voor-bouw` (scan aanwezig).
+1. Pak de bovenste stad uit `QUEUE.md` die nog niet live is, en doe de Maps-scan (§5).
 2. Onderzoek de stad: wijken/kernen en bebouwingskenmerken via betrouwbare bronnen (gemeente, CBS, Wikipedia). Noteer de bronnen in het JSON-bestand onder `bronnen`.
 3. Schrijf `seo/cities/{stad}.json` met alle unieke velden (zie het voorbeeld hieronder).
 4. Draai `npm run seo:all`.

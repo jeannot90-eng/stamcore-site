@@ -1,20 +1,20 @@
 # Publicatiewachtrij
 
-Statussen: `wacht-op-scan` (stad zonder `seo/scans/{slug}.csv`) · `klaar-voor-bouw` · `concept` (gebouwd, wacht op akkoord) · `live`.
-Claude pakt bij "maak de volgende stadspagina" de bovenste stad met `klaar-voor-bouw`, en bij "maak het volgende artikel" het bovenste artikel dat nog niet live is.
+Statussen: `klaar-voor-bouw` · `wacht-op-scan` (scan mislukt) · `concept` (gebouwd, wacht op akkoord) · `live`.
+Claude pakt bij "maak de volgende stadspagina" de bovenste stad die nog niet live is en doet zelf de Maps-scan; bij "maak het volgende artikel" het bovenste artikel dat nog niet live is.
 
 ## Steden (golf 1)
 
 | Type | Slug | Status | Datum |
 |---|---|---|---|
-| stad | tilburg | wacht-op-scan (template goedgekeurd) | 2026-10-24 |
-| stad | eindhoven | wacht-op-scan | |
-| stad | s-hertogenbosch | wacht-op-scan | |
-| stad | helmond | wacht-op-scan | |
-| stad | roosendaal | wacht-op-scan | |
-| stad | bergen-op-zoom | wacht-op-scan | |
-| stad | waalwijk | wacht-op-scan | |
-| stad | oss | wacht-op-scan | |
+| stad | tilburg | concept (echte scan 2026-10-24, wacht op akkoord om live te gaan) | 2026-10-24 |
+| stad | eindhoven | klaar-voor-bouw | |
+| stad | s-hertogenbosch | klaar-voor-bouw | |
+| stad | helmond | klaar-voor-bouw | |
+| stad | roosendaal | klaar-voor-bouw | |
+| stad | bergen-op-zoom | klaar-voor-bouw | |
+| stad | waalwijk | klaar-voor-bouw | |
+| stad | oss | klaar-voor-bouw | |
 
 ## Kennisartikelen (golf 1)
 

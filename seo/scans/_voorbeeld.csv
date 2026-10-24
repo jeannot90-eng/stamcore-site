@@ -1,5 +1,5 @@
 # VOORBEELDDATA, geen echte meting. Alleen voor de lokale preview van een stadspagina zonder scan. Een live pagina met deze data faalt in de check.
-datum,stad,zoekterm,positie,reviews,score,eigen_website,plaatspaginas,posts_laatste_30d,fotos_eigen_werk
-2026-10-23,Voorbeeld,glazenwasser voorbeeld,1,38,4.9,ja,nee,nee,ja
-2026-10-23,Voorbeeld,glazenwasser voorbeeld,2,21,4.7,ja,nee,ja,nee
-2026-10-23,Voorbeeld,glazenwasser voorbeeld,3,9,5.0,nee,nee,nee,nee
+datum,stad,zoekterm,positie,reviews,score,eigen_website,plaatspaginas,reageert_op_reviews,fotos
+2026-10-24,Voorbeeld,glazenwasser voorbeeld,1,38,4.9,ja,nee,ja,14
+2026-10-24,Voorbeeld,glazenwasser voorbeeld,2,21,4.7,ja,nee,nee,6
+2026-10-24,Voorbeeld,glazenwasser voorbeeld,3,9,5.0,nee,nee,nee,3

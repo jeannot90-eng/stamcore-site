@@ -113,21 +113,23 @@ export function analyseScan(rows, stad) {
   const scores = rows.map((r) => Number(String(r.score).replace(',', '.')) || 0).filter((s) => s > 0);
   const gemReviews = Math.round(reviews.reduce((a, b) => a + b, 0) / (n || 1));
   const gemScore = scores.length ? (scores.reduce((a, b) => a + b, 0) / scores.length).toFixed(1).replace('.', ',') : null;
-  const t = { website: ja('eigen_website'), plaats: ja('plaatspaginas'), posts: ja('posts_laatste_30d'), fotos: ja('fotos_eigen_werk') };
+  const fotos = rows.map((r) => Number(r.fotos) || 0);
+  const gemFotos = Math.round(fotos.reduce((a, b) => a + b, 0) / (n || 1));
+  const t = { website: ja('eigen_website'), plaats: ja('plaatspaginas'), reageert: ja('reageert_op_reviews'), weinigFotos: fotos.filter((f) => f < 10).length };
   // "geen van de 3 heeft", "alle 3 hebben", "2 van de 3 hebben"
   const deel = (k, ev, mv) => (k === 0 ? `geen van de ${n} ${ev}` : k === n ? `alle ${n} ${mv}` : `${k} van de ${n} ${k === 1 ? ev : mv}`);
   const Deel = (...a) => deel(...a).replace(/^./, (c) => c.toUpperCase());
   const kansen = [];
   if (n - t.plaats >= 2) kansen.push(`${t.plaats === 0 ? `Geen van de ${n} bedrijven bovenaan heeft` : `${n - t.plaats} van de ${n} bedrijven bovenaan hebben geen`} pagina's per wijk of kern. Wie die wel heeft, geeft Google meer om op te matchen als iemand zoekt op een wijk of dorp in ${stad}.`);
-  if (n - t.posts >= 2) kansen.push(`Weinig activiteit op de profielen: ${t.posts === 0 ? `geen van de ${n} plaatste de afgelopen 30 dagen een post` : `${n - t.posts} van de ${n} plaatsten de afgelopen 30 dagen geen post`}. Regelmatig posten is een van de makkelijkste manieren om te laten zien dat je bedrijf actief is.`);
+  if (n - t.reageert >= 2) kansen.push(`${t.reageert === 0 ? `Geen van de ${n} reageert` : `${n - t.reageert} van de ${n} reageren niet`} op hun reviews. Op elke review reageren kost een minuut, en nieuwe klanten lezen het mee.`);
   if (gemReviews < 30) kansen.push(`De drie bovenaan hebben gemiddeld ${gemReviews} reviews. Met een vaste reviewroutine na elke ronde is dat een gat dat je in maanden kunt dichten, niet in jaren.`);
   else kansen.push(`De drie bovenaan hebben gemiddeld ${gemReviews} reviews. Dat haal je niet in één seizoen in. Begin daarom met pagina's per wijk en een volledig profiel, terwijl je reviews groeien.`);
-  if (kansen.length < 3 && n - t.fotos >= 2) kansen.push(`${Deel(t.fotos, 'laat', 'laten')} foto's van eigen werk zien. Echte foto's van je bus en je werk vallen op tussen profielen zonder.`);
+  if (kansen.length < 3 && t.weinigFotos >= 2) kansen.push(`${Deel(t.weinigFotos, 'heeft', 'hebben')} minder dan 10 foto's op het profiel. Echte foto's van je bus en je werk maken een profiel meteen levendiger.`);
   if (kansen.length < 3 && n - t.website >= 1) kansen.push(`${Deel(t.website, 'heeft', 'hebben')} een eigen website. Een site met je diensten en plaatsen geeft Google en klanten meer houvast dan alleen een profiel.`);
   if (kansen.length < 2) kansen.push(`Een Bedrijfsprofiel met "Glazenwasser" als hoofdcategorie, losse diensten en een goed ingesteld werkgebied is de basis. Daar kijk ik als eerste naar.`);
   const samenvatting = `De drie bedrijven bovenaan hebben gemiddeld ${gemReviews} reviews${gemScore ? ` en een gemiddelde score van ${gemScore}` : ''}. ${Deel(t.website, 'heeft', 'hebben')} een eigen website, ${deel(t.plaats, 'heeft', 'hebben')} pagina's per wijk of kern.`;
   return {
-    n, gemReviews, gemScore, tellingen: t, kansen: kansen.slice(0, 3), samenvatting,
+    n, gemReviews, gemScore, gemFotos, tellingen: t, kansen: kansen.slice(0, 3), samenvatting,
     datum: rows[0]?.datum, zoekterm: rows[0]?.zoekterm,
   };
 }

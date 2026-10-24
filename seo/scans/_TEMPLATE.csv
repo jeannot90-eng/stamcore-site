@@ -1,3 +1,4 @@
-# VOORBEELD: kopieer dit bestand naar {stad}.csv (bijv. tilburg.csv), verwijder deze regel en de voorbeeldrij, en vul per bedrijf in de top 3 één rij in. Geen bedrijfsnamen.
-datum,stad,zoekterm,positie,reviews,score,eigen_website,plaatspaginas,posts_laatste_30d,fotos_eigen_werk
-2026-10-23,Voorbeeldstad,glazenwasser voorbeeldstad,1,42,4.8,ja,nee,nee,ja
+# VOORBEELD: kopieer naar {slug}.csv (bijv. tilburg.csv), verwijder deze regel en de voorbeeldrij, en vul per bedrijf in de top 3 één rij in. Geen bedrijfsnamen. Gesponsorde resultaten tellen niet mee.
+# reviews/fotos = getal · score = bijv. 4.8 · eigen_website/plaatspaginas/reageert_op_reviews = ja/nee
+datum,stad,zoekterm,positie,reviews,score,eigen_website,plaatspaginas,reageert_op_reviews,fotos
+2026-10-24,Voorbeeldstad,glazenwasser voorbeeldstad,1,42,4.8,ja,nee,ja,12
