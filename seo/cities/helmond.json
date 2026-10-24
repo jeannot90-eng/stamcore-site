@@ -1,0 +1,88 @@
+{
+  "stad": "Helmond",
+  "slug": "helmond",
+  "niche": "glazenwasser",
+  "status": "live",
+  "title": "Website glazenwasser Helmond | Stam Core",
+  "meta": "Glazenwasser in Helmond? Twee van de drie bovenaan in Google Maps hebben geen eigen website. Zo vind je klanten in Brandevoort, Stiphout en Dierdonk.",
+  "h1": "Glazenwasser in Helmond: zo vul je je rondes van Brandevoort tot Stiphout",
+  "intro": [
+    "Helmond telt bijna 97.000 inwoners. Aan de westkant verrees tussen 2000 en 2021 de Vinex-wijk Brandevoort, terwijl voormalige dorpen als Stiphout, Mierlo-Hout en Brouwhuis deels hun landelijke karakter hielden.",
+    "In Google Maps valt Helmond op: bovenaan staan bedrijven die online nog weinig laten zien. Hieronder zie je wat dat voor jou betekent."
+  ],
+  "wijken": [
+    "Binnenstad",
+    "Brandevoort",
+    "Stiphout",
+    "Mierlo-Hout",
+    "Dierdonk",
+    "Rijpelberg",
+    "Brouwhuis",
+    "Warande",
+    "'t Hout",
+    "Helmond-Oost",
+    "Helmond-West",
+    "Helmond Noord"
+  ],
+  "wijken_tekst": [
+    "Helmond is een stad van duidelijke buurten. Brandevoort heeft met De Veste een eigen centrum en is bijna een stadje op zich. Stiphout en Brouwhuis waren ooit dorpen en hebben deels hun landelijke karakter gehouden; ook daar zoeken mensen op de naam van hun eigen buurt.",
+    "Plan je per buurt, met een pagina voor elke buurt waar je komt, dan rijd je niet voor twee adressen van Brouwhuis naar Dierdonk. Hoe dichter je klanten bij elkaar wonen, hoe meer ramen je per uur doet."
+  ],
+  "kenmerken": [
+    "Brandevoort is voor een glazenwasser het opvallendste stuk Helmond. Het centrum, De Veste, is historiserend aangelegd in de stijl van een 17e-eeuws Brabants stadje, en de woonbuurten eromheen, De Buitens, zijn grotendeels ontworpen in vooroorlogse bouwstijl. Gevels in oude stijl betekenen meer kozijnwerk per woning; neem kozijnen daar standaard mee in je prijs en vertel dat ook op je pagina.",
+    "Daarnaast is Helmond een echte werkstad. Textiel bepaalde eeuwenlang het beeld, Vlisco drukt hier al sinds het midden van de negentiende eeuw katoen, en in 2021 kwam 26 procent van de werkgelegenheid uit de industrie. Fabriekshallen, kantoren en showrooms vragen om vaste afspraken in plaats van een losse beurt. Op een bedrijventerrein liggen zulke panden vaak dicht bij elkaar, dus één zakelijke klant kan de buren meebrengen.",
+    "Twee doelgroepen dus, met elk een andere vraag. Geef bewoners en bedrijven op je site elk een eigen ingang, dan hoeft niemand te zoeken of je ook voor hen werkt."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Heeft het zin om een aparte pagina voor Brandevoort te maken?",
+      "antwoord": "Ja, als je daar rijdt. Brandevoort telde in 2023 ruim 4.200 woningen en heeft een eigen centrum, en bewoners noemen hun wijk bij naam. Een pagina die laat zien dat je er al klanten hebt, sluit daar beter op aan dan een algemene Helmond-pagina."
+    },
+    {
+      "vraag": "Doe je ook Mierlo, Nuenen of Deurne?",
+      "antwoord": "Ja. Helmond grenst aan onder meer Mierlo, Deurne en Nuenen. Rijd je daar ook, dan krijgt elke plaats een eigen pagina, zodat je werkgebied stap voor stap meegroeit met je rondes."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "teksten",
+    "glazenwasser"
+  ],
+  "cta_tekst": "Ik zoek op \"glazenwasser Helmond\" en op de buurten waar jij werkt, van Brandevoort tot Brouwhuis, en leg jouw profiel naast de top 3. Je krijgt je positie, je reviews tegenover hun gemiddelde en drie dingen die je meteen kunt verbeteren. Gratis.",
+  "nabije_steden": [
+    "eindhoven",
+    "s-hertogenbosch",
+    "oss",
+    "tilburg"
+  ],
+  "scan": "scans/helmond.csv",
+  "bronnen": [
+    {
+      "feit": "96.842 inwoners op 1 januari 2026 (CBS)",
+      "bron": "https://nl.wikipedia.org/wiki/Helmond"
+    },
+    {
+      "feit": "Wijken: Binnenstad, Helmond-Oost, Helmond Noord, 't Hout, Brouwhuis, Helmond-West, Warande, Stiphout, Rijpelberg, Dierdonk, Brandevoort; Stiphout, Mierlo-Hout en Brouwhuis voormalige dorpen met deels landelijk karakter",
+      "bron": "https://nl.wikipedia.org/wiki/Helmond"
+    },
+    {
+      "feit": "Brandevoort: Vinex-wijk, gebouwd 2000–2021; De Veste historiserend in stijl van 17e-eeuws Brabants stadje; De Buitens grotendeels vooroorlogse bouwstijl; 4.296 woningen in 2023",
+      "bron": "https://nl.wikipedia.org/wiki/Brandevoort"
+    },
+    {
+      "feit": "Textielindustrie; Vlisco drukt katoen sinds midden 19e eeuw; industrie 26% van de werkgelegenheid in 2021",
+      "bron": "https://nl.wikipedia.org/wiki/Helmond"
+    },
+    {
+      "feit": "Aangrenzende gemeenten o.a. Mierlo, Deurne en Nuenen",
+      "bron": "https://nl.wikipedia.org/wiki/Helmond"
+    }
+  ],
+  "gepubliceerd": "2026-10-24",
+  "gewijzigd": "2026-10-24",
+  "kansvarianten": {
+    "plaats": 3,
+    "reageert": 1,
+    "reviewsLaag": 2
+  }
+}

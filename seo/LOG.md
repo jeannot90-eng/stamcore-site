@@ -9,6 +9,7 @@
 | 2026-10-24 | Review Tilburg verwerkt: reviewverzoek-teksten site-breed, feiten met bronnen, looptijd-zin, OG-afbeelding per stad, nieuwe og-default | https://stam-core.nl/website-glazenwasser-tilburg | seo: review Tilburg verwerkt |
 | 2026-10-24 | Stadspagina's Eindhoven en 's-Hertogenbosch live (scan zelf gedaan, bronnen in JSON) | https://stam-core.nl/website-glazenwasser-eindhoven · https://stam-core.nl/website-glazenwasser-s-hertogenbosch | seo: stadspagina's eindhoven en s-hertogenbosch |
 | 2026-10-24 | Review steden 1–3: kansen-varianten, check dubbele zinnen, kenmerken zonder skelet, feiten gecorrigeerd, alles-opnieuw-bouwen met auto-lastmod | tilburg · eindhoven · s-hertogenbosch | seo: review steden 1–3 verwerkt |
+| 2026-10-24 | Stadspagina's Helmond en Roosendaal live; kansvarianten vastgelegd per stad; samenvattingszin scanblok gerepareerd (woordvolgorde) | https://stam-core.nl/website-glazenwasser-helmond · https://stam-core.nl/website-glazenwasser-roosendaal | seo: stadspagina's helmond en roosendaal |
 
 ## Indexering aangevraagd (Search Console)
 

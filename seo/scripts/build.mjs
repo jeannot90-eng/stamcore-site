@@ -116,8 +116,14 @@ for (const { c } of live) {
 }
 
 // Kansen-zinnen kiezen: live op volgorde van publicatie, dan concepten (zie kansen.mjs).
-live.sort((a, b) => String(a.c.gepubliceerd).localeCompare(String(b.c.gepubliceerd)) || a.c.slug.localeCompare(b.c.slug));
-kiesKansen([...live, ...concept]);
+// Steden zonder vastgelegde keuze: bestaande pagina's eerst, dan op publicatiedatum en slug.
+const bestond = (r) => (exists(r.info.file) ? 0 : 1);
+live.sort((a, b) => bestond(a) - bestond(b) || String(a.c.gepubliceerd).localeCompare(String(b.c.gepubliceerd)) || a.c.slug.localeCompare(b.c.slug));
+for (const r of kiesKansen([...live, ...concept])) {
+  if (r.c.status !== 'live') continue; // concepten leggen nog niets vast
+  const { _file, ...data } = r.c;
+  fs.writeFileSync(path.join(ROOT, _file), JSON.stringify(data, null, 2) + '\n');
+}
 
 const liveArticles = articles.filter((a) => a.status === 'live');
 const conceptArticles = articles.filter((a) => a.status !== 'live');
@@ -182,7 +188,7 @@ function buildCity({ c, niche, info, scan, voorbeeld, kansen }, isPreview) {
       tegel(scan.gemReviews, 'gemiddeld aantal reviews top 3'),
       tegel(scan.gemScore ?? '—', 'gemiddelde score'),
       tegel(`${t.website}/${scan.n}`, 'met eigen website'),
-      tegel(`${t.plaats}/${scan.n}`, "met pagina's per wijk of kern"),
+      tegel(`${t.plaats}/${scan.n}`, "met pagina's per plaats of wijk"),
       tegel(`${t.reageert}/${scan.n}`, 'reageert op reviews'),
       tegel(scan.gemFotos, "gemiddeld aantal foto's"),
     ].join('\n          '),

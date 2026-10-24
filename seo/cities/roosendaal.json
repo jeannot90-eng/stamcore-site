@@ -1,0 +1,88 @@
+{
+  "stad": "Roosendaal",
+  "slug": "roosendaal",
+  "niche": "glazenwasser",
+  "status": "live",
+  "title": "Website glazenwasser Roosendaal | Stam Core",
+  "meta": "Glazenwasser in Roosendaal? Bovenaan in Google Maps heeft niemand pagina's per wijk of dorp. Zo vind je klanten in Kroeven, Tolberg, Wouw en Nispen.",
+  "h1": "Glazenwasser in Roosendaal? Hier zit de ruimte in Google Maps",
+  "intro": [
+    "De gemeente Roosendaal telt ruim 78.000 inwoners. De meesten wonen in de stad zelf; de rest woont in dorpen als Wouw, Heerle, Nispen, Wouwse Plantage en Moerstraten.",
+    "Roosendaal ligt vlak bij de Belgische grens en is sinds 1854 een spoorknooppunt. Wat dat voor jouw klanten betekent, en hoe de glazenwassers bovenaan in Maps ervoor staan, lees je hieronder."
+  ],
+  "wijken": [
+    "Centrum",
+    "Kroeven",
+    "Tolberg",
+    "Kortendijk",
+    "Wouw",
+    "Nispen",
+    "Heerle",
+    "Wouwse Plantage",
+    "Moerstraten"
+  ],
+  "wijken_tekst": [
+    "Buiten de stad liggen vijf dorpen, en die zijn voor een glazenwasser goud waard: mensen in Wouw of Nispen zoeken op hun eigen dorpsnaam, niet op Roosendaal. Wouw is met bijna 5.000 inwoners het grootste.",
+    "In de stad zelf zijn wijken als Kroeven, Tolberg en Kortendijk logische blokken voor een ronde. Met een pagina per wijk of dorp laat je zien dat je er al komt, en dat overtuigt een buurman sneller dan een algemene belofte."
+  ],
+  "kenmerken": [
+    "Het meeste glas per vierkante meter vind je in Roosendaal aan de westkant van de stad. Daar ligt sinds 2006 de Designer Outlet, eerst Rosada geheten, met een rij winkels naast elkaar. Winkelpuien moeten er altijd schoon uitzien, liefst al vóór openingstijd, en de afspraken lopen via een beheerder of de winkel zelf. Wil je zulk werk, laat dan op je website zien dat je vroeg begint en zakelijk factureert.",
+    "Ook Borchwerf hoort in dat rijtje: volgens Wikipedia een van de grootste bedrijventerreinen van Noord-Brabant, met een tweede deel, Borchwerf II, dat samen met de gemeente Halderberge is ontwikkeld. Bedrijfspanden op één terrein laten zich bundelen tot een vaste zakelijke ronde. Zo'n ronde plan je doordeweeks, terwijl je particuliere klanten in de wijken en dorpen op hun eigen vaste dag blijven.",
+    "Zakelijk en particulier liggen in Roosendaal dicht bij elkaar. Maak dat zichtbaar met een pagina voor winkels en bedrijven, naast je pagina's voor de wijken en dorpen."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Ik rijd vooral in de dorpen rond Roosendaal. Werkt dit daar ook?",
+      "antwoord": "Juist daar. In Wouw, Heerle en Nispen zoeken mensen op hun dorpsnaam, en een pagina per dorp laat zien dat je er echt komt. Je hoeft niet de hele gemeente te dekken om daar zichtbaar te zijn."
+    },
+    {
+      "vraag": "Roosendaal ligt tegen België aan. Kan ik daar ook klanten werven?",
+      "antwoord": "Je website kan prima vermelden dat je ook over de grens werkt, maar je Bedrijfsprofiel draait om het werkgebied dat je instelt. Ik leg de nadruk op de Nederlandse kant waar je je rondes rijdt, en neem België mee als je daar echt klanten hebt."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "afstand",
+    "teksten"
+  ],
+  "cta_tekst": "Ik bekijk \"glazenwasser Roosendaal\" en de dorpen waar jij komt, en zet jouw profiel naast de drie bovenaan. Je krijgt je positie, je reviews afgezet tegen hun gemiddelde en drie verbeterpunten waar je deze week mee aan de slag kunt. Zonder kosten.",
+  "nabije_steden": [
+    "bergen-op-zoom",
+    "tilburg",
+    "s-hertogenbosch"
+  ],
+  "scan": "scans/roosendaal.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente Roosendaal: 78.171 inwoners op 1 januari 2026 (CBS)",
+      "bron": "https://nl.wikipedia.org/wiki/Roosendaal_(gemeente)"
+    },
+    {
+      "feit": "Woonplaatsen 2023: Roosendaal 67.320, Wouw 4.830, Heerle 1.885, Nispen 1.745, Wouwse Plantage 1.210, Moerstraten 615",
+      "bron": "https://nl.wikipedia.org/wiki/Roosendaal_(gemeente)"
+    },
+    {
+      "feit": "Spoorlijn Antwerpen–Roosendaal–Moerdijk in 1854, Roosendaal werd verkeersknooppunt; laatste station voor de Belgische grens",
+      "bron": "https://nl.wikipedia.org/wiki/Roosendaal"
+    },
+    {
+      "feit": "Wijken Kroeven, Tolberg, Kortendijk",
+      "bron": "https://nl.wikipedia.org/wiki/Roosendaal"
+    },
+    {
+      "feit": "Designer Outlet Roosendaal sinds 2006 aan de westkant, oorspronkelijk Rosada",
+      "bron": "https://nl.wikipedia.org/wiki/Roosendaal"
+    },
+    {
+      "feit": "Borchwerf een van de grootste bedrijventerreinen van Noord-Brabant; Borchwerf II met gemeente Halderberge",
+      "bron": "https://nl.wikipedia.org/wiki/Roosendaal"
+    }
+  ],
+  "gepubliceerd": "2026-10-24",
+  "gewijzigd": "2026-10-24",
+  "kansvarianten": {
+    "plaats": 4,
+    "reageert": 2,
+    "reviewsLaag": 3
+  }
+}

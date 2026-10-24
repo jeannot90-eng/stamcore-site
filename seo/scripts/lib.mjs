@@ -118,6 +118,7 @@ export function analyseScan(rows, stad) {
   const t = { website: ja('eigen_website'), plaats: ja('plaatspaginas'), reageert: ja('reageert_op_reviews'), weinigFotos: fotos.filter((f) => f < 10).length };
   // "geen van de 3 heeft", "alle 3 hebben", "2 van de 3 hebben"
   const deel = (k, ev, mv) => (k === 0 ? `geen van de ${n} ${ev}` : k === n ? `alle ${n} ${mv}` : `${k} van de ${n} ${k === 1 ? ev : mv}`);
+  const Deel = (...a) => deel(...a).replace(/^./, (c) => c.toUpperCase());
   // Welke kansregels gelden (in volgorde van belang); de formulering kiest kansen.mjs per stad.
   const regels = [];
   if (n - t.plaats >= 2) regels.push({ regel: 'plaats', k: n - t.plaats });
@@ -126,7 +127,7 @@ export function analyseScan(rows, stad) {
   if (regels.length < 3 && t.weinigFotos >= 2) regels.push({ regel: 'fotos', k: t.weinigFotos });
   if (regels.length < 3 && n - t.website >= 1) regels.push({ regel: 'website', k: n - t.website });
   if (regels.length < 2) regels.push({ regel: 'basis', k: 0 });
-  const samenvatting = `De drie bedrijven bovenaan in ${stad} hebben gemiddeld ${gemReviews} reviews${gemScore ? ` en een gemiddelde score van ${gemScore}` : ''}. In ${stad} ${deel(t.website, 'heeft', 'hebben')} een eigen website, en ${deel(t.plaats, 'heeft', 'hebben')} pagina's per wijk of kern.`;
+  const samenvatting = `De drie bedrijven bovenaan in ${stad} hebben gemiddeld ${gemReviews} reviews${gemScore ? ` en een gemiddelde score van ${gemScore}` : ''}. ${Deel(t.website, 'heeft', 'hebben')} een eigen website, en ${deel(t.plaats, 'heeft', 'hebben')} pagina's per plaats of wijk in ${stad}.`;
   return {
     n, gemReviews, gemScore, gemFotos, tellingen: t, regels: regels.slice(0, 3), samenvatting,
     datum: rows[0]?.datum, zoekterm: rows[0]?.zoekterm,

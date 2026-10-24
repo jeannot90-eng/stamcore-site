@@ -15,7 +15,7 @@ export const VARIANTEN = {
     (x) => `${x.Kv} bedrijven bovenaan in ${x.stad} hebben geen pagina's per wijk of kern, dus wie op "glazenwasser ${x.w1}" zoekt, vindt bij hen hooguit een algemene pagina over de stad.`,
     (x) => `Een eigen pagina voor ${x.w1} of ${x.w2} ontbreekt bij ${x.kv} koplopers in ${x.stad}, en daarmee laten ze zoekopdrachten op wijkniveau liggen.`,
     (x) => `Wie in ${x.w1} woont en een glazenwasser zoekt, vindt bij ${x.kv} bedrijven bovenaan geen pagina over die wijk; daar kun je in ${x.stad} het verschil maken.`,
-    (x) => `De top 3 in ${x.stad} praat vooral over de stad als geheel: ${x.kv} hebben geen aparte pagina's voor kernen als ${x.w2}.`,
+    (x) => `In ${x.stad} ${x.k === 1 ? 'heeft' : 'hebben'} ${x.kv} bedrijven in de top 3 geen aparte pagina voor een kern als ${x.w2}, dus daar ligt de weg nog open.`,
     (x) => `Pagina's per wijk ontbreken bij ${x.kv} bedrijven bovenaan, terwijl ${x.stad} wijken en kernen heeft als ${x.w1}, ${x.w2} en ${x.w3}.`,
   ],
   // k = aantal dat niet reageert op reviews (≥ 2)
@@ -64,22 +64,37 @@ export const VARIANTEN = {
   ],
 };
 
-/** records: [{ c, scan }], al gesorteerd (live op publicatie, dan concepten). Zet rec.kansen. */
+/** records: [{ c, scan }], al gesorteerd. Zet rec.kansen. De gekozen variant per regel staat in
+    c.kansvarianten ({ regel: index }) en blijft daarna vast; geeft de records terug waarvan die keuze nieuw is. */
 export function kiesKansen(records) {
   const gebruik = Object.fromEntries(Object.keys(VARIANTEN).map((r) => [r, new Map()]));
+  const tel = (regel, idx) => gebruik[regel].set(idx, (gebruik[regel].get(idx) || 0) + 1);
+  // Eerst de vastgelegde keuzes reserveren, zodat nieuwe steden daaromheen kiezen.
+  for (const rec of records) for (const { regel } of rec.scan.regels) {
+    const vast = rec.c.kansvarianten?.[regel];
+    if (Number.isInteger(vast) && vast < VARIANTEN[regel].length) tel(regel, vast);
+  }
+  const gewijzigd = [];
   for (const rec of records) {
     const wijken = (rec.c.wijken || []).filter((w) => !GENERIEK.has(w.toLowerCase()));
     const kand = wijken.length ? wijken : [rec.c.stad];
+    const keuze = {};
     rec.kansen = rec.scan.regels.map(({ regel, k }, i) => {
       const lijst = VARIANTEN[regel];
       const teller = gebruik[regel];
-      let idx = lijst.findIndex((_, j) => !teller.has(j));
-      if (idx < 0) idx = [...lijst.keys()].sort((a, b) => (teller.get(a) - teller.get(b)) || a - b)[0];
-      teller.set(idx, (teller.get(idx) || 0) + 1);
+      let idx = rec.c.kansvarianten?.[regel];
+      if (!(Number.isInteger(idx) && idx < lijst.length)) {
+        idx = lijst.findIndex((_, j) => !teller.has(j));
+        if (idx < 0) idx = [...lijst.keys()].sort((a, b) => (teller.get(a) - teller.get(b)) || a - b)[0];
+        tel(regel, idx);
+      }
+      keuze[regel] = idx;
       const w = (o) => kand[(i + o) % kand.length];
       const n = rec.scan.n;
       const kv = k === n ? (n === 3 ? 'alle drie' : `alle ${n}`) : `${k} van de ${n}`;
       return lijst[idx]({ stad: rec.c.stad, n, k, kv, Kv: kv.replace(/^./, (ch) => ch.toUpperCase()), w1: w(0), w2: w(1), w3: w(2) });
     });
+    if (JSON.stringify(keuze) !== JSON.stringify(rec.c.kansvarianten || {})) { rec.c.kansvarianten = keuze; gewijzigd.push(rec); }
   }
+  return gewijzigd;
 }
