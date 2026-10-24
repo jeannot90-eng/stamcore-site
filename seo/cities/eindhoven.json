@@ -1,0 +1,94 @@
+{
+  "stad": "Eindhoven",
+  "slug": "eindhoven",
+  "niche": "glazenwasser",
+  "status": "live",
+  "title": "Website glazenwasser Eindhoven | Stam Core",
+  "meta": "Glazenwasser in Eindhoven? De top 3 in Google Maps heeft veel reviews, maar geen pagina's per wijk. Zo vind je klanten in Woensel, Strijp en Meerhoven.",
+  "h1": "Meer vaste klanten als glazenwasser in Eindhoven",
+  "intro": [
+    "Eindhoven telt bijna 250.000 inwoners, verdeeld over zeven stadsdelen en de dorpen Acht, Bokt en Riel. Van de rijtjes in Woensel tot de appartementen op Strijp-S: als glazenwasser kom je hier alle soorten panden tegen.",
+    "In Google Maps ligt de lat hoog, want de bedrijven bovenaan hebben veel reviews. Toch laten ze iets liggen. Hieronder zie je wat."
+  ],
+  "wijken": [
+    "Centrum",
+    "Woensel-Noord",
+    "Woensel-Zuid",
+    "Strijp",
+    "Meerhoven",
+    "Gestel",
+    "Stratum",
+    "Tongelre",
+    "Acht",
+    "Riel"
+  ],
+  "wijken_tekst": [
+    "Eindhoven is een stad van stadsdelen met elk een eigen karakter. In Woensel-Noord staat Winkelcentrum Woensel, met 160 winkels het grootste wijkwinkelcentrum buiten de Randstad. Meerhoven is een Vinex-wijk die in 1994 bij de gemeente kwam. Wie daar woont, zoekt eerder op \"glazenwasser Meerhoven\" dan op de hele stad.",
+    "Met een pagina per stadsdeel cluster je je rondes. Een middag Woensel, een middag Stratum en Tongelre: je rijdt minder heen en weer over de Ring, en elke nieuwe klant in een wijk waar je al komt, is een adres zonder extra reistijd."
+  ],
+  "kenmerken": [
+    "Eindhoven is de stad van Philips, dat hier in 1891 begon als gloeilampenfabriek; daar komt de bijnaam Lichtstad vandaan. Het voormalige Philipsterrein Strijp-S, 27 hectare groot, is omgebouwd tot een gebied om te wonen, te werken en uit te gaan. Achter zulke complexen zit vaak een beheerder of VvE als opdrachtgever.",
+    "De stad bouwt ook de hoogte in. Lighthouse op Strijp-S is sinds 2025 met 109 meter het hoogste gebouw van Eindhoven; daarvoor was dat De Admirant, met 105 meter. Hoogbouw doe je niet met een ladder: dat is zakelijk werk met een eigen prijsopbouw.",
+    "Met de TU/e (ruim 10.000 studenten), Fontys en de Design Academy is Eindhoven ook een studentenstad. Kamers en appartementen betekenen verhuurders en beheerders als klant.",
+    "Zakelijk is De Hurk het grootste bedrijventerrein van de stad: 212 hectare met ruim 300 bedrijven, tussen de A2 en de Ring. Daar liggen kantoorgevels en bedrijfspanden voor vaste zakelijke rondes.",
+    "Voor je website betekent dat: aparte pagina's voor Woensel, Strijp en Meerhoven, een pagina voor zakelijk en VvE's, en zonnepanelen als losse dienst, zodat iemand die alleen daarvoor zoekt jou ook vindt."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Doe je ook Meerhoven en de dorpen Acht en Riel?",
+      "antwoord": "Ja. Meerhoven, Acht en Riel horen bij de gemeente Eindhoven, maar bewoners zoeken op hun eigen wijk- of dorpsnaam. Rijd je daar, dan krijgt elk een eigen pagina."
+    },
+    {
+      "vraag": "De bedrijven bovenaan hebben veel reviews. Kan ik daar nog tussenkomen?",
+      "antwoord": "Met reviews alleen gaat dat niet snel. Maar de scan laat zien dat niemand bovenaan pagina's per wijk heeft. Daar zit de ruimte: met pagina's voor de stadsdelen waar je rijdt, sluit je aan op zoekopdrachten per wijk, terwijl je reviews intussen groeien."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "teksten",
+    "eigendom"
+  ],
+  "cta_tekst": "Ik zoek op \"glazenwasser Eindhoven\" en op de stadsdelen waar jij werkt, van Woensel tot Stratum. Je krijgt je eigen positie, je reviews naast het gemiddelde van de top 3 en drie concrete verbeterpunten. Kosteloos en zonder verplichting.",
+  "nabije_steden": [
+    "helmond",
+    "s-hertogenbosch",
+    "tilburg"
+  ],
+  "scan": "scans/eindhoven.csv",
+  "bronnen": [
+    {
+      "feit": "249.873 inwoners op 1 januari 2026; zeven stadsdelen (Centrum, Woensel-Noord, Woensel-Zuid, Tongelre, Stratum, Gestel, Strijp) plus de dorpen Acht, Bokt en Riel",
+      "bron": "https://nl.wikipedia.org/wiki/Eindhoven"
+    },
+    {
+      "feit": "Winkelcentrum Woensel: 160 winkels, grootste wijkwinkelcentrum buiten de Randstad",
+      "bron": "https://nl.wikipedia.org/wiki/Eindhoven"
+    },
+    {
+      "feit": "Meerhoven: Vinex-wijk, in 1994 bij de gemeente gekomen, valt onder Strijp",
+      "bron": "https://nl.wikipedia.org/wiki/Eindhoven"
+    },
+    {
+      "feit": "Philips begon in 1891 als gloeilampenfabriek; bijnaam Lichtstad",
+      "bron": "https://nl.wikipedia.org/wiki/Eindhoven"
+    },
+    {
+      "feit": "Strijp-S: voormalig Philipsterrein van 27 hectare, omgebouwd tot woon-, werk- en recreatiegebied",
+      "bron": "https://nl.wikipedia.org/wiki/Eindhoven"
+    },
+    {
+      "feit": "Lighthouse (Strijp-S) 109 m, hoogste gebouw sinds 2025; De Admirant 105 m",
+      "bron": "https://nl.wikipedia.org/wiki/Eindhoven"
+    },
+    {
+      "feit": "TU/e heeft 10.750 studenten; Fontys en Design Academy in Eindhoven",
+      "bron": "https://nl.wikipedia.org/wiki/Eindhoven"
+    },
+    {
+      "feit": "De Hurk: gemengd bedrijventerrein van 212 ha, ruim 300 bedrijven, grootste bedrijventerrein van Eindhoven, tussen A2 en Ringweg",
+      "bron": "https://nl.wikipedia.org/wiki/De_Hurk"
+    }
+  ],
+  "gepubliceerd": "2026-10-24",
+  "gewijzigd": "2026-10-24"
+}

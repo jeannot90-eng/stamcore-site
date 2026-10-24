@@ -174,7 +174,7 @@ De "insteek" is een richting, geen feit. Verifieer alles voordat je het gebruikt
 
 > **Gewijzigd op 2026-10-24 (besluit Jeannot):** Claude doet de scan zelf in de browser, als onderdeel van het bouwen van een stadspagina. Posts zijn niet zichtbaar zonder in te loggen en eigen foto's zijn niet te onderscheiden van klantfoto's; daarom zijn `posts_laatste_30d` en `fotos_eigen_werk` vervangen door `reageert_op_reviews` en `fotos` (aantal). Bij opschalen naar honderden plaatsen: overstappen op de Google Places API.
 
-Claude vult per stad `seo/scans/{stad}.csv` in: zoeken op "glazenwasser {stad}" in Google Maps (niet ingelogd, cookies afgewezen), de eerste 3 **organische** resultaten bekijken (gesponsorde overslaan), en op hun websites controleren of er pagina's per wijk of plaats zijn.
+Claude vult per stad `seo/scans/{stad}.csv` in: zoeken op "glazenwasser {stad}" (of de naam die mensen gebruiken, zoals "den bosch") in Google Maps, bij voorkeur niet ingelogd; noteer in de eerste regel van de CSV hoe er gemeten is, de eerste 3 **organische** resultaten bekijken (gesponsorde overslaan), en op hun websites controleren of er pagina's per wijk of plaats zijn.
 
 **CSV-formaat** (één rij per bedrijf; geen namen):
 ```csv

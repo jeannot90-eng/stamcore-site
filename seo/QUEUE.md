@@ -8,8 +8,8 @@ Claude pakt bij "maak de volgende stadspagina" de bovenste stad die nog niet liv
 | Type | Slug | Status | Datum |
 |---|---|---|---|
 | stad | tilburg | live (review verwerkt) | 2026-10-24 |
-| stad | eindhoven | klaar-voor-bouw | |
-| stad | s-hertogenbosch | klaar-voor-bouw | |
+| stad | eindhoven | live | 2026-10-24 |
+| stad | s-hertogenbosch | live | 2026-10-24 |
 | stad | helmond | klaar-voor-bouw | |
 | stad | roosendaal | klaar-voor-bouw | |
 | stad | bergen-op-zoom | klaar-voor-bouw | |
