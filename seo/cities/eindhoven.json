@@ -23,15 +23,14 @@
     "Riel"
   ],
   "wijken_tekst": [
-    "Eindhoven is een stad van stadsdelen met elk een eigen karakter. In Woensel-Noord staat Winkelcentrum Woensel, met 160 winkels het grootste wijkwinkelcentrum buiten de Randstad. Meerhoven is een Vinex-wijk die in 1994 bij de gemeente kwam. Wie daar woont, zoekt eerder op \"glazenwasser Meerhoven\" dan op de hele stad.",
+    "Eindhoven is een stad van stadsdelen met elk een eigen karakter. In Woensel-Noord ligt winkelcentrum WoensXL, met meer dan 150 winkels en horecazaken. Meerhoven is een Vinex-wijk in Strijp waar de eerste huizen in 1999 werden opgeleverd. Wie daar woont, zoekt eerder op \"glazenwasser Meerhoven\" dan op de hele stad.",
     "Met een pagina per stadsdeel cluster je je rondes. Een middag Woensel, een middag Stratum en Tongelre: je rijdt minder heen en weer over de Ring, en elke nieuwe klant in een wijk waar je al komt, is een adres zonder extra reistijd."
   ],
   "kenmerken": [
-    "Eindhoven is de stad van Philips, dat hier in 1891 begon als gloeilampenfabriek; daar komt de bijnaam Lichtstad vandaan. Het voormalige Philipsterrein Strijp-S, 27 hectare groot, is omgebouwd tot een gebied om te wonen, te werken en uit te gaan. Achter zulke complexen zit vaak een beheerder of VvE als opdrachtgever.",
-    "De stad bouwt ook de hoogte in. Lighthouse op Strijp-S is sinds 2025 met 109 meter het hoogste gebouw van Eindhoven; daarvoor was dat De Admirant, met 105 meter. Hoogbouw doe je niet met een ladder: dat is zakelijk werk met een eigen prijsopbouw.",
-    "Met de TU/e (ruim 10.000 studenten), Fontys en de Design Academy is Eindhoven ook een studentenstad. Kamers en appartementen betekenen verhuurders en beheerders als klant.",
-    "Zakelijk is De Hurk het grootste bedrijventerrein van de stad: 212 hectare met ruim 300 bedrijven, tussen de A2 en de Ring. Daar liggen kantoorgevels en bedrijfspanden voor vaste zakelijke rondes.",
-    "Voor je website betekent dat: aparte pagina's voor Woensel, Strijp en Meerhoven, een pagina voor zakelijk en VvE's, en zonnepanelen als losse dienst, zodat iemand die alleen daarvoor zoekt jou ook vindt."
+    "Philips begon hier in 1891 als gloeilampenfabriek, en op die oude terreinen staat nu veel van het nieuwe glas van de stad. Strijp-S, het voormalige Philipsterrein van 27 hectare, is omgebouwd tot een gebied om te wonen, te werken en uit te gaan. Daar staat ook Lighthouse: met 109 meter sinds 2024 het hoogste gebouw van Eindhoven, in oktober 2025 opgeleverd. De Admirant, met 105 meter, was dat van 2006 tot 2024.",
+    "Zulke torens en complexen poets je niet vanaf een ladder. Je opdrachtgever is een VvE of beheerder, met eigen eisen aan veiligheid en planning, en een prijs per gebouw in plaats van per raam.",
+    "Zakelijk heeft Eindhoven De Hurk: het grootste bedrijventerrein van de stad, 212 hectare met ruim 300 bedrijven, tussen de A2 en de Ring. Daar kun je een vaste ronde langs kantoren en bedrijfspanden opbouwen.",
+    "Op je site hoort dan een eigen pagina voor bedrijven en beheerders, los van de pagina's voor Woensel, Strijp en Meerhoven, zodat elke doelgroep meteen ziet dat je er voor hen bent."
   ],
   "faq_stad": [
     {
@@ -61,15 +60,15 @@
       "bron": "https://nl.wikipedia.org/wiki/Eindhoven"
     },
     {
-      "feit": "Winkelcentrum Woensel: 160 winkels, grootste wijkwinkelcentrum buiten de Randstad",
-      "bron": "https://nl.wikipedia.org/wiki/Eindhoven"
+      "feit": "Winkelcentrum Woensel (WoensXL): meer dan 150 winkels en horecabedrijven (claim 'grootste' weggelaten: [bron?] op Wikipedia)",
+      "bron": "https://nl.wikipedia.org/wiki/Winkelcentrum_Woensel"
     },
     {
-      "feit": "Meerhoven: Vinex-wijk, in 1994 bij de gemeente gekomen, valt onder Strijp",
-      "bron": "https://nl.wikipedia.org/wiki/Eindhoven"
+      "feit": "Meerhoven: Vinex-locatie, hoort bij stadsdeel Strijp, aanleg vanaf 1997, eerste huizen opgeleverd in 1999 (jaartal 1994 weggelaten: niet te verifiëren)",
+      "bron": "https://nl.wikipedia.org/wiki/Meerhoven"
     },
     {
-      "feit": "Philips begon in 1891 als gloeilampenfabriek; bijnaam Lichtstad",
+      "feit": "Philips begon in 1891 als gloeilampenfabriek",
       "bron": "https://nl.wikipedia.org/wiki/Eindhoven"
     },
     {
@@ -77,12 +76,12 @@
       "bron": "https://nl.wikipedia.org/wiki/Eindhoven"
     },
     {
-      "feit": "Lighthouse (Strijp-S) 109 m, hoogste gebouw sinds 2025; De Admirant 105 m",
-      "bron": "https://nl.wikipedia.org/wiki/Eindhoven"
+      "feit": "Lighthouse: 109 m, opgeleverd 2 oktober 2025, hoogste gebouw van Eindhoven sinds juli 2024",
+      "bron": "https://nl.wikipedia.org/wiki/Lighthouse_(Eindhoven)"
     },
     {
-      "feit": "TU/e heeft 10.750 studenten; Fontys en Design Academy in Eindhoven",
-      "bron": "https://nl.wikipedia.org/wiki/Eindhoven"
+      "feit": "De Admirant: 105 m, hoogste gebouw van Eindhoven van 2006 tot 2024",
+      "bron": "https://nl.wikipedia.org/wiki/De_Admirant"
     },
     {
       "feit": "De Hurk: gemengd bedrijventerrein van 212 ha, ruim 300 bedrijven, grootste bedrijventerrein van Eindhoven, tussen A2 en Ringweg",

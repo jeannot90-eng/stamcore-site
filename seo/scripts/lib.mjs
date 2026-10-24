@@ -105,7 +105,7 @@ export function parseScan(relPath) {
   });
 }
 
-/** Rekent gemiddelden en tellingen uit, en leidt 2–3 kansen af. Nooit beloftes. */
+/** Rekent gemiddelden en tellingen uit en bepaalt welke 2–3 kansregels gelden. */
 export function analyseScan(rows, stad) {
   const n = rows.length;
   const ja = (k) => rows.filter((r) => r[k]?.toLowerCase() === 'ja').length;
@@ -118,18 +118,17 @@ export function analyseScan(rows, stad) {
   const t = { website: ja('eigen_website'), plaats: ja('plaatspaginas'), reageert: ja('reageert_op_reviews'), weinigFotos: fotos.filter((f) => f < 10).length };
   // "geen van de 3 heeft", "alle 3 hebben", "2 van de 3 hebben"
   const deel = (k, ev, mv) => (k === 0 ? `geen van de ${n} ${ev}` : k === n ? `alle ${n} ${mv}` : `${k} van de ${n} ${k === 1 ? ev : mv}`);
-  const Deel = (...a) => deel(...a).replace(/^./, (c) => c.toUpperCase());
-  const kansen = [];
-  if (n - t.plaats >= 2) kansen.push(`${t.plaats === 0 ? `Geen van de ${n} bedrijven bovenaan heeft` : `${n - t.plaats} van de ${n} bedrijven bovenaan hebben geen`} pagina's per wijk of kern. Wie die wel heeft, geeft Google meer om op te matchen als iemand zoekt op een wijk of dorp in ${stad}.`);
-  if (n - t.reageert >= 2) kansen.push(`${t.reageert === 0 ? `Geen van de ${n} reageert` : `${n - t.reageert} van de ${n} reageren niet`} op reviews. Op elke review reageren kost een minuut, en nieuwe klanten lezen het mee.`);
-  if (gemReviews < 30) kansen.push(`De drie bovenaan hebben gemiddeld ${gemReviews} reviews. Met een vaste reviewroutine na elke ronde is dat een gat dat je in maanden kunt dichten, niet in jaren.`);
-  else kansen.push(`De drie bovenaan hebben gemiddeld ${gemReviews} reviews. Dat haal je niet in één seizoen in. Begin daarom met pagina's per wijk en een volledig profiel, terwijl je reviews groeien.`);
-  if (kansen.length < 3 && t.weinigFotos >= 2) kansen.push(`${Deel(t.weinigFotos, 'heeft', 'hebben')} minder dan 10 foto's op het profiel. Echte foto's van je bus en je werk maken een profiel meteen levendiger.`);
-  if (kansen.length < 3 && n - t.website >= 1) kansen.push(`${Deel(t.website, 'heeft', 'hebben')} een eigen website. Een site met je diensten en plaatsen geeft Google en klanten meer houvast dan alleen een profiel.`);
-  if (kansen.length < 2) kansen.push(`Een Bedrijfsprofiel met "Glazenwasser" als hoofdcategorie, losse diensten en een goed ingesteld werkgebied is de basis. Daar kijk ik als eerste naar.`);
-  const samenvatting = `De drie bedrijven bovenaan hebben gemiddeld ${gemReviews} reviews${gemScore ? ` en een gemiddelde score van ${gemScore}` : ''}. ${Deel(t.website, 'heeft', 'hebben')} een eigen website, ${deel(t.plaats, 'heeft', 'hebben')} pagina's per wijk of kern.`;
+  // Welke kansregels gelden (in volgorde van belang); de formulering kiest kansen.mjs per stad.
+  const regels = [];
+  if (n - t.plaats >= 2) regels.push({ regel: 'plaats', k: n - t.plaats });
+  if (n - t.reageert >= 2) regels.push({ regel: 'reageert', k: n - t.reageert });
+  regels.push({ regel: gemReviews < 30 ? 'reviewsLaag' : 'reviewsHoog', k: gemReviews });
+  if (regels.length < 3 && t.weinigFotos >= 2) regels.push({ regel: 'fotos', k: t.weinigFotos });
+  if (regels.length < 3 && n - t.website >= 1) regels.push({ regel: 'website', k: n - t.website });
+  if (regels.length < 2) regels.push({ regel: 'basis', k: 0 });
+  const samenvatting = `De drie bedrijven bovenaan in ${stad} hebben gemiddeld ${gemReviews} reviews${gemScore ? ` en een gemiddelde score van ${gemScore}` : ''}. In ${stad} ${deel(t.website, 'heeft', 'hebben')} een eigen website, en ${deel(t.plaats, 'heeft', 'hebben')} pagina's per wijk of kern.`;
   return {
-    n, gemReviews, gemScore, gemFotos, tellingen: t, kansen: kansen.slice(0, 3), samenvatting,
+    n, gemReviews, gemScore, gemFotos, tellingen: t, regels: regels.slice(0, 3), samenvatting,
     datum: rows[0]?.datum, zoekterm: rows[0]?.zoekterm,
   };
 }

@@ -18,6 +18,7 @@ import {
   ROOT, GENERATOR_MARK, PREVIEW_DIR, config, SITE, read, exists, esc, slugify, asParagraphs, euro, datumLeesbaar, today,
   TOKENS, fillTokens, render, loadNiches, loadCities, loadArticles, cityInfo, isExcluded, parseScan, analyseScan,
 } from './lib.mjs';
+import { kiesKansen } from './kansen.mjs';
 
 const errors = [];
 const written = new Set();
@@ -114,6 +115,10 @@ for (const { c } of live) {
   }
 }
 
+// Kansen-zinnen kiezen: live op volgorde van publicatie, dan concepten (zie kansen.mjs).
+live.sort((a, b) => String(a.c.gepubliceerd).localeCompare(String(b.c.gepubliceerd)) || a.c.slug.localeCompare(b.c.slug));
+kiesKansen([...live, ...concept]);
+
 const liveArticles = articles.filter((a) => a.status === 'live');
 const conceptArticles = articles.filter((a) => a.status !== 'live');
 
@@ -145,7 +150,7 @@ function cityOg(c) {
   return `${SITE}/${rel}`;
 }
 
-function buildCity({ c, niche, info, scan, voorbeeld }, isPreview) {
+function buildCity({ c, niche, info, scan, voorbeeld, kansen }, isPreview) {
   const faqStad = c.faq_stad.map((f) => ({ vraag: f.vraag, antwoord: fillTokens(f.antwoord) }));
   const faqPool = resolvePool(niche, c.faq_pool);
   const liveSlugs = new Map(live.filter((r) => r.c.niche === c.niche && r.c.slug !== c.slug).map((r) => [slugify(r.c.slug), r]));
@@ -181,7 +186,7 @@ function buildCity({ c, niche, info, scan, voorbeeld }, isPreview) {
       tegel(`${t.reageert}/${scan.n}`, 'reageert op reviews'),
       tegel(scan.gemFotos, "gemiddeld aantal foto's"),
     ].join('\n          '),
-    kansenHtml: scan.kansen.map((k) => `<li class="flex gap-3"><span class="text-emerald-400">+</span><span>${esc(k)}</span></li>`).join('\n            '),
+    kansenHtml: kansen.map((k) => `<li class="flex gap-3"><span class="text-emerald-400">+</span><span>${esc(k)}</span></li>`).join('\n            '),
     wijkenHtml: c.wijken.map((w) => `<li class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200">${esc(w)}</li>`).join('\n      '),
     wijkenTekstHtml: ps(c.wijken_tekst),
     kenmerkenHtml: ps(c.kenmerken),
@@ -202,7 +207,22 @@ function buildCity({ c, niche, info, scan, voorbeeld }, isPreview) {
   }));
 }
 
-for (const r of live) { write(r.info.file, buildCity(r, false)); console.log(`✓ ${r.info.url}`); }
+// Alle live steden worden elke run opnieuw gebouwd ("Ook bekeken", links, sitemap kloppen dan overal).
+// Verandert de inhoud van een bestaande pagina (inline CSS niet meegerekend), dan wordt "gewijzigd" vandaag.
+const zonderCss = (h) => h.replace(/<!-- css:app -->[\s\S]*?<!-- \/css:app -->/, '');
+for (const r of live) {
+  const html = buildCity(r, false);
+  const oud = exists(r.info.file) ? read(r.info.file) : null;
+  if (oud !== null && zonderCss(oud) !== zonderCss(html) && r.c.gewijzigd !== today()) {
+    const { _file, ...data } = r.c;
+    data.gewijzigd = today();
+    fs.writeFileSync(path.join(ROOT, _file), JSON.stringify(data, null, 2) + '\n');
+    r.c.gewijzigd = data.gewijzigd;
+    console.log(`  ${_file}: gewijzigd = ${data.gewijzigd}`);
+  }
+  write(r.info.file, html);
+  console.log(`✓ ${r.info.url}`);
+}
 fs.rmSync(path.join(ROOT, PREVIEW_DIR), { recursive: true, force: true });
 for (const r of concept) {
   write(`${PREVIEW_DIR}/${r.info.file}`, buildCity(r, true));

@@ -28,11 +28,9 @@
     "Een pagina per stadsdeel of kern waar je al rijdt, helpt je om nieuwe klanten te vinden langs je bestaande route. Zo vul je een ronde in de Reeshof aan met adressen in de Reeshof, in plaats van voor één klant naar Udenhout te rijden. Minder kilometers tussen de adressen is meer tijd met de wisser in de hand."
   ],
   "kenmerken": [
-    "Tilburg was in de negentiende eeuw een wolstad: in 1871 stonden er 125 wollenstoffenfabrieken. Het textiel is grotendeels verdwenen, maar de stad is groot gebleven. Je kunt hier een volle week rondes rijden zonder de gemeente uit te gaan.",
-    "Daarnaast is er de nieuwe kant van de stad. De Spoorzone, het voormalige NS-werkplaatsterrein ten noorden van het station, ging in 2011 open voor publiek. In de LocHal, een locomotievenhal uit 1932, zit sinds januari 2019 de bibliotheek. Woontoren Westpoint telt 47 verdiepingen. Hoogbouw en grote glaspartijen vragen om ander materiaal, zoals osmose en een lange telescoopsteel, en vaak heb je dan te maken met een VvE of beheerder in plaats van een bewoner.",
-    "Tilburg is ook een studentenstad, met Tilburg University, Fontys en Avans. Waar veel verhuurd wordt, zijn verhuurders en beheerders een klantgroep, niet alleen de bewoners.",
-    "En dan de bedrijventerreinen: op Kraaiven, Loven en Vossenberg zitten honderden bedrijven. Daar liggen zakelijke rondes met kantoorgevels, showrooms en bedrijfshallen.",
-    "Voor je website betekent dat: een pagina voor particulieren, een voor zakelijk en VvE's, en per dienst (ramen, zonnepanelen, dakgoten) duidelijk in welke delen van Tilburg je werkt."
+    "Het meest opvallende glas van Tilburg staat rond het station. Woontoren Westpoint telt 47 verdiepingen. Daarachter ligt de Spoorzone, het voormalige NS-werkplaatsterrein dat in 2011 openging voor publiek; in de LocHal, een locomotievenhal uit 1932, zit sinds januari 2019 de bibliotheek. Bij zulke gebouwen is je opdrachtgever een beheerder of VvE, niet een bewoner, en je werkt met osmose en een lange telescoopsteel of zwaarder materieel.",
+    "De tweede kant van Tilburg is zakelijk. Op Kraaiven, Loven en Vossenberg zitten honderden bedrijven, met kantoorgevels, showrooms en bedrijfshallen dicht bij elkaar. Dat laat zich goed bundelen tot een vaste zakelijke ronde, los van je particuliere klanten in de wijken. Bedrijven willen meestal vaste dagen en één factuur per maand; dat vraagt een andere planning dan een ronde langs voordeuren.",
+    "Wil je in Tilburg groeien, zet dan naast je particuliere rondes een aparte pagina voor VvE's en bedrijven op je site. Een beheerder zoekt anders dan iemand met een rijtjeshuis in de Reeshof."
   ],
   "faq_stad": [
     {
@@ -66,10 +64,6 @@
       "bron": "https://gis.tilburg.nl/server1/rest/services/Indeling_Stadsindeling/MapServer"
     },
     {
-      "feit": "125 wollenstoffenfabrieken in 1871",
-      "bron": "https://nl.wikipedia.org/wiki/Tilburg"
-    },
-    {
       "feit": "Reeshof heeft eigen station (Tilburg Reeshof)",
       "bron": "https://nl.wikipedia.org/wiki/Tilburg"
     },
@@ -88,10 +82,6 @@
     {
       "feit": "Westpoint telt 47 verdiepingen",
       "bron": "https://nl.wikipedia.org/wiki/Westpoint_(Tilburg)"
-    },
-    {
-      "feit": "Tilburg University, Fontys, Avans in Tilburg",
-      "bron": "https://nl.wikipedia.org/wiki/Tilburg"
     },
     {
       "feit": "Kraaiven, Loven en Vossenberg zijn bedrijventerreinen van Tilburg; 'honderden bedrijven' zonder getal: geen bron per terrein gevonden (Jeannot: ca. 750–800)",

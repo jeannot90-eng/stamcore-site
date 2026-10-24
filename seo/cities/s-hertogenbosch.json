@@ -7,7 +7,7 @@
   "meta": "Glazenwasser in Den Bosch? Geen van de drie bovenaan in Google Maps reageert op reviews. Zo vind je klanten in Rosmalen, de binnenstad en De Groote Wielen.",
   "h1": "Zo staan glazenwassers in Den Bosch ervoor in Google Maps",
   "intro": [
-    "'s-Hertogenbosch heeft ruim 112.000 inwoners en een binnenstad die het grootste omwalde gebied van Nederland is. Daaromheen liggen Rosmalen, Empel, Engelen, Nuland en Vinkel, elk met eigen klanten.",
+    "De gemeente 's-Hertogenbosch telt ruim 162.000 inwoners. De stad zelf heeft er bijna 113.000, Rosmalen ruim 38.000, en daarnaast horen Empel, Engelen, Nuland en Vinkel erbij, elk met eigen klanten.",
     "In Google Maps is de concurrentie hier nog bescheiden: de bedrijven bovenaan hebben weinig reviews. Hieronder lees je waar de ruimte zit."
   ],
   "wijken": [
@@ -29,10 +29,9 @@
     "Wie per wijk of dorp een pagina heeft, vult een ronde in Rosmalen of De Groote Wielen met adressen dicht bij elkaar. En nieuwbouwwijken trekken nieuwe bewoners: wie net verhuisd is, zoekt een nieuwe glazenwasser."
   ],
   "kenmerken": [
-    "Den Bosch is een monumentenstad. De binnenstad telt honderden rijksmonumenten en drie rijksbeschermde gezichten. De Sint-Janskathedraal is de grootste kathedraal van Nederland, en De Moriaan geldt als het oudste bakstenen huis van het land. Werk je in de binnenstad, dan heb je te maken met monumentale panden; laat op je website zien dat je daar zorgvuldig mee omgaat.",
-    "Daartegenover staat het Paleiskwartier, ontwikkeld rond de eeuwwisseling, met onder meer de Jeroen Bosch toren en de Armada-gebouwen. In en rond het Paleiskwartier zit ook het onderwijscentrum van de regio, met Avans, HAS green academy en het Koning Willem I College. Kantoren en scholen: dat is zakelijk werk, met contracten in plaats van losse beurten.",
-    "Aan de andere kant van de stad ligt industrieterrein De Rietvelden, 210 hectare groot. Bedrijfspanden daar zijn een zakelijke ronde op zich.",
-    "Voor je website betekent dat: een pagina voor de binnenstad, aparte pagina's voor Rosmalen en De Groote Wielen, en een zakelijke pagina voor kantoren, scholen en bedrijfspanden."
+    "Den Bosch draait om zijn binnenstad: volgens Wikipedia het grootste omwalde gebied van Nederland, met honderden rijksmonumenten en drie rijksbeschermde gezichten. De Sint-Janskathedraal is de grootste kathedraal van het land, en De Moriaan geldt als het oudste bakstenen huis. Oude panden vragen om een glazenwasser die voorzichtig werkt, en die dat ook aan een eigenaar kan uitleggen. Plan daar ook anders: parkeren en laden kosten in de binnenstad tijd, dus adressen dicht bij elkaar bundelen loont extra.",
+    "Het tegenovergestelde vind je in het Paleiskwartier, ontwikkeld rond de eeuwwisseling, met de Jeroen Bosch toren en de Armada-gebouwen. In en rond die wijk zit ook het onderwijscentrum van de regio, met Avans, HAS green academy en het Koning Willem I College. Kantoren en scholen betekenen contracten met een facilitair manager, in plaats van losse beurten.",
+    "Laat op je site daarom twee kanten zien: zorg voor monumenten in de binnenstad, en een zakelijke aanpak voor kantoren en scholen in het Paleiskwartier."
   ],
   "faq_stad": [
     {
@@ -59,10 +58,6 @@
   "scan": "scans/s-hertogenbosch.csv",
   "bronnen": [
     {
-      "feit": "112.850 inwoners op 1 januari 2023 (CBS)",
-      "bron": "https://nl.wikipedia.org/wiki/%27s-Hertogenbosch"
-    },
-    {
       "feit": "Binnenstad: grootste omwalde gebied van Nederland; honderden rijksmonumenten; drie rijksbeschermde gezichten",
       "bron": "https://nl.wikipedia.org/wiki/%27s-Hertogenbosch"
     },
@@ -83,8 +78,12 @@
       "bron": "https://nl.wikipedia.org/wiki/%27s-Hertogenbosch"
     },
     {
-      "feit": "De Rietvelden: industrieterrein van 210 ha",
-      "bron": "https://nl.wikipedia.org/wiki/De_Rietvelden"
+      "feit": "Gemeente 's-Hertogenbosch: 162.272 inwoners op 1 januari 2026 (CBS)",
+      "bron": "https://nl.wikipedia.org/wiki/%27s-Hertogenbosch_(gemeente)"
+    },
+    {
+      "feit": "Woonplaatsen (BAG, 2023): 's-Hertogenbosch 112.850, Rosmalen 38.450, Nuland 4.660, Vinkel 2.795; Empel en Engelen horen bij de gemeente",
+      "bron": "https://nl.wikipedia.org/wiki/%27s-Hertogenbosch_(gemeente)"
     }
   ],
   "gepubliceerd": "2026-10-24",

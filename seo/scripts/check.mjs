@@ -159,6 +159,19 @@ for (let i = 0; i < stadRes.length; i++) for (let j = i + 1; j < stadRes.length;
   else if (f > 0.5) for (const [x, y] of [[a, b], [b, a]]) x.waarschuwing.push(`hele pagina lijkt op ${y.p.url} (${pct(f)} overlap, advies ≤ 50%)`);
 }
 
+// Geen zin van 12+ woorden letterlijk op twee stadspagina's (alleen de unieke blokken; systeem, case,
+// prijzen en standaard-FAQ staan buiten <!-- uniek --> en tellen dus niet mee).
+const zinnen = (html) => new Set(uniqueText(html).split(/(?<=[.!?])\s+/)
+  .map((z) => z.toLowerCase().replace(/\s+/g, ' ').trim()).filter((z) => words(z).length >= 12));
+const zinnenPer = stadRes.map((r) => zinnen(r.html));
+for (let i = 0; i < stadRes.length; i++) for (let j = i + 1; j < stadRes.length; j++) {
+  for (const z of zinnenPer[i]) if (zinnenPer[j].has(z)) {
+    const kort = z.length > 90 ? `${z.slice(0, 90)}…` : z;
+    stadRes[i].fout.push(`zin staat ook op ${stadRes[j].p.url}: "${kort}"`);
+    stadRes[j].fout.push(`zin staat ook op ${stadRes[i].p.url}: "${kort}"`);
+  }
+}
+
 // ── Rapport ──────────────────────────────────────────────────────────────────
 let nFout = 0;
 console.log('Kwaliteitscheck SEO-pagina\'s\n');
