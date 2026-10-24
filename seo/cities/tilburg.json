@@ -1,0 +1,65 @@
+{
+  "stad": "Tilburg",
+  "slug": "tilburg",
+  "niche": "glazenwasser",
+  "status": "live",
+  "title": "Website glazenwasser Tilburg | Stam Core",
+  "meta": "Glazenwasser in Tilburg? Zo staan de bedrijven bovenaan in Google Maps ervoor, en zo vind je klanten in de Reeshof, Oud-Zuid en Berkel-Enschot.",
+  "h1": "Glazenwasser in Tilburg? Zo vind je klanten in jouw wijken",
+  "intro": [
+    "Tilburg doe je niet in één ronde. Oud-Zuid, de Reeshof en Oud-Noord hebben elk tussen de 35.000 en 44.000 inwoners, en daarnaast horen Berkel-Enschot, Udenhout en Biezenmortel bij de gemeente. Elk deel vraagt een eigen aanpak.",
+    "Hieronder zie je hoe de glazenwassers bovenaan in Google Maps er in Tilburg voor staan, en waar de ruimte zit voor jouw bedrijf."
+  ],
+  "wijken": [
+    "Centrum",
+    "Oud-Zuid",
+    "Oud-Noord",
+    "Reeshof",
+    "Noord",
+    "Oost",
+    "Zuid",
+    "West",
+    "Berkel-Enschot",
+    "Udenhout",
+    "Biezenmortel"
+  ],
+  "wijken_tekst": [
+    "Niet elke klant zoekt op de stadsnaam. Wie in Berkel-Enschot of Udenhout woont, typt vaak de naam van het dorp, en dan komt een bedrijf met een eigen pagina voor dat dorp sneller in beeld dan een bedrijf dat alleen \"Tilburg\" noemt. De Reeshof is qua inwoners een stad op zich, met een eigen station.",
+    "Een pagina per stadsdeel of kern waar je al rijdt, helpt je om nieuwe klanten te vinden langs je bestaande route. Zo vul je een ronde in de Reeshof aan met adressen in de Reeshof, in plaats van voor één klant naar Udenhout te rijden. Minder kilometers tussen de adressen is meer tijd met de wisser in de hand."
+  ],
+  "kenmerken": [
+    "Tilburg was in de negentiende eeuw een wolstad: in 1871 stonden er 125 wollenstoffenfabrieken. Het textiel is grotendeels verdwenen, de stad is gebleven en gegroeid. Drie stadsdelen hebben nu elk meer inwoners dan veel Brabantse gemeenten, dus je kunt hier een volle week rijden zonder de stad uit te gaan.",
+    "Daarnaast is er de nieuwe kant van de stad. In de Spoorzone, het voormalige NS-werkplaatsterrein achter het station, kregen hallen zoals de LocHal sinds 2011 een nieuwe functie. Woontoren Westpoint telt 47 verdiepingen. Hoogbouw en grote glaspartijen vragen om ander materiaal, zoals osmose en een lange telescoopsteel, en vaak heb je dan te maken met een VvE of beheerder in plaats van een bewoner.",
+    "Tilburg is ook een studentenstad, met Tilburg University, Fontys en Avans. Waar veel verhuurd wordt, zijn verhuurders en beheerders een klantgroep, niet alleen de bewoners.",
+    "En dan de bedrijventerreinen: op Kraaiven, Loven en Vossenberg zitten samen zo'n 7.600 bedrijven. Daar liggen zakelijke rondes met kantoorgevels, showrooms en bedrijfshallen.",
+    "Voor je website betekent dat: een pagina voor particulieren, een voor zakelijk en VvE's, en per dienst (ramen, zonnepanelen, dakgoten) duidelijk in welke delen van Tilburg je werkt."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Werk je ook voor glazenwassers in Berkel-Enschot en Udenhout?",
+      "antwoord": "Ja. Ze horen bij de gemeente Tilburg, maar mensen zoeken op de naam van hun dorp. Rijd je daar, dan krijgen ze een eigen pagina met de diensten die je daar doet. Biezenmortel kan erbij als je daar klanten hebt."
+    },
+    {
+      "vraag": "Heeft het zin in een stad waar al veel glazenwassers werken?",
+      "antwoord": "In een grote stad zijn er meer bedrijven, maar ook meer zoekopdrachten, verdeeld over acht stadsdelen en drie dorpen. Je hoeft niet overal tegelijk zichtbaar te zijn. Begin bij de stadsdelen waar je al rijdt en bouw daar je pagina's en reviews op. De scan hierboven laat zien waar de ruimte zit."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "eigendom",
+    "afstand"
+  ],
+  "cta_tekst": "Ik zoek op \"glazenwasser Tilburg\" en op de stadsdelen waar jij rijdt, en zet jouw bedrijf naast het gemiddelde van de top 3. Je krijgt je eigen positie, je reviews tegenover dat gemiddelde en de drie verbeterpunten die het snelst iets doen. Gratis, en je zit nergens aan vast.",
+  "nabije_steden": [
+    "waalwijk",
+    "s-hertogenbosch",
+    "eindhoven"
+  ],
+  "scan": "scans/tilburg.csv",
+  "bronnen": [
+    "https://nl.wikipedia.org/wiki/Tilburg (stadsdelen, inwonertallen 2024, wolindustrie 1871, Spoorzone, Westpoint, onderwijs, bedrijventerreinen Kraaiven/Loven/Vossenberg)",
+    "https://gis.tilburg.nl/server1/rest/services/Indeling_Stadsindeling/MapServer (officiële stadsindeling gemeente Tilburg)"
+  ],
+  "gepubliceerd": "2026-10-24",
+  "gewijzigd": "2026-10-24"
+}

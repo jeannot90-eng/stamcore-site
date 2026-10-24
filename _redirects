@@ -26,4 +26,6 @@
 # Bronbestanden voor de generator horen niet als pagina bereikbaar te zijn.
 /templates/*   /404   404!
 /data/*        /404   404!
+/seo/*         /404   404!
 /scripts/*     /404   404!
+/SEO-PLAN.md   /404   404!

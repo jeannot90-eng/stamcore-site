@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="stamcore-seo">
+<!-- Gegenereerd door seo/scripts/build.mjs uit seo/templates/seo-pijler.html. Niet met de hand bewerken: pas het template aan en draai `npm run seo:all`. -->
+<title>{{title}}</title>
+<meta name="description" content="{{meta}}">
+<meta name="theme-color" content="#020617">
+<link rel="canonical" href="{{canonical}}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/favicon.svg">
+
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{meta}}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:image" content="{{ogImage}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{{meta}}">
+<meta name="twitter:image" content="{{ogImage}}">
+
+<script type="application/ld+json">
+{{{jsonld}}}
+</script>
+
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="/assets/app.css">
+<style>
+  html { -webkit-font-smoothing: antialiased; }
+  body { background-color: #020617; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  .glow-grid {
+    background-image:
+      radial-gradient(60rem 40rem at 50% -10%, rgba(14,165,233,.16), transparent 60%),
+      radial-gradient(40rem 30rem at 85% 10%, rgba(16,185,129,.10), transparent 60%);
+  }
+  .hairline { background: linear-gradient(90deg, transparent, rgba(148,163,184,.25), transparent); }
+  .card-sheen { background:
+      linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0)),
+      rgba(15,23,42,.55); }
+</style>
+</head>
+
+<body class="font-sans text-slate-200 antialiased selection:bg-electric-500/30 selection:text-white">
+
+<!-- partial:header --><!-- /partial:header -->
+
+<main>
+<!-- ================= HERO ================= -->
+<section class="glow-grid relative overflow-hidden pt-40 pb-16 sm:pt-48 sm:pb-20">
+  <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,transparent,#020617)]"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <nav aria-label="Broodkruimel" class="text-center text-sm text-slate-400">
+      <a href="/" class="transition hover:text-white">Home</a> <span class="px-1 text-slate-600">/</span>
+      <a href="{{pijlerUrl}}" class="transition hover:text-white">{{pijlerTitel}}</a> <span class="px-1 text-slate-600">/</span>
+      <span class="text-slate-300">Lokale SEO</span>
+    </nav>
+    <div class="mx-auto mt-6 max-w-4xl text-center">
+      <span class="inline-flex items-center gap-2 rounded-full border border-electric-500/30 bg-electric-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-electric-400">Lokale SEO voor glazenwassers</span>
+      <h1 class="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl">{{h1}}</h1>
+      <div class="mx-auto mt-7 max-w-2xl space-y-4 text-left text-lg leading-relaxed text-slate-300 sm:text-center">
+        <p>Als iemand in jouw wijk "glazenwasser" googelt, kijkt die eerst naar het kaartje met drie bedrijven. Wie daar staat, krijgt het telefoontje.</p>
+        <p>Hier lees je hoe dat kaartje werkt, wat ik er elke maand aan doe voor {{prijsSeo}}, en wat je zelf kunt doen. Ik run al ruim zes jaar mijn eigen glazenwassersbedrijf, dus ik praat over rondes en vaste klanten, niet over bureau-praat.</p>
+      </div>
+      <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <a href="{{whatsappUrl}}" target="_blank" rel="noopener" class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-electric-500 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-400 sm:w-auto">Gratis Maps-scan van jouw plaats</a>
+        <a href="/prijzen" class="inline-flex w-full items-center justify-center rounded-xl border border-white/15 bg-white/5 px-7 py-4 text-base font-semibold text-white transition hover:bg-white/10 sm:w-auto">Bekijk de prijzen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 1. WAAROM MAPS ================= -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-3xl px-6">
+    <h2 class="reveal font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Waarom Google Maps voor een glazenwasser het belangrijkst is</h2>
+    <div class="reveal mt-6 space-y-4 text-lg leading-relaxed text-slate-300">
+      <p>Een glazenwasser zoek je in de buurt. Daarom laat Google bij een zoekopdracht als "glazenwasser" of "glazenwasser Tilburg" meestal eerst een kaart met drie bedrijven zien, boven de gewone zoekresultaten. Op een telefoon is dat vaak het hele eerste scherm. Wie daar staat, met sterren en een belknop, krijgt de meeste aanvragen.</p>
+      <p>De gewone resultaten daaronder tellen ook, maar anders. Daar komen mensen die al wat gerichter zoeken, bijvoorbeeld naar "zonnepanelen reinigen" of "glazenwasser abonnement". Een goede website helpt bij allebei: je Bedrijfsprofiel verwijst ernaar, en Google gebruikt wat er op je site staat om te bepalen voor welke zoekopdrachten en plaatsen je relevant bent.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 2. DE DRIE FACTOREN ================= -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="mx-auto max-w-3xl">
+      <h2 class="reveal font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Wat bepaalt of je in Maps verschijnt</h2>
+      <p class="reveal mt-6 text-lg leading-relaxed text-slate-300">Google noemt zelf drie dingen voor lokale resultaten: relevantie, afstand en bekendheid. Geen geheim recept, wel drie dingen waar je iets aan kunt doen. Of je bovenaan komt, kan niemand je beloven. Wel kun je zorgen dat je op geen van de drie punten laat liggen.</p>
+    </div>
+    <div class="mt-10 grid gap-6 md:grid-cols-3">
+      <div class="reveal rounded-3xl border border-white/5 card-sheen p-8">
+        <h3 class="font-display text-xl font-bold text-white">Relevantie</h3>
+        <p class="mt-3 text-slate-400">Past jouw bedrijf bij wat iemand zoekt? Dat haalt Google uit je categorieën, je diensten en de tekst op je website. Een glazenwasser met alleen "Schoonmaakbedrijf" als categorie en een site van één pagina geeft weinig houvast. "Glazenwasser" als hoofdcategorie, losse diensten en pagina's per plaats zeggen veel meer.</p>
+      </div>
+      <div class="reveal rounded-3xl border border-white/5 card-sheen p-8">
+        <h3 class="font-display text-xl font-bold text-white">Afstand</h3>
+        <p class="mt-3 text-slate-400">Hoe ver zit je van degene die zoekt? Daar kun je het minst aan veranderen. Wel kun je je werkgebied goed instellen, en met pagina's per wijk of kern laten zien dat je daar echt rijdt.</p>
+      </div>
+      <div class="reveal rounded-3xl border border-emerald-400/20 card-sheen p-8">
+        <h3 class="font-display text-xl font-bold text-white">Bekendheid</h3>
+        <p class="mt-3 text-slate-400">Hoe bekend is je bedrijf? Dat meet Google onder andere aan reviews (hoeveel, welke score, hoe recent), vermeldingen op andere sites en links naar je website. Hier zit voor de meeste glazenwassers de grootste ruimte, want om reviews vragen is een gewoonte die bijna niemand vastlegt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3. PAGINA'S PER DIENST × PLAATS ================= -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-3xl px-6">
+    <h2 class="reveal font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Pagina's per dienst en plaats</h2>
+    <div class="reveal mt-6 space-y-4 text-lg leading-relaxed text-slate-300">
+      <p>Een plaatspagina is een pagina op je eigen website over één dienst in één plaats of wijk, bijvoorbeeld "Glazenwasser in Berkel-Enschot" of "Zonnepanelen reinigen in Udenhout". Hij vertelt Google en de klant: hier werk ik, dit doe ik hier, zo bereik je me.</p>
+      <p>Maar een plaatspagina werkt alleen als hij echt over die plaats gaat. Tien pagina's met dezelfde tekst en alleen een andere plaatsnaam ziet Google als kopieerwerk, en dat helpt je niet. Daarom schrijf ik per pagina wat klopt voor die plek: welke wijken je doet, wat voor huizen er staan, welke diensten daar gevraagd worden, en waar het kan een foto van werk dat je daar gedaan hebt.</p>
+      <p>Met lokale SEO komen er elke maand {{seoPaginas}} nieuwe pagina's bij, voor de plaatsen en diensten waar jij wilt groeien. Niet waar het toevallig makkelijk is, maar waar je je rondes wilt vullen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4. REVIEWS ================= -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-3xl px-6">
+    <h2 class="reveal font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Reviews: vraag erom als de ramen nog glimmen</h2>
+    <p class="reveal mt-6 text-lg leading-relaxed text-slate-300">Het beste moment om om een review te vragen is direct na de ronde, als de klant net naar buiten kijkt. Een week later denkt niemand meer aan de ramen. Wat werkt:</p>
+    <ul class="reveal mt-6 space-y-3">
+      <li class="flex gap-3 rounded-xl border border-white/5 bg-slate-900/40 px-5 py-4"><span class="text-emerald-400">&check;</span><span class="text-slate-300">Een QR-code op de bus, op de factuur of op een kaartje in de brievenbus. Scannen, sterren geven, klaar.</span></li>
+      <li class="flex gap-3 rounded-xl border border-white/5 bg-slate-900/40 px-5 py-4"><span class="text-emerald-400">&check;</span><span class="text-slate-300">Een kort appje na de ronde met de directe review-link, persoonlijk en met de naam van de klant.</span></li>
+      <li class="flex gap-3 rounded-xl border border-white/5 bg-slate-900/40 px-5 py-4"><span class="text-emerald-400">&check;</span><span class="text-slate-300">Reageren op elke review, ook op de korte. Nieuwe klanten lezen dat mee.</span></li>
+      <li class="flex gap-3 rounded-xl border border-white/5 bg-slate-900/40 px-5 py-4"><span class="text-emerald-400">&check;</span><span class="text-slate-300">Begin bij vaste klanten die al jaren tevreden zijn. Die zeggen het makkelijkst ja en schrijven de beste reviews.</span></li>
+    </ul>
+    <p class="reveal mt-6 text-lg leading-relaxed text-slate-300">Bij de website krijg je één vaste review-link met QR-code. In het lokale-SEO-pakket stuur ik daarnaast de reviewverzoeken naar je klanten, zodat het niet afhangt van of jij er na een lange dag nog aan denkt.</p>
+  </div>
+</section>
+
+<!-- ================= 5. BEDRIJFSPROFIEL ================= -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-3xl px-6">
+    <h2 class="reveal font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Je Google Bedrijfsprofiel goed inrichten</h2>
+    <dl class="reveal mt-8 space-y-6 text-lg leading-relaxed">
+      <div><dt class="font-semibold text-white">Categorie</dt><dd class="mt-1 text-slate-300">"Glazenwasser" als hoofdcategorie. Doe je ook gevels of zonnepanelen, voeg dan passende extra categorieën toe, maar houd de hoofdcategorie scherp.</dd></div>
+      <div><dt class="font-semibold text-white">Werkgebied</dt><dd class="mt-1 text-slate-300">De plaatsen en kernen waar je echt rijdt. Komen klanten niet bij je langs, dan hoef je je adres niet te tonen.</dd></div>
+      <div><dt class="font-semibold text-white">Diensten</dt><dd class="mt-1 text-slate-300">Elke dienst apart, met een korte omschrijving: ramen binnen en buiten, zonnepanelen, dakgoten, kozijnen, zakelijke glasbewassing.</dd></div>
+      <div><dt class="font-semibold text-white">Foto's</dt><dd class="mt-1 text-slate-300">Je bus, je team aan het werk, de telescoopsteel tegen een hoge gevel. Echte foto's van eigen werk, geen stockfoto's.</dd></div>
+      <div><dt class="font-semibold text-white">Posts</dt><dd class="mt-1 text-slate-300">Een paar keer per maand een update: een ronde in een nieuwe wijk, een voorjaarsactie voor zonnepanelen, een voor-en-nafoto van een serre.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ================= 6. WAT JE KRIJGT ================= -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="reveal grid gap-8 rounded-3xl border border-electric-500/30 bg-gradient-to-br from-electric-500/10 to-slate-900/40 p-8 sm:p-10 lg:grid-cols-12 lg:items-center">
+      <div class="lg:col-span-7">
+        <h2 class="font-display text-3xl font-bold tracking-tight text-white">Wat je elke maand krijgt voor {{prijsSeo}}</h2>
+        <ul class="mt-6 space-y-3 text-slate-200">
+          <li class="flex gap-3"><span class="text-emerald-400">+</span><span>{{seoPaginasHoofdletter}} nieuwe pagina's per dienst en plaats, met tekst die echt over die plaats gaat</span></li>
+          <li class="flex gap-3"><span class="text-emerald-400">+</span><span>Posts op je Bedrijfsprofiel</span></li>
+          <li class="flex gap-3"><span class="text-emerald-400">+</span><span>Je Bedrijfsprofiel bijgehouden: diensten, foto's, werkgebied</span></li>
+          <li class="flex gap-3"><span class="text-emerald-400">+</span><span>Reviewverzoeken naar je klanten</span></li>
+          <li class="flex gap-3"><span class="text-emerald-400">+</span><span>Een maandrapport: wat er gedaan is en hoe je ervoor staat</span></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-5">
+        <div class="rounded-2xl border border-white/10 bg-slate-950/60 p-6">
+          <p class="font-display text-4xl font-bold text-white">{{prijsSeo}} <span class="text-base font-semibold text-slate-400">per maand</span></p>
+          <p class="mt-2 text-sm text-slate-300">{{seoVoorwaardenLang}}</p>
+          <p class="mt-4 text-sm text-slate-400">Nog geen website? Die kost {{prijsWebsite}} eenmalig plus {{prijsWebsiteJaar}} per jaar voor hosting en onderhoud.</p>
+          <a href="/prijzen" class="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-electric-400 transition hover:gap-2 hover:text-white">Alle prijzen &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 7. ZELF DOEN ================= -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-3xl px-6">
+    <h2 class="reveal font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Wat je zelf kunt doen, ook zonder mij</h2>
+    <p class="reveal mt-6 text-lg leading-relaxed text-slate-300">Je hoeft niet bij mij te beginnen om beter gevonden te worden. Dit kun je vanavond al doen:</p>
+    <ol class="reveal mt-6 list-decimal space-y-3 pl-6 text-lg leading-relaxed text-slate-300 marker:font-semibold marker:text-electric-400">
+      <li>Kijk welke hoofdcategorie je Bedrijfsprofiel heeft. Staat er geen "Glazenwasser", pas het aan.</li>
+      <li>Zet je werkgebied goed: alleen de plaatsen waar je echt rijdt.</li>
+      <li>Upload tien foto's van je eigen werk en je bus.</li>
+      <li>Maak een QR-code naar je review-link en plak hem op de bus.</li>
+      <li>Vraag deze week vijf vaste klanten om een review, en reageer op elke review die binnenkomt.</li>
+    </ol>
+    <p class="reveal mt-6 text-lg leading-relaxed text-slate-300">Kom je er daarna niet aan toe om het bij te houden, of wil je pagina's per plaats en wijk? Dan neem ik het over. Hoe dat eruitzag bij een ander glasbewassingsbedrijf, lees je in de <a href="{{caseUrl}}" class="font-semibold text-electric-400 transition hover:text-white">case {{caseNaam}}</a>.</p>
+  </div>
+</section>
+
+{{{kennisHtml}}}
+
+<!-- ================= 8. FAQ ================= -->
+<section class="relative py-16 sm:py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-3xl px-6">
+    <h2 class="reveal font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Veelgestelde vragen over lokale SEO</h2>
+    <div class="mt-10 space-y-4">
+      {{{faqHtml}}}
+    </div>
+  </div>
+</section>
+
+<!-- ================= 9. CTA ================= -->
+<section class="relative py-20">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-slate-900/60 to-slate-950 p-10 text-center sm:p-14">
+      <h2 class="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Gratis Maps-scan van jouw plaats</h2>
+      <p class="mx-auto mt-4 max-w-xl text-lg text-slate-300">Ik zoek op "glazenwasser" in jouw plaats en zet jouw bedrijf naast de drie bovenaan: je positie, je reviews tegenover hun gemiddelde en de drie verbeterpunten die het snelst iets doen. Gratis, en je zit nergens aan vast.</p>
+      <div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <a href="{{whatsappUrl}}" target="_blank" rel="noopener" class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-electric-500 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-400 sm:w-auto">Vraag de scan aan via WhatsApp</a>
+        <a href="/#contact" class="inline-flex w-full items-center justify-center rounded-xl border border-white/15 bg-white/5 px-7 py-4 text-base font-semibold text-white transition hover:bg-white/10 sm:w-auto">Of plan een gesprek</a>
+      </div>
+      <p class="mt-8 text-sm text-slate-500"><a href="{{pijlerUrl}}" class="transition hover:text-white">&larr; Terug naar {{pijlerTitel}}</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- partial:footer --><!-- /partial:footer -->
+
+<!-- partial:scripts --><!-- /partial:scripts -->
+</body>
+</html>

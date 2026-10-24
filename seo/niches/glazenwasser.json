@@ -1,0 +1,51 @@
+{
+  "_uitleg": "Niche-brede inhoud voor glazenwassers. {tokens} worden door build.mjs ingevuld uit config.json (zie seo/README.md).",
+  "key": "glazenwasser",
+  "enkelvoud": "glazenwasser",
+  "meervoud": "glazenwassers",
+  "pijlerUrl": "/website-glazenwasser",
+  "pijlerBestand": "website-glazenwasser.html",
+  "pijlerTitel": "Website voor glazenwassers",
+  "seoPijlerUrl": "/seo-glazenwasser",
+  "seoPijlerTitel": "Lokale SEO voor glazenwassers",
+  "serviceType": "Website en lokale SEO voor glazenwassers",
+  "zoekterm": "glazenwasser {stad}",
+  "diensten": ["ramen wassen", "zonnepanelen reinigen", "dakgoten schoonmaken", "kozijnen reinigen", "zakelijke glasbewassing"],
+  "terminologie": ["rondes", "osmose", "telescoopsteel", "frequentie", "abonnement", "VvE"],
+  "systeem": [
+    { "titel": "Website", "tekst": "Een snelle, mobiele voordeur waar klanten in {stad} direct een aanvraag doen, bellen of appen." },
+    { "titel": "Pagina's per plaats", "tekst": "Een pagina per dienst voor {stad} en de wijken en kernen waar je rijdt, zodat Google weet waar je werkt." },
+    { "titel": "Google Bedrijfsprofiel", "tekst": "Ingericht met \"Glazenwasser\" als hoofdcategorie, je diensten, je werkgebied en foto's van je eigen werk." },
+    { "titel": "Reviewmotor", "tekst": "Een vaste review-link en QR-code voor op de bus en de factuur, zodat een tevreden klant in één tik een review achterlaat." }
+  ],
+  "faq_pool": {
+    "prijs": {
+      "vraag": "Wat kost een website en lokale SEO?",
+      "antwoord": "De website kost {website_eenmalig} eenmalig plus {website_per_jaar} per jaar voor hosting en onderhoud. Lokale SEO is optioneel: {seo_per_maand} per maand, minimaal {seo_min_maanden} maanden, daarna maandelijks opzegbaar met {seo_opzegtermijn} opzegtermijn. Alle bedragen {btw}."
+    },
+    "eigendom": {
+      "vraag": "Van wie is de website?",
+      "antwoord": "Van jou. Domein, teksten en pagina's blijven van jou, ook als je stopt met lokale SEO."
+    },
+    "afstand": {
+      "vraag": "Stam Core zit in Oosterhout. Werkt dat als ik ergens anders zit?",
+      "antwoord": "Ja. De scan, de pagina's en je Bedrijfsprofiel doe ik op afstand. We bellen of videobellen, en de rest gaat via WhatsApp en mail."
+    },
+    "teksten": {
+      "vraag": "Moet ik zelf teksten schrijven?",
+      "antwoord": "Nee, de pagina's schrijf ik. Van jou heb ik nodig: in welke plaatsen en wijken je rijdt, welke diensten je doet, en foto's van je eigen werk en je bus."
+    },
+    "glazenwasser": {
+      "vraag": "Waarom een glazenwasser als bouwer?",
+      "antwoord": "Omdat ik al meer dan zes jaar mijn eigen glazenwassersbedrijf run. Ik weet hoe een ronde werkt, waarom een klant in april belt en wat een abonnement waard is. Dat hoef je mij niet uit te leggen."
+    }
+  },
+  "seo_pijler_faq": [
+    { "vraag": "Kun je beloven dat ik bovenaan kom in Google Maps?", "antwoord": "Nee, en wie dat wel belooft, weet niet hoe Maps werkt. De afstand tot degene die zoekt kun je niet veranderen, en Google past de volgorde steeds aan. Wat ik wel doe: zorgen dat je op relevantie en bekendheid niets laat liggen, en elke maand laten zien wat er veranderd is." },
+    { "vraag": "Hoe lang duurt het voordat ik iets merk?", "antwoord": "Een goed ingericht profiel en de eerste pagina's kunnen binnen een paar weken iets doen, maar reken op enkele maanden voordat je het structureel terugziet in aanvragen. Daarom is de minimale looptijd {seo_min_maanden} maanden." },
+    { "vraag": "Ik heb al een website. Kan lokale SEO daar ook op?", "antwoord": "Dan kijk ik eerst wat er staat. Soms kunnen de pagina's per plaats er gewoon bij, soms is een nieuwe site sneller en goedkoper dan repareren. Dat hoor je eerlijk in het eerste gesprek." },
+    { "vraag": "Wat moet ik zelf doen?", "antwoord": "Weinig. Foto's van je werk en je bus aanleveren, af en toe een vraag beantwoorden over waar je rijdt, en je klanten tevreden houden. De rest doe ik." },
+    { "vraag": "Kan ik lokale SEO opzeggen?", "antwoord": "Ja. De minimale looptijd is {seo_min_maanden} maanden. Daarna is het maandelijks opzegbaar met {seo_opzegtermijn} opzegtermijn. Je website en alle pagina's blijven van jou." },
+    { "ref": "glazenwasser" }
+  ]
+}

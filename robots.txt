@@ -3,6 +3,7 @@ Allow: /
 Disallow: /_preview/
 Disallow: /templates/
 Disallow: /data/
+Disallow: /seo/
 Disallow: /scripts/
 
 Sitemap: https://stam-core.nl/sitemap.xml
