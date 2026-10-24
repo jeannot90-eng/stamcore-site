@@ -7,3 +7,5 @@
 # automatisch aan de acquisitiemachine).
 [functions]
   directory = "netlify/functions"
+  # esbuild bundelt de gedeelde code in netlify/lib/ mee in de website-scan-functions.
+  node_bundler = "esbuild"
