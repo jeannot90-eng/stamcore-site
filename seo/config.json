@@ -36,6 +36,7 @@
   "statischeSitemap": [
     { "url": "/", "bestand": "index.html", "priority": "1.0" },
     { "url": "/prijzen", "bestand": "prijzen.html", "priority": "0.9" },
+    { "url": "/website-scan", "bestand": "website-scan.html", "priority": "0.8" },
     { "url": "/website-glazenwasser", "bestand": "website-glazenwasser.html", "priority": "0.9" },
     { "url": "/seo-glazenwasser", "bestand": "seo-glazenwasser.html", "priority": "0.9" },
     { "url": "/front-end.html", "bestand": "front-end.html", "priority": "0.8" },
