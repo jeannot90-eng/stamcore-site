@@ -12,6 +12,7 @@
 | 2026-10-24 | Stadspagina's Helmond en Roosendaal live; kansvarianten vastgelegd per stad; samenvattingszin scanblok gerepareerd (woordvolgorde) | https://stam-core.nl/website-glazenwasser-helmond · https://stam-core.nl/website-glazenwasser-roosendaal | seo: stadspagina's helmond en roosendaal |
 | 2026-10-24 | Review Helmond/Roosendaal verwerkt (bronvermeldingen, wijknamen in kansen, FAQ's, Tilburg-bedrijven met bron) | alle stadspagina's | seo: review helmond/roosendaal verwerkt |
 | 2026-10-24 | Stadspagina's Bergen op Zoom, Waalwijk en Oss live: golf 1 compleet (8 steden) | https://stam-core.nl/website-glazenwasser-bergen-op-zoom · https://stam-core.nl/website-glazenwasser-waalwijk · https://stam-core.nl/website-glazenwasser-oss | seo: stadspagina's bergen op zoom, waalwijk, oss |
+| 2026-10-24 | Website-scan als hoofdactie op alle SEO-pagina's (met ?bron=), CTA-teksten per stad herschreven | alle SEO-pagina's | seo: website-scan als hoofdactie |
 
 ## Indexering aangevraagd (Search Console)
 

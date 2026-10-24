@@ -175,6 +175,7 @@ function buildCity({ c, niche, info, scan, voorbeeld, kansen }, isPreview) {
     ...sharedVars,
     slug: c.slug, title: c.title, meta: c.meta, h1: c.h1, stad: c.stad, canonical: info.canonical,
     ogImage: cityOg(c),
+    scanUrl: `/website-scan?bron=${info.slug}`,
     robotsMeta: isPreview ? noindex : '',
     voorbeeldBanner: voorbeeld ? voorbeeldBanner : '',
     pijlerUrl: niche.pijlerUrl, pijlerTitel: niche.pijlerTitel, seoPijlerUrl: niche.seoPijlerUrl, nicheMeervoud: niche.meervoud,
@@ -293,6 +294,7 @@ function buildArticle(a, isPreview) {
     ...sharedVars,
     slug: a.slug, title: a.title, meta: a.meta, h1: a.h1, canonical: a.canonical,
     robotsMeta: isPreview ? noindex : '',
+    scanUrl: `/website-scan?bron=kennis-${a.slug}`,
     jsonld: jsonldStr({ '@context': 'https://schema.org', '@graph': graph }),
     pijlerUrl: glazen.pijlerUrl, pijlerTitel: glazen.pijlerTitel, seoPijlerUrl: glazen.seoPijlerUrl, seoPijlerTitel: glazen.seoPijlerTitel,
     auteur: config.bedrijf.eigenaar, dateModified: a.dateModified || a.datePublished, datumLeesbaar: datumLeesbaar(a.dateModified || a.datePublished),
@@ -348,6 +350,7 @@ for (const niche of Object.values(niches)) {
   write(file, finish(render(seoTpl, {
     ...sharedVars, title, meta, h1: 'Gevonden worden in de wijken waar je al rijdt', canonical,
     pijlerUrl: niche.pijlerUrl, pijlerTitel: niche.pijlerTitel,
+    scanUrl: `/website-scan?bron=${niche.seoPijlerUrl.slice(1)}`,
     whatsappUrl: waUrl(`Hoi Jeannot, ik ben ${niche.enkelvoud} en wil graag een gratis Maps-scan van mijn plaats.`),
     jsonld: jsonldStr(jsonld),
     faqHtml: faq.map(faqItemHtml).join('\n      '),

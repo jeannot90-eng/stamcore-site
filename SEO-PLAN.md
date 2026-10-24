@@ -104,7 +104,7 @@ Gebruik geen frameworks of zware dependencies. Node zonder of met minimale packa
   6. Wat je elke maand krijgt voor €199 (uit config)
   7. Wat je zelf kunt doen zonder ons (geeft vertrouwen)
   8. FAQ (5–7 vragen, `FAQPage`-schema)
-  9. CTA: gratis Maps-scan van je eigen plaats
+  9. CTA: gratis website-scan (`/website-scan?bron=seo-glazenwasser`) als hoofdactie; Maps-scan via WhatsApp als tweede optie voor wie nog geen website heeft *(gewijzigd 2026-10-24)*
 
 ### 3.3 Stadspagina: `/website-glazenwasser-{stad}`
 
@@ -122,7 +122,7 @@ Gebruik geen frameworks of zware dependencies. Node zonder of met minimale packa
 
 | # | Blok | Uniek per stad? | Inhoud |
 |---|---|---|---|
-| 1 | Hero | ✅ | H1, korte intro (2–3 zinnen) met een echt kenmerk van de stad, CTA's (gesprek + WhatsApp) |
+| 1 | Hero | ✅ | H1, korte intro (2–3 zinnen) met een echt kenmerk van de stad, CTA's (gratis website-scan als hoofdactie + WhatsApp) |
 | 2 | **Zo staat {Stad} ervoor in Maps** | ✅ verplicht | Geanonimiseerde scan (§5): gemiddeld aantal reviews top 3, gemiddelde score, hoeveel een eigen website hebben, hoeveel plaatspagina's hebben, hoeveel actief posten. Met datum: "gemeten op {datum}". Afsluiten met 2–3 concrete kansen die uit déze data volgen. Geen beloftes. |
 | 3 | **Wijken en kernen** | ✅ verplicht | Geverifieerde wijken en kernen van {Stad} (minimaal 6). Plus uitleg: waarom pagina's per wijk of kern helpen om rondes te vullen in plaats van door de stad te zigzaggen. |
 | 4 | **Wat {Stad} anders maakt** | ✅ verplicht | 150–250 woorden over het type bebouwing en de klantkansen, alleen met verifieerbare feiten: bijvoorbeeld veel nieuwbouw met grote glaspartijen, een historische binnenstad met winkelpanden, een studentenstad met veel huurwoningen, bedrijventerreinen (zakelijke rondes), VvE's of hoogbouw. Vertaal dat naar diensten (ramen, zonnepanelen, dakgoten, kozijnen, zakelijk) en naar wat er op de website moet. |
@@ -130,7 +130,7 @@ Gebruik geen frameworks of zware dependencies. Node zonder of met minimale packa
 | 6 | Case Clean up support | ⚪ gedeeld | Korte casus + Lighthouse-scores (uit config) + link `/werk#cleanup` |
 | 7 | Prijzen | ⚪ gedeeld (uit config) | Website + lokale SEO, link naar `/prijzen` |
 | 8 | FAQ | ✅ deels | 4–5 vragen: 2 stadspecifiek (bijv. "Werk je ook in {kern}?", "Heeft het zin in een stad met al veel glazenwassers?") + 2–3 uit de FAQ-pool. `FAQPage`-schema. |
-| 9 | CTA | ✅ | "Gratis Maps-scan voor jouw bedrijf in {Stad}": wat je krijgt (je eigen positie, je reviews vs. het gemiddelde, de 3 snelste verbeterpunten). WhatsApp-link met vooringevulde tekst inclusief de stadsnaam. |
+| 9 | CTA | ✅ | **Hoofdactie: gratis website-scan** (`/website-scan?bron=website-glazenwasser-{stad}`), met een eigen tekst per stad. Tweede optie: "Geen website? Vraag een Maps-scan" via WhatsApp met vooringevulde tekst inclusief de stadsnaam. *(gewijzigd 2026-10-24, besluit Jeannot)* |
 | 10 | Andere steden | ⚪ automatisch | Links naar 3–4 andere stadspagina's (bij voorkeur nabijgelegen) + terug naar de pijler |
 
 **Minimaal 700 woorden, waarvan ≥ 350 woorden in de unieke blokken (1–4, 8-stad, 9).**
