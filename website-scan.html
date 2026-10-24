@@ -211,7 +211,7 @@
      deploy. De pagina verstuurt de lead via JavaScript; submission-created stuurt hem door naar de cockpit. -->
 <form name="website-scan" data-netlify="true" netlify-honeypot="bedrijfsnaam_extra" hidden>
   <input type="text" name="naam"><input type="email" name="email"><input type="text" name="bedrijf">
-  <input type="text" name="website"><input type="text" name="interesse"><input type="text" name="herkomst">
+  <input type="text" name="website"><input type="text" name="interesse"><input type="text" name="herkomst"><input type="text" name="bron">
   <input type="text" name="score_mobiel"><input type="text" name="score_desktop"><input type="text" name="score_seo">
   <textarea name="bericht"></textarea><input type="text" name="bedrijfsnaam_extra">
 </form>
@@ -407,6 +407,15 @@
   // Verstuurd zodra het rapport klaar is; sluit de bezoeker eerder af, dan alsnog via sendBeacon.
   let lead = null;
   let leadSent = false;
+  // Van welke pagina kwam de bezoeker? SEO-pagina's linken naar /website-scan?bron=… (bv. website-glazenwasser-tilburg).
+  // Onthouden in de sessie, zodat het ook na herladen of 'nog een website scannen' meegaat.
+  const bron = (() => {
+    const clean = (v) => String(v || '').toLowerCase().replace(/[^a-z0-9-]/g, '').slice(0, 80);
+    let b = '';
+    try { b = clean(new URLSearchParams(location.search).get('bron')); } catch { /* geen geldige URL */ }
+    try { if (b) sessionStorage.setItem('sc_scan_bron', b); else b = clean(sessionStorage.getItem('sc_scan_bron')); } catch { /* geen opslag */ }
+    return b || 'direct';
+  })();
   function sendLead(viaBeacon) {
     if (!lead || leadSent) return;
     leadSent = true;
@@ -591,6 +600,7 @@
       website: start.url,
       interesse: 'Website-scan',
       herkomst: typeof window.stamcoreHerkomst === 'function' ? window.stamcoreHerkomst() : '',
+      bron,
       bericht: `Website-scan van ${start.url} (rapport niet afgewacht).`,
       bedrijfsnaam_extra: String(fd.get('bedrijfsnaam_extra') || ''),
     };
@@ -631,6 +641,7 @@
       score_seo: v(ms.seo ?? ds.seo),
       bericht: [
         `Website-scan via stam-core.nl/website-scan van ${start.url}`,
+        `Bron: ${bron}`,
         `PageSpeed mobiel ${v(ms.performance)}, desktop ${v(ds.performance)}, SEO ${v(ms.seo ?? ds.seo)}, toegankelijkheid ${v(ms.accessibility ?? ds.accessibility)}, best practices ${v(ms.bestPractices ?? ds.bestPractices)}`,
         start.fetchError ? `Homepage: ${start.fetchError}` : '',
         findings.length ? 'Belangrijkste verbeterpunten:\n' + findings.map((f, i) => `${i + 1}. ${f.title}`).join('\n') : 'Geen grote verbeterpunten gevonden.',
