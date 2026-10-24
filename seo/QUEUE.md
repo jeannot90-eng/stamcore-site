@@ -26,6 +26,8 @@ Claude pakt bij "maak de volgende stadspagina" de bovenste stad die nog niet liv
 | artikel | klanten-werven-glazenwasser | klaar-voor-bouw | |
 | artikel | winter-glazenwasser-omzet | klaar-voor-bouw | |
 | artikel | zonnepanelen-reinigen-extra-dienst | klaar-voor-bouw | |
+| artikel | website-traag-op-mobiel | klaar-voor-bouw | |
+| artikel | pagespeed-score-uitleg | klaar-voor-bouw | |
 
 ## Golf 2 (na evaluatie, zie SEO-PLAN.md §9)
 

@@ -148,6 +148,10 @@ Golf 1 (in deze volgorde):
 | 4 | `klanten-werven-glazenwasser` | Klanten werven als glazenwasser: wat werkt echt | Nieuwe klanten voor je glazenwassersbedrijf | Wijkgericht werven, flyeren bij bestaande rondes, Maps, mond-tot-mond versterken |
 | 5 | `winter-glazenwasser-omzet` | Glazenwasser in de winter: omzet op peil houden | Rustige wintermaanden als glazenwasser opvangen | Abonnementen in het voorjaar binnenhalen, zakelijke rondes, extra diensten (dakgoten, zonnepanelen) |
 | 6 | `zonnepanelen-reinigen-extra-dienst` | Zonnepanelen reinigen als extra dienst online verkopen | Zonnepanelen reinigen: zo verkoop je het online | Aparte dienstpagina, plaatspagina's, uitleg voor klanten |
+| 7 | `website-traag-op-mobiel` | Waarom is mijn website traag op mobiel? | Waarom is mijn website traag op mobiel? | De meest voorkomende oorzaken bij sites van servicebedrijven (zware foto's, sliders, plugins, goedkope hosting), hoe je het zelf meet, wat je zelf kunt doen. Interne link naar /website-scan ("scan je eigen site") |
+| 8 | `pagespeed-score-uitleg` | Wat betekent mijn PageSpeed-score? | Wat betekent mijn PageSpeed-score? | Uitleg van de vier scores en LCP/CLS in gewone taal, waarom mobiel lager uitvalt dan desktop, welke score goed genoeg is, waar je begint. Interne link naar /website-scan |
+
+Artikel 7 en 8 (toegevoegd 2026-10-24, besluit Jeannot) linken allebei naar `/website-scan`. Let op: `/kennis` en `/kennis/` sturen in `_redirects` nog tijdelijk (302) door naar home. Haal die regels weg zodra er een kennisoverzicht (`kennis/index.html`) live staat.
 
 ---
 

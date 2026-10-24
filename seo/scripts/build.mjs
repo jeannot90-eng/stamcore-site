@@ -8,7 +8,7 @@
    2. SEO-pijler /seo-{niche} uit seo/templates/seo-pijler.html (prijzen uit config)
    3. Kennisartikelen uit seo/articles/*.md → /kennis/{slug}.html (concept → _preview/kennis/)
    4. Blokken "Per stad" en "Kennis" op de pijler bijwerken (markers PLAATSEN / KENNIS)
-   5. Header/footer/scripts uit templates/partials/ en inline CSS in alle pagina's
+   5. Header/footer/scripts/scanblok uit templates/partials/ en inline CSS in alle pagina's
    Daarna: npm run seo:check en npm run seo:sitemap (of in één keer: npm run seo:all).
 =========================================================================== */
 import fs from 'node:fs';
@@ -131,7 +131,7 @@ const conceptArticles = articles.filter((a) => a.status !== 'live');
 if (errors.length) bail();
 
 // ── 2. Stadspagina's renderen ───────────────────────────────────────────────
-const partials = Object.fromEntries(['header', 'footer', 'scripts'].map((n) => [n, read(`templates/partials/${n}.html`).trimEnd()]));
+const partials = Object.fromEntries(['header', 'footer', 'scripts', 'scanblok'].map((n) => [n, read(`templates/partials/${n}.html`).trimEnd()]));
 const fillPartials = (src) => src.replace(/<!-- partial:(\w+) -->[\s\S]*?<!-- \/partial:\1 -->/g, (m, n) => {
   if (!partials[n]) { errors.push(`onbekende partial "${n}"`); return m; }
   return `<!-- partial:${n} -->\n${partials[n]}\n<!-- /partial:${n} -->`;

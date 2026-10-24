@@ -14,5 +14,8 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.13"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.2.0"
   }
 }

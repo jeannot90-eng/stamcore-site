@@ -1,0 +1,16 @@
+<section class="relative py-16 sm:py-20" aria-labelledby="scan-blok-kop">
+  <div class="mx-auto max-w-4xl px-6">
+    <div class="rounded-3xl border border-electric-500/30 bg-gradient-to-br from-electric-500/10 to-emerald-500/5 p-6 sm:p-10">
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-electric-400">Gratis &middot; direct resultaat &middot; geen account</p>
+      <h2 id="scan-blok-kop" class="mt-2 font-display text-2xl font-bold text-white sm:text-3xl">Scan eerst je eigen website</h2>
+      <p class="mt-3 text-slate-300">Vul je webadres in en zie binnen een minuut hoe snel je site is, of Google hem goed kan lezen en wat je als eerste kunt verbeteren.</p>
+      <form action="/website-scan" method="get" class="mt-6 flex flex-col gap-3 sm:flex-row">
+        <label for="scan-blok-url" class="sr-only">Je website</label>
+        <input id="scan-blok-url" name="url" type="text" inputmode="url" autocomplete="url" required placeholder="jouwbedrijf.nl" class="w-full rounded-lg border border-white/10 bg-slate-950/60 px-4 py-3 text-white placeholder-slate-500 outline-none transition focus:border-electric-500/50 focus:ring-2 focus:ring-electric-500/20">
+        <input type="hidden" name="bron" value="" data-scan-bron>
+        <button type="submit" class="inline-flex shrink-0 items-center justify-center rounded-xl bg-electric-500 px-6 py-3 font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-400">Scan mijn website</button>
+      </form>
+      <script>document.querySelectorAll('[data-scan-bron]').forEach(function (i) { i.value = location.pathname.replace(/^\/+|\/+$|\.html$/g, '').replace(/\//g, '-') || 'home'; });</script>
+    </div>
+  </div>
+</section>
