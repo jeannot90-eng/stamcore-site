@@ -2,7 +2,7 @@
   "stad": "Tilburg",
   "slug": "tilburg",
   "niche": "glazenwasser",
-  "status": "concept",
+  "status": "live",
   "title": "Website glazenwasser Tilburg | Stam Core",
   "meta": "Glazenwasser in Tilburg? Zo staan de bedrijven bovenaan in Google Maps ervoor, en zo vind je klanten in de Reeshof, Oud-Zuid en Berkel-Enschot.",
   "h1": "Glazenwasser in Tilburg? Zo vind je klanten in jouw wijken",
@@ -10,7 +10,19 @@
     "Tilburg doe je niet in één ronde. Oud-Zuid, de Reeshof en Oud-Noord hebben elk tussen de 35.000 en 44.000 inwoners, en daarnaast horen Berkel-Enschot, Udenhout en Biezenmortel bij de gemeente. Elk deel vraagt een eigen aanpak.",
     "Hieronder zie je hoe de glazenwassers bovenaan in Google Maps er in Tilburg voor staan, en waar de ruimte zit voor jouw bedrijf."
   ],
-  "wijken": ["Centrum", "Oud-Zuid", "Oud-Noord", "Reeshof", "Noord", "Oost", "Zuid", "West", "Berkel-Enschot", "Udenhout", "Biezenmortel"],
+  "wijken": [
+    "Centrum",
+    "Oud-Zuid",
+    "Oud-Noord",
+    "Reeshof",
+    "Noord",
+    "Oost",
+    "Zuid",
+    "West",
+    "Berkel-Enschot",
+    "Udenhout",
+    "Biezenmortel"
+  ],
   "wijken_tekst": [
     "Niet elke klant zoekt op de stadsnaam. Wie in Berkel-Enschot of Udenhout woont, typt vaak de naam van het dorp, en dan komt een bedrijf met een eigen pagina voor dat dorp sneller in beeld dan een bedrijf dat alleen \"Tilburg\" noemt. De Reeshof is qua inwoners een stad op zich, met een eigen station.",
     "Een pagina per stadsdeel of kern waar je al rijdt, helpt je om nieuwe klanten te vinden langs je bestaande route. Zo vul je een ronde in de Reeshof aan met adressen in de Reeshof, in plaats van voor één klant naar Udenhout te rijden. Minder kilometers tussen de adressen is meer tijd met de wisser in de hand."
@@ -32,14 +44,22 @@
       "antwoord": "In een grote stad zijn er meer bedrijven, maar ook meer zoekopdrachten, verdeeld over acht stadsdelen en drie dorpen. Je hoeft niet overal tegelijk zichtbaar te zijn. Begin bij de stadsdelen waar je al rijdt en bouw daar je pagina's en reviews op. De scan hierboven laat zien waar de ruimte zit."
     }
   ],
-  "faq_pool": ["prijs", "eigendom", "afstand"],
+  "faq_pool": [
+    "prijs",
+    "eigendom",
+    "afstand"
+  ],
   "cta_tekst": "Ik zoek op \"glazenwasser Tilburg\" en op de stadsdelen waar jij rijdt, en zet jouw bedrijf naast het gemiddelde van de top 3. Je krijgt je eigen positie, je reviews tegenover dat gemiddelde en de drie verbeterpunten die het snelst iets doen. Gratis, en je zit nergens aan vast.",
-  "nabije_steden": ["waalwijk", "s-hertogenbosch", "eindhoven"],
+  "nabije_steden": [
+    "waalwijk",
+    "s-hertogenbosch",
+    "eindhoven"
+  ],
   "scan": "scans/tilburg.csv",
   "bronnen": [
     "https://nl.wikipedia.org/wiki/Tilburg (stadsdelen, inwonertallen 2024, wolindustrie 1871, Spoorzone, Westpoint, onderwijs, bedrijventerreinen Kraaiven/Loven/Vossenberg)",
     "https://gis.tilburg.nl/server1/rest/services/Indeling_Stadsindeling/MapServer (officiële stadsindeling gemeente Tilburg)"
   ],
-  "gepubliceerd": null,
-  "gewijzigd": null
+  "gepubliceerd": "2026-10-24",
+  "gewijzigd": "2026-10-24"
 }

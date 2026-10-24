@@ -7,7 +7,7 @@ Claude pakt bij "maak de volgende stadspagina" de bovenste stad die nog niet liv
 
 | Type | Slug | Status | Datum |
 |---|---|---|---|
-| stad | tilburg | concept (echte scan 2026-10-24, wacht op akkoord om live te gaan) | 2026-10-24 |
+| stad | tilburg | live | 2026-10-24 |
 | stad | eindhoven | klaar-voor-bouw | |
 | stad | s-hertogenbosch | klaar-voor-bouw | |
 | stad | helmond | klaar-voor-bouw | |
@@ -20,7 +20,7 @@ Claude pakt bij "maak de volgende stadspagina" de bovenste stad die nog niet liv
 
 | Type | Slug | Status | Datum |
 |---|---|---|---|
-| artikel | google-bedrijfsprofiel-glazenwasser | klaar-voor-bouw (na akkoord Tilburg) | |
+| artikel | google-bedrijfsprofiel-glazenwasser | klaar-voor-bouw | |
 | artikel | meer-reviews-glazenwasser | klaar-voor-bouw | |
 | artikel | wat-kost-website-glazenwasser | klaar-voor-bouw | |
 | artikel | klanten-werven-glazenwasser | klaar-voor-bouw | |
