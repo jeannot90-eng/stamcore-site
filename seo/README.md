@@ -97,4 +97,5 @@ Let op: `_redirects` stuurt `/kennis` en `/kennis/` (alleen die twee) tijdelijk 
 Wat Jeannot bij reviews heeft besloten. Dit geldt voor alle volgende pagina's.
 
 - **2026-10-24:** `/seo-glazenwasser` en Tilburg zonder wijzigingen goedgekeurd. De opbouw en toon van [`cities/tilburg.json`](cities/tilburg.json) zijn het template voor alle volgende stadspagina's. Tilburg gaat pas live zodra `scans/tilburg.csv` er is.
+- **2026-10-24:** Indexering: nieuwe pagina's komen via `sitemap.xml` en de links op de pijler vanzelf bij Google. Daarnaast vraagt Claude **per 5 nieuwe live pagina's** in Search Console "Indexering aanvragen" aan, in het browserpaneel, nadat Jeannot daar zelf heeft ingelogd. Houd in `LOG.md` bij welke URL's al zijn aangevraagd (kolom Indexering).
 - **2026-10-24:** Claude doet de Maps-scan zelf via de browser. Kolommen `posts_laatste_30d` en `fotos_eigen_werk` vervangen door `reageert_op_reviews` en `fotos`, omdat posts en eigen-vs-klantfoto's niet zichtbaar zijn zonder in te loggen. Gesponsorde resultaten tellen niet mee.

@@ -6,3 +6,11 @@
 | 2026-10-24 | Review: beide pagina's goedgekeurd; gecommit op branch `seo-glazenwasser` (niet op main) | | |
 | 2026-10-24 | Maps-scan Tilburg zelf gedaan via browser; scanformaat aangepast (reageert_op_reviews, fotos) | | |
 | 2026-10-24 | Tilburg live; /seo-glazenwasser live | https://stam-core.nl/website-glazenwasser-tilburg · https://stam-core.nl/seo-glazenwasser | seo: stadspagina tilburg |
+
+## Indexering aangevraagd (Search Console)
+
+| Datum | URL | Door |
+|---|---|---|
+| 2026-10-24 | sitemap.xml opnieuw ingediend | Claude |
+| 2026-10-24 | https://stam-core.nl/website-glazenwasser-tilburg | Claude |
+| 2026-10-24 | https://stam-core.nl/seo-glazenwasser | Jeannot |
