@@ -42,7 +42,7 @@
   },
   "seo_pijler_faq": [
     { "vraag": "Kun je beloven dat ik bovenaan kom in Google Maps?", "antwoord": "Nee, en wie dat wel belooft, weet niet hoe Maps werkt. De afstand tot degene die zoekt kun je niet veranderen, en Google past de volgorde steeds aan. Wat ik wel doe: zorgen dat je op relevantie en bekendheid niets laat liggen, en elke maand laten zien wat er veranderd is." },
-    { "vraag": "Hoe lang duurt het voordat ik iets merk?", "antwoord": "Een goed ingericht profiel en de eerste pagina's kunnen binnen een paar weken iets doen, maar reken op enkele maanden voordat je het structureel terugziet in aanvragen. Daarom is de minimale looptijd {seo_min_maanden} maanden." },
+    { "vraag": "Hoe lang duurt het voordat ik iets merk?", "antwoord": "Een goed ingericht profiel en de eerste pagina's kunnen binnen een paar weken iets doen, maar reken op enkele maanden voordat je het structureel terugziet in aanvragen. Daarom laat het maandrapport vanaf maand 1 zien wat er gebouwd is en wat er beweegt." },
     { "vraag": "Ik heb al een website. Kan lokale SEO daar ook op?", "antwoord": "Dan kijk ik eerst wat er staat. Soms kunnen de pagina's per plaats er gewoon bij, soms is een nieuwe site sneller en goedkoper dan repareren. Dat hoor je eerlijk in het eerste gesprek." },
     { "vraag": "Wat moet ik zelf doen?", "antwoord": "Weinig. Foto's van je werk en je bus aanleveren, af en toe een vraag beantwoorden over waar je rijdt, en je klanten tevreden houden. De rest doe ik." },
     { "vraag": "Kan ik lokale SEO opzeggen?", "antwoord": "Ja. De minimale looptijd is {seo_min_maanden} maanden. Daarna is het maandelijks opzegbaar met {seo_opzegtermijn} opzegtermijn. Je website en alle pagina's blijven van jou." },

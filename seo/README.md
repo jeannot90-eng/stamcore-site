@@ -92,10 +92,17 @@ Markdown: `##`/`###`, alinea's, `-` lijsten, `1.` stappen, `- [ ]` checklist, `*
 
 Let op: `_redirects` stuurt `/kennis` en `/kennis/` (alleen die twee) tijdelijk door naar `/`. Artikelen op `/kennis/{slug}` werken gewoon.
 
+## Vaste regels
+
+- **Stam Core verstuurt nooit zelf reviewverzoeken naar klanten van klanten; de klant verstuurt ze zelf.** Wij leveren een reviewlink, QR-code en een kant-en-klaar appje. De check faalt op "reviewverzoeken naar je klanten", "stuur ik de reviewverzoeken" en "vragen we je klanten om reviews".
+- **Elk getal en elk historisch of feitelijk gegeven in een stadspagina heeft een bron in het JSON-bestand van die stad**, als `{ "feit": "…", "bron": "https://…" }` in `bronnen`. De check faalt als een stadspagina getallen bevat terwijl `bronnen` leeg is. Een script ziet niet of elk feit gedekt is: noteer per feit een bron, en laat weg wat je niet kunt verifiëren.
+- **OG-afbeelding per stad:** `img/og/{niche}-{slug}.jpg` (1200×630), gemaakt door `seo/scripts/og.py` (Python + Pillow, lettertype Segoe UI). `seo:build` maakt hem aan als hij ontbreekt; de check faalt zonder. `python seo/scripts/og.py` zonder argumenten maakt ook `img/og-default.jpg` opnieuw.
+
 ## Review-afspraken
 
 Wat Jeannot bij reviews heeft besloten. Dit geldt voor alle volgende pagina's.
 
 - **2026-10-24:** `/seo-glazenwasser` en Tilburg zonder wijzigingen goedgekeurd. De opbouw en toon van [`cities/tilburg.json`](cities/tilburg.json) zijn het template voor alle volgende stadspagina's. Tilburg gaat pas live zodra `scans/tilburg.csv` er is.
+- **2026-10-24 (review Jeannot):** reviewverzoek-teksten site-breed vervangen door "reviewlink, QR-code en kant-en-klaar appje"; Tilburg-feiten gecorrigeerd met bronnen (bedrijventerreinen zonder getal, LocHal sinds 2019); looptijd-zin in de FAQ vervangen door het maandrapport; OG-afbeelding per stad.
 - **2026-10-24:** Indexering: nieuwe pagina's komen via `sitemap.xml` en de links op de pijler vanzelf bij Google. Daarnaast vraagt Claude **per 5 nieuwe live pagina's** in Search Console "Indexering aanvragen" aan, in het browserpaneel, nadat Jeannot daar zelf heeft ingelogd. Houd in `LOG.md` bij welke URL's al zijn aangevraagd (kolom Indexering).
 - **2026-10-24:** Claude doet de Maps-scan zelf via de browser. Kolommen `posts_laatste_30d` en `fotos_eigen_werk` vervangen door `reageert_op_reviews` en `fotos`, omdat posts en eigen-vs-klantfoto's niet zichtbaar zijn zonder in te loggen. Gesponsorde resultaten tellen niet mee.

@@ -13,6 +13,7 @@
 =========================================================================== */
 import fs from 'node:fs';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 import {
   ROOT, GENERATOR_MARK, PREVIEW_DIR, config, SITE, read, exists, esc, slugify, asParagraphs, euro, datumLeesbaar, today,
   TOKENS, fillTokens, render, loadNiches, loadCities, loadArticles, cityInfo, isExcluded, parseScan, analyseScan,
@@ -134,6 +135,16 @@ const finish = (html) => inlineCss(fillPartials(html));
 const cityTpl = read('seo/templates/city.html');
 const ps = (arr, cls = '') => asParagraphs(arr).map((t) => `<p${cls ? ` class="${cls}"` : ''}>${esc(fillTokens(t))}</p>`).join('\n        ');
 
+// OG-afbeelding per stad (img/og/{niche}-{slug}.jpg); ontbreekt hij, dan maakt og.py hem aan.
+function cityOg(c) {
+  const rel = `img/og/${c.niche}-${slugify(c.slug)}.jpg`;
+  if (!exists(rel)) {
+    try { execFileSync('python', ['seo/scripts/og.py', c.slug], { cwd: ROOT, stdio: 'inherit' }); }
+    catch { errors.push(`${rel} ontbreekt en seo/scripts/og.py kon niet draaien (Python + Pillow nodig)`); }
+  }
+  return `${SITE}/${rel}`;
+}
+
 function buildCity({ c, niche, info, scan, voorbeeld }, isPreview) {
   const faqStad = c.faq_stad.map((f) => ({ vraag: f.vraag, antwoord: fillTokens(f.antwoord) }));
   const faqPool = resolvePool(niche, c.faq_pool);
@@ -152,6 +163,7 @@ function buildCity({ c, niche, info, scan, voorbeeld }, isPreview) {
   return finish(render(cityTpl, {
     ...sharedVars,
     slug: c.slug, title: c.title, meta: c.meta, h1: c.h1, stad: c.stad, canonical: info.canonical,
+    ogImage: cityOg(c),
     robotsMeta: isPreview ? noindex : '',
     voorbeeldBanner: voorbeeld ? voorbeeldBanner : '',
     pijlerUrl: niche.pijlerUrl, pijlerTitel: niche.pijlerTitel, seoPijlerUrl: niche.seoPijlerUrl, nicheMeervoud: niche.meervoud,

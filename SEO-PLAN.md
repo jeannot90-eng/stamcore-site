@@ -35,7 +35,9 @@ Reken op 2–4 maanden voordat er structureel organisch verkeer is.
 6. **Geen dunne duplicaten.** Elke stadspagina moet de kwaliteitscheck (§6) halen, anders wordt hij niet gepubliceerd.
 7. **Uitgesloten steden** (eigen werkgebied en klantregio): Oosterhout, Breda, Dongen, Geertruidenberg, Drimmelen, Etten-Leur, Gilze en Rijen, Amersfoort (en kernen daarbinnen). Maak voor deze plaatsen nooit een stadspagina, tenzij Jeannot dit expliciet wijzigt in `seo/config.json`.
 8. **Prijzen en voorwaarden** altijd uit `seo/config.json`, nooit hardcoded in teksten: website €350 eenmalig + €300/jaar; lokale SEO €199/maand, minimaal 3 maanden, daarna maandelijks opzegbaar met 1 maand opzegtermijn; alle bedragen excl. btw.
-9. Toon: Nederlands, direct, van ondernemer tot ondernemer, vakjargon van glazenwassers mag (rondes, osmose, telescoopsteel, frequentie). Geen bureau-taal.
+9. **Reviews:** Stam Core verstuurt nooit zelf reviewverzoeken naar klanten van klanten; de klant verstuurt ze zelf. Wat we leveren: een vaste reviewlink, een QR-code en een kant-en-klaar appje dat de klant na de ronde zelf verstuurt. *(toegevoegd 2026-10-24)*
+10. **Bronnen:** elk getal en elk historisch of feitelijk gegeven in een stadspagina heeft een bron in het JSON-bestand van die stad (`bronnen`: `{ "feit", "bron" }`). Geen bron = weglaten. *(toegevoegd 2026-10-24)*
+11. Toon: Nederlands, direct, van ondernemer tot ondernemer, vakjargon van glazenwassers mag (rondes, osmose, telescoopsteel, frequentie). Geen bureau-taal.
 
 ---
 

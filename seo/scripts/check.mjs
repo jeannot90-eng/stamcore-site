@@ -26,7 +26,7 @@ for (const c of cities) {
   const n = niches[c.niche]; if (!n) continue;
   const info = cityInfo(c, n);
   const file = c.status === 'live' ? info.file : `${PREVIEW_DIR}/${info.file}`;
-  add(file, 'stad', info.url, { preview: c.status !== 'live', stad: c.stad });
+  add(file, 'stad', info.url, { preview: c.status !== 'live', stad: c.stad, bronnen: Array.isArray(c.bronnen) ? c.bronnen.length : 0 });
   if (c.status === 'live' && !exists(file)) pages.push({ file, type: 'stad', url: info.url, missing: true });
 }
 for (const a of articles) {
@@ -133,6 +133,14 @@ for (const p of pages) {
   for (const v of verboden) if (v && scanText.toLowerCase().includes(v)) fout.push(`verboden woord/frase: "${v}"`);
 
   if (p.type === 'stad' && isExcluded(p.stad)) fout.push(`${p.stad} staat in de uitsluitlijst`);
+  if (p.type === 'stad') {
+    if (/\d/.test(uniqueText(html).replace(/Gemeten op[^.]*\./g, '')) && !p.bronnen) fout.push('bevat getallen, maar "bronnen" in de stads-JSON is leeg');
+    const og = (html.match(/<meta property="og:image" content="([^"]*)"/) || [])[1] || '';
+    const tw = (html.match(/<meta name="twitter:image" content="([^"]*)"/) || [])[1] || '';
+    if (!og.startsWith(`${SITE}/img/og/`)) fout.push(`og:image is geen stads-afbeelding (${og || '—'})`);
+    else if (!exists(og.replace(`${SITE}/`, ''))) fout.push(`og:image-bestand ontbreekt: ${og.replace(`${SITE}/`, '')}`);
+    if (tw !== og) fout.push('twitter:image wijkt af van og:image');
+  }
   if (/VOORBEELDDATA/.test(html)) (p.preview ? waarschuwing : fout).push('bevat VOORBEELDDATA (geen echte Maps-scan)');
   if (p.preview && !/<meta name="robots" content="noindex">/.test(html)) fout.push('concept zonder noindex');
 
