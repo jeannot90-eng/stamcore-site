@@ -22,7 +22,7 @@ export default async (req, context) => {
   }
   const email = String(input.email || '').trim().toLowerCase();
   if (!isEmail(email)) return fail(400, 'Vul een geldig e-mailadres in.');
-  if (input.consent !== true) return fail(400, 'Geef toestemming om je het rapport te sturen en contact op te nemen.');
+  if (input.consent !== true) return fail(400, 'Vink het vakje aan, dan laten we je resultaat zien.');
   let url;
   try { url = normalizeUrl(input.url); } catch (e) { return fail(400, e.message); }
   if (rateLimited(`email:${email}`, 5, 24 * 60 * 60_000)) {
