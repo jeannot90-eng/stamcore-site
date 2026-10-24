@@ -26,7 +26,7 @@ for (const c of cities) {
   const n = niches[c.niche]; if (!n) continue;
   const info = cityInfo(c, n);
   const file = c.status === 'live' ? info.file : `${PREVIEW_DIR}/${info.file}`;
-  add(file, 'stad', info.url, { preview: c.status !== 'live', stad: c.stad, bronnen: Array.isArray(c.bronnen) ? c.bronnen.length : 0 });
+  add(file, 'stad', info.url, { preview: c.status !== 'live', stad: c.stad, wijken: c.wijken || [], bronnen: Array.isArray(c.bronnen) ? c.bronnen.length : 0 });
   if (c.status === 'live' && !exists(file)) pages.push({ file, type: 'stad', url: info.url, missing: true });
 }
 for (const a of articles) {
@@ -133,6 +133,17 @@ for (const p of pages) {
   for (const v of verboden) if (v && scanText.toLowerCase().includes(v)) fout.push(`verboden woord/frase: "${v}"`);
 
   if (p.type === 'stad' && isExcluded(p.stad)) fout.push(`${p.stad} staat in de uitsluitlijst`);
+  // Bronnen horen in de JSON, nooit in de paginatekst.
+  const bronTekst = scanText.match(/volgens wikipedia|wikipedia|\bbron:|\baldus\b/i);
+  if (bronTekst) fout.push(`bronvermelding in de paginatekst: "${bronTekst[0]}" (bronnen alleen in de stads-JSON)`);
+  if (p.type === 'stad') {
+    const kansen = [...html.matchAll(/<li class="flex gap-3"><span class="text-emerald-400">\+<\/span><span>([^<]*)<\/span><\/li>/g)].map((m) => m[1]);
+    // Wijknaam als los woord (dus "Zuid" telt niet mee in "Oud-Zuid").
+    const letter = (ch) => !!ch && /[\p{L}-]/u.test(ch);
+    const noemt = (zin, w) => { let i = zin.indexOf(w); while (i >= 0) { if (!letter(zin[i - 1]) && !letter(zin[i + w.length])) return true; i = zin.indexOf(w, i + 1); } return false; };
+    const metWijk = kansen.filter((k) => p.wijken.some((w) => noemt(k, w)));
+    if (metWijk.length > 1) fout.push(`${metWijk.length} kans-zinnen noemen een wijk (max 1)`);
+  }
   if (p.type === 'stad') {
     if (/\d/.test(uniqueText(html).replace(/Gemeten op[^.]*\./g, '')) && !p.bronnen) fout.push('bevat getallen, maar "bronnen" in de stads-JSON is leeg');
     const og = (html.match(/<meta property="og:image" content="([^"]*)"/) || [])[1] || '';

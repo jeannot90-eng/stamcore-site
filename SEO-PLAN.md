@@ -37,7 +37,9 @@ Reken op 2–4 maanden voordat er structureel organisch verkeer is.
 8. **Prijzen en voorwaarden** altijd uit `seo/config.json`, nooit hardcoded in teksten: website €350 eenmalig + €300/jaar; lokale SEO €199/maand, minimaal 3 maanden, daarna maandelijks opzegbaar met 1 maand opzegtermijn; alle bedragen excl. btw.
 9. **Reviews:** Stam Core verstuurt nooit zelf reviewverzoeken naar klanten van klanten; de klant verstuurt ze zelf. Wat we leveren: een vaste reviewlink, een QR-code en een kant-en-klaar appje dat de klant na de ronde zelf verstuurt. *(toegevoegd 2026-10-24)*
 10. **Bronnen:** elk getal en elk historisch of feitelijk gegeven in een stadspagina heeft een bron in het JSON-bestand van die stad (`bronnen`: `{ "feit", "bron" }`). Geen bron = weglaten. *(toegevoegd 2026-10-24)*
-11. Toon: Nederlands, direct, van ondernemer tot ondernemer, vakjargon van glazenwassers mag (rondes, osmose, telescoopsteel, frequentie). Geen bureau-taal.
+11. **Geen bronvermelding in de paginatekst:** "volgens Wikipedia", "bron:", "aldus" en dergelijke staan nooit op de pagina; bronnen staan alleen in het JSON-bestand van de stad. *(toegevoegd 2026-10-24)*
+12. **FAQ vanuit de glazenwasser:** stads-FAQ's zijn vragen die een glazenwasser aan Stam Core stelt ("Kan mijn werkgebied … mee?"), nooit vragen die klinken alsof Stam Core zelf ramen wast ("Doe je ook …?"). *(toegevoegd 2026-10-24)*
+13. Toon: Nederlands, direct, van ondernemer tot ondernemer, vakjargon van glazenwassers mag (rondes, osmose, telescoopsteel, frequentie). Geen bureau-taal.
 
 ---
 

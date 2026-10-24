@@ -29,13 +29,13 @@
   ],
   "kenmerken": [
     "Het meest opvallende glas van Tilburg staat rond het station. Woontoren Westpoint telt 47 verdiepingen. Daarachter ligt de Spoorzone, het voormalige NS-werkplaatsterrein dat in 2011 openging voor publiek; in de LocHal, een locomotievenhal uit 1932, zit sinds januari 2019 de bibliotheek. Bij zulke gebouwen is je opdrachtgever een beheerder of VvE, niet een bewoner, en je werkt met osmose en een lange telescoopsteel of zwaarder materieel.",
-    "De tweede kant van Tilburg is zakelijk. Op Kraaiven, Loven en Vossenberg zitten honderden bedrijven, met kantoorgevels, showrooms en bedrijfshallen dicht bij elkaar. Dat laat zich goed bundelen tot een vaste zakelijke ronde, los van je particuliere klanten in de wijken. Bedrijven willen meestal vaste dagen en één factuur per maand; dat vraagt een andere planning dan een ronde langs voordeuren.",
+    "De tweede kant van Tilburg is zakelijk. Alleen al op Vossenberg en Kraaiven zitten zo'n 790 bedrijven, en daarnaast is er Loven, met kantoorgevels, showrooms en bedrijfshallen dicht bij elkaar. Dat laat zich goed bundelen tot een vaste zakelijke ronde, los van je particuliere klanten in de wijken. Bedrijven willen meestal vaste dagen en één factuur per maand; dat vraagt een andere planning dan een ronde langs voordeuren.",
     "Wil je in Tilburg groeien, zet dan naast je particuliere rondes een aparte pagina voor VvE's en bedrijven op je site. Een beheerder zoekt anders dan iemand met een rijtjeshuis in de Reeshof."
   ],
   "faq_stad": [
     {
-      "vraag": "Werk je ook voor glazenwassers in Berkel-Enschot en Udenhout?",
-      "antwoord": "Ja. Ze horen bij de gemeente Tilburg, maar mensen zoeken op de naam van hun dorp. Rijd je daar, dan krijgen ze een eigen pagina met de diensten die je daar doet. Biezenmortel kan erbij als je daar klanten hebt."
+      "vraag": "Ik rijd ook in Berkel-Enschot en Udenhout. Kunnen die erbij?",
+      "antwoord": "Zeker. Ze horen bij de gemeente Tilburg, maar bewoners zoeken op de naam van hun dorp. Dan krijgen ze elk een eigen pagina met de diensten die je daar levert, en Biezenmortel kan erbij als je daar klanten hebt."
     },
     {
       "vraag": "Heeft het zin in een stad waar al veel glazenwassers werken?",
@@ -84,7 +84,11 @@
       "bron": "https://nl.wikipedia.org/wiki/Westpoint_(Tilburg)"
     },
     {
-      "feit": "Kraaiven, Loven en Vossenberg zijn bedrijventerreinen van Tilburg; 'honderden bedrijven' zonder getal: geen bron per terrein gevonden (Jeannot: ca. 750–800)",
+      "feit": "Vossenberg/Kraaiven: 787 bedrijven (meldingen in LMA-data), terrein 572,5 ha",
+      "bron": "https://circulair.biz/vossenberg-kraaiven/"
+    },
+    {
+      "feit": "Loven is een bedrijventerrein van Tilburg",
       "bron": "https://nl.wikipedia.org/wiki/Tilburg"
     }
   ],
