@@ -146,6 +146,17 @@ const finish = (html) => inlineCss(fillPartials(html));
 const cityTpl = read('seo/templates/city.html');
 const ps = (arr, cls = '') => asParagraphs(arr).map((t) => `<p${cls ? ` class="${cls}"` : ''}>${esc(fillTokens(t))}</p>`).join('\n        ');
 
+// OG-afbeelding per kennisartikel (img/og/kennis-{slug}.jpg, regels uit frontmatter "og"); zonder "og" de standaard.
+function articleOg(a) {
+  if (!Array.isArray(a.og)) return OG;
+  const rel = `img/og/kennis-${a.slug}.jpg`;
+  if (!exists(rel)) {
+    try { execFileSync('python', ['seo/scripts/og.py', a.slug], { cwd: ROOT, stdio: 'inherit' }); }
+    catch { errors.push(`${rel} ontbreekt en seo/scripts/og.py kon niet draaien (Python + Pillow nodig)`); }
+  }
+  return `${SITE}/${rel}`;
+}
+
 // OG-afbeelding per stad (img/og/{niche}-{slug}.jpg); ontbreekt hij, dan maakt og.py hem aan.
 function cityOg(c) {
   const rel = `img/og/${c.niche}-${slugify(c.slug)}.jpg`;
@@ -295,6 +306,7 @@ function buildArticle(a, isPreview) {
     slug: a.slug, title: a.title, meta: a.meta, h1: a.h1, canonical: a.canonical,
     robotsMeta: isPreview ? noindex : '',
     scanUrl: `/website-scan?bron=kennis-${a.slug}`,
+    ogImage: articleOg(a),
     jsonld: jsonldStr({ '@context': 'https://schema.org', '@graph': graph }),
     pijlerUrl: glazen.pijlerUrl, pijlerTitel: glazen.pijlerTitel, seoPijlerUrl: glazen.seoPijlerUrl, seoPijlerTitel: glazen.seoPijlerTitel,
     auteur: config.bedrijf.eigenaar, dateModified: a.dateModified || a.datePublished, datumLeesbaar: datumLeesbaar(a.dateModified || a.datePublished),

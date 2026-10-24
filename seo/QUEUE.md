@@ -20,7 +20,7 @@ Claude pakt bij "maak de volgende stadspagina" de bovenste stad die nog niet liv
 
 | Type | Slug | Status | Datum |
 |---|---|---|---|
-| artikel | google-bedrijfsprofiel-glazenwasser | klaar-voor-bouw | |
+| artikel | google-bedrijfsprofiel-glazenwasser | live | 2026-10-24 |
 | artikel | meer-reviews-glazenwasser | klaar-voor-bouw | |
 | artikel | wat-kost-website-glazenwasser | klaar-voor-bouw | |
 | artikel | klanten-werven-glazenwasser | klaar-voor-bouw | |

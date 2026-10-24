@@ -8,6 +8,7 @@ build.mjs roept dit script zelf aan als de afbeelding van een stad ontbreekt.
 Lettertype: Segoe UI (Windows), net als de eerdere og-default.jpg.
 """
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -89,6 +90,16 @@ def main(slugs):
         render(f"{word} in {c['stad']}", "— Maps-scan",
                [f"Zo staan de {niche['meervoud']} bovenaan in Google Maps ervoor,", "en waar de ruimte zit voor jouw bedrijf."],
                ROOT / "img" / "og" / f"{c['niche']}-{c['slug']}.jpg")
+    # Kennisartikelen: regels uit de frontmatter "og: [regel1, regel2, sub1, sub2]" -> img/og/kennis-{slug}.jpg
+    for f in sorted((ROOT / "seo" / "articles").glob("*.md")):
+        slug = f.stem
+        if f.name.startswith("_") or (slugs and slug not in slugs):
+            continue
+        m = re.search(r"^og:\s*(\[.*\])\s*$", f.read_text(encoding="utf-8"), re.M)
+        if not m:
+            continue
+        r1, r2, *sub = json.loads(m.group(1))
+        render(r1, r2, sub, ROOT / "img" / "og" / f"kennis-{slug}.jpg")
 
 
 if __name__ == "__main__":
