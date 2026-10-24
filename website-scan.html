@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gratis website-scan voor servicebedrijven | Stam Core</title>
+<meta name="description" content="Ontdek in een minuut wat jouw website laat liggen: snelheid, vindbaarheid in Google en de belangrijkste verbeterpunten in gewone taal. Gratis scan.">
+<meta name="theme-color" content="#020617">
+<link rel="canonical" href="https://stam-core.nl/website-scan">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/favicon.svg">
+
+<meta property="og:title" content="Gratis website-scan | Stam Core">
+<meta property="og:description" content="Ontdek wat jouw website laat liggen: snelheid, vindbaarheid en de belangrijkste verbeterpunten in gewone taal.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://stam-core.nl/website-scan">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:image" content="https://stam-core.nl/img/og-default.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gratis website-scan | Stam Core">
+<meta name="twitter:description" content="Ontdek wat jouw website laat liggen, in gewone taal.">
+<meta name="twitter:image" content="https://stam-core.nl/img/og-default.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://stam-core.nl/website-scan#tool",
+      "name": "Gratis website-scan",
+      "url": "https://stam-core.nl/website-scan",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "provider": { "@id": "https://stam-core.nl/#organization" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stam-core.nl/" },
+        { "@type": "ListItem", "position": 2, "name": "Gratis website-scan", "item": "https://stam-core.nl/website-scan" }
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="/assets/app.css">
+<style>
+  html { -webkit-font-smoothing: antialiased; }
+  body { background-color: #020617; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  .glow-grid {
+    background-image:
+      radial-gradient(60rem 40rem at 50% -10%, rgba(14,165,233,.16), transparent 60%),
+      radial-gradient(40rem 30rem at 85% 10%, rgba(16,185,129,.10), transparent 60%);
+  }
+  .hairline { background: linear-gradient(90deg, transparent, rgba(148,163,184,.25), transparent); }
+  .card-sheen { background:
+      linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0)),
+      rgba(15,23,42,.55); }
+  .spin { animation: spin 1s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .spin { animation: none; } }
+</style>
+</head>
+
+<body class="font-sans text-slate-200 antialiased selection:bg-electric-500/30 selection:text-white">
+
+<!-- partial:header --><!-- /partial:header -->
+
+<main>
+<!-- ================= HERO + FORMULIER ================= -->
+<section class="glow-grid relative overflow-hidden pt-40 pb-16 sm:pt-48 sm:pb-20">
+  <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,transparent,#020617)]"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <nav aria-label="Broodkruimel" class="text-center text-sm text-slate-400">
+      <a href="/" class="transition hover:text-white">Home</a> <span class="px-1 text-slate-600">/</span> <span class="text-slate-300">Gratis website-scan</span>
+    </nav>
+    <div class="mx-auto mt-6 max-w-3xl text-center">
+      <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-slate-300">
+        <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+        Gratis &middot; in ongeveer een minuut
+      </span>
+      <h1 class="mt-7 font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl">
+        Ontdek wat jouw website <span class="bg-gradient-to-r from-electric-400 to-emerald-400 bg-clip-text text-transparent">laat liggen</span>
+      </h1>
+      <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-300 sm:text-xl">
+        Vul je webadres in. We meten de snelheid op mobiel en desktop, kijken of Google je homepage
+        goed kan lezen en zetten de belangrijkste verbeterpunten op een rij — in gewone taal.
+      </p>
+    </div>
+
+    <div class="mx-auto mt-10 max-w-2xl rounded-3xl border border-white/10 bg-slate-950/60 p-6 sm:p-8" data-scan-form-wrap>
+      <form class="space-y-5" data-scan-form novalidate>
+        <div>
+          <label for="scan-url" class="block text-sm font-medium text-slate-300">Je website</label>
+          <input id="scan-url" name="url" type="text" inputmode="url" autocomplete="url" required placeholder="jouwbedrijf.nl" class="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-slate-500 outline-none transition focus:border-electric-500/50 focus:ring-2 focus:ring-electric-500/20">
+        </div>
+        <div>
+          <label for="scan-email" class="block text-sm font-medium text-slate-300">Je e-mailadres</label>
+          <input id="scan-email" name="email" type="email" autocomplete="email" required placeholder="jij@bedrijf.nl" class="mt-2 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-slate-500 outline-none transition focus:border-electric-500/50 focus:ring-2 focus:ring-electric-500/20">
+          <p class="mt-2 text-xs text-slate-400">Het rapport verschijnt direct hier op de pagina.</p>
+        </div>
+        <!-- Honeypot: mensen zien dit veld niet, bots vullen het in -->
+        <div class="hidden" aria-hidden="true">
+          <label>Laat dit veld leeg <input type="text" name="bedrijfsnaam_extra" tabindex="-1" autocomplete="off"></label>
+        </div>
+        <label class="flex cursor-pointer items-start gap-3 text-sm text-slate-300">
+          <input type="checkbox" name="consent" required class="mt-0.5 h-4 w-4 shrink-0 accent-electric-500">
+          <span>Stam Core mag mijn gegevens gebruiken om me de uitkomst te sturen en contact op te nemen over de verbeterpunten. Zie de <a href="/privacy.html" class="text-slate-200 underline transition hover:text-white">privacyverklaring</a>.</span>
+        </label>
+        <button type="submit" class="group inline-flex w-full items-center justify-center gap-2 rounded-xl bg-electric-500 px-6 py-4 text-base font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-400 disabled:cursor-wait disabled:opacity-70" data-scan-submit>
+          Scan mijn website
+          <svg class="h-4 w-4 transition group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m0 0l-6-6m6 6l-6 6"/></svg>
+        </button>
+        <p class="hidden rounded-lg border border-rose-500/30 bg-rose-500/10 px-4 py-3 text-sm text-rose-200" data-scan-error role="alert"></p>
+      </form>
+
+      <!-- Laadindicator -->
+      <div class="hidden" data-scan-loading aria-live="polite">
+        <p class="font-display text-lg font-semibold text-white">Bezig met scannen van <span class="text-electric-400" data-scan-host></span></p>
+        <p class="mt-1 text-sm text-slate-400">Dit duurt meestal 30 tot 60 seconden. Laat deze pagina open.</p>
+        <ul class="mt-6 space-y-3 text-sm">
+          <li class="flex items-center gap-3" data-step="home"><span data-step-icon></span><span>Homepage ophalen en controleren</span></li>
+          <li class="flex items-center gap-3" data-step="mobile"><span data-step-icon></span><span>Snelheid meten op mobiel</span></li>
+          <li class="flex items-center gap-3" data-step="desktop"><span data-step-icon></span><span>Snelheid meten op desktop</span></li>
+          <li class="flex items-center gap-3" data-step="report"><span data-step-icon></span><span>Verbeterpunten op een rij zetten</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RAPPORT ================= -->
+<section class="relative hidden pb-20" data-scan-report aria-live="polite">
+  <div class="mx-auto max-w-5xl px-6">
+    <div class="rounded-3xl border border-white/10 bg-slate-950/60 p-6 sm:p-10">
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-electric-400">Scan-rapport</p>
+      <h2 class="mt-2 break-all font-display text-2xl font-bold text-white sm:text-3xl" data-report-host></h2>
+      <p class="mt-2 text-sm text-slate-400" data-report-date></p>
+
+      <!-- Scores -->
+      <h3 class="mt-10 font-display text-lg font-semibold text-white">Scores van Google PageSpeed</h3>
+      <div class="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5" data-report-scores></div>
+      <div class="mt-3 grid gap-3 sm:grid-cols-2" data-report-vitals></div>
+      <p class="mt-3 hidden text-sm text-amber-200" data-report-psi-note></p>
+
+      <!-- Verbeterpunten -->
+      <h3 class="mt-12 font-display text-lg font-semibold text-white">De belangrijkste verbeterpunten</h3>
+      <ol class="mt-4 space-y-4" data-report-findings></ol>
+
+      <!-- On-page checklist -->
+      <h3 class="mt-12 font-display text-lg font-semibold text-white">Wat we op je homepage hebben gecontroleerd</h3>
+      <ul class="mt-4 grid gap-2 sm:grid-cols-2" data-report-checks></ul>
+
+      <!-- CTA -->
+      <div class="mt-12 overflow-hidden rounded-2xl border border-electric-500/30 bg-gradient-to-br from-electric-500/10 to-emerald-500/5 p-6 sm:p-8">
+        <h3 class="font-display text-2xl font-bold text-white">Laat Stam Core dit oppakken</h3>
+        <p class="mt-3 text-slate-300">We lopen de punten graag met je door en vertellen eerlijk wat het meeste oplevert. Vrijblijvend, van ondernemer tot ondernemer.</p>
+        <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+          <a href="#" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-xl bg-electric-500 px-6 py-3.5 font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-400" data-cta-whatsapp>
+            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.157 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.207z"/></svg>
+            App via WhatsApp
+          </a>
+          <a href="/#contact" class="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-6 py-3.5 font-semibold text-white transition hover:bg-white/10">Plan een gesprek</a>
+          <a href="tel:+31162560125" class="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/5 px-6 py-3.5 font-semibold text-white transition hover:bg-white/10">Bel 0162 560 125</a>
+        </div>
+      </div>
+      <p class="mt-6 text-xs text-slate-500">Deze scan bekijkt alleen je homepage en geeft een eerste indruk. Een volledige analyse gaat dieper: alle pagina's, je Google Bedrijfsprofiel en je concurrenten in Maps.</p>
+      <button type="button" class="mt-4 text-sm font-semibold text-electric-400 transition hover:text-white" data-scan-again>Nog een website scannen &rarr;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WAT WE CHECKEN ================= -->
+<section class="relative py-20 sm:py-24" data-scan-info>
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <span class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-electric-400">Wat we checken</span>
+      <h2 class="reveal mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Drie dingen die bepalen of je gevonden en gekozen wordt</h2>
+    </div>
+    <div class="mt-14 grid gap-6 md:grid-cols-3">
+      <div class="reveal rounded-3xl border border-white/5 card-sheen p-8">
+        <h3 class="font-display text-xl font-bold text-white">Snelheid</h3>
+        <p class="mt-3 text-slate-400">Hoe snel laadt je site op een telefoon en op een computer? We meten het met Google PageSpeed, dezelfde meting die Google zelf gebruikt.</p>
+      </div>
+      <div class="reveal rounded-3xl border border-white/5 card-sheen p-8">
+        <h3 class="font-display text-xl font-bold text-white">Vindbaarheid</h3>
+        <p class="mt-3 text-slate-400">Title, beschrijving, kop, bedrijfsgegevens voor Google (schema.org) en meer: kan Google lezen wat je doet en waar?</p>
+      </div>
+      <div class="reveal rounded-3xl border border-white/5 card-sheen p-8">
+        <h3 class="font-display text-xl font-bold text-white">Vertrouwen</h3>
+        <p class="mt-3 text-slate-400">Beveiligde verbinding, mobielvriendelijk en makkelijk contact opnemen. Dingen die bepalen of een bezoeker belt of doorklikt naar de volgende.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- partial:footer --><!-- /partial:footer -->
+
+<!-- partial:scripts --><!-- /partial:scripts -->
+
+<script>
+(() => {
+  const $ = (sel, root = document) => root.querySelector(sel);
+  const form = $('[data-scan-form]');
+  const startedAt = Date.now();
+  const errBox = $('[data-scan-error]');
+  const loading = $('[data-scan-loading]');
+  const report = $('[data-scan-report]');
+
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+  const ICON = {
+    wait: '<span class="block h-5 w-5 rounded-full border-2 border-white/15"></span>',
+    busy: '<svg class="spin h-5 w-5 text-electric-400" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-opacity=".25" stroke-width="3"/><path d="M21 12a9 9 0 00-9-9" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>',
+    done: '<svg class="h-5 w-5 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>',
+    fail: '<svg class="h-5 w-5 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v5m0 3h.01"/></svg>',
+  };
+  const setStep = (name, state) => { const s = $(`[data-step="${name}"] [data-step-icon]`, loading); if (s) s.innerHTML = ICON[state]; };
+
+  function showError(msg) { errBox.textContent = msg; errBox.classList.remove('hidden'); }
+
+  async function api(path, opts = {}) {
+    const res = await fetch(path, opts);
+    let data = {};
+    try { data = await res.json(); } catch { /* geen JSON */ }
+    if (!res.ok || data.ok === false) throw new Error(data.error || 'Er ging iets mis. Probeer het opnieuw.');
+    return data;
+  }
+
+  // ── Stoplichten ──────────────────────────────────────────────────────
+  const tone = (v) => v == null ? 'none' : v >= 90 ? 'good' : v >= 50 ? 'mid' : 'bad';
+  const TONE = {
+    good: { box: 'border-emerald-400/30 bg-emerald-400/10', dot: 'bg-emerald-400', text: 'text-emerald-300', label: 'Goed' },
+    mid: { box: 'border-amber-400/30 bg-amber-400/10', dot: 'bg-amber-400', text: 'text-amber-300', label: 'Kan beter' },
+    bad: { box: 'border-rose-500/30 bg-rose-500/10', dot: 'bg-rose-400', text: 'text-rose-300', label: 'Slecht' },
+    none: { box: 'border-white/10 bg-white/5', dot: 'bg-slate-600', text: 'text-slate-400', label: 'Niet gemeten' },
+  };
+  function scoreCard(label, value) {
+    const t = TONE[tone(value)];
+    const card = el('div', `rounded-xl border px-4 py-4 ${t.box}`);
+    const top = el('div', 'flex items-center gap-2');
+    top.append(el('span', `h-2.5 w-2.5 rounded-full ${t.dot}`), el('span', `text-xs font-medium ${t.text}`, t.label));
+    card.append(top, el('p', 'mt-2 font-display text-3xl font-bold text-white', value == null ? '–' : String(value)), el('p', 'mt-1 text-xs text-slate-400', label));
+    return card;
+  }
+  function vitalCard(label, display, state, explain) {
+    const t = TONE[state];
+    const card = el('div', `flex items-start gap-3 rounded-xl border px-4 py-3 ${t.box}`);
+    card.append(el('span', `mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full ${t.dot}`));
+    const txt = el('div');
+    txt.append(el('p', 'text-sm text-white', `${label}: ${display || '–'}`), el('p', 'text-xs text-slate-400', explain));
+    card.append(txt);
+    return card;
+  }
+
+  // ── Verbeterpunten in gewone taal ──────────────────────────────────────
+  function buildFindings(op, fetchError, mob, desk) {
+    const f = [];
+    const add = (impact, title, why, fix) => f.push({ impact, title, why, fix });
+    if (fetchError) add(10, 'We konden je homepage niet goed ophalen', `${fetchError} Als onze scanner de site niet kan laden, lukt dat Google of een bezoeker soms ook niet. Elke bezoeker die een foutmelding ziet, belt de concurrent.`, 'Hosting, domein en certificaat laten nalopen.');
+    const ms = mob?.ok ? mob.scores : null;
+    const ds = desk?.ok ? desk.scores : null;
+    if (op) {
+      if (op.noindex) add(10, 'Je homepage staat op "noindex": Google mag hem niet tonen', 'Met noindex vraag je Google letterlijk om de pagina níet in de zoekresultaten te zetten. Zolang dit erop staat, ben je onvindbaar.', 'Noindex weghalen (vaak een vergeten vinkje in WordPress).');
+      if (!op.https) add(9, 'Geen beveiligde verbinding (https)', 'Chrome toont "Niet veilig" naast je adres. Bezoekers haken af, zeker bij een contactformulier, en Google rankt onveilige sites lager.', 'Gratis SSL-certificaat activeren en alles naar https laten doorsturen.');
+      if (!op.viewport) add(9, 'Je site is niet ingesteld voor mobiel', 'Op een telefoon verschijnt je site als piepklein desktopscherm. Bezoekers moeten inzoomen en haken af, en Google kijkt eerst naar de mobiele versie.', 'De site responsive maken (viewport + mobiele opmaak).');
+      if (!op.titleLength) add(9, 'Je homepage heeft geen title', 'De title is de blauwe kop in Google. Zonder title verzint Google zelf iets en mis je je beste kans om je dienst en plaats te noemen.', 'Een title als "[Dienst] in [Plaats] | [Bedrijfsnaam]".');
+      else if (op.titleLength > 60 || op.titleLength < 30) add(4, `Je title is ${op.titleLength > 60 ? 'te lang' : 'te kort'} (${op.titleLength} tekens)`, 'Een te lange title wordt afgekapt in Google, een te korte laat kansen liggen om op dienst en plaats gevonden te worden.', 'Een title van 30–60 tekens, met dienst en plaats vooraan.');
+      if (!op.descriptionLength) add(6, 'Je homepage heeft geen meta description', 'Dat is het stukje tekst onder je kop in Google. Zonder kiest Google een willekeurig stuk tekst en klikken minder mensen door.', 'Een wervende beschrijving van 120–155 tekens met dienst, plaats en een reden om te klikken.');
+      if (op.h1Count === 0) add(5, 'Je homepage heeft geen hoofdkop (H1)', 'De H1 vertelt Google en de bezoeker in één zin waar de pagina over gaat. Zonder is minder duidelijk dat jij die dienst in die plaats levert.', 'Eén duidelijke kop, bijvoorbeeld "Glazenwasser in Tilburg".');
+      else if (op.h1Count > 1) add(2, `Je homepage heeft ${op.h1Count} hoofdkoppen (H1)`, 'Meerdere hoofdkoppen maken minder duidelijk wat het hoofdonderwerp is.', 'Eén H1 houden, de rest een tussenkop (H2) maken.');
+      if (!op.hasLocalSchema) add(6, 'Google krijgt je bedrijfsgegevens niet "op een presenteerblaadje"', 'Met schema.org-gegevens (LocalBusiness) geef je Google je naam, adres, telefoon en werkgebied in een vorm die het direct begrijpt. Dat helpt in de lokale resultaten en Maps.', 'LocalBusiness-gegevens toevoegen, gelijk aan je Google Bedrijfsprofiel.');
+      if (op.wordCount < 300) add(6, `Weinig tekst op je homepage (±${op.wordCount} woorden)`, 'Google moet kunnen lezen wat je doet, waar en voor wie. Met een paar zinnen heb je te weinig om op te scoren tegen concurrenten met uitgebreide pagina\'s.', 'De homepage uitbreiden: diensten, werkgebied, werkwijze, veelgestelde vragen en reviews.');
+      if (!op.contact.tel && !op.contact.whatsapp) add(5, 'Geen klikbaar telefoonnummer of WhatsApp-knop', 'Bij lokale diensten bellen of appen de meeste mensen direct vanaf hun telefoon. Moet iemand een nummer overtikken, dan is die klant vaak al weg.', 'Een klikbaar nummer en een WhatsApp-knop bovenin en onderaan.');
+      if (op.altCoverage != null && op.altCoverage < 90) add(op.altCoverage < 60 ? 4 : 3, `Afbeeldingen zonder omschrijving (${op.altCoverage}% heeft een alt-tekst)`, 'Google kan foto\'s niet "zien". Een korte omschrijving (alt-tekst) vertelt wat erop staat en helpt je gevonden te worden in Google Afbeeldingen.', 'Elke inhoudelijke foto een korte omschrijving geven.');
+      if (!op.canonical) add(3, 'Geen canonical-tag', 'Zonder canonical kan Google meerdere varianten van dezelfde pagina zien (met of zonder www) en de waarde verdelen.', 'Op elke pagina een canonical naar zichzelf zetten.');
+      if (!op.openGraph) add(3, 'Gedeelde links tonen geen nette preview', 'Deel je je site via WhatsApp of Facebook, dan verschijnt er een kale link zonder foto. Juist mond-tot-mond via WhatsApp is lokaal belangrijk.', 'Een deelafbeelding en -tekst instellen (Open Graph).');
+    }
+    if (ms && ms.performance != null && ms.performance < 90) add(ms.performance < 50 ? 9 : 6, `Je site is traag op mobiel (PageSpeed ${ms.performance}/100)`, 'De meeste mensen zoeken een lokaal bedrijf op hun telefoon. Bij elke extra seconde laadtijd haken bezoekers af, en Google laat snelheid meewegen.', 'Afbeeldingen verkleinen (WebP), overbodige scripts en plugins weg, caching aan.');
+    if (ds && ds.performance != null && ds.performance < 50) add(4, `Ook op desktop traag (PageSpeed ${ds.performance}/100)`, 'Zelfs op een snelle computer moet de bezoeker wachten. Geen goede eerste indruk.', 'Zelfde aanpak als mobiel: zware afbeeldingen en scripts aanpakken.');
+    if (mob?.ok && mob.lcp?.ms > 4000) add(6, `Het belangrijkste beeld verschijnt pas na ${mob.lcp.display} op mobiel`, 'Zolang het grootste stuk van de pagina niet zichtbaar is, ziet de bezoeker een lege of halve pagina. Google wil dit onder de 2,5 seconde.', 'De grootste afbeelding of kop sneller laten laden (kleiner bestand, eerder inladen).');
+    if (mob?.ok && mob.cls?.value > 0.25) add(4, 'De pagina verspringt tijdens het laden', 'Knoppen en tekst schuiven op terwijl de pagina laadt. Bezoekers klikken mis en raken geïrriteerd.', 'Vaste afmetingen geven aan afbeeldingen, banners en lettertypes.');
+    if (ms && ms.seo != null && ms.seo < 80) add(5, `Google's eigen SEO-check scoort ${ms.seo}/100`, 'Google vindt technische basisdingen die ontbreken of niet kloppen. Dat zijn vaak snelle winstpunten.', 'De SEO-punten uit PageSpeed één voor één oplossen.');
+    if (ms && ms.accessibility != null && ms.accessibility < 70) add(3, `Slecht leesbaar of bruikbaar voor een deel van je bezoekers (${ms.accessibility}/100)`, 'Te weinig contrast, te kleine knoppen of ontbrekende labels maken de site lastig, vooral op een telefoon en voor oudere bezoekers.', 'Contrast, knopgroottes en labels verbeteren.');
+    return f.sort((a, b) => b.impact - a.impact).slice(0, 5);
+  }
+
+  function renderChecks(op) {
+    const list = $('[data-report-checks]');
+    list.textContent = '';
+    if (!op) { list.append(el('li', 'text-sm text-slate-400', 'De homepage kon niet worden opgehaald, dus deze checks zijn overgeslagen.')); return; }
+    const rows = [
+      ['Beveiligde verbinding (https)', op.https, op.https ? 'Ja' : 'Nee'],
+      ['Mobielvriendelijk ingesteld (viewport)', op.viewport, op.viewport ? 'Ja' : 'Nee'],
+      ['Title', op.titleLength >= 30 && op.titleLength <= 60, op.titleLength ? `${op.titleLength} tekens` : 'Ontbreekt'],
+      ['Meta description', op.descriptionLength >= 70 && op.descriptionLength <= 160, op.descriptionLength ? `${op.descriptionLength} tekens` : 'Ontbreekt'],
+      ['Eén hoofdkop (H1)', op.h1Count === 1, `${op.h1Count} gevonden`],
+      ['Canonical-tag', !!op.canonical, op.canonical ? 'Aanwezig' : 'Ontbreekt'],
+      ['Bedrijfsgegevens voor Google (schema.org)', op.hasLocalSchema, op.hasLocalSchema ? 'Aanwezig' : (op.schemaTypes.length ? 'Alleen algemeen' : 'Ontbreekt')],
+      ['Alt-teksten bij afbeeldingen', op.altCoverage == null || op.altCoverage >= 90, op.altCoverage == null ? 'Geen afbeeldingen' : `${op.altCoverage}%`],
+      ['Klikbaar telefoonnummer of WhatsApp', op.contact.tel || op.contact.whatsapp, op.contact.tel || op.contact.whatsapp ? 'Ja' : 'Nee'],
+      ['Mag in Google (geen noindex)', !op.noindex, op.noindex ? 'Nee' : 'Ja'],
+    ];
+    for (const [label, good, val] of rows) {
+      const li = el('li', `flex items-center justify-between gap-3 rounded-lg border px-4 py-3 text-sm ${good ? 'border-white/5 bg-white/5' : 'border-rose-500/20 bg-rose-500/5'}`);
+      const left = el('span', 'flex items-center gap-2 text-slate-200');
+      left.append(el('span', good ? 'text-emerald-400' : 'text-rose-400', good ? '✓' : '✗'), el('span', '', label));
+      li.append(left, el('span', 'shrink-0 text-xs text-slate-400', val));
+      list.append(li);
+    }
+  }
+
+  function renderScores(mob, desk) {
+    const wrap = $('[data-report-scores]');
+    wrap.textContent = '';
+    const ms = mob?.ok ? mob.scores : {}, ds = desk?.ok ? desk.scores : {};
+    wrap.append(
+      scoreCard('Snelheid mobiel', ms.performance ?? null),
+      scoreCard('Snelheid desktop', ds.performance ?? null),
+      scoreCard('SEO', ms.seo ?? ds.seo ?? null),
+      scoreCard('Toegankelijkheid', ms.accessibility ?? ds.accessibility ?? null),
+      scoreCard('Best practices', ms.bestPractices ?? ds.bestPractices ?? null),
+    );
+    const vit = $('[data-report-vitals]');
+    vit.textContent = '';
+    if (mob?.ok) {
+      const l = mob.lcp?.ms, c = mob.cls?.value;
+      vit.append(
+        vitalCard('Laadtijd hoofdbeeld (LCP, mobiel)', mob.lcp?.display, l == null ? 'none' : l <= 2500 ? 'good' : l <= 4000 ? 'mid' : 'bad', 'Hoe lang het duurt voor het grootste deel van de pagina zichtbaar is. Doel: onder 2,5 s.'),
+        vitalCard('Verspringen tijdens laden (CLS, mobiel)', mob.cls?.display, c == null ? 'none' : c <= 0.1 ? 'good' : c <= 0.25 ? 'mid' : 'bad', 'Hoeveel de pagina verschuift tijdens het laden. Doel: onder 0,1.'),
+      );
+    }
+    const note = $('[data-report-psi-note]');
+    const errs = [mob, desk].filter((r) => r && !r.ok).map((r) => r.error);
+    note.classList.toggle('hidden', !errs.length);
+    note.textContent = errs.length ? `Niet alle snelheidsmetingen zijn gelukt: ${errs[0]} De rest van het rapport klopt wel.` : '';
+  }
+
+  function renderFindings(list) {
+    const ol = $('[data-report-findings]');
+    ol.textContent = '';
+    if (!list.length) { ol.append(el('li', 'rounded-xl border border-emerald-400/20 bg-emerald-400/5 px-5 py-4 text-slate-200', 'Netjes! We vonden geen grote problemen op je homepage. De winst zit dan meestal in meer pagina\'s per dienst en plaats, en in reviews.')); return; }
+    list.forEach((f, i) => {
+      const li = el('li', 'rounded-xl border border-white/10 bg-white/5 p-5');
+      const head = el('div', 'flex items-start gap-3');
+      head.append(el('span', 'grid h-7 w-7 shrink-0 place-items-center rounded-full bg-electric-500/15 font-display text-sm font-bold text-electric-400', String(i + 1)), el('p', 'font-semibold text-white', f.title));
+      const body = el('div', 'mt-2 space-y-1 pl-10 text-sm');
+      body.append(el('p', 'text-slate-300', f.why), el('p', 'text-slate-400', `Oplossing: ${f.fix}`));
+      li.append(head, body);
+      ol.append(li);
+    });
+  }
+
+  function resetUi() {
+    report.classList.add('hidden');
+    loading.classList.add('hidden');
+    form.classList.remove('hidden');
+    $('[data-scan-submit]').disabled = false;
+  }
+  $('[data-scan-again]').addEventListener('click', () => { resetUi(); $('[data-scan-form-wrap]').scrollIntoView({ behavior: 'smooth', block: 'center' }); });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    errBox.classList.add('hidden');
+    const fd = new FormData(form);
+    const url = String(fd.get('url') || '').trim();
+    const email = String(fd.get('email') || '').trim();
+    if (!url) return showError('Vul het adres van je website in.');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return showError('Vul een geldig e-mailadres in, dan kunnen we je het rapport sturen.');
+    if (!fd.get('consent')) return showError('Vink het vakje aan, dan sturen we je de uitkomst.');
+
+    $('[data-scan-submit]').disabled = true;
+    let start;
+    try {
+      start = await api('/api/scan/start', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url, email, consent: true, bedrijfsnaam_extra: fd.get('bedrijfsnaam_extra') || '', startedAt }),
+      });
+    } catch (err) {
+      $('[data-scan-submit]').disabled = false;
+      return showError(err.message);
+    }
+
+    // Laadscherm
+    const host = new URL(start.url).hostname;
+    $('[data-scan-host]').textContent = host;
+    form.classList.add('hidden');
+    loading.classList.remove('hidden');
+    ['home', 'mobile', 'desktop', 'report'].forEach((s) => setStep(s, 'wait'));
+    setStep('home', start.onpage ? 'done' : 'fail');
+    setStep('mobile', 'busy'); setStep('desktop', 'busy');
+
+    const psi = (strategy) => api(`/api/scan/psi?strategy=${strategy}`, { headers: { 'X-Scan-Token': start.token } })
+      .then((r) => { setStep(strategy, r.ok ? 'done' : 'fail'); return r; })
+      .catch((err) => { setStep(strategy, 'fail'); return { ok: false, error: err.message }; });
+    const [mob, desk] = await Promise.all([psi('mobile'), psi('desktop')]);
+
+    setStep('report', 'busy');
+    const findings = buildFindings(start.onpage, start.fetchError, mob, desk);
+    $('[data-report-host]').textContent = host;
+    $('[data-report-date]').textContent = 'Gescand op ' + new Date().toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' });
+    renderScores(mob, desk);
+    renderFindings(findings);
+    renderChecks(start.onpage);
+    const wa = `Hoi Jeannot, ik heb net de website-scan gedaan voor ${host}. Kun je kijken wat jullie hiermee kunnen?`;
+    $('[data-cta-whatsapp]').href = 'https://wa.me/31162560125?text=' + encodeURIComponent(wa);
+    setStep('report', 'done');
+
+    loading.classList.add('hidden');
+    report.classList.remove('hidden');
+    report.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Scores bij de lead zetten (fire-and-forget)
+    fetch('/api/scan/complete', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token: start.token, mobile: mob, desktop: desk, findings: findings.map((f) => f.title) }),
+      keepalive: true,
+    }).catch(() => {});
+  });
+})();
+</script>
+</body>
+</html>
