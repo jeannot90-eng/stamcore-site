@@ -198,6 +198,15 @@
   </div>
 </section>
 
+<!-- Netlify Forms: dit verborgen formulier laat Netlify het formulier "website-scan" herkennen bij de
+     deploy. De pagina verstuurt de lead via JavaScript; submission-created stuurt hem door naar de cockpit. -->
+<form name="website-scan" data-netlify="true" netlify-honeypot="bedrijfsnaam_extra" hidden>
+  <input type="text" name="naam"><input type="email" name="email"><input type="text" name="bedrijf">
+  <input type="text" name="website"><input type="text" name="interesse"><input type="text" name="herkomst">
+  <input type="text" name="score_mobiel"><input type="text" name="score_desktop"><input type="text" name="score_seo">
+  <textarea name="bericht"></textarea><input type="text" name="bedrijfsnaam_extra">
+</form>
+
 <!-- ================= RAPPORT ================= -->
 <section class="relative hidden pb-20" data-scan-report aria-live="polite">
   <div class="mx-auto max-w-5xl px-6">
@@ -381,6 +390,19 @@
 
   function showError(msg) { errBox.textContent = msg; errBox.classList.remove('hidden'); }
 
+  // ── Lead naar Netlify Forms (één inzending per scan) ─────────────────────
+  // Verstuurd zodra het rapport klaar is; sluit de bezoeker eerder af, dan alsnog via sendBeacon.
+  let lead = null;
+  let leadSent = false;
+  function sendLead(viaBeacon) {
+    if (!lead || leadSent) return;
+    leadSent = true;
+    const body = new URLSearchParams({ 'form-name': 'website-scan', ...lead });
+    if (viaBeacon && navigator.sendBeacon) { navigator.sendBeacon('/', body); return; }
+    fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body.toString(), keepalive: true }).catch(() => {});
+  }
+  addEventListener('pagehide', () => sendLead(true));
+
   async function api(path, opts = {}) {
     const res = await fetch(path, opts);
     let data = {};
@@ -547,6 +569,17 @@
 
     // Laadscherm
     const host = new URL(start.url).hostname;
+    leadSent = false;
+    lead = {
+      naam: host,
+      email,
+      bedrijf: host,
+      website: start.url,
+      interesse: 'Website-scan',
+      herkomst: typeof window.stamcoreHerkomst === 'function' ? window.stamcoreHerkomst() : '',
+      bericht: `Website-scan van ${start.url} (rapport niet afgewacht).`,
+      bedrijfsnaam_extra: String(fd.get('bedrijfsnaam_extra') || ''),
+    };
     $('[data-scan-host]').textContent = host;
     form.classList.add('hidden');
     loading.classList.remove('hidden');
@@ -575,13 +608,21 @@
     report.classList.remove('hidden');
     report.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-    // Scores bij de lead zetten (fire-and-forget)
-    fetch('/api/scan/complete', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ token: start.token, mobile: mob, desktop: desk, findings: findings.map((f) => f.title) }),
-      keepalive: true,
-    }).catch(() => {});
+    // Lead met scores naar Netlify Forms
+    const ms = mob?.ok ? mob.scores : {}, ds = desk?.ok ? desk.scores : {};
+    const v = (x) => (x == null ? '–' : String(x));
+    Object.assign(lead, {
+      score_mobiel: v(ms.performance),
+      score_desktop: v(ds.performance),
+      score_seo: v(ms.seo ?? ds.seo),
+      bericht: [
+        `Website-scan via stam-core.nl/website-scan van ${start.url}`,
+        `PageSpeed mobiel ${v(ms.performance)}, desktop ${v(ds.performance)}, SEO ${v(ms.seo ?? ds.seo)}, toegankelijkheid ${v(ms.accessibility ?? ds.accessibility)}, best practices ${v(ms.bestPractices ?? ds.bestPractices)}`,
+        start.fetchError ? `Homepage: ${start.fetchError}` : '',
+        findings.length ? 'Belangrijkste verbeterpunten:\n' + findings.map((f, i) => `${i + 1}. ${f.title}`).join('\n') : 'Geen grote verbeterpunten gevonden.',
+      ].filter(Boolean).join('\n'),
+    });
+    sendLead(false);
   });
 })();
 </script>

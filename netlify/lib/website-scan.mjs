@@ -1,16 +1,12 @@
 /* ===========================================================================
    Gedeelde code voor de publieke Website-Scan (/website-scan).
-   Gebruikt door netlify/functions/scan-start.mjs en scan-complete.mjs. De PageSpeed-meting
+   Gebruikt door netlify/functions/scan-start.mjs. De PageSpeed-meting
    draait als Edge Function (netlify/edge-functions/scan-psi.js) vanwege de tijdslimiet.
    Geen npm-dependencies: alleen Node 18+ (fetch, crypto, dns).
 
    Environment variables (Netlify → Site configuration → Environment variables):
-     PAGESPEED_API_KEY     Google PageSpeed Insights API-key
-     BREVO_API_KEY         Brevo API-key (v3)
-     BREVO_LIST_ID         ID van de Brevo-lijst waar leads in komen (getal)
      SCAN_TOKEN_SECRET     lange willekeurige string; ondertekent de scan-token
-     LEAD_NOTIFY_EMAIL     (optioneel) jouw adres voor een notificatie per lead
-     BREVO_SENDER_EMAIL    (optioneel) geverifieerd afzenderadres in Brevo voor die notificatie
+     PAGESPEED_API_KEY     (alleen in de Edge Function scan-psi) Google PageSpeed-key
 =========================================================================== */
 import crypto from 'node:crypto';
 import dns from 'node:dns/promises';
@@ -201,7 +197,7 @@ export function analyzeHtml(html, finalUrl, startUrl) {
 }
 
 // ── Scan-token: koppelt de vervolgverzoeken aan een geldige scan ──────────
-// Zonder token kan niemand onze PageSpeed-key of Brevo-koppeling direct aanroepen.
+// Zonder token kan niemand onze PageSpeed-key via deze functies aanroepen.
 // Let op: netlify/edge-functions/scan-psi.js controleert dezelfde token (Web Crypto).
 function secret() {
   const s = process.env.SCAN_TOKEN_SECRET;
@@ -237,54 +233,3 @@ export function rateLimited(key, limit, windowMs) {
   return hits.length > limit;
 }
 
-// ── Brevo ───────────────────────────────────────────────────────────────────
-async function brevo(path, body) {
-  const key = process.env.BREVO_API_KEY;
-  if (!key) return { ok: false, skipped: true, error: 'BREVO_API_KEY ontbreekt' };
-  try {
-    const res = await fetch(`https://api.brevo.com/v3${path}`, {
-      method: 'POST',
-      headers: { 'api-key': key, 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify(body),
-    });
-    const text = await res.text();
-    return { ok: res.ok, status: res.status, body: text.slice(0, 500) };
-  } catch (e) {
-    return { ok: false, error: e.message };
-  }
-}
-
-/**
- * Voegt het contact toe aan (of werkt het bij in) de leadlijst.
- * Lukt het met attributen niet (bv. omdat ze in Brevo nog niet bestaan), dan opnieuw
- * zonder attributen: het e-mailadres mag nooit verloren gaan.
- */
-export async function upsertBrevoContact(email, attributes) {
-  const listId = Number(process.env.BREVO_LIST_ID);
-  const base = { email, updateEnabled: true, ...(listId ? { listIds: [listId] } : {}) };
-  const clean = Object.fromEntries(Object.entries(attributes).filter(([, v]) => v !== null && v !== undefined && v !== ''));
-  let r = await brevo('/contacts', { ...base, attributes: clean });
-  if (!r.ok && !r.skipped && r.status === 400) {
-    console.warn('[website-scan] Brevo weigerde attributen, opnieuw zonder:', r.body);
-    r = await brevo('/contacts', base);
-  }
-  if (!r.ok) console.error('[website-scan] Brevo contact mislukt:', r.error || r.body);
-  return r;
-}
-
-export async function notifyLead(subject, html, replyTo) {
-  const to = process.env.LEAD_NOTIFY_EMAIL;
-  const from = process.env.BREVO_SENDER_EMAIL;
-  if (!to || !from) return { ok: false, skipped: true };
-  const r = await brevo('/smtp/email', {
-    sender: { email: from, name: 'Stam Core Website-scan' },
-    to: [{ email: to }],
-    ...(replyTo ? { replyTo: { email: replyTo } } : {}),
-    subject,
-    htmlContent: html,
-  });
-  if (!r.ok) console.error('[website-scan] notificatie mislukt:', r.error || r.body);
-  return r;
-}
-
-export const escapeHtml = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));

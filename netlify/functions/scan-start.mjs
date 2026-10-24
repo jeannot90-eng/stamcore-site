@@ -1,8 +1,9 @@
-// Website-Scan stap 1: invoer controleren, homepage ophalen + on-page checks,
-// lead in Brevo zetten en een scan-token teruggeven voor de PageSpeed-metingen.
+// Website-Scan stap 1: invoer controleren, homepage ophalen + on-page checks en een
+// scan-token teruggeven voor de PageSpeed-metingen. De lead zelf verstuurt de pagina via
+// Netlify Forms (formulier "website-scan"), net als het contactformulier.
 import {
   json, fail, readJson, isEmail, normalizeUrl, safeFetchHtml, analyzeHtml,
-  signToken, rateLimited, upsertBrevoContact,
+  signToken, rateLimited,
 } from '../lib/website-scan.mjs';
 
 export default async (req, context) => {
@@ -28,7 +29,7 @@ export default async (req, context) => {
     return fail(429, 'Met dit e-mailadres zijn vandaag al genoeg scans gedaan.');
   }
 
-  // Homepage ophalen en checken. Lukt dat niet, dan nemen we de lead toch op.
+  // Homepage ophalen en checken. Lukt dat niet, dan krijgt de bezoeker toch een rapport.
   let onpage = null;
   let fetchError = null;
   try {
@@ -40,12 +41,6 @@ export default async (req, context) => {
   }
   // Tikfout of geen openbaar adres: geen lead en geen scan, de bezoeker kan het verbeteren.
   if (fetchError && /bestaat niet|niet openbaar/.test(fetchError)) return fail(400, `${fetchError} Klopt het adres?`);
-
-  await upsertBrevoContact(email, {
-    WEBSITE: url,
-    SCAN_DATUM: new Date().toISOString().slice(0, 10),
-    BRON: 'website-scan',
-  });
 
   let token;
   try { token = signToken({ email, url }); } catch (e) {
