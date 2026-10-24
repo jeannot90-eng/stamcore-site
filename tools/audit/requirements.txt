@@ -1,0 +1,3 @@
+requests>=2.31
+beautifulsoup4>=4.12
+tldextract>=5.0  # optioneel: nauwkeuriger intern/extern bij subdomeinen en .co.uk e.d.

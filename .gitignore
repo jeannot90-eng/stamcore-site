@@ -3,3 +3,5 @@
 .DS_Store
 Thumbs.db
 _preview/
+tools/audit/rapporten/
+__pycache__/
