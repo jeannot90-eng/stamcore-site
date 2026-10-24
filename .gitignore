@@ -5,3 +5,4 @@ Thumbs.db
 _preview/
 tools/audit/rapporten/
 __pycache__/
+.env

@@ -1,6 +1,7 @@
 /* ===========================================================================
    Gedeelde code voor de publieke Website-Scan (/website-scan).
-   Gebruikt door netlify/functions/scan-start.mjs, scan-psi.mjs en scan-complete.mjs.
+   Gebruikt door netlify/functions/scan-start.mjs en scan-complete.mjs. De PageSpeed-meting
+   draait als Edge Function (netlify/edge-functions/scan-psi.js) vanwege de tijdslimiet.
    Geen npm-dependencies: alleen Node 18+ (fetch, crypto, dns).
 
    Environment variables (Netlify → Site configuration → Environment variables):
@@ -70,7 +71,7 @@ async function assertPublicHost(hostname) {
 }
 
 /** Haalt een pagina op met timeout, maximale grootte en veilige redirects. */
-export async function safeFetchHtml(startUrl, { timeoutMs = 8000, maxBytes = 2_500_000, maxRedirects = 5 } = {}) {
+export async function safeFetchHtml(startUrl, { timeoutMs = 6000, maxBytes = 2_500_000, maxRedirects = 5 } = {}) {
   let url = startUrl;
   const chain = [];
   const t0 = Date.now();
@@ -199,57 +200,12 @@ export function analyzeHtml(html, finalUrl, startUrl) {
   };
 }
 
-// ── Google PageSpeed Insights ───────────────────────────────────────────────
-export async function runPageSpeed(url, strategy, { timeoutMs = 25000 } = {}) {
-  const key = process.env.PAGESPEED_API_KEY || '';
-  const qs = new URLSearchParams({ url, strategy });
-  for (const c of ['PERFORMANCE', 'SEO', 'ACCESSIBILITY', 'BEST_PRACTICES']) qs.append('category', c);
-  if (key) qs.set('key', key);
-  const ctrl = new AbortController();
-  const timer = setTimeout(() => ctrl.abort(), timeoutMs);
-  try {
-    const res = await fetch(`https://www.googleapis.com/pagespeedonline/v5/runPagespeed?${qs}`, { signal: ctrl.signal });
-    if (!res.ok) {
-      const msg = res.status === 429 ? 'PageSpeed is even overbelast (quota).' : `PageSpeed gaf fout ${res.status}.`;
-      return { ok: false, error: msg };
-    }
-    const data = await res.json();
-    const lh = data.lighthouseResult || {};
-    const cat = lh.categories || {};
-    const score = (k) => (cat[k] && typeof cat[k].score === 'number' ? Math.round(cat[k].score * 100) : null);
-    const audit = (k) => lh.audits?.[k] || {};
-    // Grootste verbeterkansen (in gewone woorden kun je ze niet altijd vertalen; we geven de top 3 titels mee)
-    const opportunities = Object.values(lh.audits || {})
-      .filter((a) => a.details?.type === 'opportunity' && (a.details.overallSavingsMs || 0) > 300)
-      .sort((a, b) => (b.details.overallSavingsMs || 0) - (a.details.overallSavingsMs || 0))
-      .slice(0, 3)
-      .map((a) => ({ id: a.id, title: a.title, savingsMs: Math.round(a.details.overallSavingsMs) }));
-    return {
-      ok: true,
-      strategy,
-      scores: {
-        performance: score('performance'),
-        seo: score('seo'),
-        accessibility: score('accessibility'),
-        bestPractices: score('best-practices'),
-      },
-      lcp: { ms: Math.round(audit('largest-contentful-paint').numericValue || 0) || null, display: audit('largest-contentful-paint').displayValue || null },
-      cls: { value: typeof audit('cumulative-layout-shift').numericValue === 'number' ? Math.round(audit('cumulative-layout-shift').numericValue * 1000) / 1000 : null, display: audit('cumulative-layout-shift').displayValue || null },
-      opportunities,
-    };
-  } catch (e) {
-    return { ok: false, error: e.name === 'AbortError' ? 'PageSpeed deed er te lang over.' : 'PageSpeed was niet bereikbaar.' };
-  } finally {
-    clearTimeout(timer);
-  }
-}
-
 // ── Scan-token: koppelt de vervolgverzoeken aan een geldige scan ──────────
 // Zonder token kan niemand onze PageSpeed-key of Brevo-koppeling direct aanroepen.
+// Let op: netlify/edge-functions/scan-psi.js controleert dezelfde token (Web Crypto).
 function secret() {
   const s = process.env.SCAN_TOKEN_SECRET;
   if (s && s.length >= 16) return s;
-  if (process.env.NETLIFY_DEV === 'true' || process.env.CONTEXT === 'dev') return 'alleen-lokaal-testen-niet-veilig';
   throw new Error('SCAN_TOKEN_SECRET ontbreekt of is te kort');
 }
 const b64url = (buf) => Buffer.from(buf).toString('base64url');

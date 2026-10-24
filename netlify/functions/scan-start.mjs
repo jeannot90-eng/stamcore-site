@@ -38,6 +38,8 @@ export default async (req, context) => {
   } catch (e) {
     fetchError = e.message;
   }
+  // Tikfout of geen openbaar adres: geen lead en geen scan, de bezoeker kan het verbeteren.
+  if (fetchError && /bestaat niet|niet openbaar/.test(fetchError)) return fail(400, `${fetchError} Klopt het adres?`);
 
   await upsertBrevoContact(email, {
     WEBSITE: url,

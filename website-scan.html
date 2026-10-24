@@ -146,7 +146,7 @@
     <div class="mx-auto mt-6 max-w-3xl text-center">
       <span class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-slate-300">
         <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
-        Gratis &middot; in ongeveer een minuut
+        Gratis &middot; binnen een minuut
       </span>
       <h1 class="mt-7 font-display text-4xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl">
         Ontdek wat jouw website <span class="bg-gradient-to-r from-electric-400 to-emerald-400 bg-clip-text text-transparent">laat liggen</span>
@@ -438,7 +438,7 @@
       if (!op.canonical) add(3, 'Geen canonical-tag', 'Zonder canonical kan Google meerdere varianten van dezelfde pagina zien (met of zonder www) en de waarde verdelen.', 'Op elke pagina een canonical naar zichzelf zetten.');
       if (!op.openGraph) add(3, 'Gedeelde links tonen geen nette preview', 'Deel je je site via WhatsApp of Facebook, dan verschijnt er een kale link zonder foto. Juist mond-tot-mond via WhatsApp is lokaal belangrijk.', 'Een deelafbeelding en -tekst instellen (Open Graph).');
     }
-    if (ms && ms.performance != null && ms.performance < 90) add(ms.performance < 50 ? 9 : 6, `Je site is traag op mobiel (PageSpeed ${ms.performance}/100)`, 'De meeste mensen zoeken een lokaal bedrijf op hun telefoon. Bij elke extra seconde laadtijd haken bezoekers af, en Google laat snelheid meewegen.', 'Afbeeldingen verkleinen (WebP), overbodige scripts en plugins weg, caching aan.');
+    if (ms && ms.performance != null && ms.performance < 90) add(ms.performance < 50 ? 9 : 6, `${ms.performance < 50 ? 'Je site is traag op mobiel' : 'Je site kan sneller op mobiel'} (PageSpeed ${ms.performance}/100)`, 'De meeste mensen zoeken een lokaal bedrijf op hun telefoon. Bij elke extra seconde laadtijd haken bezoekers af, en Google laat snelheid meewegen.', 'Afbeeldingen verkleinen (WebP), overbodige scripts en plugins weg, caching aan.');
     if (ds && ds.performance != null && ds.performance < 50) add(4, `Ook op desktop traag (PageSpeed ${ds.performance}/100)`, 'Zelfs op een snelle computer moet de bezoeker wachten. Geen goede eerste indruk.', 'Zelfde aanpak als mobiel: zware afbeeldingen en scripts aanpakken.');
     if (mob?.ok && mob.lcp?.ms > 4000) add(6, `Het belangrijkste beeld verschijnt pas na ${mob.lcp.display} op mobiel`, 'Zolang het grootste stuk van de pagina niet zichtbaar is, ziet de bezoeker een lege of halve pagina. Google wil dit onder de 2,5 seconde.', 'De grootste afbeelding of kop sneller laten laden (kleiner bestand, eerder inladen).');
     if (mob?.ok && mob.cls?.value > 0.25) add(4, 'De pagina verspringt tijdens het laden', 'Knoppen en tekst schuiven op terwijl de pagina laadt. Bezoekers klikken mis en raken geïrriteerd.', 'Vaste afmetingen geven aan afbeeldingen, banners en lettertypes.');
@@ -517,6 +517,7 @@
     report.classList.add('hidden');
     loading.classList.add('hidden');
     form.classList.remove('hidden');
+    $('[data-scan-form-wrap]').classList.remove('hidden');
     $('[data-scan-submit]').disabled = false;
   }
   $('[data-scan-again]').addEventListener('click', () => { resetUi(); $('[data-scan-form-wrap]').scrollIntoView({ behavior: 'smooth', block: 'center' }); });
@@ -570,6 +571,7 @@
     setStep('report', 'done');
 
     loading.classList.add('hidden');
+    $('[data-scan-form-wrap]').classList.add('hidden');
     report.classList.remove('hidden');
     report.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
