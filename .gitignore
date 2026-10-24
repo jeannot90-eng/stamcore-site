@@ -6,3 +6,4 @@ _preview/
 tools/audit/rapporten/
 __pycache__/
 .env
+deno.lock
