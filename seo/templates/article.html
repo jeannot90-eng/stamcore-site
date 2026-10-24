@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="nl" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="stamcore-seo">
+<!-- Gegenereerd door seo/scripts/build.mjs uit seo/articles/{{slug}}.md. Niet met de hand bewerken: pas het artikel aan en draai `npm run seo:all`. -->
+{{{robotsMeta}}}
+<title>{{title}}</title>
+<meta name="description" content="{{meta}}">
+<meta name="theme-color" content="#020617">
+<link rel="canonical" href="{{canonical}}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/favicon.svg">
+
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{meta}}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:image" content="{{ogImage}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{title}}">
+<meta name="twitter:description" content="{{meta}}">
+<meta name="twitter:image" content="{{ogImage}}">
+
+<script type="application/ld+json">
+{{{jsonld}}}
+</script>
+
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="/assets/app.css">
+<style>
+  html { -webkit-font-smoothing: antialiased; }
+  body { background-color: #020617; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+  .reveal.in { opacity: 1; transform: none; }
+  .glow-grid {
+    background-image:
+      radial-gradient(60rem 40rem at 50% -10%, rgba(14,165,233,.16), transparent 60%),
+      radial-gradient(40rem 30rem at 85% 10%, rgba(16,185,129,.10), transparent 60%);
+  }
+  .hairline { background: linear-gradient(90deg, transparent, rgba(148,163,184,.25), transparent); }
+  .card-sheen { background:
+      linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0)),
+      rgba(15,23,42,.55); }
+</style>
+</head>
+
+<body class="font-sans text-slate-200 antialiased selection:bg-electric-500/30 selection:text-white">
+
+<!-- partial:header --><!-- /partial:header -->
+
+<main>
+<article>
+  <header class="glow-grid relative overflow-hidden pt-40 pb-12 sm:pt-48">
+    <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,transparent,#020617)]"></div>
+    <div class="mx-auto max-w-3xl px-6">
+      <nav aria-label="Broodkruimel" class="text-sm text-slate-400">
+        <a href="/" class="transition hover:text-white">Home</a> <span class="px-1 text-slate-600">/</span>
+        <a href="{{pijlerUrl}}" class="transition hover:text-white">{{pijlerTitel}}</a> <span class="px-1 text-slate-600">/</span>
+        <span class="text-slate-300">Kennis</span>
+      </nav>
+      <h1 class="mt-6 font-display text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl">{{h1}}</h1>
+      <p class="mt-5 text-sm text-slate-400">Door {{auteur}} &middot; glazenwasser en bouwer van Stam Core &middot; bijgewerkt op <time datetime="{{dateModified}}">{{datumLeesbaar}}</time></p>
+    </div>
+  </header>
+
+  <div class="mx-auto max-w-3xl px-6 pb-16">
+    <div class="article-body space-y-5 text-lg leading-relaxed text-slate-300">
+      {{{bodyHtml}}}
+    </div>
+  </div>
+</article>
+
+{{{faqHtml}}}
+
+<section class="relative py-16">
+  <div class="absolute inset-x-0 top-0 h-px hairline"></div>
+  <div class="mx-auto max-w-3xl px-6">
+    <div class="rounded-3xl border border-electric-500/30 bg-gradient-to-br from-electric-500/10 to-slate-900/40 p-8">
+      <h2 class="font-display text-2xl font-bold text-white">Liever dat iemand het voor je doet?</h2>
+      <p class="mt-3 text-slate-300">Ik bouw websites en doe lokale SEO voor glazenwassers. Website {{prijsWebsite}} eenmalig plus {{prijsWebsiteJaar}} per jaar, lokale SEO {{prijsSeo}} per maand ({{btw}}).</p>
+      <ul class="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold">
+        <li><a href="{{pijlerUrl}}" class="text-electric-400 transition hover:text-white">{{pijlerTitel}} &rarr;</a></li>
+        <li><a href="{{seoPijlerUrl}}" class="text-electric-400 transition hover:text-white">{{seoPijlerTitel}} &rarr;</a></li>
+        <li><a href="/prijzen" class="text-electric-400 transition hover:text-white">Prijzen &rarr;</a></li>
+      </ul>
+    </div>
+    {{{gerelateerdHtml}}}
+  </div>
+</section>
+</main>
+
+<!-- partial:footer --><!-- /partial:footer -->
+
+<!-- partial:scripts --><!-- /partial:scripts -->
+</body>
+</html>

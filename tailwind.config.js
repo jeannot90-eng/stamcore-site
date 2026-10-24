@@ -1,8 +1,8 @@
 /** Tailwind-config voor de gecompileerde CSS (vervangt de CDN-versie). */
 module.exports = {
   content: {
-    files: ['./*.html', './templates/**/*.html', './scripts/*.mjs'],
-    // De inline CSS (gezet door scripts/generate.mjs) niet scannen, anders verandert de CSS bij elke build.
+    files: ['./*.html', './kennis/*.html', './templates/**/*.html', './seo/templates/*.html', './seo/scripts/*.mjs'],
+    // De inline CSS (gezet door seo/scripts/build.mjs) niet scannen, anders verandert de CSS bij elke build.
     transform: { html: (src) => src.replace(/<!-- css:app -->[\s\S]*?<!-- \/css:app -->/g, '') },
   },
   safelist: ['border-white/10', 'shadow-lg', 'shadow-slate-950/50'],

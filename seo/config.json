@@ -1,0 +1,44 @@
+{
+  "_uitleg": "Bron voor prijzen, voorwaarden, contactgegevens en case-feiten op alle SEO-pagina's. Wijzig hier en draai `npm run seo:all`. Bedragen in hele euro's, excl. btw.",
+  "site": "https://stam-core.nl",
+  "bedrijf": {
+    "naam": "Stam Core",
+    "eigenaar": "Jeannot Kustermans",
+    "straat": "Rietbeemd 48",
+    "postcode": "4907 ED",
+    "plaats": "Oosterhout",
+    "telefoon": "0162 560 125",
+    "telefoonIntl": "+31162560125",
+    "whatsapp": "31162560125",
+    "email": "info@stam-core.nl",
+    "kvk": "78014336"
+  },
+  "prijzen": {
+    "website": { "eenmalig": 350, "perJaar": 300 },
+    "lokaleSeo": { "perMaand": 199, "minimaalMaanden": 3, "opzegtermijnMaanden": 1, "paginasPerMaand": "tot 5" },
+    "btw": "excl. btw"
+  },
+  "case": {
+    "naam": "Clean up support Nederland",
+    "url": "/werk.html#cleanup",
+    "samenvatting": "Van der Zee Glasbewassing werd Clean up support Nederland. Ik maakte de huisstijl, een website met meerdere pagina's, lokale pagina's per dienst en plaats, een ingericht Bedrijfsprofiel en een reviewmotor. De site werd kort na livegang geïndexeerd, met sitelinks op de merknaam.",
+    "lighthouse": [
+      { "label": "SEO", "waarde": "100" },
+      { "label": "Best Practices", "waarde": "100" },
+      { "label": "Toegankelijkheid", "waarde": "94" },
+      { "label": "Prestaties desktop / mobiel", "waarde": "99 / 89" }
+    ]
+  },
+  "uitgesloten": ["Oosterhout", "Breda", "Dongen", "Geertruidenberg", "Drimmelen", "Etten-Leur", "Gilze en Rijen", "Amersfoort", "Raamsdonksveer", "Raamsdonk", "Made", "Terheijden", "Wagenberg", "Lage Zwaluwe", "Hooge Zwaluwe", "Gilze", "Rijen", "Hulten", "Molenschot", "Den Hout", "Oosteind", "Dorst", "Teteringen", "Prinsenbeek", "Bavel", "Ulvenhout", "'s Gravenmoer"],
+  "verboden": ["gegarandeerd", "garantie op", "top 3 garantie", "wij brengen je bovenaan", "nummer 1 in google"],
+  "verboden_namen": [],
+  "_verboden_namen": "Zet hier bedrijfsnamen van concurrenten die je bent tegengekomen. De check faalt als een ervan op een pagina staat.",
+  "statischeSitemap": [
+    { "url": "/", "bestand": "index.html", "priority": "1.0" },
+    { "url": "/prijzen", "bestand": "prijzen.html", "priority": "0.9" },
+    { "url": "/website-glazenwasser", "bestand": "website-glazenwasser.html", "priority": "0.9" },
+    { "url": "/seo-glazenwasser", "bestand": "seo-glazenwasser.html", "priority": "0.9" },
+    { "url": "/front-end.html", "bestand": "front-end.html", "priority": "0.8" },
+    { "url": "/werk.html", "bestand": "werk.html", "priority": "0.7" }
+  ]
+}
