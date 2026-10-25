@@ -17,6 +17,7 @@
 | 2026-10-25 | Advies over reageren op reviews gelijkgetrokken met Google (kans-zinnen en /seo-glazenwasser); bug in gewijzigd-detectie (regeleinden) opgelost | bergen-op-zoom · helmond · s-hertogenbosch · waalwijk · seo-glazenwasser | seo: reageren op reviews volgens Google |
 | 2026-10-25 | Overzichtspagina /kennis/ live; Kennis-link in header en footer; tijdelijke 302 op /kennis weg | https://stam-core.nl/kennis/ | seo: overzichtspagina kennis |
 | 2026-10-25 | 'Kennis voor glazenwassers' hernoemd naar 'Kennis' (menu, footer, overzichtspagina breder); broodkruimel artikelen naar /kennis/ | https://stam-core.nl/kennis/ | seo: kennis hernoemd |
+| 2026-10-25 | Kennisartikel wat-is-geo live (handmatige run op verzoek Jeannot, geen wekelijkse run); artikel 1 linkt ernaar | https://stam-core.nl/kennis/wat-is-geo | kennis: wat-is-geo |
 
 ## Indexering aangevraagd (Search Console)
 

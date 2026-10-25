@@ -22,6 +22,7 @@ Volgorde = KENNISARTIKELEN.md §3. Titel, zoekwoord en insteek staan daar.
 
 | Type | Slug | Status | Datum | Opmerking |
 |---|---|---|---|---|
+| artikel | wat-is-geo | live | 2026-10-25 | Op verzoek Jeannot bovenaan gezet |
 | artikel | google-bedrijfsprofiel-glazenwasser | live | 2026-10-24 | |
 | artikel | meer-reviews-glazenwasser | klaar-voor-bouw |  | |
 | artikel | website-traag-op-mobiel | klaar-voor-bouw |  | |

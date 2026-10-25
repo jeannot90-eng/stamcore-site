@@ -78,12 +78,17 @@
   </url>
   <url>
     <loc>https://stam-core.nl/kennis/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://stam-core.nl/kennis/google-bedrijfsprofiel-glazenwasser</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://stam-core.nl/kennis/wat-is-geo</loc>
+    <lastmod>2026-10-25</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>
