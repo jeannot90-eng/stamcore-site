@@ -167,17 +167,29 @@ function cityOg(c) {
   return `${SITE}/${rel}`;
 }
 
+const ANKERS = [
+  (n, stad) => `Maps-scan voor ${n.meervoud} in ${stad}`,
+  (n, stad) => `Bekijk de kansen voor ${n.meervoud} in ${stad}`,
+  (n, stad) => `Zo staan ${n.meervoud} in ${stad} ervoor`,
+];
+const anker = (niche, stad, i) => ANKERS[i % ANKERS.length](niche, stad);
+
 function buildCity({ c, niche, info, scan, voorbeeld, kansen }, isPreview) {
   const faqStad = c.faq_stad.map((f) => ({ vraag: f.vraag, antwoord: fillTokens(f.antwoord) }));
   const faqPool = resolvePool(niche, c.faq_pool);
   const liveSlugs = new Map(live.filter((r) => r.c.niche === c.niche && r.c.slug !== c.slug).map((r) => [slugify(r.c.slug), r]));
   const andere = [...c.nabije_steden.map(slugify).filter((s) => liveSlugs.has(s)), ...liveSlugs.keys()]
     .filter((s, i, a) => a.indexOf(s) === i).slice(0, 4).map((s) => liveSlugs.get(s));
+  // Ankerteksten voor "Ook bekeken" wisselen per link (en per pagina), zodat hetzelfde anker niet steeds terugkomt.
+  const ankerBasis = [...c.slug].reduce((n, ch) => n + ch.charCodeAt(0), 0);
   const t = scan.tellingen;
   const tegel = (waarde, label) => `<div class="rounded-2xl border border-white/10 bg-slate-950/60 p-5"><p class="font-display text-3xl font-bold text-white">${esc(waarde)}</p><p class="mt-1 text-xs text-slate-400">${esc(label)}</p></div>`;
   const jsonld = { '@context': 'https://schema.org', '@graph': [
     { '@type': 'Service', '@id': `${info.canonical}#service`, name: c.h1, serviceType: niche.serviceType, url: info.canonical,
-      provider: { '@id': `${SITE}/#organization` }, areaServed: { '@type': 'City', name: c.stad },
+      provider: { '@id': `${SITE}/#organization` },
+      areaServed: { '@type': 'City', name: c.stad, ...(c.wikidata || c.wikipedia ? { sameAs: [c.wikidata, c.wikipedia].filter(Boolean) } : {}) },
+      // Wijken en kernen van de pagina; sameAs alleen als er een eenduidig Wikidata-item is (seo/cities: wijken_wikidata).
+      mentions: c.wijken.map((w) => ({ '@type': 'Place', name: w, ...(c.wijken_wikidata?.[w] ? { sameAs: c.wijken_wikidata[w] } : {}) })),
       audience: { '@type': 'BusinessAudience', name: niche.meervoud }, offers },
     breadcrumb([['Home', `${SITE}/`], [niche.pijlerTitel, `${SITE}${niche.pijlerUrl}`], [c.stad, info.canonical]]),
     faqPage([...faqStad, ...faqPool]),
@@ -219,7 +231,7 @@ function buildCity({ c, niche, info, scan, voorbeeld, kansen }, isPreview) {
     andereStedenHtml: andere.length
       ? `<p class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400">Ook bekeken</p>
     <ul class="mt-5 flex flex-wrap justify-center gap-3">
-      ${andere.map((r) => `<li><a href="${r.info.url}" class="${pillCls}">${esc(niche.enkelvoud.replace(/^./, (x) => x.toUpperCase()))} in ${esc(r.c.stad)}</a></li>`).join('\n      ')}
+      ${andere.map((r, i) => `<li><a href="${r.info.url}" class="${pillCls}">${esc(anker(niche, r.c.stad, ankerBasis + i))}</a></li>`).join('\n      ')}
     </ul>`
       : `<p class="text-slate-400">Meer steden volgen. Intussen staat de hele aanpak op <a href="${niche.pijlerUrl}" class="font-semibold text-electric-400 transition hover:text-white">${esc(niche.pijlerTitel.toLowerCase())}</a>.</p>`,
   }));

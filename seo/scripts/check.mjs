@@ -26,7 +26,7 @@ for (const c of cities) {
   const n = niches[c.niche]; if (!n) continue;
   const info = cityInfo(c, n);
   const file = c.status === 'live' ? info.file : `${PREVIEW_DIR}/${info.file}`;
-  add(file, 'stad', info.url, { preview: c.status !== 'live', stad: c.stad, wijken: c.wijken || [], bronnen: Array.isArray(c.bronnen) ? c.bronnen.length : 0 });
+  add(file, 'stad', info.url, { preview: c.status !== 'live', stad: c.stad, wijken: c.wijken || [], wikidata: c.wikidata || null, bronnen: Array.isArray(c.bronnen) ? c.bronnen.length : 0 });
   if (c.status === 'live' && !exists(file)) pages.push({ file, type: 'stad', url: info.url, missing: true });
 }
 add('kennis/index.html', 'overzicht', '/kennis/');
@@ -153,6 +153,13 @@ for (const p of pages) {
     if (!og.startsWith(`${SITE}/img/og/`)) fout.push(`og:image is geen stads-afbeelding (${og || '—'})`);
     else if (!exists(og.replace(`${SITE}/`, ''))) fout.push(`og:image-bestand ontbreekt: ${og.replace(`${SITE}/`, '')}`);
     if (tw !== og) fout.push('twitter:image wijkt af van og:image');
+    // Service-schema moet areaServed (City met naam) hebben; sameAs naar Wikidata/Wikipedia als die in de stads-JSON staan.
+    let service = null;
+    for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+      try { service = (JSON.parse(m[1])['@graph'] || []).find((n) => n['@type'] === 'Service') || service; } catch { /* al gemeld */ }
+    }
+    if (!service?.areaServed?.name) fout.push('Service-schema mist areaServed met plaatsnaam');
+    else if (p.wikidata && !(service.areaServed.sameAs || []).includes(p.wikidata)) fout.push('areaServed mist de Wikidata-link uit de stads-JSON');
   }
   if (/VOORBEELDDATA/.test(html)) (p.preview ? waarschuwing : fout).push('bevat VOORBEELDDATA (geen echte Maps-scan)');
   if (p.preview && !/<meta name="robots" content="noindex">/.test(html)) fout.push('concept zonder noindex');

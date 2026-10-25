@@ -78,5 +78,12 @@
     "plaats": 2,
     "reageert": 0,
     "reviewsLaag": 0
+  },
+  "wikidata": "https://www.wikidata.org/wiki/Q745038",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Waalwijk_%28gemeente%29",
+  "wijken_wikidata": {
+    "Baardwijk": "https://www.wikidata.org/wiki/Q3025163",
+    "Sprang-Capelle": "https://www.wikidata.org/wiki/Q1329691",
+    "Waspik": "https://www.wikidata.org/wiki/Q2922346"
   }
 }

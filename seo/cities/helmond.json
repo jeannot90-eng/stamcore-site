@@ -84,5 +84,18 @@
     "plaats": 3,
     "reageert": 1,
     "reviewsLaag": 2
+  },
+  "wikidata": "https://www.wikidata.org/wiki/Q9844",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Helmond",
+  "wijken_wikidata": {
+    "Binnenstad": "https://www.wikidata.org/wiki/Q61928519",
+    "Brandevoort": "https://www.wikidata.org/wiki/Q2334300",
+    "Stiphout": "https://www.wikidata.org/wiki/Q2709958",
+    "Mierlo-Hout": "https://www.wikidata.org/wiki/Q1830390",
+    "Dierdonk": "https://www.wikidata.org/wiki/Q2305666",
+    "Brouwhuis": "https://www.wikidata.org/wiki/Q2976892",
+    "Helmond-Oost": "https://www.wikidata.org/wiki/Q2454863",
+    "Helmond-West": "https://www.wikidata.org/wiki/Q5018662",
+    "Helmond Noord": "https://www.wikidata.org/wiki/Q4564221"
   }
 }

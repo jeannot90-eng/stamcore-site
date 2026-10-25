@@ -92,5 +92,18 @@
     "plaats": 1,
     "reageert": 0,
     "reviewsLaag": 0
+  },
+  "wikidata": "https://www.wikidata.org/wiki/Q9807",
+  "wikipedia": "https://nl.wikipedia.org/wiki/%27s-Hertogenbosch_%28gemeente%29",
+  "wijken_wikidata": {
+    "Binnenstad": "https://www.wikidata.org/wiki/Q2661093",
+    "De Groote Wielen": "https://www.wikidata.org/wiki/Q2463774",
+    "Maaspoort": "https://www.wikidata.org/wiki/Q2011514",
+    "Empel": "https://www.wikidata.org/wiki/Q2756855",
+    "Nuland": "https://www.wikidata.org/wiki/Q2112786",
+    "Graafsepoort": "https://www.wikidata.org/wiki/Q2382653",
+    "Muntel/Vliert": "https://www.wikidata.org/wiki/Q2240181",
+    "West": "https://www.wikidata.org/wiki/Q2486680",
+    "Zuidoost": "https://www.wikidata.org/wiki/Q2122427"
   }
 }

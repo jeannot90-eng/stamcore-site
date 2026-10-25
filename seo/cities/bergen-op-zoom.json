@@ -79,5 +79,15 @@
     "plaats": 0,
     "reageert": 3,
     "reviewsLaag": 4
+  },
+  "wikidata": "https://www.wikidata.org/wiki/Q9814",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Bergen_op_Zoom_%28gemeente%29",
+  "wijken_wikidata": {
+    "Bergse Plaat": "https://www.wikidata.org/wiki/Q2449882",
+    "De Markiezaten": "https://www.wikidata.org/wiki/Q1967589",
+    "Noordgeest": "https://www.wikidata.org/wiki/Q2797960",
+    "Meilust": "https://www.wikidata.org/wiki/Q123997523",
+    "Tuinwijk": "https://www.wikidata.org/wiki/Q1882674",
+    "Halsteren": "https://www.wikidata.org/wiki/Q2213267"
   }
 }

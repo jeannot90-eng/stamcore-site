@@ -98,5 +98,15 @@
     "plaats": 2,
     "reviewsLaag": 1,
     "fotos": 0
+  },
+  "wikidata": "https://www.wikidata.org/wiki/Q26430",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Tilburg_%28gemeente%29",
+  "wijken_wikidata": {
+    "Oud-Zuid": "https://www.wikidata.org/wiki/Q2333587",
+    "Oud-Noord": "https://www.wikidata.org/wiki/Q15638238",
+    "Reeshof": "https://www.wikidata.org/wiki/Q5641949",
+    "Berkel-Enschot": "https://www.wikidata.org/wiki/Q2682795",
+    "Udenhout": "https://www.wikidata.org/wiki/Q3030229",
+    "Biezenmortel": "https://www.wikidata.org/wiki/Q2902052"
   }
 }

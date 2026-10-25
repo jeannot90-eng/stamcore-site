@@ -84,5 +84,12 @@
     "plaats": 4,
     "reageert": 2,
     "reviewsLaag": 3
+  },
+  "wikidata": "https://www.wikidata.org/wiki/Q9861",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Roosendaal_%28gemeente%29",
+  "wijken_wikidata": {
+    "Nispen": "https://www.wikidata.org/wiki/Q670577",
+    "Heerle": "https://www.wikidata.org/wiki/Q2868110",
+    "Moerstraten": "https://www.wikidata.org/wiki/Q2044968"
   }
 }

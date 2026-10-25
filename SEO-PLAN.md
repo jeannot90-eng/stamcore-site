@@ -70,6 +70,8 @@ Controleer eerst of er al een generator en datamodel bestaan uit een eerdere ron
 
 Gegenereerde HTML komt op de bestaande URL-structuur van de site (bijv. `/website-glazenwasser-tilburg/index.html` of `.html`, afhankelijk van hoe de site nu werkt; volg de bestaande conventie).
 
+**URL-structuur (vastgelegd 2026-10-25, besluit Jeannot):** bestaande URL's blijven zoals ze zijn. Voor elke branche geldt hetzelfde patroon: `/website-{niche}` (pijler), `/seo-{niche}` (SEO-pijler) en `/website-{niche}-{stad}` (stadspagina), kennisartikelen op `/kennis/{slug}`. Geen mappenstructuur zoals `/branches/{niche}/{stad}/`. De ordening gebeurt in de bronbestanden (`seo/niches/`, `seo/cities/`), en de samenhang voor Google via interne links en `BreadcrumbList`, niet via de URL.
+
 Voeg aan `package.json` toe:
 ```
 "seo:build": "node seo/scripts/build.mjs",

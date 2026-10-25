@@ -83,5 +83,11 @@
     "plaats": 1,
     "reageert": 4,
     "reviewsHoog": 1
+  },
+  "wikidata": "https://www.wikidata.org/wiki/Q9859",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Oss_%28gemeente%29",
+  "wijken_wikidata": {
+    "Ussen": "https://www.wikidata.org/wiki/Q26267380",
+    "Megen": "https://www.wikidata.org/wiki/Q1862257"
   }
 }

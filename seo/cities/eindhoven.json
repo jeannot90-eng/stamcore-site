@@ -93,5 +93,15 @@
   "kansvarianten": {
     "plaats": 0,
     "reviewsHoog": 0
+  },
+  "wikidata": "https://www.wikidata.org/wiki/Q9832",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Eindhoven",
+  "wijken_wikidata": {
+    "Strijp": "https://www.wikidata.org/wiki/Q2008504",
+    "Meerhoven": "https://www.wikidata.org/wiki/Q4488950",
+    "Gestel": "https://www.wikidata.org/wiki/Q2499100",
+    "Stratum": "https://www.wikidata.org/wiki/Q2193091",
+    "Tongelre": "https://www.wikidata.org/wiki/Q2322681",
+    "Riel": "https://www.wikidata.org/wiki/Q5120826"
   }
 }
