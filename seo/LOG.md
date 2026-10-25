@@ -16,6 +16,7 @@
 | 2026-10-24 | Kennisartikel 1 live: Google Bedrijfsprofiel voor glazenwassers (2.012 woorden, met eigen scandata en Google-richtlijnen); OG-afbeelding per artikel | https://stam-core.nl/kennis/google-bedrijfsprofiel-glazenwasser | seo: kennisartikel google-bedrijfsprofiel-glazenwasser |
 | 2026-10-25 | Advies over reageren op reviews gelijkgetrokken met Google (kans-zinnen en /seo-glazenwasser); bug in gewijzigd-detectie (regeleinden) opgelost | bergen-op-zoom · helmond · s-hertogenbosch · waalwijk · seo-glazenwasser | seo: reageren op reviews volgens Google |
 | 2026-10-25 | Overzichtspagina /kennis/ live; Kennis-link in header en footer; tijdelijke 302 op /kennis weg | https://stam-core.nl/kennis/ | seo: overzichtspagina kennis |
+| 2026-10-25 | 'Kennis voor glazenwassers' hernoemd naar 'Kennis' (menu, footer, overzichtspagina breder); broodkruimel artikelen naar /kennis/ | https://stam-core.nl/kennis/ | seo: kennis hernoemd |
 
 ## Indexering aangevraagd (Search Console)
 

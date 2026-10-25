@@ -299,7 +299,7 @@ function buildArticle(a, isPreview) {
       datePublished: a.datePublished, dateModified: a.dateModified || a.datePublished, image: OG,
       author: { '@type': 'Person', name: config.bedrijf.eigenaar }, publisher: { '@id': `${SITE}/#organization` },
       mainEntityOfPage: a.canonical },
-    breadcrumb([['Home', `${SITE}/`], [glazen.pijlerTitel, `${SITE}${glazen.pijlerUrl}`], [a.h1, a.canonical]]),
+    breadcrumb([['Home', `${SITE}/`], ['Kennis', `${SITE}/kennis/`], [a.h1, a.canonical]]),
   ];
   if (faq.length) graph.push(faqPage(faq));
   return finish(render(articleTpl, {
@@ -335,16 +335,16 @@ if (liveArticles.length) {
   const canonical = `${SITE}/kennis/`;
   const lijst = [...liveArticles].sort((a, b) => String(b.datePublished).localeCompare(String(a.datePublished)));
   const jsonld = { '@context': 'https://schema.org', '@graph': [
-    { '@type': 'CollectionPage', '@id': `${canonical}#pagina`, name: 'Kennis voor glazenwassers', url: canonical, inLanguage: 'nl-NL',
+    { '@type': 'CollectionPage', '@id': `${canonical}#pagina`, name: 'Kennis', url: canonical, inLanguage: 'nl-NL',
       publisher: { '@id': `${SITE}/#organization` },
       mainEntity: { '@type': 'ItemList', itemListElement: lijst.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: a.canonical, name: a.h1 })) } },
     breadcrumb([['Home', `${SITE}/`], ['Kennis', canonical]]),
   ] };
   write('kennis/index.html', finish(render(read('seo/templates/kennis-index.html'), {
     ...sharedVars,
-    title: 'Kennis voor glazenwassers | Stam Core',
-    meta: 'Praktische artikelen voor glazenwassers: je Google Bedrijfsprofiel, reviews, je website en vaste klanten werven. Geschreven door een glazenwasser.',
-    h1: 'Kennis voor glazenwassers',
+    title: 'Kennis: websites en lokale SEO | Stam Core',
+    meta: 'Praktische artikelen over je Google Bedrijfsprofiel, reviews, je website en lokale SEO. Geschreven door een ondernemer die zelf een servicebedrijf runt.',
+    h1: 'Kennis',
     canonical, robotsMeta: '',
     scanUrl: '/website-scan?bron=kennis',
     pijlerUrl: glazen.pijlerUrl, pijlerTitel: glazen.pijlerTitel, seoPijlerUrl: glazen.seoPijlerUrl, seoPijlerTitel: glazen.seoPijlerTitel,
