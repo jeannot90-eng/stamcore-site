@@ -153,6 +153,8 @@ Golf 1 (in deze volgorde):
 
 Artikel 7 en 8 (toegevoegd 2026-10-24, besluit Jeannot) linken allebei naar `/website-scan`. De overzichtspagina `/kennis/` staat sinds 2026-10-25 live en de tijdelijke 302 naar home is weg.
 
+Vanaf 2026-10-25 geldt voor kennisartikelen ook [`KENNISARTIKELEN.md`](KENNISARTIKELEN.md): wekelijkse workflow, backlog van 20 artikelen (vervangt de volgorde hierboven) en extra checks.
+
 ---
 
 ## 4. Steden golf 1 en golf 2

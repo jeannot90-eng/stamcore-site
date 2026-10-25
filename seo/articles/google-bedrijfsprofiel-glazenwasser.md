@@ -3,6 +3,7 @@ status: live
 title: Google Bedrijfsprofiel voor glazenwassers inrichten
 meta: Zo richt je als glazenwasser je Google Bedrijfsprofiel in: de juiste categorie, je werkgebied, diensten, foto's van je bus en reviews. Met checklist.
 h1: Je Bedrijfsprofiel als glazenwasser: stap voor stap
+zoekwoord: google bedrijfsprofiel glazenwasser
 datePublished: 2026-10-24
 dateModified: 2026-10-24
 og: ["Google Bedrijfsprofiel", "voor glazenwassers", "Stap voor stap: categorie, werkgebied, foto's,", "updates en reviews."]

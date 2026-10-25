@@ -81,12 +81,16 @@ status: concept
 title: Meer Google-reviews als glazenwasser
 meta: …120–160 tekens…
 h1: Zo krijg je als glazenwasser meer reviews
+zoekwoord: meer google reviews krijgen
 datePublished: 2026-11-02
 dateModified: 2026-11-02
 gerelateerd: ["google-bedrijfsprofiel-glazenwasser"]
 faq: [{"vraag": "…", "antwoord": "…"}]
+bronnen: ["https://… (waarvoor)"]
 ---
 ```
+
+**Wekelijkse workflow, backlog en extra artikelregels:** [`KENNISARTIKELEN.md`](../KENNISARTIKELEN.md). De check meet de artikelregels (1.000–2.200 woorden, `zoekwoord` in title/H1/eerste alinea, ≥ 3 interne links in de tekst waaronder een pijler, `bronnen` bij getallen, `verboden_artikel` uit config, geen dubbele zinnen tussen artikelen) op de Markdown zelf. Persoonlijke ervaringen alleen uit `articles/input/{slug}.md` (template: `articles/input/_TEMPLATE.md`).
 
 Markdown: `##`/`###`, alinea's, `-` lijsten, `1.` stappen, `- [ ]` checklist, `**vet**`, `[tekst](/url)`. Minimaal 1.000 woorden. Het template linkt zelf naar beide pijlers en `/prijzen`.
 

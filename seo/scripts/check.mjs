@@ -185,6 +185,59 @@ for (let i = 0; i < stadRes.length; i++) for (let j = i + 1; j < stadRes.length;
   }
 }
 
+// ── Kennisartikelen (KENNISARTIKELEN.md §7) ──────────────────────────────────
+// Gemeten op de Markdown van het artikel zelf (+ FAQ), niet op de vaste blokken van het template.
+const mdText = (md) => String(md)
+  .replace(/\[([^\]]+)\]\([^)\s]+\)/g, '$1').replace(/\*\*/g, '')
+  .replace(/^\s*#{2,3}\s+/gm, '').replace(/^\s*([-*]|\d+\.)\s+(\[( |x)\]\s+)?/gm, '');
+const norm = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+// Zoekwoord "staat erin" als elk woord ervan als (begin van een) woord voorkomt: "glazenwasser" telt in "glazenwassers".
+const heeftZoekwoord = (veld, kw) => { const w = words(norm(veld)); return words(norm(kw)).every((k) => w.some((x) => x.startsWith(k))); };
+const verbodenArtikel = (config.verboden_artikel || []).map((v) => v.toLowerCase());
+const GOOGLE_ONDERWERP = /google|bedrijfsprofiel|pagespeed|search console|review/i;
+const artikelZinnen = [];
+for (const a of articles) {
+  const r = results.find((x) => x.p.type === 'artikel' && x.p.url === a.url);
+  if (!r) continue;
+  const faqTekst = Array.isArray(a.faq) ? a.faq.map((f) => `${f.vraag} ${f.antwoord}`).join(' ') : '';
+  const body = mdText(a.body);
+  const n = words(`${body} ${faqTekst}`).length;
+  if (n < 1000 || n > 2200) r.fout.push(`artikeltekst is ${n} woorden (1.000–2.200)`);
+
+  const blokken = a.body.split(/\r?\n\s*\r?\n/).map((b) => b.trim()).filter(Boolean);
+  const eerste = mdText(blokken.find((b) => !/^#/.test(b)) || '');
+  if (!a.zoekwoord) r.fout.push('frontmatter "zoekwoord" ontbreekt');
+  else if (![a.title, a.h1, eerste].some((v) => heeftZoekwoord(v, a.zoekwoord))) r.fout.push(`zoekwoord "${a.zoekwoord}" staat niet in de title, de H1 of de eerste alinea`);
+  if (words(eerste).length > 80) r.waarschuwing.push(`eerste alinea is ${words(eerste).length} woorden (advies ≤ 80)`);
+
+  const links = [...new Set([...a.body.matchAll(/\]\((\/[^)\s]*)\)/g)].map((m) => m[1].split('#')[0].replace(/\/$/, '') || '/'))];
+  if (links.length < 3) r.fout.push(`${links.length} interne links in de artikeltekst (minimaal 3)`);
+  if (!links.some((u) => pijlerUrls.has(u) || Object.values(niches).some((ni) => ni.seoPijlerUrl === u))) r.fout.push('geen link naar een pijler in de artikeltekst');
+
+  const bronnen = Array.isArray(a.bronnen) ? a.bronnen.filter(Boolean) : [];
+  if (/\d/.test(`${body} ${faqTekst}`) && !bronnen.length) r.fout.push('bevat getallen of jaartallen, maar "bronnen" in de frontmatter is leeg');
+  const bronInTekst = `${body} ${faqTekst}`.match(/\(bron\b|\bbronnen?:|volgens (wikipedia|[a-z]+\.(nl|com|org))/i);
+  if (bronInTekst) r.fout.push(`bronvermelding in de artikeltekst: "${bronInTekst[0]}"`);
+
+  const input = exists(`seo/articles/input/${a.slug}.md`) ? read(`seo/articles/input/${a.slug}.md`).toLowerCase() : '';
+  const laag = `${a.title} ${a.meta} ${a.h1} ${body} ${faqTekst}`.toLowerCase();
+  for (const v of verbodenArtikel) if (v && laag.includes(v) && !input.includes(v)) r.fout.push(`verboden frase: "${v}"`);
+
+  if (!/^\s*(\d+\.|[-*]\s+\[( |x)\])\s+/m.test(a.body) && !/^#{2,3}\s+(stap|checklist)/im.test(a.body)) r.waarschuwing.push('geen stappenplan, checklist of genummerde lijst');
+  const gewijzigd = new Date(a.dateModified || a.datePublished);
+  if (Date.now() - gewijzigd > 365 * 864e5 && GOOGLE_ONDERWERP.test(`${a.title} ${a.body}`)) r.waarschuwing.push('ouder dan 12 maanden en over Google-functies: controleer opnieuw en werk dateModified bij');
+
+  artikelZinnen.push({ r, zinnen: new Set(`${body} ${faqTekst}`.split(/(?<=[.!?])\s+/).map((z) => z.toLowerCase().replace(/\s+/g, ' ').trim()).filter((z) => words(z).length >= 12)) });
+}
+for (let i = 0; i < artikelZinnen.length; i++) for (let j = i + 1; j < artikelZinnen.length; j++) {
+  const a = artikelZinnen[i], b = artikelZinnen[j];
+  for (const z of a.zinnen) if (b.zinnen.has(z)) {
+    const kort = z.length > 90 ? `${z.slice(0, 90)}…` : z;
+    a.r.fout.push(`zin staat ook in ${b.r.p.url}: "${kort}"`);
+    b.r.fout.push(`zin staat ook in ${a.r.p.url}: "${kort}"`);
+  }
+}
+
 // ── Rapport ──────────────────────────────────────────────────────────────────
 let nFout = 0;
 console.log('Kwaliteitscheck SEO-pagina\'s\n');
