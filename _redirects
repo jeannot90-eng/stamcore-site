@@ -19,9 +19,7 @@
 /core.html                                          /    301
 /kennis/offerte-tot-factuur-automatiseren          /    301
 /kennis/offerte-tot-factuur-automatiseren.html     /    301
-# /kennis komt later terug met nieuwe artikelen: daarom tijdelijk (302), niet permanent.
-/kennis                                             /    302
-/kennis/                                            /    302
+# /kennis/ is sinds oktober 2026 de overzichtspagina van de kennisartikelen (de tijdelijke 302 naar / is weg).
 
 # Bronbestanden voor de generator horen niet als pagina bereikbaar te zijn.
 /templates/*   /404   404!

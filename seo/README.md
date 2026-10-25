@@ -90,7 +90,7 @@ faq: [{"vraag": "…", "antwoord": "…"}]
 
 Markdown: `##`/`###`, alinea's, `-` lijsten, `1.` stappen, `- [ ]` checklist, `**vet**`, `[tekst](/url)`. Minimaal 1.000 woorden. Het template linkt zelf naar beide pijlers en `/prijzen`.
 
-Let op: `_redirects` stuurt `/kennis` en `/kennis/` (alleen die twee) tijdelijk door naar `/`. Artikelen op `/kennis/{slug}` werken gewoon.
+**Overzichtspagina `/kennis/`:** de build maakt `kennis/index.html` (template `seo/templates/kennis-index.html`) met alle live artikelen, nieuwste eerst, zodra er minstens één live artikel is. Header (menu "Meer" en mobiel) en footer linken naar `/kennis/`, dus elk artikel is vanaf elke pagina in twee klikken bereikbaar. De oude tijdelijke 302 van `/kennis` naar `/` is weg.
 
 ## Vaste regels
 

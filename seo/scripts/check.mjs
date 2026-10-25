@@ -29,6 +29,7 @@ for (const c of cities) {
   add(file, 'stad', info.url, { preview: c.status !== 'live', stad: c.stad, wijken: c.wijken || [], bronnen: Array.isArray(c.bronnen) ? c.bronnen.length : 0 });
   if (c.status === 'live' && !exists(file)) pages.push({ file, type: 'stad', url: info.url, missing: true });
 }
+add('kennis/index.html', 'overzicht', '/kennis/');
 for (const a of articles) {
   const live = a.status === 'live';
   add(live ? a.file : `${PREVIEW_DIR}/${a.file}`, 'artikel', a.url, { preview: !live });
@@ -51,12 +52,13 @@ for (const f of sitePages) {
   push('title', getTitle(h)); push('meta', getMeta(h)); getH1s(h).forEach((v) => push('h1', v));
 }
 
-const MIN_WORDS = { stad: 700, artikel: 1000, 'seo-pijler': 1000, pijler: 1000 };
+const MIN_WORDS = { stad: 700, artikel: 1000, 'seo-pijler': 1000, pijler: 1000, overzicht: 250 };
 const TYPES = {
   stad: ['Service', 'BreadcrumbList', 'FAQPage'],
   'seo-pijler': ['Service', 'BreadcrumbList', 'FAQPage'],
   pijler: ['Service', 'BreadcrumbList'],
   artikel: ['Article', 'BreadcrumbList'],
+  overzicht: ['CollectionPage', 'BreadcrumbList'],
 };
 const verboden = [...config.verboden, ...config.verboden_namen].map((v) => v.toLowerCase());
 const pijlerUrls = new Set(Object.values(niches).map((n) => n.pijlerUrl));

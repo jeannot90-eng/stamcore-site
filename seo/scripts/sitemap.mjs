@@ -23,7 +23,12 @@ for (const c of loadCities().filter((c) => c.status === 'live').sort((a, b) => a
   const info = cityInfo(c, niches[c.niche]);
   entries.push({ loc: info.canonical, lastmod: c.gewijzigd || c.gepubliceerd || today(), priority: '0.7' });
 }
-for (const a of loadArticles().filter((a) => a.status === 'live').sort((a, b) => a.slug.localeCompare(b.slug))) {
+const liveArtikelen = loadArticles().filter((a) => a.status === 'live');
+if (liveArtikelen.length && exists('kennis/index.html')) {
+  const nieuwste = liveArtikelen.map((a) => a.dateModified || a.datePublished || today()).sort().pop();
+  entries.push({ loc: `${SITE}/kennis/`, lastmod: nieuwste, priority: '0.7' });
+}
+for (const a of liveArtikelen.sort((a, b) => a.slug.localeCompare(b.slug))) {
   entries.push({ loc: a.canonical, lastmod: a.dateModified || a.datePublished || today(), priority: '0.6' });
 }
 

@@ -330,6 +330,36 @@ function buildArticle(a, isPreview) {
 for (const a of liveArticles) { write(a.file, buildArticle(a, false)); console.log(`✓ ${a.url}`); }
 for (const a of conceptArticles) { write(`${PREVIEW_DIR}/${a.file}`, buildArticle(a, true)); console.log(`◌ concept → ${PREVIEW_DIR}/${a.file}`); }
 
+// Overzichtspagina /kennis/ met alle live artikelen (nieuwste eerst). Zonder live artikelen geen pagina.
+if (liveArticles.length) {
+  const canonical = `${SITE}/kennis/`;
+  const lijst = [...liveArticles].sort((a, b) => String(b.datePublished).localeCompare(String(a.datePublished)));
+  const jsonld = { '@context': 'https://schema.org', '@graph': [
+    { '@type': 'CollectionPage', '@id': `${canonical}#pagina`, name: 'Kennis voor glazenwassers', url: canonical, inLanguage: 'nl-NL',
+      publisher: { '@id': `${SITE}/#organization` },
+      mainEntity: { '@type': 'ItemList', itemListElement: lijst.map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: a.canonical, name: a.h1 })) } },
+    breadcrumb([['Home', `${SITE}/`], ['Kennis', canonical]]),
+  ] };
+  write('kennis/index.html', finish(render(read('seo/templates/kennis-index.html'), {
+    ...sharedVars,
+    title: 'Kennis voor glazenwassers | Stam Core',
+    meta: 'Praktische artikelen voor glazenwassers: je Google Bedrijfsprofiel, reviews, je website en vaste klanten werven. Geschreven door een glazenwasser.',
+    h1: 'Kennis voor glazenwassers',
+    canonical, robotsMeta: '',
+    scanUrl: '/website-scan?bron=kennis',
+    pijlerUrl: glazen.pijlerUrl, pijlerTitel: glazen.pijlerTitel, seoPijlerUrl: glazen.seoPijlerUrl, seoPijlerTitel: glazen.seoPijlerTitel,
+    jsonld: jsonldStr(jsonld),
+    artikelenHtml: lijst.map((a) => `<a href="${a.url}" class="reveal block rounded-2xl border border-white/5 bg-slate-900/40 p-6 transition hover:border-electric-500/40">
+      <p class="text-xs text-slate-500"><time datetime="${a.dateModified || a.datePublished}">${datumLeesbaar(a.dateModified || a.datePublished)}</time></p>
+      <h2 class="mt-2 font-display text-xl font-bold text-white">${esc(a.h1)}</h2>
+      <p class="mt-2 text-slate-400">${esc(a.meta)}</p>
+      <span class="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-electric-400">Lees het artikel &rarr;</span>
+    </a>`).join('\n    '),
+  })));
+  console.log('✓ /kennis/');
+}
+
+
 const kennisList = (niche) => liveArticles.length ? `
 <!-- ================= KENNIS (gegenereerd) ================= -->
 <section id="kennis" class="relative py-20 sm:py-24">
