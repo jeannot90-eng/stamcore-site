@@ -20,7 +20,7 @@
 
 ## 2. Wekelijkse run
 
-De run start elke maandag om 9:00 automatisch (geplande taak `kennisartikel-wekelijks` in de Claude-app; draait alleen als de app open is). Handmatig starten kan ook met: **"Schrijf het kennisartikel van deze week."**
+De run start elke maandag om 7:00 automatisch (geplande taak `kennisartikel-wekelijks` in de Claude-app; draait alleen als de app open is). Handmatig starten kan ook met: **"Schrijf het kennisartikel van deze week."**
 
 **Besluit Jeannot (2026-10-25):** de run publiceert niet zelf. Stap 1–7 en het rapport gebeuren automatisch, met het artikel als `status: concept` (QUEUE: `concept`, niet gecommit). Pas na "akkoord" van Jeannot volgt stap 8: status `live`, `seo:all`, commit, push.
 
