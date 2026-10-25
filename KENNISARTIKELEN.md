@@ -20,7 +20,9 @@
 
 ## 2. Wekelijkse run
 
-Jeannot start de run met: **"Schrijf het kennisartikel van deze week."**
+De run start elke maandag om 9:00 automatisch (geplande taak `kennisartikel-wekelijks` in de Claude-app; draait alleen als de app open is). Handmatig starten kan ook met: **"Schrijf het kennisartikel van deze week."**
+
+**Besluit Jeannot (2026-10-25):** de run publiceert niet zelf. Stap 1–7 en het rapport gebeuren automatisch, met het artikel als `status: concept` (QUEUE: `concept`, niet gecommit). Pas na "akkoord" van Jeannot volgt stap 8: status `live`, `seo:all`, commit, push.
 
 1. **Kies het onderwerp.** Neem het bovenste artikel uit `QUEUE.md` met status `klaar-voor-bouw`. Staat er voor die slug een bestand in `seo/articles/input/`, gebruik dat dan (§6).
 2. **Controleer op overlap met bestaande pagina's (kannibalisatie).** Zoek op de site of een bestaande pagina al op dezelfde zoekintentie mikt (pijler, prijzen, scan, stadspagina, ander artikel). Is dat zo, verander dan de invalshoek zodat het artikel iets toevoegt, en link naar die pagina. Lukt dat niet, sla het onderwerp over, zet het op `overgeslagen` met een reden en neem het volgende.
