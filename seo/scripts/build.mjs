@@ -227,7 +227,8 @@ function buildCity({ c, niche, info, scan, voorbeeld, kansen }, isPreview) {
 
 // Alle live steden worden elke run opnieuw gebouwd ("Ook bekeken", links, sitemap kloppen dan overal).
 // Verandert de inhoud van een bestaande pagina (inline CSS niet meegerekend), dan wordt "gewijzigd" vandaag.
-const zonderCss = (h) => h.replace(/<!-- css:app -->[\s\S]*?<!-- \/css:app -->/, '');
+// Regeleinden gelijktrekken: na een git-checkout staan pagina's soms in CRLF, en dat is geen inhoudelijke wijziging.
+const zonderCss = (h) => h.replace(/\r\n/g, '\n').replace(/<!-- css:app -->[\s\S]*?<!-- \/css:app -->/, '');
 for (const r of live) {
   const html = buildCity(r, false);
   const oud = exists(r.info.file) ? read(r.info.file) : null;

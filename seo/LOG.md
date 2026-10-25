@@ -14,6 +14,7 @@
 | 2026-10-24 | Stadspagina's Bergen op Zoom, Waalwijk en Oss live: golf 1 compleet (8 steden) | https://stam-core.nl/website-glazenwasser-bergen-op-zoom · https://stam-core.nl/website-glazenwasser-waalwijk · https://stam-core.nl/website-glazenwasser-oss | seo: stadspagina's bergen op zoom, waalwijk, oss |
 | 2026-10-24 | Website-scan als hoofdactie op alle SEO-pagina's (met ?bron=), CTA-teksten per stad herschreven | alle SEO-pagina's | seo: website-scan als hoofdactie |
 | 2026-10-24 | Kennisartikel 1 live: Google Bedrijfsprofiel voor glazenwassers (2.012 woorden, met eigen scandata en Google-richtlijnen); OG-afbeelding per artikel | https://stam-core.nl/kennis/google-bedrijfsprofiel-glazenwasser | seo: kennisartikel google-bedrijfsprofiel-glazenwasser |
+| 2026-10-25 | Advies over reageren op reviews gelijkgetrokken met Google (kans-zinnen en /seo-glazenwasser); bug in gewijzigd-detectie (regeleinden) opgelost | bergen-op-zoom · helmond · s-hertogenbosch · waalwijk · seo-glazenwasser | seo: reageren op reviews volgens Google |
 
 ## Indexering aangevraagd (Search Console)
 

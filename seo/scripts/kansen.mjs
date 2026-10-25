@@ -21,10 +21,10 @@ export const VARIANTEN = {
   // Vanaf hier geen wijknamen: een wijk staat in hooguit één kans per pagina (die over pagina's per wijk, of de basiskans).
   // k = aantal dat niet reageert op reviews (≥ 2)
   reageert: [
-    (x) => `${x.Kv} bedrijven bovenaan in ${x.stad} reageren niet op hun reviews, terwijl een kort bedankje een minuut kost en nieuwe klanten het meelezen.`,
-    (x) => `Bij ${x.kv} koplopers in ${x.stad} blijven reviews onbeantwoord; reageer jij op elke review, dan zien nieuwe klanten meteen het verschil.`,
+    (x) => `${x.Kv} bedrijven bovenaan in ${x.stad} reageren niet op hun reviews, terwijl een korte, vriendelijke reactie nieuwe klanten laat zien wie er achter het profiel zit.`,
+    (x) => `Bij ${x.kv} koplopers in ${x.stad} blijven reviews onbeantwoord; reageer jij waar je iets toe te voegen hebt, zeker op kritiek, dan zien nieuwe klanten meteen het verschil.`,
     (x) => `Wie in ${x.stad} de reviews van de top 3 doorleest, ziet bij ${x.kv} geen reacties van de eigenaar.`,
-    (x) => `${x.Kv} profielen bovenaan in ${x.stad} hebben geen antwoorden van de eigenaar onder hun reviews, een gat dat je vanaf je eerste review dicht.`,
+    (x) => `${x.Kv} profielen bovenaan in ${x.stad} hebben geen antwoorden van de eigenaar onder hun reviews, terwijl juist een rustige reactie op kritiek vertrouwen geeft.`,
     (x) => `Reageren op reviews laten ${x.kv} koplopers in ${x.stad} over, en juist dat laat zien dat er een vakman achter het profiel zit.`,
   ],
   // k = gemiddeld aantal reviews top 3 (< 30)
