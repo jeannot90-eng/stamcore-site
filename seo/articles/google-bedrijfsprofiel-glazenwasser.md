@@ -5,7 +5,7 @@ meta: Zo richt je als glazenwasser je Google Bedrijfsprofiel in: de juiste categ
 h1: Je Bedrijfsprofiel als glazenwasser: stap voor stap
 zoekwoord: google bedrijfsprofiel glazenwasser
 datePublished: 2026-10-24
-dateModified: 2026-10-25
+dateModified: 2026-10-26
 og: ["Google Bedrijfsprofiel", "voor glazenwassers", "Stap voor stap: categorie, werkgebied, foto's,", "updates en reviews."]
 gerelateerd: ["wat-is-geo", "meer-reviews-glazenwasser"]
 faq: [{"vraag": "Mag ik 'glazenwasser' en mijn plaatsnaam in mijn bedrijfsnaam zetten?", "antwoord": "Alleen als dat echt je bedrijfsnaam is, zoals op je bus, je facturen en je website. Google staat niet toe dat je zoekwoorden, plaatsnamen of diensten aan je naam toevoegt. Die horen in je categorie, je diensten en je beschrijving."}, {"vraag": "Moet ik mijn huisadres op mijn profiel laten zien?", "antwoord": "Nee. Komen klanten niet naar jou toe, dan moet je je adres zelfs verbergen. Je stelt in plaats daarvan een servicegebied in met de plaatsen waar je werkt."}, {"vraag": "Hoeveel plaatsen kan ik als werkgebied instellen?", "antwoord": "Maximaal 20 servicegebieden, en de grens ligt niet verder dan ongeveer 2 uur rijden van je bedrijf. Een straal rond je adres instellen kan niet; je kiest plaatsen, postcodes of andere gebieden."}, {"vraag": "Mag ik klanten korting geven als ze een review schrijven?", "antwoord": "Nee. Google verbiedt elke beloning in ruil voor een review, ook korting of een gratis extra beurt. Vragen om een eerlijke review mag wel, zolang je het iedereen vraagt en niemand onder druk zet."}, {"vraag": "Hoe vaak moet ik een update plaatsen?", "antwoord": "Daar is geen regel voor. Updates die ouder zijn dan zes maanden worden wel gearchiveerd. Een paar keer per maand een korte update met een foto houdt je profiel zichtbaar actief, en dat kost je hooguit tien minuten."}]
@@ -101,7 +101,7 @@ Wat volgens Google **niet** mag:
 - Mensen onder druk zetten om ter plekke een review te schrijven, of voorschrijven wat ze moeten schrijven.
 - Negatieve reviews ontmoedigen.
 
-Vraag het dus iedere klant op dezelfde, nette manier, bijvoorbeeld met een vast appje na elke ronde. Dan groeit je aantal reviews vanzelf mee met je klantenbestand.
+Vraag het dus iedere klant op dezelfde, nette manier, bijvoorbeeld met een vast appje na elke ronde. Dan groeit je aantal reviews vanzelf mee met je klantenbestand. De hele routine, met voorbeeldappjes en de QR-code stap voor stap, staat in [meer reviews krijgen als glazenwasser](/kennis/meer-reviews-glazenwasser).
 
 Reageer op reviews als je iets toevoegt, kort en vriendelijk; je hoeft niet iedereen publiekelijk te bedanken. Bij een negatieve review geef je fouten toe, deel je nooit privégegevens en laat je merken dat je de klant begrijpt. Bijvoorbeeld: "Vervelend dat er strepen op de ramen achterbleven, dat hoort niet. Ik kom het deze week kosteloos overdoen; ik stuur je een berichtje om een moment af te spreken." Nieuwe klanten lezen zo'n reactie, en ze zien er een vakman in die het werk serieus neemt.
 

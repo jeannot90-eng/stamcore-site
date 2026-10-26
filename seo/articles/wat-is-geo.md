@@ -5,7 +5,7 @@ meta: Wat is GEO? Zo vergroot je de kans dat ChatGPT, Perplexity en Google AI je
 h1: Gevonden worden in ChatGPT en Perplexity: wat is GEO?
 zoekwoord: wat is geo
 datePublished: 2026-10-25
-dateModified: 2026-10-25
+dateModified: 2026-10-26
 og: ["Wat is GEO?", "Gevonden worden in AI", "Zo vergroot je de kans dat ChatGPT, Perplexity", "en Google jouw bedrijf noemen."]
 gerelateerd: ["google-bedrijfsprofiel-glazenwasser", "meer-reviews-glazenwasser"]
 faq: [{"vraag": "Is GEO hetzelfde als SEO?", "antwoord": "Nee, maar ze liggen in elkaars verlengde. SEO gaat over gevonden worden in zoekmachines, GEO over genoemd worden in de antwoorden van AI-assistenten. Omdat die assistenten voor een groot deel op zoekmachines en bedrijfsgegevens leunen, is goede SEO de basis voor GEO."}, {"vraag": "Moet ik een speciaal bestand voor AI op mijn website zetten?", "antwoord": "Voor de AI-functies van Google niet: Google zegt zelf dat je daarvoor geen nieuwe bestanden of speciale opmaak nodig hebt. Begin met de basis uit dit artikel: een compleet profiel, kloppende gegevens, goede pagina's en crawlers die je site mogen lezen."}, {"vraag": "Kun je beloven dat ChatGPT mijn bedrijf noemt?", "antwoord": "Nee. Niemand kan dat. AI-assistenten stellen elk antwoord opnieuw samen, en wat ze noemen verschilt per vraag, per persoon en per moment. Wat je wel kunt doen, is zorgen dat de informatie over jouw bedrijf overal vindbaar, compleet en hetzelfde is."}, {"vraag": "Hoe vaak moet ik testen of ik genoemd word?", "antwoord": "Eens per maand is genoeg. Stel steeds dezelfde paar vragen, noteer welke bedrijven en bronnen genoemd worden, en kijk of daar na je verbeteringen iets in verandert."}]
@@ -53,7 +53,7 @@ Je bedrijfsnaam, adres (of werkgebied) en telefoonnummer moeten overal exact het
 
 ### 4. Reviews, en reacties daarop
 
-Reviews zijn het zichtbare bewijs dat klanten tevreden zijn, en bekendheid is volgens Google een van de factoren voor lokale resultaten. Vraag iedere klant op dezelfde nette manier om een eerlijke review, bijvoorbeeld met een QR-code op de bus of een appje na de ronde. Je verstuurt die verzoeken zelf; een beloning ervoor geven mag niet. Reageer kort en vriendelijk waar je iets toe te voegen hebt, zeker op kritiek.
+Reviews zijn het zichtbare bewijs dat klanten tevreden zijn, en bekendheid is volgens Google een van de factoren voor lokale resultaten. Vraag iedere klant op dezelfde nette manier om een eerlijke review, bijvoorbeeld met een QR-code op de bus of een appje na de ronde. Hoe je zo'n vaste routine opzet, lees je in [meer Google-reviews krijgen als glazenwasser](/kennis/meer-reviews-glazenwasser). Je verstuurt die verzoeken zelf; een beloning ervoor geven mag niet. Reageer kort en vriendelijk waar je iets toe te voegen hebt, zeker op kritiek.
 
 ### 5. Pagina's die echte klantvragen beantwoorden
 
