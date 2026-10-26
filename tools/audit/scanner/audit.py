@@ -54,7 +54,7 @@ def run_audit(url: str, *, max_pages: int = 10, psi_key: str | None = None, use_
             log("Techniek (https, robots, sitemap, 404, gewicht)…")
             result["technical"] = technical.run_all(fetcher, cr, log=log)
             log("Tracking & tools…")
-            result["tracking"] = tracking.detect(cr["pages"])
+            result["tracking"] = tracking.detect(cr["pages"], fetcher)
             if check_links:
                 log("Links op de homepage controleren…")
                 result["links"] = links.check_links(fetcher, cr["home"])

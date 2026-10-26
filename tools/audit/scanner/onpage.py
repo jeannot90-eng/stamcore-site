@@ -21,7 +21,8 @@ THIN_WORDS, OK_WORDS = 150, 300
 
 # Schema.org-types die op een lokaal bedrijf duiden
 LOCAL_TYPES = {
-    "localbusiness", "organization", "professionalservice", "homeandconstructionbusiness",
+    # 'Organization' telt bewust niet mee: dat zet Yoast standaard neer, zonder adres of werkgebied.
+    "localbusiness", "professionalservice", "homeandconstructionbusiness",
     "store", "restaurant", "medicalbusiness", "legalservice", "automotivebusiness",
     "healthandbeautybusiness", "foodestablishment", "lodgingbusiness", "financialservice",
     "plumber", "electrician", "roofingcontractor", "housepainter", "locksmith", "hvacbusiness",

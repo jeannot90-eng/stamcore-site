@@ -84,7 +84,9 @@ def noindex(c: Ctx):
                        "Noindex verwijderen (vaak een vergeten vinkje 'zoekmachines ontmoedigen' in WordPress).",
                        f"robots: {c.home.get('robots_meta')}")
     # Privacy, voorwaarden, bedankt- en loginpagina's horen vaak juist niet in Google
-    routine = ("privacy", "cookie", "voorwaarden", "disclaimer", "bedankt", "thank", "login", "inloggen", "account", "registr", "winkelwagen", "cart")
+    routine = ("privacy", "cookie", "voorwaarden", "disclaimer", "bedankt", "thank", "login", "inloggen", "account", "registr", "winkelwagen", "cart",
+               # zoek-, categorie-, tag- en archiefpagina's op noindex is juist goede praktijk
+               "zoeken", "search", "/category/", "/tag/", "/page/", "/author/")
     others = [p for p in c.site.get("noindex", []) if p != "/" and not any(w in p.lower() for w in routine)]
     if others:
         what = "1 pagina staat" if len(others) == 1 else f"{len(others)} pagina's staan"

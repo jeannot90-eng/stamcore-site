@@ -74,7 +74,36 @@ def _script_haystack(soup) -> str:
     return "\n".join(parts)
 
 
-def detect(pages) -> dict:
+# Wat we in een GTM-container (gtm.js) herkennen. De container is publiek op te halen
+# en bevat de tags die Tag Manager laadt; in de HTML van de site zie je die niet.
+CONTAINER = {
+    "ga4": r"['\"](G-[A-Z0-9]{8,12})['\"]",
+    "google_ads": r"\b(AW-\d{6,12})\b",
+    "meta_pixel": r"fbevents|fbq\(",
+    "hotjar": r"static\.hotjar\.com",
+    "clarity": r"clarity\.ms",
+    "linkedin": r"snap\.licdn\.com|_linkedin_partner_id",
+    "tiktok": r"analytics\.tiktok\.com",
+}
+
+
+def _scan_gtm(fetcher, gtm_ids, found, via_gtm, consent):
+    """Haal de GTM-container(s) op en voeg de tools en cookiebanner die erin zitten toe."""
+    for gid in gtm_ids[:3]:
+        r = fetcher.get(f"https://www.googletagmanager.com/gtm.js?id={gid}")
+        if r.status != 200 or not r.text:
+            continue
+        for key, pat in CONTAINER.items():
+            matches = list(re.finditer(pat, r.text, 0 if key == "ga4" else re.I))
+            if matches:
+                via_gtm.add(key)
+                found[key].update(m.group(1) for m in matches if m.groups() and m.group(1))
+        for name, pat in CONSENT.items():
+            if name != "Google Consent Mode" and re.search(pat, r.text, re.I):  # gtm.js bevat altijd consent-code
+                consent.add(f"{name} (via GTM)")
+
+
+def detect(pages, fetcher=None) -> dict:
     found = {k: set() for k in PATTERNS}
     pages_with = {k: 0 for k in PATTERNS}
     consent, cms = set(), set()
@@ -107,8 +136,15 @@ def detect(pages) -> dict:
             gen = page.soup.find("meta", attrs={"name": re.compile(r"^generator$", re.I)})
             generator = gen.get("content") if gen else None
 
-    tools = {k: {"label": LABELS[k], "found": pages_with[k] > 0, "ids": sorted(found[k]),
-                 "pages": pages_with[k]} for k in PATTERNS}
+    via_gtm: set = set()
+    if fetcher is not None and found["gtm"]:
+        try:
+            _scan_gtm(fetcher, sorted(found["gtm"]), found, via_gtm, consent)
+        except Exception:  # noqa: BLE001 - container is een extraatje
+            pass
+
+    tools = {k: {"label": LABELS[k], "found": pages_with[k] > 0 or k in via_gtm, "ids": sorted(found[k]),
+                 "pages": pages_with[k], "via_gtm": k in via_gtm and pages_with[k] == 0} for k in PATTERNS}
     d = {"tools": tools, "consent": sorted(consent), "cms": sorted(cms), "generator": generator,
          "verification": verification, "pages_scanned": len(pages)}
     d["checks"] = build_checks(d)
@@ -120,7 +156,8 @@ def build_checks(d: dict) -> list:
     c = []
     ga4, gtm, ua = t["ga4"]["found"], t["gtm"]["found"], t["ua"]["found"]
     if ga4:
-        c.append(check("Google Analytics 4", PASS, ", ".join(t["ga4"]["ids"]) or "gtag gevonden"))
+        via = " (via Tag Manager)" if t["ga4"].get("via_gtm") else ""
+        c.append(check("Google Analytics 4", PASS, (", ".join(t["ga4"]["ids"]) or "gtag gevonden") + via))
     elif gtm:
         c.append(check("Google Analytics 4", WARN, "niet in de HTML; mogelijk via Tag Manager geladen — controleer in GTM"))
     elif ua:
@@ -131,7 +168,8 @@ def build_checks(d: dict) -> list:
     if ua:
         c.append(check("Universal Analytics opgeruimd", WARN, f"oude code staat er nog: {', '.join(t['ua']['ids'])}"))
     c.append(check("Meta pixel", PASS if t["meta_pixel"]["found"] else INFO,
-                   ", ".join(i for i in t["meta_pixel"]["ids"]) or ("gevonden" if t["meta_pixel"]["found"] else "niet gevonden")))
+                   (", ".join(t["meta_pixel"]["ids"]) or ("gevonden" if t["meta_pixel"]["found"] else "niet gevonden"))
+                   + (" (via Tag Manager)" if t["meta_pixel"].get("via_gtm") else "")))
     c.append(check("Search Console-verificatietag", PASS if d["verification"]["google"] else INFO,
                    "gevonden op homepage" if d["verification"]["google"]
                    else "geen meta-tag (kan ook via DNS/GA zijn geverifieerd — navragen)"))
