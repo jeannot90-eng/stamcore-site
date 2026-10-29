@@ -1,0 +1,98 @@
+{
+  "stad": "Rotterdam",
+  "slug": "rotterdam",
+  "niche": "glazenwasser",
+  "status": "live",
+  "title": "Website glazenwasser Rotterdam | Stam Core",
+  "meta": "Glazenwasser in Rotterdam? De top 3 in Google Maps heeft gemiddeld maar 12 reviews. Zo vind je klanten in Kralingen, Hillegersberg, Delfshaven en Zuid.",
+  "h1": "Glazenwasser in Rotterdam: zo pak je de wijken één voor één",
+  "intro": [
+    "Rotterdam is met ruim 670.000 inwoners de tweede gemeente van het land, en de stad groeit vooral in de hoogte. Voor een glazenwasser is het een markt van uitersten: woontorens aan de Maas, vooroorlogse herenhuizen in Kralingen en rijtjeshuizen in de tuinsteden.",
+    "Opvallend in Google Maps: de bedrijven bovenaan hebben elk maar zo'n twaalf reviews. In een stad van deze omvang is dat weinig. Hieronder zie je wat dat voor jou betekent."
+  ],
+  "wijken": [
+    "Centrum",
+    "Kralingen",
+    "Crooswijk",
+    "Hillegersberg",
+    "Schiebroek",
+    "Blijdorp",
+    "Delfshaven",
+    "Scheepvaartkwartier",
+    "Noordereiland",
+    "Kop van Zuid",
+    "Charlois",
+    "IJsselmonde",
+    "Overschie"
+  ],
+  "wijken_tekst": [
+    "Rotterdam groeide door dorpen en gemeenten in te lijven: Delfshaven, Kralingen en Charlois rond 1900, Hillegersberg, Schiebroek en IJsselmonde in 1941. Die oude namen zijn nog steeds de namen waar mensen op zoeken. Niemand typt glazenwasser Rotterdam-Noord als hij in Hillegersberg woont.",
+    "Kies dus niet de hele stad, maar de wijken waar je al rijdt. Met een pagina per wijk concurreer je niet tegen alles wat in Rotterdam glazen wast, maar alleen tegen wie er ook echt komt."
+  ],
+  "kenmerken": [
+    "Na het bombardement van 1940 koos Rotterdam voor moderne wederopbouw en hoogbouw. Rond de Kop van Zuid en de Wilhelminapier staan torens van 150 meter en meer, en in 2022 kwam de Zalmhaventoren erbij, de hoogste woontoren van het land. Gevels van die hoogte zijn werk voor gondels en specialisten, niet voor een glazenwasser met een telescoopsteel.",
+    "Interessanter voor jou zijn de wijken die het bombardement overleefden. Kralingen, Crooswijk, het Oude Noorden en Hillegersberg zijn grotendeels vooroorlogs, en het Scheepvaartkwartier en Kralingen-Midden zijn beschermd stadsgezicht. Grote panden met veel en hoge ramen, vaak met eigenaren die een vaste glazenwasser willen.",
+    "Daarnaast kent Rotterdam veel appartementencomplexen met een VvE. Eén akkoord met een bestuur levert tientallen voordeuren in één keer op. Laat op je site zien dat je met VvE's werkt, met een aparte pagina voor bestuurders: zij zoeken anders dan bewoners."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Rotterdam is groot. Hoeveel wijkpagina's moet ik maken?",
+      "antwoord": "Begin met drie of vier wijken waar je nu al klanten hebt. Een pagina die laat zien dat je er wekelijks rijdt, werkt beter dan twintig dunne pagina's. Breid uit zodra een nieuwe wijk klanten oplevert."
+    },
+    {
+      "vraag": "Moet ik een aparte pagina hebben voor VvE's?",
+      "antwoord": "In Rotterdam wel. Een VvE-bestuur wil weten hoe je planning, verzekering en communicatie met bewoners regelt. Dat past niet op een pagina voor particulieren, en het is precies wat een bestuurder zoekt voordat hij offertes opvraagt."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "teksten",
+    "eigendom"
+  ],
+  "cta_tekst": "Van Kralingen tot Charlois: wie je vindt, kijkt eerst naar je website, en meestal op een telefoon. Doe de gratis website-scan en zie meteen hoe snel je homepage laadt en wat Google er nog in mist.",
+  "nabije_steden": [
+    "dordrecht",
+    "den-haag",
+    "utrecht"
+  ],
+  "scan": "scans/rotterdam.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente Rotterdam: 674.485 inwoners; tweede stad van Nederland",
+      "bron": "https://nl.wikipedia.org/wiki/Rotterdam"
+    },
+    {
+      "feit": "Annexaties: Delfshaven (1886), Kralingen, deel Overschie en Charlois (1895); Hillegersberg, Schiebroek, rest Overschie, Kralingseveer en IJsselmonde (1941)",
+      "bron": "https://nl.wikipedia.org/wiki/Rotterdam"
+    },
+    {
+      "feit": "Hoogbouw rond Kop van Zuid en Wilhelminapier (De Rotterdam 149 m, New Orleans 160 m, Maastoren 164 m); Zalmhaventoren 2022, hoogste woontoren van het land",
+      "bron": "https://nl.wikipedia.org/wiki/Rotterdam"
+    },
+    {
+      "feit": "Cool, Scheepvaartkwartier, Oude en Nieuwe Westen, Kralingen, Crooswijk, Oude Noorden en Hillegersberg grotendeels vooroorlogs; beschermd stadsgezicht o.a. Blijdorp/Bergpolder, Delfshaven, Kralingen-Midden, Scheepvaartkwartier, Noordereiland",
+      "bron": "https://nl.wikipedia.org/wiki/Rotterdam"
+    }
+  ],
+  "gepubliceerd": "2026-10-29",
+  "gewijzigd": "2026-10-29",
+  "kansvarianten": {
+    "plaats": 0,
+    "reviewsLaag": 1,
+    "fotos": 1
+  },
+  "wikidata": "https://www.wikidata.org/wiki/Q34370",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Rotterdam",
+  "wijken_wikidata": {
+    "Kralingen": "https://www.wikidata.org/wiki/Q12012990",
+    "Hillegersberg": "https://www.wikidata.org/wiki/Q2400537",
+    "Charlois": "https://www.wikidata.org/wiki/Q2289835",
+    "Schiebroek": "https://www.wikidata.org/wiki/Q2434010",
+    "Crooswijk": "https://www.wikidata.org/wiki/Q2507540",
+    "Noordereiland": "https://www.wikidata.org/wiki/Q2131937",
+    "Kop van Zuid": "https://www.wikidata.org/wiki/Q1748087",
+    "Scheepvaartkwartier": "https://www.wikidata.org/wiki/Q2435152",
+    "Delfshaven": "https://www.wikidata.org/wiki/Q2352207",
+    "Blijdorp": "https://www.wikidata.org/wiki/Q2668761"
+  }
+}

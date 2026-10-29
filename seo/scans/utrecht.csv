@@ -1,0 +1,5 @@
+# Gemeten door Claude via de browser (Google Maps, ingelogd in het browserpaneel; gesponsorde resultaten overgeslagen). #1 en #3 hebben een pagina voor Utrecht en andere plaatsen; #2 alleen een pagina voor een andere plaats, telt als nee. Gecontroleerd op de websites; #1 en #3 zijn brede schoonmaakbedrijven.
+datum,stad,zoekterm,positie,reviews,score,eigen_website,plaatspaginas,reageert_op_reviews,fotos
+2026-10-29,Utrecht,glazenwasser utrecht,1,54,4.6,ja,ja,ja,10
+2026-10-29,Utrecht,glazenwasser utrecht,2,21,4.6,ja,nee,ja,1
+2026-10-29,Utrecht,glazenwasser utrecht,3,175,4.6,ja,ja,ja,7

@@ -21,6 +21,7 @@
 | 2026-10-26 | Kennisartikel meer-reviews-glazenwasser live (artikel-run 3, wekelijkse run 2; concept 26-10, akkoord Jeannot); in-tekstlinks vanuit google-bedrijfsprofiel-glazenwasser en wat-is-geo | https://stam-core.nl/kennis/meer-reviews-glazenwasser | kennis: meer-reviews-glazenwasser |
 | 2026-10-29 | Kennisartikel seo-en-google-ads live (handmatige run op verzoek Jeannot, geen wekelijkse run; telt niet mee voor het onderhoud uit KENNISARTIKELEN.md §9); in-tekstlink vanuit google-bedrijfsprofiel-glazenwasser | https://stam-core.nl/kennis/seo-en-google-ads | kennis: seo-en-google-ads |
 | 2026-10-29 | Golf 2 Brabant live: Veldhoven, Uden, Boxtel, Best; generator ondersteunt top 2 (Boxtel); Eindhoven en Tilburg linken naar de nieuwe steden | https://stam-core.nl/website-glazenwasser-veldhoven · https://stam-core.nl/website-glazenwasser-uden · https://stam-core.nl/website-glazenwasser-boxtel · https://stam-core.nl/website-glazenwasser-best | seo: golf 2 brabant |
+| 2026-10-29 | Golf 2 buiten Brabant live: Rotterdam, Dordrecht, Utrecht, Nijmegen, Den Haag, Zwolle (scan zelf gedaan, bronnen en Wikidata in JSON); Roosendaal linkt naar Dordrecht | https://stam-core.nl/website-glazenwasser-rotterdam · https://stam-core.nl/website-glazenwasser-dordrecht · https://stam-core.nl/website-glazenwasser-utrecht · https://stam-core.nl/website-glazenwasser-nijmegen · https://stam-core.nl/website-glazenwasser-den-haag · https://stam-core.nl/website-glazenwasser-zwolle | seo: golf 2 buiten brabant |
 
 ## Indexering aangevraagd (Search Console)
 

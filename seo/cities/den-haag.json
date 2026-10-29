@@ -1,0 +1,88 @@
+{
+  "stad": "Den Haag",
+  "slug": "den-haag",
+  "niche": "glazenwasser",
+  "status": "live",
+  "title": "Website glazenwasser Den Haag | Stam Core",
+  "meta": "Glazenwasser in Den Haag? De drie bovenaan in Google Maps scoren een 5,0, maar niemand reageert op reviews. Zo vind je klanten van Scheveningen tot Ypenburg.",
+  "h1": "Glazenwasser in Den Haag: van Scheveningen tot Ypenburg",
+  "intro": [
+    "Den Haag telt ruim 569.000 inwoners en is de derde gemeente van het land. Het is ook de grootste Nederlandse stad aan zee, met elf kilometer kust en de badplaatsen Scheveningen en Kijkduin binnen de gemeentegrens.",
+    "In Google Maps hebben alle drie de bedrijven bovenaan een perfecte score, maar geen van hen reageert op reviews en niemand heeft pagina's per wijk. Hieronder zie je wat dat voor jou betekent."
+  ],
+  "wijken": [
+    "Centrum",
+    "Scheveningen",
+    "Segbroek",
+    "Loosduinen",
+    "Haagse Hout",
+    "Benoordenhout",
+    "Escamp",
+    "Laak",
+    "Leidschenveen-Ypenburg"
+  ],
+  "wijken_tekst": [
+    "Den Haag heeft acht stadsdelen: Centrum, Scheveningen, Segbroek, Loosduinen, Escamp, Laak, Haagse Hout en Leidschenveen-Ypenburg. Scheveningen en Loosduinen dragen nog de naam van het dorp dat ze ooit waren, en daar zoeken bewoners ook op.",
+    "Het verschil tussen de stadsdelen is groot, van villa's in Benoordenhout tot de nieuwbouw van Ypenburg. Een pagina per stadsdeel of wijk laat zien dat je dat verschil kent, en maakt je vindbaar waar je al rijdt."
+  ],
+  "kenmerken": [
+    "Langs de kust, van Scheveningen tot Kijkduin, brengt de wind zand en zout mee naar de ramen. Wie daar woont, merkt dat ruiten sneller dof worden dan in de rest van de stad. Een glazenwasser die daar een vaster ritme voor voorstelt en dat op zijn site uitlegt, laat zien dat hij de kust kent.",
+    "Den Haag is ook een stad van overheid en organisaties: in 2006 kwam een kwart van de banen uit die hoek, met ministeries, de gemeente en internationale instellingen. Kantoren, ambassades en instellingen zoeken een betrouwbare vaste partner, liefst één die laat zien dat hij discreet en op afspraak werkt.",
+    "Aan de oostkant liggen de nieuwere wijken van Leidschenveen-Ypenburg. Woningen met grote glaspartijen, vaak met een eerste eigenaar die nog geen vaste glazenwasser heeft. Daar telt vindbaarheid op wijkniveau het meest."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Mijn reviews zijn net zo goed als die van de bedrijven bovenaan. Hoe val ik dan op?",
+      "antwoord": "Door te reageren. In Den Haag doet geen van de drie dat. Een korte, persoonlijke reactie op elke review laat zien dat er iemand achter het bedrijf zit, en dat zien nieuwe klanten meteen."
+    },
+    {
+      "vraag": "Maak ik een pagina voor Scheveningen of voor het hele stadsdeel?",
+      "antwoord": "Begin met Scheveningen als geheel; daar zoeken mensen op. Heb je veel klanten in een specifieke buurt, zoals Duinoord of het havengebied, dan kun je die later een eigen pagina geven."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "teksten",
+    "afstand"
+  ],
+  "cta_tekst": "Van Scheveningen tot Ypenburg: een klant die je vindt, beslist binnen een paar seconden of hij belt. Doe de gratis website-scan en zie meteen of je homepage snel genoeg is en wat Google mist.",
+  "nabije_steden": [
+    "rotterdam",
+    "utrecht",
+    "dordrecht"
+  ],
+  "scan": "scans/den-haag.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente Den Haag: 569.076 inwoners (1 januari 2026), op twee na grootste gemeente; grootste stad aan de Noordzee, kustlijn van elf kilometer, badplaatsen Scheveningen en Kijkduin",
+      "bron": "https://nl.wikipedia.org/wiki/Den_Haag"
+    },
+    {
+      "feit": "Acht stadsdelen: Centrum, Laak, Leidschenveen-Ypenburg, Escamp, Loosduinen, Segbroek, Scheveningen, Haagse Hout; Scheveningen en Loosduinen vernoemd naar voormalige dorpskernen; wijk Benoordenhout",
+      "bron": "https://nl.wikipedia.org/wiki/Den_Haag"
+    },
+    {
+      "feit": "Overheid en internationale organisaties 26% van de werkgelegenheid (56.000 personen in 2006)",
+      "bron": "https://nl.wikipedia.org/wiki/Den_Haag"
+    }
+  ],
+  "gepubliceerd": "2026-10-29",
+  "gewijzigd": "2026-10-29",
+  "kansvarianten": {
+    "plaats": 2,
+    "reageert": 4,
+    "reviewsLaag": 3
+  },
+  "wikidata": "https://www.wikidata.org/wiki/Q36600",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Den_Haag",
+  "wijken_wikidata": {
+    "Scheveningen": "https://www.wikidata.org/wiki/Q837211",
+    "Loosduinen": "https://www.wikidata.org/wiki/Q994533",
+    "Segbroek": "https://www.wikidata.org/wiki/Q846497",
+    "Escamp": "https://www.wikidata.org/wiki/Q1615318",
+    "Haagse Hout": "https://www.wikidata.org/wiki/Q1614057",
+    "Leidschenveen-Ypenburg": "https://www.wikidata.org/wiki/Q1614939",
+    "Benoordenhout": "https://www.wikidata.org/wiki/Q4890135",
+    "Laak": "https://www.wikidata.org/wiki/Q1614099"
+  }
+}

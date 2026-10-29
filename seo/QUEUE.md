@@ -55,9 +55,9 @@ Na indexering golf 1 (Search Console bevestigd) op verzoek van Jeannot gestart.
 | stad | uden | live | 2026-10-29 | Gemeente Maashorst sinds 2022 |
 | stad | boxtel | live | 2026-10-29 | Maps toont maar 2 organische resultaten: top 2 |
 | stad | best | live | 2026-10-29 | Kustermans Glas organisch in top 3, geanonimiseerd meegeteld |
-| stad | rotterdam | klaar-voor-bouw | | |
-| stad | dordrecht | klaar-voor-bouw | | |
-| stad | utrecht | klaar-voor-bouw | | |
-| stad | nijmegen | klaar-voor-bouw | | |
-| stad | den-haag | klaar-voor-bouw | | |
-| stad | zwolle | klaar-voor-bouw | | |
+| stad | rotterdam | live | 2026-10-29 | |
+| stad | dordrecht | live | 2026-10-29 | |
+| stad | utrecht | live | 2026-10-29 | Top 3 sterk: alle drie reageren op reviews |
+| stad | nijmegen | live | 2026-10-29 | |
+| stad | den-haag | live | 2026-10-29 | Top 3 allemaal score 5,0 |
+| stad | zwolle | live | 2026-10-29 | |

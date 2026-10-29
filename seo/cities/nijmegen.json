@@ -1,0 +1,101 @@
+{
+  "stad": "Nijmegen",
+  "slug": "nijmegen",
+  "niche": "glazenwasser",
+  "status": "live",
+  "title": "Website glazenwasser Nijmegen | Stam Core",
+  "meta": "Glazenwasser in Nijmegen? Geen van de drie bovenaan in Google Maps heeft pagina's per wijk. Zo vind je klanten in Lent, Dukenburg, Lindenholt en de Waalsprong.",
+  "h1": "Glazenwasser in Nijmegen: van de Waalsprong tot Dukenburg",
+  "intro": [
+    "Nijmegen telt bijna 190.000 inwoners en is de grootste gemeente van Gelderland. De stad ligt grotendeels op de zuidoever van de Waal, maar groeit sinds eind jaren negentig ook aan de overkant, in de Waalsprong.",
+    "In Google Maps hebben de bedrijven bovenaan hoge scores, maar weinig reviews en geen pagina's per wijk. Hieronder zie je waar dat ruimte laat."
+  ],
+  "wijken": [
+    "Stadscentrum",
+    "Bottendaal",
+    "Hunnerberg",
+    "Hengstdal",
+    "Altrade",
+    "Hatert",
+    "Hees",
+    "Brakkenstein",
+    "Heijendaal",
+    "Dukenburg",
+    "Lindenholt",
+    "Lent",
+    "Waalsprong"
+  ],
+  "wijken_tekst": [
+    "Nijmegen is een stad van uitbreidingen. Na de oorlog gingen de dorpen Hatert, Hees en Neerbosch op in nieuwe stadswijken met dezelfde naam. Vanaf 1966 kwamen er in Dukenburg 10.000 woningen bij, vanaf 1977 nog eens 6.000 in Lindenholt, aan de westkant van het Maas-Waalkanaal.",
+    "Het centrum ligt daardoor helemaal in het noordoosten, en de woonwijken liggen ver uit elkaar. Kies je wijken bewust en geef elk een eigen pagina; zo vul je je ronde zonder dat je de hele dag van Lent naar Lindenholt rijdt."
+  ],
+  "kenmerken": [
+    "Aan de overkant van de Waal is rond de dorpen Lent en Ressen een complete nieuwe stad verrezen: de Waalsprong. Nieuwbouwwijken met grote raampartijen, bewoners die vaak voor het eerst een glazenwasser zoeken, en een eigen station, Nijmegen Lent. Wie hier vroeg vindbaar is, bouwt een klantenbestand op dat jaren meegaat.",
+    "Dukenburg en Lindenholt zijn het tegenovergestelde: wijken uit de jaren zestig en zeventig met veel rijtjeshuizen en flats. Daar draait het om een strakke route en een eerlijke prijs per straat, en om klanten die elkaar doorvertellen dat je betrouwbaar bent.",
+    "In Nijmegen-Zuid liggen de Radboud Universiteit en het Radboudumc, in de wijk Heijendaal. Rond zulke grote werkgevers zitten praktijken, kantoren en studentenhuizen. Ook dat is een doelgroep met een eigen vraag, die je beter apart aanspreekt."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Heeft een pagina voor de Waalsprong zin, of kan ik beter Lent apart noemen?",
+      "antwoord": "Allebei. Oudere bewoners zeggen Lent, nieuwe bewoners vaak Waalsprong of de naam van hun eigen buurt. Een pagina voor Lent die ook de Waalsprong noemt, vangt beide."
+    },
+    {
+      "vraag": "Ik heb vooral klanten in Dukenburg. Is één wijk genoeg om mee te beginnen?",
+      "antwoord": "Ja. Een wijk met 10.000 woningen is groot genoeg voor een volle ronde. Laat op die pagina zien dat je er vaste dagen rijdt, en breid uit naar Lindenholt of Hatert als je ruimte hebt."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "afstand",
+    "eigendom"
+  ],
+  "cta_tekst": "Van de Waalsprong tot Dukenburg: je website is vaak het eerste wat een nieuwe klant van je ziet. Doe de gratis website-scan en zie binnen een minuut hoe die scoort op mobiel en desktop.",
+  "nabije_steden": [
+    "s-hertogenbosch",
+    "oss",
+    "uden",
+    "utrecht"
+  ],
+  "scan": "scans/nijmegen.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente Nijmegen: 189.850 inwoners (1 januari 2026), grootste gemeente van Gelderland; grotendeels op zuidoever van de Waal",
+      "bron": "https://nl.wikipedia.org/wiki/Nijmegen"
+    },
+    {
+      "feit": "Hatert, Hees en Neerbosch na WOII stadswijken; Dukenburg 10.000 woningen vanaf 1966, Lindenholt 6000 vanaf 1977, ten westen van het Maas-Waalkanaal; centrum in uiterste noordoosten",
+      "bron": "https://nl.wikipedia.org/wiki/Nijmegen"
+    },
+    {
+      "feit": "Waalsprong: uitbreiding ten noorden van de Waal vanaf eind jaren negentig rond Lent en Ressen; station Nijmegen Lent",
+      "bron": "https://nl.wikipedia.org/wiki/Nijmegen"
+    },
+    {
+      "feit": "Radboud Universiteit (sinds 1923 als Katholieke Universiteit); Radboudumc in de wijk Heijendaal; wijken o.a. Stadscentrum, Bottendaal, Hunnerberg, Hengstdal, Altrade, Brakkenstein",
+      "bron": "https://nl.wikipedia.org/wiki/Nijmegen"
+    }
+  ],
+  "gepubliceerd": "2026-10-29",
+  "gewijzigd": "2026-10-29",
+  "kansvarianten": {
+    "plaats": 4,
+    "reageert": 1,
+    "reviewsLaag": 0
+  },
+  "wikidata": "https://www.wikidata.org/wiki/Q47887",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Nijmegen",
+  "wijken_wikidata": {
+    "Lent": "https://www.wikidata.org/wiki/Q2068947",
+    "Dukenburg": "https://www.wikidata.org/wiki/Q2916263",
+    "Lindenholt": "https://www.wikidata.org/wiki/Q1925421",
+    "Hatert": "https://www.wikidata.org/wiki/Q2280121",
+    "Hees": "https://www.wikidata.org/wiki/Q2362080",
+    "Waalsprong": "https://www.wikidata.org/wiki/Q4371466",
+    "Bottendaal": "https://www.wikidata.org/wiki/Q2141890",
+    "Hunnerberg": "https://www.wikidata.org/wiki/Q1355891",
+    "Hengstdal": "https://www.wikidata.org/wiki/Q5884057",
+    "Altrade": "https://www.wikidata.org/wiki/Q2752587",
+    "Brakkenstein": "https://www.wikidata.org/wiki/Q7476126",
+    "Heijendaal": "https://www.wikidata.org/wiki/Q2646418"
+  }
+}

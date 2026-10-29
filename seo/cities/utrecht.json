@@ -1,0 +1,89 @@
+{
+  "stad": "Utrecht",
+  "slug": "utrecht",
+  "niche": "glazenwasser",
+  "status": "live",
+  "title": "Website glazenwasser Utrecht | Stam Core",
+  "meta": "Glazenwasser in Utrecht? Alle drie bovenaan in Google Maps reageren op reviews, twee hebben pagina's per plaats. Zo val je toch op, van Oost tot Leidsche Rijn.",
+  "h1": "Glazenwasser in Utrecht: opvallen waar de concurrentie al goed is",
+  "intro": [
+    "Utrecht telt ruim 378.000 inwoners en is de vierde gemeente van het land. Naast de stad zelf horen Vleuten, De Meern en Haarzuilens erbij, en aan de westkant groeit Leidsche Rijn, de grootste Vinex-locatie van Nederland.",
+    "Google Maps laat in Utrecht een ander beeld zien dan in de meeste steden: de bedrijven bovenaan doen veel goed. Dat maakt de vraag interessanter waar jij het verschil maakt. Hieronder lees je hoe."
+  ],
+  "wijken": [
+    "Binnenstad",
+    "Oost",
+    "Noordoost",
+    "Zuid",
+    "Zuidwest",
+    "West",
+    "Noordwest",
+    "Overvecht",
+    "Leidsche Rijn",
+    "Vleuten-De Meern"
+  ],
+  "wijken_tekst": [
+    "Bestuurlijk heeft Utrecht tien wijken, van de Binnenstad tot Vleuten-De Meern. Die indeling is grof: binnen Oost liggen buurten als Wittevrouwen en het Oosterkwartier, en Leidsche Rijn bestaat uit een hele reeks nieuwe buurten met eigen namen.",
+    "Juist daar zit de ruimte. Twee van de drie bedrijven bovenaan hebben pagina's per plaats in de regio, maar niemand heeft pagina's per Utrechtse buurt. Wie zich op een paar buurten richt en daar laat zien dat hij er wekelijks komt, is specifieker dan een schoonmaakbedrijf dat de hele provincie bedient."
+  ],
+  "kenmerken": [
+    "Het historische centrum van Utrecht wordt omringd door de Stadsbuitengracht, met daarbinnen de Oudegracht en de Nieuwegracht. Die grachten hebben werven: lage kades waar de werfkelders van de huizen op uitkomen. De stad telt na Amsterdam en Maastricht de meeste rijksmonumenten van het land. Monumentale ramen vragen vakwerk, en eigenaren zoeken daar een glazenwasser die er voorzichtig mee omgaat.",
+    "Aan de andere kant van het Amsterdam-Rijnkanaal ligt Leidsche Rijn, dat bij afronding ongeveer 90.000 inwoners huisvest. Veel jonge gezinnen, veel nieuwe woningen met grote raampartijen. Daar zoekt men een glazenwasser voor het eerst, en dan wint wie al goed vindbaar is.",
+    "Let op het verschil met de bedrijven bovenaan in Maps: in Utrecht zijn dat deels brede schoonmaakbedrijven. Een glazenwasser die zich echt als glazenwasser presenteert, met eigen foto's van ramen, ladders en bus, valt tussen kantoorschoonmakers juist op."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "De bedrijven bovenaan in Utrecht doen al veel goed. Heeft een nieuwe website dan nog zin?",
+      "antwoord": "Ja, maar kies je terrein. Op 'glazenwasser Utrecht' haal je ze niet snel in. Op een buurt in Leidsche Rijn of op 'glazenwasser Vleuten' ligt het anders, zeker als je daar al rijdt en dat kunt laten zien."
+    },
+    {
+      "vraag": "Maak ik een pagina voor Leidsche Rijn als geheel of per buurt?",
+      "antwoord": "Begin met Leidsche Rijn als geheel en voeg buurten toe waar je meerdere klanten hebt. Zo bouw je stap voor stap op, en elke nieuwe pagina gaat over een plek waar je echt werkt."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "teksten",
+    "glazenwasser"
+  ],
+  "cta_tekst": "In een stad waar de concurrentie online al sterk is, telt elk detail van je website. Doe de gratis website-scan en zie direct hoe jouw homepage scoort op snelheid, vindbaarheid en mobiel gebruik.",
+  "nabije_steden": [
+    "s-hertogenbosch",
+    "nijmegen",
+    "rotterdam",
+    "zwolle"
+  ],
+  "scan": "scans/utrecht.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente Utrecht: 378.278 inwoners op 1 januari 2026, vierde gemeente; woonplaatsen Utrecht, Haarzuilens, Vleuten en De Meern",
+      "bron": "https://nl.wikipedia.org/wiki/Utrecht_(stad)"
+    },
+    {
+      "feit": "Tien wijken: Binnenstad, Oost, Leidsche Rijn, West, Overvecht, Zuid, Noordoost, Zuidwest, Noordwest, Vleuten-De Meern; buurten Wittevrouwen en Voordorp",
+      "bron": "https://nl.wikipedia.org/wiki/Utrecht_(stad)"
+    },
+    {
+      "feit": "Leidsche Rijn: grootste Vinex-locatie van Nederland, ten westen van het Amsterdam-Rijnkanaal, bij afronding circa 90.000 inwoners",
+      "bron": "https://nl.wikipedia.org/wiki/Utrecht_(stad)"
+    },
+    {
+      "feit": "Historisch centrum omringd door Stadsbuitengracht; Oudegracht en Nieuwegracht met werven en werfkelders; na Amsterdam en Maastricht de meeste rijksmonumenten (1.590 in 2024)",
+      "bron": "https://nl.wikipedia.org/wiki/Utrecht_(stad)"
+    }
+  ],
+  "gepubliceerd": "2026-10-29",
+  "gewijzigd": "2026-10-29",
+  "kansvarianten": {
+    "reviewsHoog": 4,
+    "fotos": 2
+  },
+  "wikidata": "https://www.wikidata.org/wiki/Q803",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Utrecht_%28stad%29",
+  "wijken_wikidata": {
+    "Leidsche Rijn": "https://www.wikidata.org/wiki/Q4352681",
+    "Overvecht": "https://www.wikidata.org/wiki/Q2321954",
+    "Vleuten-De Meern": "https://www.wikidata.org/wiki/Q2581182",
+    "Oost": "https://www.wikidata.org/wiki/Q2435623"
+  }
+}

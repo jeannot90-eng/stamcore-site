@@ -52,6 +52,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://stam-core.nl/website-glazenwasser-den-haag</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stam-core.nl/website-glazenwasser-dordrecht</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://stam-core.nl/website-glazenwasser-eindhoven</loc>
     <lastmod>2026-10-29</lastmod>
     <priority>0.7</priority>
@@ -62,12 +72,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://stam-core.nl/website-glazenwasser-nijmegen</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://stam-core.nl/website-glazenwasser-oss</loc>
     <lastmod>2026-10-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://stam-core.nl/website-glazenwasser-roosendaal</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stam-core.nl/website-glazenwasser-rotterdam</loc>
     <lastmod>2026-10-29</lastmod>
     <priority>0.7</priority>
   </url>
@@ -87,12 +107,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://stam-core.nl/website-glazenwasser-utrecht</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://stam-core.nl/website-glazenwasser-veldhoven</loc>
     <lastmod>2026-10-29</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://stam-core.nl/website-glazenwasser-waalwijk</loc>
+    <lastmod>2026-10-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stam-core.nl/website-glazenwasser-zwolle</loc>
     <lastmod>2026-10-29</lastmod>
     <priority>0.7</priority>
   </url>
