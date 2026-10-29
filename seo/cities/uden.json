@@ -1,0 +1,93 @@
+{
+  "stad": "Uden",
+  "slug": "uden",
+  "niche": "glazenwasser",
+  "status": "live",
+  "title": "Website glazenwasser Uden | Stam Core",
+  "meta": "Glazenwasser in Uden? Alle drie de bedrijven bovenaan in Google Maps hebben een website, maar geen pagina's per kern. Zo pak je Volkel, Schaijk en Zeeland.",
+  "h1": "Glazenwasser in Uden en Maashorst: zo pak je de kernen",
+  "intro": [
+    "Uden is met ruim 37.000 inwoners de grootste kern van de gemeente Maashorst, die in 2022 ontstond uit Uden en Landerd. De hele gemeente telt zo'n 60.000 inwoners, verdeeld over zes kernen.",
+    "In Google Maps heeft één bedrijf bovenaan een flinke voorsprong in reviews, de andere twee hebben er een handvol. Hieronder zie je wat dat voor jou betekent."
+  ],
+  "wijken": [
+    "Uden-Zuid",
+    "Uden-Noord",
+    "Volkel",
+    "Odiliapeel",
+    "Schaijk",
+    "Reek",
+    "Zeeland"
+  ],
+  "wijken_tekst": [
+    "Maashorst bestaat uit Uden, Volkel, Odiliapeel, Reek, Schaijk en Zeeland. Sinds de fusie wonen ze in één gemeente, maar wie in Schaijk woont, noemt zich zelden een inwoner van Maashorst. Wie een glazenwasser zoekt, typt de naam van zijn eigen dorp.",
+    "Daar zit je kans. Een pagina voor Schaijk of Zeeland heeft weinig concurrentie, omdat bijna niemand zo'n pagina maakt. Begin met de kernen waar je al rijdt en vul je ronde daar verder op."
+  ],
+  "kenmerken": [
+    "In de tweede helft van de twintigste eeuw groeide Uden uit van arme agrarische gemeenschap tot industrieplaats. Na de oorlog kwam er een industrieterrein tussen Uden en Volkel, en nu ligt er een hele rij bedrijventerreinen: Vluchtoord, Loopkant, Goorkens, Liessent, Molenheide en het nieuwe Hoogveld. Dat is zakelijk werk dicht bij elkaar.",
+    "Het centrum trekt winkelend publiek uit de wijde omgeving, en sinds 2013 staat het regionale ziekenhuis Bernhoven in Uden. Etalages en entrees die er elke week schoon bij moeten staan, vragen om een vaste ronde op een vaste dag.",
+    "En Uden is groen: in 2008 werd de stad uitgeroepen tot Groenste Stad van Europa. Veel tuinen en bomen betekenen stuifmeel en blad op de ruiten. Een glazenwasser die dat uitlegt en er zijn ritme op afstemt, laat zien dat hij de plek kent."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Moet ik op mijn site Maashorst noemen of Uden?",
+      "antwoord": "Allebei, maar niet op dezelfde plek. Zet Uden en de dorpen voorop, want daar zoeken mensen op. Noem Maashorst in je werkgebied, zodat duidelijk is dat je in de hele gemeente komt."
+    },
+    {
+      "vraag": "Ik heb vooral klanten in Schaijk en Reek. Is een eigen pagina voor zulke kleine dorpen de moeite waard?",
+      "antwoord": "Ja. Er wordt minder op gezocht, maar er is ook bijna geen concurrentie. Een pagina die laat zien dat je er al rijdt, is vaak het eerste resultaat dat iemand uit het dorp ziet."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "afstand",
+    "glazenwasser"
+  ],
+  "cta_tekst": "Of je nu in Uden-Zuid of in Zeeland rijdt: je website is vaak het eerste wat een nieuwe klant van je ziet. De gratis website-scan laat meteen zien hoe die scoort op mobiel en desktop, en wat je het eerst verbetert.",
+  "nabije_steden": [
+    "oss",
+    "s-hertogenbosch",
+    "helmond",
+    "boxtel"
+  ],
+  "scan": "scans/uden.csv",
+  "bronnen": [
+    {
+      "feit": "Uden: 37.325 inwoners op 1 januari 2023, grootste kern van de gemeente Maashorst",
+      "bron": "https://nl.wikipedia.org/wiki/Uden_(plaats)"
+    },
+    {
+      "feit": "Gemeente Maashorst: per 1 januari 2022 ontstaan uit Landerd en Uden; 60.060 inwoners (1 januari 2026, CBS); zes kernen: Uden, Volkel, Odiliapeel, Reek, Schaijk en Zeeland",
+      "bron": "https://nl.wikipedia.org/wiki/Maashorst_(gemeente)"
+    },
+    {
+      "feit": "Bedrijventerreinen Goorkens, Hoogveld (in ontwikkeling), Loopkant, Liessent, Molenheide, Vluchtoord, Industrieterrein Volkel; industrieterrein tussen Uden en Volkel vanaf 1947; ontwikkeling van arme agrarische gemeenschap tot industriegemeente",
+      "bron": "https://nl.wikipedia.org/wiki/Uden_(plaats)"
+    },
+    {
+      "feit": "Ziekenhuis Bernhoven nieuwe locatie in Uden geopend in 2013; centrum belangrijkste publiekstrekker regio Uden-Veghel",
+      "bron": "https://nl.wikipedia.org/wiki/Uden_(plaats)"
+    },
+    {
+      "feit": "Uden op 19 september 2008 uitgeroepen tot Groenste Stad van Europa (Entente Florale)",
+      "bron": "https://nl.wikipedia.org/wiki/Uden_(plaats)"
+    },
+    {
+      "feit": "Uden-Noord (Hengstheuvel) en Uden-Zuid als delen van Uden",
+      "bron": "https://nl.wikipedia.org/wiki/Uden_(plaats)"
+    }
+  ],
+  "gepubliceerd": "2026-10-29",
+  "gewijzigd": "2026-10-29",
+  "kansvarianten": {
+    "plaats": 0,
+    "reageert": 2,
+    "reviewsLaag": 2
+  },
+  "wikidata": "https://www.wikidata.org/wiki/Q528819",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Uden_%28plaats%29",
+  "wijken_wikidata": {
+    "Volkel": "https://www.wikidata.org/wiki/Q2239883",
+    "Odiliapeel": "https://www.wikidata.org/wiki/Q2176041"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "stad": "Best",
+  "slug": "best",
+  "niche": "glazenwasser",
+  "status": "live",
+  "title": "Website glazenwasser Best | Stam Core",
+  "meta": "Glazenwasser in Best? Geen van de drie bovenaan in Google Maps heeft een pagina voor Best of de buurten. Zo vind je klanten in Batadorp, Heivelden en Aarle.",
+  "h1": "Glazenwasser in Best: van Batadorp tot de buurtschappen",
+  "intro": [
+    "Best telt bijna 32.000 inwoners en ligt waar de A2, de A50 en de A58 samenkomen. Naast het dorp zelf horen de buurtschappen Aarle en De Vleut bij de gemeente; in 2028 gaat Best samen met Oirschot verder als Best-Oirschot.",
+    "In Google Maps staan bovenaan bedrijven die ook in de omliggende steden werken, met flink wat reviews. Hieronder zie je waar je je toch kunt onderscheiden."
+  ],
+  "wijken": [
+    "Centrum",
+    "Batadorp",
+    "Naastenbest",
+    "Heivelden",
+    "Speelheide",
+    "Wilhelminadorp",
+    "Aarle",
+    "De Vleut"
+  ],
+  "wijken_tekst": [
+    "Best is een dorp van buurten met een eigen verhaal. Batadorp ontstond rond de schoenfabriek, Wilhelminadorp en Heivelden zijn duidelijke woonbuurten, en in het buitengebied liggen Aarle en De Vleut met hun langgevelboerderijen.",
+    "Wie hier zoekt, noemt vaak zijn buurt. Een pagina per buurt waar je al klanten hebt, laat zien dat je Best echt kent en niet vanuit een grote stad af en toe langskomt."
+  ],
+  "kenmerken": [
+    "In 1933 kocht schoenfabrikant Bata 660 hectare grond in Best en bouwde er een fabriek met 130 arbeiderswoningen: het Batadorp. Die woningen staan er nog, net als de fabrieksgebouwen, die nu als industrieel erfgoed worden herontwikkeld. Karakteristieke ramen in zo'n historisch straatbeeld vragen om een glazenwasser die er voorzichtig mee omgaat.",
+    "Later bracht Philips Healthcare het dorp verder op gang: in Best ontwikkelt en produceert het röntgen- en MRI-systemen, op een eigen campus. Rond zo'n campus en de bedrijventerreinen langs het Wilhelminakanaal zitten kantoren en bedrijfshallen die een vaste zakelijke ronde waard zijn.",
+    "Door de fusie met Oirschot in 2028 wordt het werkgebied vanzelf groter. Rijd je ook in Oirschot, dan kun je dat nu al een eigen pagina geven, zodat je er staat voordat de nieuwe gemeente begint."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Moet ik mijn site aanpassen als Best en Oirschot in 2028 samengaan?",
+      "antwoord": "Nauwelijks. Mensen blijven zoeken op Best en op hun eigen buurt of dorp. Noem de nieuwe gemeentenaam in je werkgebied zodra die er is, en houd je pagina's per plaats gewoon zoals ze zijn."
+    },
+    {
+      "vraag": "De bedrijven bovenaan in Maps werken in de hele regio. Kan ik daar als glazenwasser uit Best tegenop?",
+      "antwoord": "Ja, juist met lokaal werk. Laat zien dat je in Best zelf zit of er vast rijdt, met foto's uit de buurt, reviews van klanten uit Best en een pagina per buurt. Dat kan een bedrijf dat de hele regio bedient, moeilijk evenaren."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "afstand",
+    "eigendom"
+  ],
+  "cta_tekst": "Van Batadorp tot De Vleut: een klant die je vindt, wil snel zien wat je doet en hoe hij je bereikt. Doe de gratis website-scan en zie direct waar je homepage tijd of vindbaarheid verliest.",
+  "nabije_steden": [
+    "eindhoven",
+    "veldhoven",
+    "boxtel",
+    "tilburg"
+  ],
+  "scan": "scans/best.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente Best: 31.694 inwoners (1 januari 2026, CBS); bij A58, A50 en A2; buurtschappen Aarle en De Vleut; fusie met Oirschot per 1 januari 2028 tot Best-Oirschot",
+      "bron": "https://nl.wikipedia.org/wiki/Best"
+    },
+    {
+      "feit": "Buurten: Aarle, Salderes, Driehoek, Mosselaar, Verrenbest, De Leeuwerik, De Vleut, Wilhelminadorp, Batadorp, Kantonnier, Heivelden, Heuveleind, Hoge Akker, Steegsche Velden, Heikant, Dijkstraten, Speelheide, Villawijk, Naastenbest; langgevelboerderijen bij Aarle en De Vleut",
+      "bron": "https://nl.wikipedia.org/wiki/Best"
+    },
+    {
+      "feit": "Bata kocht in 1933 660 hectare grond en bouwde fabriek en 130 arbeiderswoningen (Batadorp); gebouwen industrieel erfgoed, worden herontwikkeld",
+      "bron": "https://nl.wikipedia.org/wiki/Best"
+    },
+    {
+      "feit": "Philips Healthcare in Best: ontwikkelings- en productiecentrum voor röntgen en MRI, ontwikkelingscampus; ligging aan Wilhelminakanaal en Beatrixkanaal",
+      "bron": "https://nl.wikipedia.org/wiki/Best"
+    }
+  ],
+  "gepubliceerd": "2026-10-29",
+  "gewijzigd": "2026-10-29",
+  "kansvarianten": {
+    "plaats": 3,
+    "reviewsHoog": 2,
+    "website": 0
+  },
+  "wikidata": "https://www.wikidata.org/wiki/Q9816",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Best",
+  "wijken_wikidata": {
+    "Aarle": "https://www.wikidata.org/wiki/Q13427900",
+    "De Vleut": "https://www.wikidata.org/wiki/Q2624269",
+    "Batadorp": "https://www.wikidata.org/wiki/Q2198018"
+  }
+}

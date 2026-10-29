@@ -1,0 +1,81 @@
+{
+  "stad": "Boxtel",
+  "slug": "boxtel",
+  "niche": "glazenwasser",
+  "status": "live",
+  "title": "Website glazenwasser Boxtel | Stam Core",
+  "meta": "Glazenwasser in Boxtel? Google Maps toont maar twee bedrijven, geen van beide als glazenwasser. Zo vind je klanten in Boxtel, Liempde, Esch en Lennisheuvel.",
+  "h1": "Glazenwasser in Boxtel: een markt die online nog openligt",
+  "intro": [
+    "De gemeente Boxtel telt ruim 34.000 inwoners en ligt aan de Dommel, midden in de driehoek Tilburg, Eindhoven en Den Bosch. Naast Boxtel zelf horen Liempde, Lennisheuvel en sinds 2021 ook Esch erbij.",
+    "Zoek je in Google Maps op een glazenwasser in Boxtel, dan zie je iets bijzonders: er verschijnen maar twee bedrijven, en geen van beide staat als glazenwasser ingeschreven. Hieronder zie je wat dat voor jou betekent."
+  ],
+  "wijken": [
+    "Centrum",
+    "Selissen",
+    "Liempde",
+    "Lennisheuvel",
+    "Esch"
+  ],
+  "wijken_tekst": [
+    "Boxtel is overzichtelijk: één flinke kern met een oud centrum rond de Markt en de Sint-Petrusbasiliek, en daaromheen de dorpen Liempde, Lennisheuvel en Esch. Esch hoorde tot 2021 bij Haaren en voelt voor veel bewoners nog als een dorp apart.",
+    "Juist bij zo'n kleine gemeente telt elke plaatsnaam. Zet Liempde, Esch en Lennisheuvel elk op een eigen pagina, dan sta je er waar je rijdt, en niet alleen onder de algemene noemer Boxtel."
+  ],
+  "kenmerken": [
+    "Dat Maps in Boxtel maar twee bedrijven laat zien, en die ook nog als schoonmaakbedrijf, zegt veel. Google laat hier geen bedrijf zien dat zich duidelijk als glazenwasser in Boxtel presenteert. Wie dat wel doet, met de juiste categorie en een plaatsnaam in zijn profiel, heeft een goede kans om op te vallen.",
+    "Ladonk, het bedrijventerrein langs het spoor, groeide na de oorlog uit tot de zakelijke motor van Boxtel. Er zitten productiebedrijven als Bosch Rexroth, en Waterschap De Dommel heeft zijn hoofdkantoor in Boxtel. Kantoren en hallen dicht bij elkaar maken een zakelijke ochtendronde haalbaar.",
+    "Boxtel ligt bovendien op een knooppunt: de A2 en een intercitystation, met directe treinen naar Den Bosch, Tilburg en Eindhoven. Rij je daar ook, laat dan op je site zien dat Boxtel bij je vaste werkgebied hoort, en niet een uitstapje is."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Wat betekent het dat er in Boxtel maar twee bedrijven in Google Maps staan?",
+      "antwoord": "Dat er nog weinig concurrentie is op de zoekterm. Kies als hoofdcategorie Glazenwasser in je Bedrijfsprofiel, zet Boxtel en de dorpen in je servicegebied en zorg voor een pagina per plaats. Dan heeft Google iets om je aan te koppelen."
+    },
+    {
+      "vraag": "Esch hoorde vroeger bij Haaren. Noem ik het onder Boxtel of apart?",
+      "antwoord": "Apart, met een eigen pagina. Bewoners zoeken op Esch, niet op Boxtel. In de tekst kun je vermelden dat Esch tegenwoordig bij de gemeente Boxtel hoort."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "eigendom",
+    "teksten"
+  ],
+  "cta_tekst": "In een markt waar online nog weinig gebeurt, maakt een goede website meteen verschil. Doe de gratis website-scan en zie hoe jouw homepage scoort op snelheid, vindbaarheid en mobiel gebruik.",
+  "nabije_steden": [
+    "s-hertogenbosch",
+    "tilburg",
+    "best",
+    "eindhoven"
+  ],
+  "scan": "scans/boxtel.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente Boxtel: 34.314 inwoners (1 januari 2026, CBS); aan de Dommel, in de driehoek Tilburg, Eindhoven en 's-Hertogenbosch; kernen Boxtel, Liempde, Lennisheuvel en Esch; Esch per 1 januari 2021 van Haaren naar Boxtel",
+      "bron": "https://nl.wikipedia.org/wiki/Boxtel_(gemeente)"
+    },
+    {
+      "feit": "Bedrijventerrein Ladonk aan het spoor na de Tweede Wereldoorlog; Bosch Rexroth; hoofdkantoor Waterschap De Dommel in Boxtel; Sint-Petrusbasiliek; wijk Selissen",
+      "bron": "https://nl.wikipedia.org/wiki/Boxtel_(plaats)"
+    },
+    {
+      "feit": "A2 bij Boxtel; station Boxtel sinds 1865 met verbindingen naar 's-Hertogenbosch, Tilburg en Eindhoven",
+      "bron": "https://nl.wikipedia.org/wiki/Boxtel_(plaats)"
+    }
+  ],
+  "gepubliceerd": "2026-10-29",
+  "gewijzigd": "2026-10-29",
+  "kansvarianten": {
+    "plaats": 4,
+    "reageert": 1,
+    "reviewsLaag": 1
+  },
+  "wikidata": "https://www.wikidata.org/wiki/Q9821",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Boxtel_%28gemeente%29",
+  "wijken_wikidata": {
+    "Liempde": "https://www.wikidata.org/wiki/Q2433570",
+    "Lennisheuvel": "https://www.wikidata.org/wiki/Q2542116",
+    "Esch": "https://www.wikidata.org/wiki/Q2450863",
+    "Selissen": "https://www.wikidata.org/wiki/Q2058215"
+  }
+}

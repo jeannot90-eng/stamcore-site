@@ -1,0 +1,92 @@
+{
+  "stad": "Veldhoven",
+  "slug": "veldhoven",
+  "niche": "glazenwasser",
+  "status": "live",
+  "title": "Website glazenwasser Veldhoven | Stam Core",
+  "meta": "Glazenwasser in Veldhoven? Eén van de drie bovenaan in Google Maps heeft al pagina's per plaats. Zo vind je klanten in Zeelst, Oerle en Zilverackers.",
+  "h1": "Glazenwasser in Veldhoven: van Zeelst en Oerle tot de Zilverackers",
+  "intro": [
+    "Veldhoven telt bijna 48.000 inwoners. De gemeente ontstond in 1921 uit vier Kempische dorpen: Veldhoven, Meerveldhoven, Zeelst en Oerle. Door de nieuwbouw na de oorlog groeiden ze aan elkaar vast tot één bebouwde kom.",
+    "In Google Maps loopt het bovenaan sterk uiteen: van een bedrijf met twee reviews tot een met bijna tweehonderd. Hieronder zie je waar dat ruimte laat."
+  ],
+  "wijken": [
+    "City Centrum",
+    "Veldhoven Dorp",
+    "Meerveldhoven",
+    "Zeelst",
+    "Oerle",
+    "d'Ekker",
+    "Zonderwijk",
+    "'t Look",
+    "Cobbeek",
+    "Heikant",
+    "De Kelen",
+    "De Polders",
+    "Pegbroeken",
+    "Zilverackers"
+  ],
+  "wijken_tekst": [
+    "Wie hier woont, zegt eerder Zeelst of 't Look dan Veldhoven. De oude dorpskernen hebben hun naam gehouden, en de wijken uit de jaren zestig tot negentig (Zonderwijk, Cobbeek, Heikant, De Kelen, De Polders) zijn duidelijk afgebakend. Oerle heeft het meest zijn eigen karakter bewaard.",
+    "Aan de westkant komt er nog veel bij: in de Zilverackers worden ongeveer 2.700 woningen gebouwd. Een pagina voor zo'n groeiwijk staat er al als de eerste bewoners hun sleutel krijgen, en dan ben jij de glazenwasser die ze vinden."
+  ],
+  "kenmerken": [
+    "Op bedrijventerrein De Run staat het hoofdkantoor van ASML, een kantoortoren van 82 meter met assemblage en onderzoek eromheen. Op hetzelfde terrein ligt het Máxima Medisch Centrum, waar zo'n 3.400 mensen werken. Grote glasgevels op hoogte zijn specialistenwerk met hoogwerkers en vaste contracten; daar concurreer je niet op met een ladder.",
+    "Toch is dat werk interessant voor jou. Rond zo'n terrein zitten toeleveranciers, kleinere kantoren, praktijken en showrooms die wel een vaste glazenwasser zoeken. Die zoeken niet op 'glasbewassing ASML', maar op een glazenwasser in Veldhoven die zakelijk werkt.",
+    "Veldhoven sluit bovendien naadloos aan op Meerhoven, dat sinds 1994 bij Eindhoven hoort maar praktisch aansluit op het woongebied van Veldhoven; de bewoners zijn ook op Veldhoven gericht. Rijd je daar ook, zet het dan gewoon in je werkgebied: wie op de grens woont, kijkt niet naar gemeentegrenzen."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Ik rijd ook in Meerhoven. Moet ik dat onder Veldhoven of onder Eindhoven zetten?",
+      "antwoord": "Geef Meerhoven een eigen pagina. Bewoners zoeken op de naam van hun wijk, niet op de gemeente, en zo hoef je niet te kiezen. Vanaf die pagina link je naar je Veldhovense wijken én naar Eindhoven."
+    },
+    {
+      "vraag": "Heeft een pagina voor de Zilverackers al zin nu er nog volop gebouwd wordt?",
+      "antwoord": "Juist nu. Google heeft tijd nodig om een nieuwe pagina op te pikken. Staat hij er al voordat de wijk vol is, dan ben je vindbaar op het moment dat nieuwe bewoners hun eerste glazenwasser zoeken."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "teksten",
+    "eigendom"
+  ],
+  "cta_tekst": "Van Zeelst tot de Zilverackers: wie je vindt, kijkt eerst op je website. Doe de gratis website-scan en zie binnen een minuut hoe snel je homepage is op een telefoon en wat Google nog mist.",
+  "nabije_steden": [
+    "eindhoven",
+    "best",
+    "helmond"
+  ],
+  "scan": "scans/veldhoven.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente Veldhoven: 47.902 inwoners; in 1921 gevormd uit Veldhoven en Meerveldhoven, Oerle en Zeelst; vier dorpen aan elkaar vastgegroeid; Oerle heeft het duidelijkst eigen karakter",
+      "bron": "https://nl.wikipedia.org/wiki/Veldhoven"
+    },
+    {
+      "feit": "Wijken: City Centrum, d'Ekker, Zonderwijk (1962), 't Look (1970), Cobbeek (1973), Heikant (1980), De Kelen (1990), De Polders (1992), Pegbroeken (1997); Zilverackers circa 2700 woningen",
+      "bron": "https://nl.wikipedia.org/wiki/Veldhoven"
+    },
+    {
+      "feit": "Bedrijventerrein De Run: hoofdkantoor ASML in kantoortoren van 82 meter met assemblage en R&D; Máxima Medisch Centrum, circa 3400 medewerkers",
+      "bron": "https://nl.wikipedia.org/wiki/Veldhoven"
+    },
+    {
+      "feit": "Noorden van Veldhoven op 1 januari 1994 naar Eindhoven (stadsdeel Meerhoven), praktisch deel van het woongebied van Veldhoven",
+      "bron": "https://nl.wikipedia.org/wiki/Veldhoven"
+    }
+  ],
+  "gepubliceerd": "2026-10-29",
+  "gewijzigd": "2026-10-29",
+  "kansvarianten": {
+    "plaats": 1,
+    "reageert": 3,
+    "reviewsHoog": 3
+  },
+  "wikidata": "https://www.wikidata.org/wiki/Q9875",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Veldhoven",
+  "wijken_wikidata": {
+    "Zeelst": "https://www.wikidata.org/wiki/Q2376179",
+    "Meerveldhoven": "https://www.wikidata.org/wiki/Q2127213",
+    "Zonderwijk": "https://www.wikidata.org/wiki/Q2455098"
+  }
+}

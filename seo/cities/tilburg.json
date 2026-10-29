@@ -51,7 +51,8 @@
   "nabije_steden": [
     "waalwijk",
     "s-hertogenbosch",
-    "eindhoven"
+    "eindhoven",
+    "boxtel"
   ],
   "scan": "scans/tilburg.csv",
   "bronnen": [

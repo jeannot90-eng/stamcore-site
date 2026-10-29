@@ -15,7 +15,7 @@ export const VARIANTEN = {
     (x) => `${x.Kv} bedrijven bovenaan in ${x.stad} hebben geen pagina's per wijk of kern, dus wie op "glazenwasser ${x.w1}" zoekt, vindt bij hen hooguit een algemene pagina over de stad.`,
     (x) => `Een eigen pagina voor ${x.w1} of ${x.w2} ontbreekt bij ${x.kv} koplopers in ${x.stad}, en daarmee laten ze zoekopdrachten op wijkniveau liggen.`,
     (x) => `Wie in ${x.w1} woont en een glazenwasser zoekt, vindt bij ${x.kv} bedrijven bovenaan geen pagina over die wijk; daar kun je in ${x.stad} het verschil maken.`,
-    (x) => `In ${x.stad} ${x.k === 1 ? 'heeft' : 'hebben'} ${x.kv} bedrijven in de top 3 geen aparte pagina voor een kern als ${x.w2}, dus daar ligt de weg nog open.`,
+    (x) => `In ${x.stad} ${x.k === 1 ? 'heeft' : 'hebben'} ${x.kv} bedrijven in de ${x.top} geen aparte pagina voor een kern als ${x.w2}, dus daar ligt de weg nog open.`,
     (x) => `Pagina's per wijk ontbreken bij ${x.kv} bedrijven bovenaan, terwijl ${x.stad} wijken en kernen heeft als ${x.w1}, ${x.w2} en ${x.w3}.`,
   ],
   // Vanaf hier geen wijknamen: een wijk staat in hooguit één kans per pagina (die over pagina's per wijk, of de basiskans).
@@ -23,24 +23,24 @@ export const VARIANTEN = {
   reageert: [
     (x) => `${x.Kv} bedrijven bovenaan in ${x.stad} reageren niet op hun reviews, terwijl een korte, vriendelijke reactie nieuwe klanten laat zien wie er achter het profiel zit.`,
     (x) => `Bij ${x.kv} koplopers in ${x.stad} blijven reviews onbeantwoord; reageer jij waar je iets toe te voegen hebt, zeker op kritiek, dan zien nieuwe klanten meteen het verschil.`,
-    (x) => `Wie in ${x.stad} de reviews van de top 3 doorleest, ziet bij ${x.kv} geen reacties van de eigenaar.`,
+    (x) => `Wie in ${x.stad} de reviews van de ${x.top} doorleest, ziet bij ${x.kv} geen reacties van de eigenaar.`,
     (x) => `${x.Kv} profielen bovenaan in ${x.stad} hebben geen antwoorden van de eigenaar onder hun reviews, terwijl juist een rustige reactie op kritiek vertrouwen geeft.`,
     (x) => `Reageren op reviews laten ${x.kv} koplopers in ${x.stad} over, en juist dat laat zien dat er een vakman achter het profiel zit.`,
   ],
   // k = gemiddeld aantal reviews top 3 (< 30)
   reviewsLaag: [
-    (x) => `De drie bovenaan in ${x.stad} hebben gemiddeld ${x.k} reviews; met een vaste reviewroutine na elke ronde is dat een gat dat je in maanden kunt dichten, niet in jaren.`,
+    (x) => `De ${x.drie} bovenaan in ${x.stad} hebben gemiddeld ${x.k} reviews; met een vaste reviewroutine na elke ronde is dat een gat dat je in maanden kunt dichten, niet in jaren.`,
     (x) => `Gemiddeld ${x.k} reviews bij de koplopers in ${x.stad}: vraag na elke ronde om een review, en dat niveau komt binnen bereik.`,
     (x) => `${x.k} reviews is het gemiddelde bovenaan in ${x.stad}; tien vaste klanten om een review vragen is een begin dat je deze maand al kunt maken.`,
     (x) => `Het aantal reviews bovenaan in ${x.stad} is bescheiden, gemiddeld ${x.k}, dus elke review die je na een ronde binnenhaalt, valt hier op.`,
-    (x) => `Met een QR-code op de bus en een appje na de ronde werk je in ${x.stad} toe naar de ${x.k} reviews die de top 3 gemiddeld heeft.`,
+    (x) => `Met een QR-code op de bus en een appje na de ronde werk je in ${x.stad} toe naar de ${x.k} reviews die de ${x.top} gemiddeld heeft.`,
   ],
   // k = gemiddeld aantal reviews top 3 (≥ 30)
   reviewsHoog: [
-    (x) => `De drie bovenaan in ${x.stad} hebben gemiddeld ${x.k} reviews; dat haal je niet in één seizoen in, dus begin met pagina's per wijk en een volledig profiel terwijl je reviews groeien.`,
+    (x) => `De ${x.drie} bovenaan in ${x.stad} hebben gemiddeld ${x.k} reviews; dat haal je niet in één seizoen in, dus begin met pagina's per wijk en een volledig profiel terwijl je reviews groeien.`,
     (x) => `Met gemiddeld ${x.k} reviews ligt de lat in ${x.stad} hoog, maar reviews zijn niet het enige: wijkpagina's kun je deze maand al bouwen.`,
     (x) => `${x.k} reviews gemiddeld bij de koplopers in ${x.stad} vraagt geduld; zet een vaste routine neer en werk intussen aan wat sneller gaat, zoals je profiel en wijkpagina's.`,
-    (x) => `In ${x.stad} heeft de top 3 gemiddeld ${x.k} reviews, dus zoek je eerst ruimte op wijkniveau, waar een eigen pagina meer zegt dan een algemene stadspagina.`,
+    (x) => `In ${x.stad} heeft de ${x.top} gemiddeld ${x.k} reviews, dus zoek je eerst ruimte op wijkniveau, waar een eigen pagina meer zegt dan een algemene stadspagina.`,
     (x) => `Tegen gemiddeld ${x.k} reviews bovenaan in ${x.stad} begin je niet met reviews alleen; combineer een reviewroutine met pagina's per wijk en kijk elke maand wat er beweegt.`,
   ],
   // k = aantal met minder dan 10 foto's (≥ 2)
@@ -48,7 +48,7 @@ export const VARIANTEN = {
     (x) => `${x.Kv} profielen bovenaan in ${x.stad} hebben minder dan 10 foto's; een paar echte foto's van je bus en je werk maken jouw profiel meteen levendiger.`,
     (x) => `Foto's zijn schaars bij de koplopers in ${x.stad}: ${x.kv} blijven onder de 10, dus met beelden van je eigen rondes val je op.`,
     (x) => `Wie door de profielen in ${x.stad} bladert, ziet bij ${x.kv} bedrijven bovenaan minder dan 10 foto's.`,
-    (x) => `Met tien goede foto's van telescoopsteel, bus en schone ruiten heb je in ${x.stad} al meer beeld dan ${x.kv} bedrijven in de top 3.`,
+    (x) => `Met tien goede foto's van telescoopsteel, bus en schone ruiten heb je in ${x.stad} al meer beeld dan ${x.kv} bedrijven in de ${x.top}.`,
   ],
   // k = aantal zonder eigen website (≥ 1)
   website: [
@@ -60,7 +60,7 @@ export const VARIANTEN = {
   // Alleen als er minder dan 2 andere kansen zijn; komt dus nooit samen met de kans over wijkpagina's voor.
   basis: [
     (x) => `In ${x.stad} begint het bij de basis: "Glazenwasser" als hoofdcategorie, losse diensten en een werkgebied dat ${x.w1} en ${x.w2} echt dekt.`,
-    (x) => `Ook waar de top 3 in ${x.stad} veel goed doet, maakt een compleet Bedrijfsprofiel met diensten en een werkgebied tot in ${x.w1} het verschil.`,
+    (x) => `Ook waar de ${x.top} in ${x.stad} veel goed doet, maakt een compleet Bedrijfsprofiel met diensten en een werkgebied tot in ${x.w1} het verschil.`,
     (x) => `Voor ${x.stad} kijk ik als eerste naar je Bedrijfsprofiel: hoofdcategorie, diensten en een werkgebied dat aansluit op wijken als ${x.w2}.`,
     (x) => `De koplopers in ${x.stad} hebben hun basis op orde; jouw ruimte zit in een profiel en website die per wijk laten zien waar je rijdt, van ${x.w1} tot ${x.w2}.`,
   ],
@@ -93,8 +93,9 @@ export function kiesKansen(records) {
       keuze[regel] = idx;
       const w = (o) => kand[(i + o) % kand.length];
       const n = rec.scan.n;
-      const kv = k === n ? (n === 3 ? 'alle drie' : `alle ${n}`) : `${k} van de ${n}`;
-      return lijst[idx]({ stad: rec.c.stad, n, k, kv, Kv: kv.replace(/^./, (ch) => ch.toUpperCase()), w1: w(0), w2: w(1), w3: w(2) });
+      const kv = k === n ? (n === 3 ? 'alle drie' : n === 2 ? 'beide' : `alle ${n}`) : `${k} van de ${n}`;
+      const drie = n === 3 ? 'drie' : n === 2 ? 'twee' : String(n);
+      return lijst[idx]({ stad: rec.c.stad, n, k, kv, Kv: kv.replace(/^./, (ch) => ch.toUpperCase()), drie, top: `top ${n}`, w1: w(0), w2: w(1), w3: w(2) });
     });
     if (JSON.stringify(keuze) !== JSON.stringify(rec.c.kansvarianten || {})) { rec.c.kansvarianten = keuze; gewijzigd.push(rec); }
   }

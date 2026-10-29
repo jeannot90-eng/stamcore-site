@@ -97,7 +97,8 @@ for (const c of cities) {
   const hasScan = exists(scanPath);
   if (c.status === 'live' && !hasScan) { errors.push(`${label}: staat op live maar ${scanPath} ontbreekt. Zet hem in QUEUE.md op wacht-op-scan.`); continue; }
   const rows = parseScan(hasScan ? scanPath : 'seo/scans/_voorbeeld.csv');
-  if (rows.length < 3) errors.push(`${scanPath}: minimaal 3 rijen (top 3) nodig, nu ${rows.length}`);
+  // Normaal de top 3; toont Maps er maar 2 (zoals in Boxtel), dan die 2. Minder kan niet.
+  if (rows.length < 2) errors.push(`${scanPath}: minimaal 2 rijen nodig (de top 3, of 2 als Maps er niet meer toont), nu ${rows.length}`);
   const missingCols = SCAN_COLS.filter((k) => !(k in (rows[0] || {})));
   if (missingCols.length) { errors.push(`${scanPath}: kolommen ontbreken: ${missingCols.join(', ')} (zie scans/_TEMPLATE.csv)`); continue; }
   const rec = { c, niche, info: cityInfo(c, niche), scan: analyseScan(rows, c.stad), voorbeeld: !hasScan };
@@ -208,8 +209,9 @@ function buildCity({ c, niche, info, scan, voorbeeld, kansen }, isPreview) {
     scanSamenvatting: scan.samenvatting,
     scanDatum: datumLeesbaar(scan.datum),
     scanZoekterm: scan.zoekterm,
+    scanAantalWoord: scan.n === 3 ? 'drie' : scan.n === 2 ? 'twee' : String(scan.n),
     scanTegelsHtml: [
-      tegel(scan.gemReviews, 'gemiddeld aantal reviews top 3'),
+      tegel(scan.gemReviews, `gemiddeld aantal reviews top ${scan.n}`),
       tegel(scan.gemScore ?? '—', 'gemiddelde score'),
       tegel(`${t.website}/${scan.n}`, 'met eigen website'),
       tegel(`${t.plaats}/${scan.n}`, "met pagina's per plaats of wijk"),

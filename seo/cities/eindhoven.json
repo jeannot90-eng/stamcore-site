@@ -51,7 +51,8 @@
   "nabije_steden": [
     "helmond",
     "s-hertogenbosch",
-    "tilburg"
+    "tilburg",
+    "veldhoven"
   ],
   "scan": "scans/eindhoven.csv",
   "bronnen": [

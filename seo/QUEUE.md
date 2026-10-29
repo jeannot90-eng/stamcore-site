@@ -45,6 +45,19 @@ Volgorde = KENNISARTIKELEN.md §3. Titel, zoekwoord en insteek staan daar.
 | artikel | starten-als-glazenwasser-online | klaar-voor-bouw |  | |
 | artikel | domeinnaam-email-glazenwasser | klaar-voor-bouw |  | |
 
-## Golf 2 (na evaluatie, zie SEO-PLAN.md §9)
+## Steden (golf 2)
 
-Veldhoven, Uden, Boxtel, Best, Rotterdam, Dordrecht, Utrecht, Nijmegen, Den Haag, Zwolle.
+Na indexering golf 1 (Search Console bevestigd) op verzoek van Jeannot gestart.
+
+| Type | Slug | Status | Datum | Opmerking |
+|---|---|---|---|---|
+| stad | veldhoven | live | 2026-10-29 | |
+| stad | uden | live | 2026-10-29 | Gemeente Maashorst sinds 2022 |
+| stad | boxtel | live | 2026-10-29 | Maps toont maar 2 organische resultaten: top 2 |
+| stad | best | live | 2026-10-29 | Kustermans Glas organisch in top 3, geanonimiseerd meegeteld |
+| stad | rotterdam | klaar-voor-bouw | | |
+| stad | dordrecht | klaar-voor-bouw | | |
+| stad | utrecht | klaar-voor-bouw | | |
+| stad | nijmegen | klaar-voor-bouw | | |
+| stad | den-haag | klaar-voor-bouw | | |
+| stad | zwolle | klaar-voor-bouw | | |
