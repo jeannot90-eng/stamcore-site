@@ -52,6 +52,16 @@ const sharedVars = {
   caseSamenvatting: config.case.samenvatting,
   caseLighthouseHtml: config.case.lighthouse.map((l, i, a) =>
     `<div class="rounded-lg border ${i === a.length - 1 ? 'border-electric-500/20 bg-electric-500/10' : 'border-white/5 bg-white/5'} px-4 py-3"><p class="font-display text-2xl font-bold text-white">${esc(l.waarde)}</p><p class="text-xs text-slate-400">${esc(l.label)}</p></div>`).join('\n            '),
+  caseReviewHtml: config.case.review ? `<figure class="mt-6 rounded-2xl border border-white/10 bg-slate-950/60 p-5">
+          <div class="flex items-center gap-1 text-amber-400" role="img" aria-label="5 van 5 sterren">
+            <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="ml-2 text-xs text-slate-500">Google-review</span>
+          </div>
+          <blockquote class="mt-3 text-slate-300">
+            <p>&ldquo;${esc(config.case.review.tekst)}&rdquo;</p>
+          </blockquote>
+          <figcaption class="mt-3 text-sm"><span class="font-semibold text-white">${esc(config.case.review.naam)}</span> <span class="text-slate-500">&middot; ${esc(config.case.review.rol)}</span></figcaption>
+        </figure>` : '',
   ogImage: OG,
 };
 

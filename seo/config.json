@@ -22,6 +22,11 @@
     "naam": "Clean up support Nederland",
     "url": "/werk.html#cleanup",
     "samenvatting": "Van der Zee Glasbewassing werd Clean up support Nederland. Ik maakte de huisstijl, een website met meerdere pagina's, lokale pagina's per dienst en plaats, een ingericht Bedrijfsprofiel en een reviewmotor. De site werd kort na livegang geïndexeerd, met sitelinks op de merknaam.",
+    "review": {
+      "tekst": "Fijn is vooral dat hij zelf uit de schoonmaakbranche komt — hij snapt precies wat voor werk wij doen en denkt actief mee.",
+      "naam": "Nick van der Zee",
+      "rol": "eigenaar Clean up support Nederland"
+    },
     "lighthouse": [
       { "label": "SEO", "waarde": "100" },
       { "label": "Best Practices", "waarde": "100" },
