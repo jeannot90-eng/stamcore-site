@@ -241,7 +241,7 @@ Maak `seo/scans/_TEMPLATE.csv` aan met de header en één voorbeeldrij die duide
 
 - **Schema (JSON-LD)**
   - Alle pagina's: `BreadcrumbList`.
-  - Site-breed (alleen op home): `ProfessionalService` met het echte adres in Oosterhout, telefoon 0162 560 125, info@stam-core.nl, KvK, en `sameAs` (Facebook, Instagram, LinkedIn).
+  - Site-breed (alleen op home): `ProfessionalService` met het echte adres in Oosterhout, telefoon 06 42628444, info@stam-core.nl, KvK, en `sameAs` (Facebook, Instagram, LinkedIn).
   - Pijlers en stadspagina's: `Service` (`serviceType`: "Website en lokale SEO voor glazenwassers", `provider`: verwijzing naar het ProfessionalService via `@id`, `areaServed`: `City` met de stadsnaam op stadspagina's) + `Offer`(s) uit config.
   - FAQ-blokken: `FAQPage`.
   - Artikelen: `Article` (auteur: Jeannot Kustermans, `datePublished`, `dateModified`).

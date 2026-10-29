@@ -14,7 +14,7 @@ from .models import FAIL, INFO, PASS, WARN
 
 BRAND = "Stam Core"
 BRAND_URL = "https://stam-core.nl"
-BRAND_CONTACT = "info@stam-core.nl · 0162 560 125"
+BRAND_CONTACT = "info@stam-core.nl · 06 42628444"
 
 
 def e(v) -> str:
