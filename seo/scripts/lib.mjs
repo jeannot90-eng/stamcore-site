@@ -128,7 +128,14 @@ export function analyseScan(rows, stad) {
   if (regels.length < 3 && n - t.website >= 1) regels.push({ regel: 'website', k: n - t.website });
   if (regels.length < 2) regels.push({ regel: 'basis', k: 0 });
   const drie = n === 3 ? 'drie' : n === 2 ? 'twee' : String(n);
-  const samenvatting = `De ${drie} bedrijven bovenaan in ${stad} hebben gemiddeld ${gemReviews} reviews${gemScore ? ` en een gemiddelde score van ${gemScore}` : ''}. ${Deel(t.website, 'heeft', 'hebben')} een eigen website, en ${deel(t.plaats, 'heeft', 'hebben')} pagina's per plaats of wijk in ${stad}.`;
+  // Optionele kolom type_bedrijf (hoofdcategorie in Maps): alleen gebruiken als elke rij hem heeft.
+  // Uitspraken over het soort bedrijf bovenaan komen uitsluitend hieruit, nooit uit losse tekst.
+  const types = rows.map((r) => (r.type_bedrijf || '').toLowerCase());
+  const typeBekend = n > 0 && types.every(Boolean);
+  if (typeBekend) t.nietGlazenwasser = types.filter((x) => x !== 'glazenwasser').length;
+  const soort = typeBekend && types.filter((x) => x !== 'glazenwasser').every((x) => x === 'schoonmaakbedrijf') ? 'schoonmaakbedrijf' : 'ander soort bedrijf';
+  const typeZin = typeBekend && t.nietGlazenwasser ? ` In ${stad} ${t.nietGlazenwasser === 1 ? 'staat' : 'staan'} ${t.nietGlazenwasser === n ? (n === 2 ? 'beide' : `alle ${n}`) : `${t.nietGlazenwasser} van de ${n}`} bedrijven bovenaan in Google Maps niet als glazenwasser ingeschreven, maar als ${soort}.` : '';
+  const samenvatting = `De ${drie} bedrijven bovenaan in ${stad} hebben gemiddeld ${gemReviews} reviews${gemScore ? ` en een gemiddelde score van ${gemScore}` : ''}. ${Deel(t.website, 'heeft', 'hebben')} een eigen website, en ${deel(t.plaats, 'heeft', 'hebben')} pagina's per plaats of wijk in ${stad}.${typeZin}`;
   return {
     n, gemReviews, gemScore, gemFotos, tellingen: t, regels: regels.slice(0, 3), samenvatting,
     datum: rows[0]?.datum, zoekterm: rows[0]?.zoekterm,

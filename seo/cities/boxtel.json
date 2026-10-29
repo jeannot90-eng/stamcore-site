@@ -2,6 +2,7 @@
   "stad": "Boxtel",
   "slug": "boxtel",
   "niche": "glazenwasser",
+  "regio": "brabant",
   "status": "live",
   "title": "Website glazenwasser Boxtel | Stam Core",
   "meta": "Glazenwasser in Boxtel? Google Maps toont maar twee bedrijven, geen van beide als glazenwasser. Zo vind je klanten in Boxtel, Liempde, Esch en Lennisheuvel.",
@@ -18,7 +19,7 @@
     "Esch"
   ],
   "wijken_tekst": [
-    "Boxtel is overzichtelijk: één flinke kern met een oud centrum rond de Markt en de Sint-Petrusbasiliek, en daaromheen de dorpen Liempde, Lennisheuvel en Esch. Esch hoorde tot 2021 bij Haaren en voelt voor veel bewoners nog als een dorp apart.",
+    "Boxtel is overzichtelijk: één flinke kern met een oud centrum rond de Markt en de Sint-Petrusbasiliek, en daaromheen de dorpen Liempde, Lennisheuvel en Esch. Esch hoorde tot 2021 bij de gemeente Haaren en is een kern met een eigen naam.",
     "Juist bij zo'n kleine gemeente telt elke plaatsnaam. Zet Liempde, Esch en Lennisheuvel elk op een eigen pagina, dan sta je er waar je rijdt, en niet alleen onder de algemene noemer Boxtel."
   ],
   "kenmerken": [
@@ -44,8 +45,8 @@
   "cta_tekst": "In een markt waar online nog weinig gebeurt, maakt een goede website meteen verschil. Doe de gratis website-scan en zie hoe jouw homepage scoort op snelheid, vindbaarheid en mobiel gebruik.",
   "nabije_steden": [
     "s-hertogenbosch",
-    "tilburg",
     "best",
+    "tilburg",
     "eindhoven"
   ],
   "scan": "scans/boxtel.csv",
@@ -77,5 +78,9 @@
     "Lennisheuvel": "https://www.wikidata.org/wiki/Q2542116",
     "Esch": "https://www.wikidata.org/wiki/Q2450863",
     "Selissen": "https://www.wikidata.org/wiki/Q2058215"
-  }
+  },
+  "systeem_wijken": [
+    "Liempde",
+    "Esch"
+  ]
 }

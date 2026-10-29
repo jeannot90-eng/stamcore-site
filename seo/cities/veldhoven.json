@@ -2,6 +2,7 @@
   "stad": "Veldhoven",
   "slug": "veldhoven",
   "niche": "glazenwasser",
+  "regio": "brabant",
   "status": "live",
   "title": "Website glazenwasser Veldhoven | Stam Core",
   "meta": "Glazenwasser in Veldhoven? Eén van de drie bovenaan in Google Maps heeft al pagina's per plaats. Zo vind je klanten in Zeelst, Oerle en Zilverackers.",
@@ -31,7 +32,7 @@
     "Aan de westkant komt er nog veel bij: in de Zilverackers worden ongeveer 2.700 woningen gebouwd. Een pagina voor zo'n groeiwijk staat er al als de eerste bewoners hun sleutel krijgen, en dan ben jij de glazenwasser die ze vinden."
   ],
   "kenmerken": [
-    "Op bedrijventerrein De Run staat het hoofdkantoor van ASML, een kantoortoren van 82 meter met assemblage en onderzoek eromheen. Op hetzelfde terrein ligt het Máxima Medisch Centrum, waar zo'n 3.400 mensen werken. Grote glasgevels op hoogte zijn specialistenwerk met hoogwerkers en vaste contracten; daar concurreer je niet op met een ladder.",
+    "Op bedrijventerrein De Run staat het hoofdkantoor van ASML, een kantoortoren van 82 meter met assemblage en onderzoek eromheen. Op hetzelfde terrein staat ook een vestiging van het Máxima Medisch Centrum. Grote glasgevels op hoogte zijn specialistenwerk met hoogwerkers en vaste contracten; daar concurreer je niet op met een ladder.",
     "Toch is dat werk interessant voor jou. Rond zo'n terrein zitten toeleveranciers, kleinere kantoren, praktijken en showrooms die wel een vaste glazenwasser zoeken. Die zoeken niet op 'glasbewassing ASML', maar op een glazenwasser in Veldhoven die zakelijk werkt.",
     "Veldhoven sluit bovendien naadloos aan op Meerhoven, dat sinds 1994 bij Eindhoven hoort maar praktisch aansluit op het woongebied van Veldhoven; de bewoners zijn ook op Veldhoven gericht. Rijd je daar ook, zet het dan gewoon in je werkgebied: wie op de grens woont, kijkt niet naar gemeentegrenzen."
   ],
@@ -54,7 +55,8 @@
   "nabije_steden": [
     "eindhoven",
     "best",
-    "helmond"
+    "helmond",
+    "boxtel"
   ],
   "scan": "scans/veldhoven.csv",
   "bronnen": [
@@ -88,5 +90,9 @@
     "Zeelst": "https://www.wikidata.org/wiki/Q2376179",
     "Meerveldhoven": "https://www.wikidata.org/wiki/Q2127213",
     "Zonderwijk": "https://www.wikidata.org/wiki/Q2455098"
-  }
+  },
+  "systeem_wijken": [
+    "Zeelst",
+    "Zilverackers"
+  ]
 }

@@ -2,6 +2,7 @@
   "stad": "Helmond",
   "slug": "helmond",
   "niche": "glazenwasser",
+  "regio": "brabant",
   "status": "live",
   "title": "Website glazenwasser Helmond | Stam Core",
   "meta": "Glazenwasser in Helmond? Twee van de drie bovenaan in Google Maps hebben geen eigen website. Zo vind je klanten in Brandevoort, Stiphout en Dierdonk.",
@@ -51,9 +52,9 @@
   "cta_tekst": "Of je nu in Brandevoort of Stiphout rijdt: een snelle, duidelijke website helpt een zoeker de stap naar contact te zetten. De gratis website-scan laat direct zien hoe jouw site scoort op mobiel en desktop, met de verbeterpunten in gewone taal.",
   "nabije_steden": [
     "eindhoven",
-    "s-hertogenbosch",
-    "oss",
-    "tilburg"
+    "veldhoven",
+    "best",
+    "uden"
   ],
   "scan": "scans/helmond.csv",
   "bronnen": [
@@ -97,5 +98,9 @@
     "Helmond-Oost": "https://www.wikidata.org/wiki/Q2454863",
     "Helmond-West": "https://www.wikidata.org/wiki/Q5018662",
     "Helmond Noord": "https://www.wikidata.org/wiki/Q4564221"
-  }
+  },
+  "systeem_wijken": [
+    "Brandevoort",
+    "Stiphout"
+  ]
 }

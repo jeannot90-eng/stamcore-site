@@ -2,6 +2,7 @@
   "stad": "Oss",
   "slug": "oss",
   "niche": "glazenwasser",
+  "regio": "brabant",
   "status": "live",
   "title": "Website glazenwasser Oss | Stam Core",
   "meta": "Glazenwasser in Oss? Geen van de drie bovenaan in Google Maps reageert op reviews. Zo vind je klanten in Ussen, Ruwaard, Berghem en de dorpen rond Oss.",
@@ -49,10 +50,10 @@
   ],
   "cta_tekst": "Van Berghem tot Ussen: je website moet op een telefoon snel en duidelijk zijn. Doe de gratis website-scan en zie meteen hoe jouw homepage scoort, wat Google mist en waar je het beste kunt beginnen.",
   "nabije_steden": [
+    "uden",
     "s-hertogenbosch",
-    "helmond",
-    "waalwijk",
-    "eindhoven"
+    "boxtel",
+    "helmond"
   ],
   "scan": "scans/oss.csv",
   "bronnen": [
@@ -89,5 +90,9 @@
   "wijken_wikidata": {
     "Ussen": "https://www.wikidata.org/wiki/Q26267380",
     "Megen": "https://www.wikidata.org/wiki/Q1862257"
-  }
+  },
+  "systeem_wijken": [
+    "Berghem",
+    "Ussen"
+  ]
 }

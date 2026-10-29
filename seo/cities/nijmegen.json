@@ -2,6 +2,7 @@
   "stad": "Nijmegen",
   "slug": "nijmegen",
   "niche": "glazenwasser",
+  "regio": "randstad-en-overig",
   "status": "live",
   "title": "Website glazenwasser Nijmegen | Stam Core",
   "meta": "Glazenwasser in Nijmegen? Geen van de drie bovenaan in Google Maps heeft pagina's per wijk. Zo vind je klanten in Lent, Dukenburg, Lindenholt en de Waalsprong.",
@@ -30,9 +31,9 @@
     "Het centrum ligt daardoor helemaal in het noordoosten, en de woonwijken liggen ver uit elkaar. Kies je wijken bewust en geef elk een eigen pagina; zo vul je je ronde zonder dat je de hele dag van Lent naar Lindenholt rijdt."
   ],
   "kenmerken": [
-    "Aan de overkant van de Waal is rond de dorpen Lent en Ressen een complete nieuwe stad verrezen: de Waalsprong. Nieuwbouwwijken met grote raampartijen, bewoners die vaak voor het eerst een glazenwasser zoeken, en een eigen station, Nijmegen Lent. Wie hier vroeg vindbaar is, bouwt een klantenbestand op dat jaren meegaat.",
-    "Dukenburg en Lindenholt zijn het tegenovergestelde: wijken uit de jaren zestig en zeventig met veel rijtjeshuizen en flats. Daar draait het om een strakke route en een eerlijke prijs per straat, en om klanten die elkaar doorvertellen dat je betrouwbaar bent.",
-    "In Nijmegen-Zuid liggen de Radboud Universiteit en het Radboudumc, in de wijk Heijendaal. Rond zulke grote werkgevers zitten praktijken, kantoren en studentenhuizen. Ook dat is een doelgroep met een eigen vraag, die je beter apart aanspreekt."
+    "Aan de overkant van de Waal is rond de dorpen Lent en Ressen sinds eind jaren negentig veel nieuwbouw verrezen: de Waalsprong, met een eigen station, Nijmegen Lent. In nieuwbouwwijken zoeken bewoners vaak voor het eerst een glazenwasser. Wie hier vroeg vindbaar is, bouwt een klantenbestand op dat jaren meegaat.",
+    "Dukenburg en Lindenholt zijn het tegenovergestelde: wijken uit de jaren zestig en zeventig, met samen zo'n 16.000 woningen. Daar draait het om een strakke route en een eerlijke prijs per straat, en om klanten die elkaar doorvertellen dat je betrouwbaar bent.",
+    "Nijmegen is sinds 1923 een universiteitsstad, en in de wijk Heijendaal ligt het Radboudumc. Rond zulke grote werkgevers zitten praktijken, kantoren en studentenhuizen. Ook dat is een doelgroep met een eigen vraag, die je beter apart aanspreekt."
   ],
   "faq_stad": [
     {
@@ -51,10 +52,10 @@
   ],
   "cta_tekst": "Van de Waalsprong tot Dukenburg: je website is vaak het eerste wat een nieuwe klant van je ziet. Doe de gratis website-scan en zie binnen een minuut hoe die scoort op mobiel en desktop.",
   "nabije_steden": [
-    "s-hertogenbosch",
-    "oss",
-    "uden",
-    "utrecht"
+    "utrecht",
+    "zwolle",
+    "dordrecht",
+    "rotterdam"
   ],
   "scan": "scans/nijmegen.csv",
   "bronnen": [
@@ -97,5 +98,9 @@
     "Altrade": "https://www.wikidata.org/wiki/Q2752587",
     "Brakkenstein": "https://www.wikidata.org/wiki/Q7476126",
     "Heijendaal": "https://www.wikidata.org/wiki/Q2646418"
-  }
+  },
+  "systeem_wijken": [
+    "Lent",
+    "Dukenburg"
+  ]
 }

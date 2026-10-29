@@ -191,6 +191,12 @@ for (let i = 0; i < stadRes.length; i++) for (let j = i + 1; j < stadRes.length;
     stadRes[j].fout.push(`zin staat ook op ${stadRes[i].p.url}: "${kort}"`);
   }
 }
+// Zelfde sjabloon, andere stad of ander getal: de patronen uit config.herhaalpatronen mogen op hooguit één stadspagina staan.
+for (const patroon of config.herhaalpatronen || []) {
+  const re = new RegExp(patroon, 'i');
+  const met = stadRes.filter((r) => re.test(uniqueText(r.html)));
+  if (met.length > 1) for (const r of met) r.fout.push(`formulering /${patroon}/ staat op ${met.length} stadspagina's (max 1): ${met.filter((x) => x !== r).map((x) => x.p.url).join(', ')}`);
+}
 
 // ── Kennisartikelen (KENNISARTIKELEN.md §7) ──────────────────────────────────
 // Gemeten op de Markdown van het artikel zelf (+ FAQ), niet op de vaste blokken van het template.

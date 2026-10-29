@@ -33,6 +33,8 @@
   "verboden": ["gegarandeerd", "garantie op", "top 3 garantie", "wij brengen je bovenaan", "nummer 1 in google", "reviewverzoeken naar je klanten", "stuur ik de reviewverzoeken", "vragen we je klanten om reviews"],
   "verboden_artikel": ["vorige week had ik een klant", "een klant van mij", "laatst belde er", "holistische", "next level", "in het huidige digitale landschap", "vergeet seo", "100% geo-proof", "geo-proof"],
   "_verboden_artikel": "Extra verboden frasen voor kennisartikelen (KENNISARTIKELEN.md §4 en §7). Mag wel als de passage letterlijk in seo/articles/input/{slug}.md staat.",
+  "herhaalpatronen": ["tien (vaste )?klanten om een review", "deze maand"],
+  "_herhaalpatronen": "Formuleringen die op hooguit één stadspagina mogen staan (regex, hoofdletterongevoelig). Vult de 12-woorden-check aan: die vangt alleen letterlijk gelijke zinnen, niet hetzelfde sjabloon met een andere stadsnaam of ander getal.",
   "verboden_namen": [],
   "_verboden_namen": "Zet hier bedrijfsnamen van concurrenten die je bent tegengekomen. De check faalt als een ervan op een pagina staat.",
   "statischeSitemap": [

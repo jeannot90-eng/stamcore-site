@@ -2,6 +2,7 @@
   "stad": "Eindhoven",
   "slug": "eindhoven",
   "niche": "glazenwasser",
+  "regio": "brabant",
   "status": "live",
   "title": "Website glazenwasser Eindhoven | Stam Core",
   "meta": "Glazenwasser in Eindhoven? De top 3 in Google Maps heeft veel reviews, maar geen pagina's per wijk. Zo vind je klanten in Woensel, Strijp en Meerhoven.",
@@ -49,10 +50,10 @@
   ],
   "cta_tekst": "Klanten in Woensel of Stratum vergelijken snel, vaak op hun telefoon. Vul je webadres in bij de gratis website-scan en zie in een minuut waar je site traag is, wat Google mist en wat het meeste oplevert om te verbeteren.",
   "nabije_steden": [
+    "veldhoven",
+    "best",
     "helmond",
-    "s-hertogenbosch",
-    "tilburg",
-    "veldhoven"
+    "boxtel"
   ],
   "scan": "scans/eindhoven.csv",
   "bronnen": [
@@ -104,5 +105,9 @@
     "Stratum": "https://www.wikidata.org/wiki/Q2193091",
     "Tongelre": "https://www.wikidata.org/wiki/Q2322681",
     "Riel": "https://www.wikidata.org/wiki/Q5120826"
-  }
+  },
+  "systeem_wijken": [
+    "Woensel-Noord",
+    "Meerhoven"
+  ]
 }

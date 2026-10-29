@@ -2,12 +2,13 @@
   "stad": "Zwolle",
   "slug": "zwolle",
   "niche": "glazenwasser",
+  "regio": "randstad-en-overig",
   "status": "live",
   "title": "Website glazenwasser Zwolle | Stam Core",
   "meta": "Glazenwasser in Zwolle? Eén van de drie bovenaan in Google Maps heeft geen eigen website. Zo vind je klanten in Stadshagen, Assendorp, Zwolle-Zuid en Berkum.",
   "h1": "Glazenwasser in Zwolle: zo pak je Stadshagen en de oude wijken",
   "intro": [
-    "Zwolle is de hoofdstad van Overijssel en telt ruim 134.000 inwoners. De oude hanzestad ligt op een dekzandrug tussen de IJssel en de Vecht, en is in de vorige eeuw flink naar alle kanten gegroeid.",
+    "Zwolle is de hoofdstad van Overijssel en telt ruim 134.000 inwoners. De oude hanzestad ligt op een dekzandrug tussen de IJssel en de Vecht, en telt inmiddels ruim twintig wijken.",
     "In Google Maps heeft één van de bedrijven bovenaan geen eigen website, en niemand heeft pagina's per wijk. Hieronder zie je wat dat voor jou betekent."
   ],
   "wijken": [
@@ -25,18 +26,18 @@
     "Veerallee"
   ],
   "wijken_tekst": [
-    "Rond de binnenstad liggen de oude wijken: Assendorp, Diezerpoort, Kamperpoort en de Wipstrik. Daarbuiten volgen Holtenbroek en de Aa-landen, en verder weg Zwolle-Zuid, Berkum en, aan de noordwestkant, Stadshagen.",
-    "Stadshagen is inmiddels een stad op zich, met een eigen rondweg en een eigen station. Wie daar een paar straten vol klanten heeft, kan er een volle ronde van maken. Een pagina voor Stadshagen is dan logischer dan een algemene Zwolle-pagina."
+    "De oudste uitbreidingen buiten de binnenstad zijn wijken als Assendorp, Diezerpoort, Kamperpoort en de Wipstrik. Later kwamen onder meer Holtenbroek, de Aa-landen, Zwolle-Zuid, Berkum en, aan de noordwestkant, Stadshagen erbij.",
+    "Stadshagen heeft een eigen rondweg en sinds 2019 een eigen station. Wie daar een paar straten vol klanten heeft, kan er een volle ronde van maken. Een pagina voor Stadshagen is dan logischer dan een algemene Zwolle-pagina."
   ],
   "kenmerken": [
-    "Assendorp ontstond rond 1870, toen Zwolle een spoorwegstation kreeg en er een Centrale Werkplaats voor treinen kwam. Het was de eerste wijk in Zwolle met sociale woningbouw. Rijen arbeiderswoningen met kleine ruiten en voordeuren aan de straat: werk dat vlot gaat als je de route goed plant.",
+    "Assendorp ontstond in de jaren 1870, toen Zwolle een spoorwegstation kreeg en er een Centrale Werkplaats voor treinen kwam. Het was de eerste wijk in Zwolle met sociale woningbouw. Een wijk met veel woningen dicht op elkaar: werk dat vlot gaat als je de route goed plant.",
     "De binnenstad ligt nog altijd op de oude dekzandrug, met hoogteverschillen die je in de straten ziet. Oude panden, winkels en horeca op een kleine oppervlakte: een gebied waar je met een vaste ochtendronde veel adressen kunt doen.",
-    "Aan de noordwestkant groeit Stadshagen, met nieuwe woningen en veel gezinnen. Daar wint een glazenwasser die er al vindbaar is als de bewoners gaan zoeken. Laat op je site zien dat je er vaste dagen rijdt, dan weten nieuwe bewoners meteen dat je er bent."
+    "Aan de noordwestkant ligt Stadshagen, een van de nieuwere wijken. Daar wint een glazenwasser die er al vindbaar is als de bewoners gaan zoeken. Laat op je site zien dat je er vaste dagen rijdt, dan weten nieuwe bewoners meteen dat je er bent."
   ],
   "faq_stad": [
     {
       "vraag": "Is Stadshagen groot genoeg voor een eigen pagina?",
-      "antwoord": "Ruim. Het is een van de grootste wijken van Zwolle, met een eigen rondweg en een eigen station. Bewoners zoeken op Stadshagen, niet op Zwolle-Noord, dus een eigen pagina sluit aan op hoe ze zoeken."
+      "antwoord": "Ja. Stadshagen heeft een eigen rondweg en een eigen station, en bewoners zoeken op Stadshagen, niet op Zwolle-Noord. Een eigen pagina sluit aan op hoe ze zoeken."
     },
     {
       "vraag": "Ik rijd ook in Kampen en Hattem. Moet dat een aparte site worden?",
@@ -51,7 +52,9 @@
   "cta_tekst": "Van Assendorp tot Stadshagen: je website moet op een telefoon snel en duidelijk zijn. Doe de gratis website-scan en zie meteen hoe jouw homepage scoort, wat Google mist en waar je begint.",
   "nabije_steden": [
     "utrecht",
-    "nijmegen"
+    "nijmegen",
+    "dordrecht",
+    "rotterdam"
   ],
   "scan": "scans/zwolle.csv",
   "bronnen": [
@@ -70,13 +73,17 @@
     {
       "feit": "Stadshagen: rondweg N331 (2007) en station Zwolle Stadshagen",
       "bron": "https://nl.wikipedia.org/wiki/Zwolle"
+    },
+    {
+      "feit": "Station Zwolle Stadshagen sinds 15 december 2019 in de dienstregeling",
+      "bron": "https://nl.wikipedia.org/wiki/Zwolle"
     }
   ],
   "gepubliceerd": "2026-10-29",
   "gewijzigd": "2026-10-29",
   "kansvarianten": {
     "plaats": 1,
-    "reviewsLaag": 2,
+    "reviewsLaag": 6,
     "fotos": 3
   },
   "wikidata": "https://www.wikidata.org/wiki/Q793",
@@ -93,5 +100,9 @@
     "Diezerpoort": "https://www.wikidata.org/wiki/Q2051230",
     "Berkum": "https://www.wikidata.org/wiki/Q2363718",
     "Veerallee": "https://www.wikidata.org/wiki/Q2796106"
-  }
+  },
+  "systeem_wijken": [
+    "Stadshagen",
+    "Assendorp"
+  ]
 }

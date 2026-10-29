@@ -2,6 +2,7 @@
   "stad": "Dordrecht",
   "slug": "dordrecht",
   "niche": "glazenwasser",
+  "regio": "randstad-en-overig",
   "status": "live",
   "title": "Website glazenwasser Dordrecht | Stam Core",
   "meta": "Glazenwasser in Dordrecht? Geen van de drie bovenaan in Google Maps heeft pagina's per wijk. Zo vind je klanten in Sterrenburg, Dubbeldam en Krispijn.",
@@ -25,7 +26,7 @@
     "Noordflank"
   ],
   "wijken_tekst": [
-    "De gemeente deelt de stad in dertien wijken in, van de Binnenstad en Het Reeland tot Sterrenburg en Dubbeldam. Dubbeldam was ooit een eigen dorp en heeft nog steeds zijn eigen markt op dinsdag; Sterrenburg en Stadspolders zijn grote woonwijken aan de zuidkant.",
+    "De gemeente deelt de stad in dertien wijken in, van de Binnenstad en Het Reeland tot Sterrenburg en Dubbeldam. Dubbeldam was tot 1970 een eigen gemeente en heeft nog steeds een eigen markt op dinsdag.",
     "Met een pagina per wijk laat je zien dat je de stad in stukken plant. Dat scheelt rijtijd, en klanten in Sterrenburg zien dat je niet alleen af en toe in de binnenstad komt."
   ],
   "kenmerken": [
@@ -51,8 +52,9 @@
   "cta_tekst": "Van de Voorstraat tot Sterrenburg: een klant die je vindt, wil snel zien wat je doet en wat het kost. De gratis website-scan laat direct zien hoe je homepage scoort op mobiel en wat je als eerste verbetert.",
   "nabije_steden": [
     "rotterdam",
-    "s-hertogenbosch",
-    "roosendaal"
+    "den-haag",
+    "utrecht",
+    "nijmegen"
   ],
   "scan": "scans/dordrecht.csv",
   "bronnen": [
@@ -70,6 +72,10 @@
     },
     {
       "feit": "Zesde zeehaven van Nederland; DuPont negen fabrieken op Staart-Oost met 900 medewerkers; nieuwe wijk Stadswerven tussen centrum en De Staart op voormalig industrieterrein",
+      "bron": "https://nl.wikipedia.org/wiki/Dordrecht"
+    },
+    {
+      "feit": "Gemeente Dubbeldam (ca. 10.000 inwoners) in 1970 bij Dordrecht gevoegd",
       "bron": "https://nl.wikipedia.org/wiki/Dordrecht"
     }
   ],
@@ -93,5 +99,9 @@
     "Zuidhoven": "https://www.wikidata.org/wiki/Q15884256",
     "Noordflank": "https://www.wikidata.org/wiki/Q2011698",
     "Crabbehof": "https://www.wikidata.org/wiki/Q2284294"
-  }
+  },
+  "systeem_wijken": [
+    "Sterrenburg",
+    "Dubbeldam"
+  ]
 }

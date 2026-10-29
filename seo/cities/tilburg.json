@@ -2,6 +2,7 @@
   "stad": "Tilburg",
   "slug": "tilburg",
   "niche": "glazenwasser",
+  "regio": "brabant",
   "status": "live",
   "title": "Website glazenwasser Tilburg | Stam Core",
   "meta": "Glazenwasser in Tilburg? Zo staan de bedrijven bovenaan in Google Maps ervoor, en zo vind je klanten in de Reeshof, Oud-Zuid en Berkel-Enschot.",
@@ -50,9 +51,9 @@
   "cta_tekst": "Na je Google-profiel is je website het eerste wat een klant uit de Reeshof of Oud-Zuid van je ziet. Met de gratis website-scan weet je binnen een minuut hoe snel die op een telefoon laadt, of Google hem goed leest en welke drie dingen je als eerste aanpakt.",
   "nabije_steden": [
     "waalwijk",
+    "boxtel",
     "s-hertogenbosch",
-    "eindhoven",
-    "boxtel"
+    "best"
   ],
   "scan": "scans/tilburg.csv",
   "bronnen": [
@@ -109,5 +110,9 @@
     "Berkel-Enschot": "https://www.wikidata.org/wiki/Q2682795",
     "Udenhout": "https://www.wikidata.org/wiki/Q3030229",
     "Biezenmortel": "https://www.wikidata.org/wiki/Q2902052"
-  }
+  },
+  "systeem_wijken": [
+    "Reeshof",
+    "Berkel-Enschot"
+  ]
 }

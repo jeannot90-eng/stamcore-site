@@ -1,5 +1,5 @@
-# Gemeten door Claude via de browser (Google Maps, ingelogd in het browserpaneel; gesponsorde resultaten overgeslagen). Plaatspagina's gecontroleerd op de websites zelf.
-datum,stad,zoekterm,positie,reviews,score,eigen_website,plaatspaginas,reageert_op_reviews,fotos
-2026-10-29,Zwolle,glazenwasser zwolle,1,9,5.0,nee,nee,ja,10
-2026-10-29,Zwolle,glazenwasser zwolle,2,8,3.3,ja,nee,nee,0
-2026-10-29,Zwolle,glazenwasser zwolle,3,30,4.7,ja,nee,ja,6
+# Gemeten door Claude via de browser (Google Maps, ingelogd in het browserpaneel; gesponsorde resultaten overgeslagen). Plaatspagina's gecontroleerd op de websites zelf. type_bedrijf = hoofdcategorie zoals Maps die in de resultatenlijst toont.
+datum,stad,zoekterm,positie,reviews,score,eigen_website,plaatspaginas,reageert_op_reviews,fotos,type_bedrijf
+2026-10-29,Zwolle,glazenwasser zwolle,1,9,5.0,nee,nee,ja,10,glazenwasser
+2026-10-29,Zwolle,glazenwasser zwolle,2,8,3.3,ja,nee,nee,0,schoonmaakbedrijf
+2026-10-29,Zwolle,glazenwasser zwolle,3,30,4.7,ja,nee,ja,6,glazenwasser

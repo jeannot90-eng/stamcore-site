@@ -1,6 +1,6 @@
 # Publicatiewachtrij
 
-Statussen: `klaar-voor-bouw` · `wacht-op-scan` (scan mislukt) · `concept` (gebouwd, wacht op akkoord) · `overgeslagen` (overlap met bestaande pagina, reden in Opmerking) · `live`.
+Statussen: `on-hold-tot-evaluatie` (live, maar geen nieuwe stadspagina's tot de indexering is geëvalueerd, SEO-PLAN.md §9) · `klaar-voor-bouw` · `wacht-op-scan` (scan mislukt) · `concept` (gebouwd, wacht op akkoord) · `overgeslagen` (overlap met bestaande pagina, reden in Opmerking) · `live`.
 Claude pakt bij "maak de volgende stadspagina" de bovenste stad die nog niet live is en doet zelf de Maps-scan; bij "Schrijf het kennisartikel van deze week" het bovenste artikel met status `klaar-voor-bouw` (workflow: `KENNISARTIKELEN.md`).
 
 ## Steden (golf 1)
@@ -47,17 +47,17 @@ Volgorde = KENNISARTIKELEN.md §3. Titel, zoekwoord en insteek staan daar.
 
 ## Steden (golf 2)
 
-Na indexering golf 1 (Search Console bevestigd) op verzoek van Jeannot gestart.
+Na indexering golf 1 (Search Console bevestigd) op verzoek van Jeannot gestart. **Pauze:** geen nieuwe stadspagina's tot Jeannot de indexering heeft geëvalueerd (≥ 80% "URL staat op Google", zie SEO-PLAN.md §9).
 
 | Type | Slug | Status | Datum | Opmerking |
 |---|---|---|---|---|
-| stad | veldhoven | live | 2026-10-29 | |
-| stad | uden | live | 2026-10-29 | Gemeente Maashorst sinds 2022 |
-| stad | boxtel | live | 2026-10-29 | Maps toont maar 2 organische resultaten: top 2 |
-| stad | best | live | 2026-10-29 | Kustermans Glas organisch in top 3, geanonimiseerd meegeteld |
-| stad | rotterdam | live | 2026-10-29 | |
-| stad | dordrecht | live | 2026-10-29 | |
-| stad | utrecht | live | 2026-10-29 | Top 3 sterk: alle drie reageren op reviews |
-| stad | nijmegen | live | 2026-10-29 | |
-| stad | den-haag | live | 2026-10-29 | Top 3 allemaal score 5,0 |
-| stad | zwolle | live | 2026-10-29 | |
+| stad | veldhoven | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29 |
+| stad | uden | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29; Gemeente Maashorst sinds 2022 |
+| stad | boxtel | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29; Maps toont maar 2 organische resultaten: top 2 |
+| stad | best | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29; Kustermans Glas organisch in top 3, geanonimiseerd meegeteld |
+| stad | rotterdam | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29 |
+| stad | dordrecht | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29 |
+| stad | utrecht | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29; Top 3 sterk: alle drie reageren op reviews |
+| stad | nijmegen | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29 |
+| stad | den-haag | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29; Top 3 allemaal score 5,0 |
+| stad | zwolle | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29 |

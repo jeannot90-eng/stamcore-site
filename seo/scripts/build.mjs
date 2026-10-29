@@ -81,8 +81,10 @@ const resolvePool = (niche, refs) => refs.map((r) => {
 const pillCls = 'inline-block rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-medium text-slate-200 transition hover:border-electric-500/40 hover:text-white';
 
 // ── 1. Steden valideren ─────────────────────────────────────────────────────
+const TYPE_BEDRIJF = ['glazenwasser', 'schoonmaakbedrijf', 'anders'];
 const SCAN_COLS = ['datum', 'stad', 'zoekterm', 'positie', 'reviews', 'score', 'eigen_website', 'plaatspaginas', 'reageert_op_reviews', 'fotos'];
-const REQUIRED = ['stad', 'slug', 'niche', 'status', 'title', 'meta', 'h1', 'intro', 'wijken', 'wijken_tekst', 'kenmerken', 'faq_stad', 'faq_pool', 'cta_tekst', 'nabije_steden', 'scan', 'bronnen'];
+const REGIO = { brabant: 'Noord-Brabant', 'randstad-en-overig': 'Randstad en de rest van Nederland' };
+const REQUIRED = ['stad', 'slug', 'niche', 'regio', 'status', 'title', 'meta', 'h1', 'intro', 'wijken', 'wijken_tekst', 'kenmerken', 'faq_stad', 'faq_pool', 'cta_tekst', 'nabije_steden', 'scan', 'bronnen'];
 const live = [];
 const concept = [];
 for (const c of cities) {
@@ -93,6 +95,9 @@ for (const c of cities) {
   if (!niche) { errors.push(`${label}: onbekende niche "${c.niche}"`); continue; }
   if (isExcluded(c.stad)) { errors.push(`${label}: ${c.stad} staat in de uitsluitlijst (config.json → uitgesloten)`); continue; }
   if (!['live', 'concept'].includes(c.status)) { errors.push(`${label}: status moet "live" of "concept" zijn`); continue; }
+  if (!REGIO[c.regio]) { errors.push(`${label}: regio moet ${Object.keys(REGIO).join(' of ')} zijn`); continue; }
+  const vreemd = (c.systeem_wijken || []).filter((w) => !c.wijken.includes(w));
+  if (vreemd.length) { errors.push(`${label}: systeem_wijken staan niet in wijken: ${vreemd.join(', ')}`); continue; }
   const scanPath = `seo/${c.scan}`;
   const hasScan = exists(scanPath);
   if (c.status === 'live' && !hasScan) { errors.push(`${label}: staat op live maar ${scanPath} ontbreekt. Zet hem in QUEUE.md op wacht-op-scan.`); continue; }
@@ -101,6 +106,9 @@ for (const c of cities) {
   if (rows.length < 2) errors.push(`${scanPath}: minimaal 2 rijen nodig (de top 3, of 2 als Maps er niet meer toont), nu ${rows.length}`);
   const missingCols = SCAN_COLS.filter((k) => !(k in (rows[0] || {})));
   if (missingCols.length) { errors.push(`${scanPath}: kolommen ontbreken: ${missingCols.join(', ')} (zie scans/_TEMPLATE.csv)`); continue; }
+  // Optionele kolom type_bedrijf: hoofdcategorie in Maps.
+  const foutType = rows.filter((r) => 'type_bedrijf' in r && !TYPE_BEDRIJF.includes(r.type_bedrijf.toLowerCase()));
+  if (foutType.length) { errors.push(`${scanPath}: type_bedrijf moet ${TYPE_BEDRIJF.join('/')} zijn (of de kolom weglaten)`); continue; }
   const rec = { c, niche, info: cityInfo(c, niche), scan: analyseScan(rows, c.stad), voorbeeld: !hasScan };
   if (rec.voorbeeld) rec.scan.zoekterm = fillTokens(niche.zoekterm, { stad: c.stad.toLowerCase() });
   (c.status === 'live' ? live : concept).push(rec);
@@ -120,6 +128,8 @@ for (const { c } of live) {
 // Steden zonder vastgelegde keuze: bestaande pagina's eerst, dan op publicatiedatum en slug.
 const bestond = (r) => (exists(r.info.file) ? 0 : 1);
 live.sort((a, b) => bestond(a) - bestond(b) || String(a.c.gepubliceerd).localeCompare(String(b.c.gepubliceerd)) || a.c.slug.localeCompare(b.c.slug));
+// Variant van de stadszin onder "Het systeem": op dezelfde volgorde, dus een nieuwe stad verandert niets aan bestaande pagina's.
+[...live, ...concept].forEach((r, i) => { r.systeemIdx = i; });
 for (const r of kiesKansen([...live, ...concept])) {
   if (r.c.status !== 'live') continue; // concepten leggen nog niets vast
   const { _file, ...data } = r.c;
@@ -175,11 +185,31 @@ const ANKERS = [
 ];
 const anker = (niche, stad, i) => ANKERS[i % ANKERS.length](niche, stad);
 
-function buildCity({ c, niche, info, scan, voorbeeld, kansen }, isPreview) {
+// Eén stadspecifieke zin onder de vier stappen van "Het systeem", met twee wijken/kernen uit de stads-JSON
+// (systeem_wijken, anders de eerste twee niet-generieke wijken). De stappen zelf zijn voor elke stad gelijk.
+const SYSTEEM_ZINNEN = [
+  (stad, a, b) => `In ${stad} begin je met pagina's voor ${a} en ${b}.`,
+  (stad, a, b) => `Voor ${stad} zijn ${a} en ${b} een logische eerste stap; de andere wijken volgen als daar klanten bij komen.`,
+  (stad, a, b) => `Rijd je al in ${a} of ${b}? Dan zijn dat in ${stad} je eerste twee pagina's.`,
+  (stad, a, b) => `Eerst ${a} en ${b}, daarna de rest van ${stad}: zo bouw je je pagina's per wijk op.`,
+  (stad, a, b) => `Een goed begin in ${stad}: één pagina voor ${a} en één voor ${b}.`,
+  (stad, a, b) => `Begin in ${stad} klein, met ${a} en ${b}, en voeg plaatsen toe waar je ronde groeit.`,
+  (stad, a, b) => `In ${stad} liggen ${a} en ${b} voor de hand als eerste pagina's.`,
+  (stad, a, b) => `Wie in ${stad} start, kiest eerst ${a} en ${b} en breidt daarna wijk voor wijk uit.`,
+];
+const GENERIEKE_WIJK = /^(centrum|binnenstad|stadscentrum|city centrum|noord|oost|zuid|west|noordoost|noordwest|zuidoost|zuidwest)$/i;
+function systeemZin(c, idx) {
+  const [a, b] = c.systeem_wijken?.length >= 2 ? c.systeem_wijken : c.wijken.filter((w) => !GENERIEKE_WIJK.test(w));
+  return a && b ? SYSTEEM_ZINNEN[idx % SYSTEEM_ZINNEN.length](c.stad, a, b) : '';
+}
+
+function buildCity({ c, niche, info, scan, voorbeeld, kansen, systeemIdx = 0 }, isPreview) {
   const faqStad = c.faq_stad.map((f) => ({ vraag: f.vraag, antwoord: fillTokens(f.antwoord) }));
   const faqPool = resolvePool(niche, c.faq_pool);
   const liveSlugs = new Map(live.filter((r) => r.c.niche === c.niche && r.c.slug !== c.slug).map((r) => [slugify(r.c.slug), r]));
-  const andere = [...c.nabije_steden.map(slugify).filter((s) => liveSlugs.has(s)), ...liveSlugs.keys()]
+  // "Ook bekeken": alleen steden uit dezelfde regio, nabije_steden eerst (op volgorde van afstand), daarna de rest van de regio.
+  const regioSlugs = [...liveSlugs.keys()].filter((s) => liveSlugs.get(s).c.regio === c.regio).sort();
+  const andere = [...c.nabije_steden.map(slugify).filter((s) => regioSlugs.includes(s)), ...regioSlugs]
     .filter((s, i, a) => a.indexOf(s) === i).slice(0, 4).map((s) => liveSlugs.get(s));
   // Ankerteksten voor "Ook bekeken" wisselen per link (en per pagina), zodat hetzelfde anker niet steeds terugkomt.
   const ankerBasis = [...c.slug].reduce((n, ch) => n + ch.charCodeAt(0), 0);
@@ -227,6 +257,7 @@ function buildCity({ c, niche, info, scan, voorbeeld, kansen }, isPreview) {
         <h3 class="mt-4 font-display text-xl font-bold text-white">${esc(s.titel)}</h3>
         <p class="mt-3 text-slate-400">${esc(fillTokens(s.tekst, { stad: c.stad }))}</p>
       </li>`).join('\n      '),
+    systeemZin: systeemZin(c, systeemIdx),
     faqStadHtml: faqStad.map(faqItemHtml).join('\n      '),
     faqPoolHtml: faqPool.map(faqItemHtml).join('\n      '),
     ctaTekst: fillTokens(c.cta_tekst),
@@ -448,9 +479,10 @@ for (const [key, niche] of Object.entries(niches)) {
       <span class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-electric-400">Per stad</span>
       <h2 class="reveal mt-4 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Zo staan ${esc(niche.meervoud)} ervoor, per stad</h2>
     </div>
-    <ul class="reveal mt-10 flex flex-wrap justify-center gap-3">
-${items.map((r) => `      <li><a href="${r.info.url}" class="${pillCls}">${esc(r.c.stad)}</a></li>`).join('\n')}
-    </ul>
+${Object.entries(REGIO).map(([regio, label]) => [label, items.filter((r) => r.c.regio === regio)]).filter(([, rs]) => rs.length).map(([label, rs]) => `    <h3 class="reveal mt-10 text-center text-sm font-semibold uppercase tracking-[0.18em] text-slate-400">${esc(label)}</h3>
+    <ul class="reveal mt-5 flex flex-wrap justify-center gap-3">
+${rs.map((r) => `      <li><a href="${r.info.url}" class="${pillCls}">${esc(r.c.stad)}</a></li>`).join('\n')}
+    </ul>`).join('\n')}
   </div>
 </section>
 ` : '';

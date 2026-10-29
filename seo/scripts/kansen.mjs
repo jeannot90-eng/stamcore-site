@@ -31,17 +31,20 @@ export const VARIANTEN = {
   reviewsLaag: [
     (x) => `De ${x.drie} bovenaan in ${x.stad} hebben gemiddeld ${x.k} reviews; met een vaste reviewroutine na elke ronde is dat een gat dat je in maanden kunt dichten, niet in jaren.`,
     (x) => `Gemiddeld ${x.k} reviews bij de koplopers in ${x.stad}: vraag na elke ronde om een review, en dat niveau komt binnen bereik.`,
-    (x) => `${x.k} reviews is het gemiddelde bovenaan in ${x.stad}; tien vaste klanten om een review vragen is een begin dat je deze maand al kunt maken.`,
+    (x) => `${x.k} reviews is het gemiddelde bovenaan in ${x.stad}; begin bij klanten die je al jaren helpt, want die schrijven het makkelijkst een paar zinnen over je werk.`,
     (x) => `Het aantal reviews bovenaan in ${x.stad} is bescheiden, gemiddeld ${x.k}, dus elke review die je na een ronde binnenhaalt, valt hier op.`,
     (x) => `Met een QR-code op de bus en een appje na de ronde werk je in ${x.stad} toe naar de ${x.k} reviews die de ${x.top} gemiddeld heeft.`,
+    (x) => `Bovenaan in ${x.stad} staan profielen met gemiddeld ${x.k} reviews, een aantal dat met een vast moment voor reviewverzoeken na elke ronde haalbaar wordt.`,
+    (x) => `Een voorsprong van gemiddeld ${x.k} reviews is in ${x.stad} niet groot: wie elke tevreden klant een directe link stuurt, ziet zijn eigen aantal gestaag oplopen.`,
   ],
   // k = gemiddeld aantal reviews top 3 (≥ 30)
   reviewsHoog: [
     (x) => `De ${x.drie} bovenaan in ${x.stad} hebben gemiddeld ${x.k} reviews; dat haal je niet in één seizoen in, dus begin met pagina's per wijk en een volledig profiel terwijl je reviews groeien.`,
-    (x) => `Met gemiddeld ${x.k} reviews ligt de lat in ${x.stad} hoog, maar reviews zijn niet het enige: wijkpagina's kun je deze maand al bouwen.`,
+    (x) => `Met gemiddeld ${x.k} reviews ligt de lat in ${x.stad} hoog, maar reviews zijn niet het enige: wijkpagina's bouw je in weken, reviews in seizoenen.`,
     (x) => `${x.k} reviews gemiddeld bij de koplopers in ${x.stad} vraagt geduld; zet een vaste routine neer en werk intussen aan wat sneller gaat, zoals je profiel en wijkpagina's.`,
     (x) => `In ${x.stad} heeft de ${x.top} gemiddeld ${x.k} reviews, dus zoek je eerst ruimte op wijkniveau, waar een eigen pagina meer zegt dan een algemene stadspagina.`,
     (x) => `Tegen gemiddeld ${x.k} reviews bovenaan in ${x.stad} begin je niet met reviews alleen; combineer een reviewroutine met pagina's per wijk en kijk elke maand wat er beweegt.`,
+    (x) => `De koplopers in ${x.stad} bouwden hun gemiddeld ${x.k} reviews over jaren op; jouw kortere route loopt via een compleet profiel en pagina's voor de wijken waar je al komt.`,
   ],
   // k = aantal met minder dan 10 foto's (≥ 2)
   fotos: [

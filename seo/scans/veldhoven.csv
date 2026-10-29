@@ -1,5 +1,5 @@
-# Gemeten door Claude via de browser (Google Maps, ingelogd in het browserpaneel; gesponsorde resultaten overgeslagen). Plaatspagina's gecontroleerd op de websites zelf. #2 heeft pagina's per plaats (o.a. Veldhoven, Eindhoven, Best). #3 is gevestigd in Eindhoven.
-datum,stad,zoekterm,positie,reviews,score,eigen_website,plaatspaginas,reageert_op_reviews,fotos
-2026-10-29,Veldhoven,glazenwasser veldhoven,1,2,3.0,nee,nee,nee,1
-2026-10-29,Veldhoven,glazenwasser veldhoven,2,6,5.0,ja,ja,nee,10
-2026-10-29,Veldhoven,glazenwasser veldhoven,3,196,4.2,ja,nee,ja,9
+# Gemeten door Claude via de browser (Google Maps, ingelogd in het browserpaneel; gesponsorde resultaten overgeslagen). Plaatspagina's gecontroleerd op de websites zelf. #2 heeft pagina's per plaats (o.a. Veldhoven, Eindhoven, Best). #3 is gevestigd in Eindhoven. type_bedrijf = hoofdcategorie zoals Maps die in de resultatenlijst toont.
+datum,stad,zoekterm,positie,reviews,score,eigen_website,plaatspaginas,reageert_op_reviews,fotos,type_bedrijf
+2026-10-29,Veldhoven,glazenwasser veldhoven,1,2,3.0,nee,nee,nee,1,glazenwasser
+2026-10-29,Veldhoven,glazenwasser veldhoven,2,6,5.0,ja,ja,nee,10,glazenwasser
+2026-10-29,Veldhoven,glazenwasser veldhoven,3,196,4.2,ja,nee,ja,9,glazenwasser

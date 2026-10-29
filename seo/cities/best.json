@@ -2,6 +2,7 @@
   "stad": "Best",
   "slug": "best",
   "niche": "glazenwasser",
+  "regio": "brabant",
   "status": "live",
   "title": "Website glazenwasser Best | Stam Core",
   "meta": "Glazenwasser in Best? Geen van de drie bovenaan in Google Maps heeft een pagina voor Best of de buurten. Zo vind je klanten in Batadorp, Heivelden en Aarle.",
@@ -47,8 +48,8 @@
   "cta_tekst": "Van Batadorp tot De Vleut: een klant die je vindt, wil snel zien wat je doet en hoe hij je bereikt. Doe de gratis website-scan en zie direct waar je homepage tijd of vindbaarheid verliest.",
   "nabije_steden": [
     "eindhoven",
-    "veldhoven",
     "boxtel",
+    "veldhoven",
     "tilburg"
   ],
   "scan": "scans/best.csv",
@@ -83,5 +84,9 @@
     "Aarle": "https://www.wikidata.org/wiki/Q13427900",
     "De Vleut": "https://www.wikidata.org/wiki/Q2624269",
     "Batadorp": "https://www.wikidata.org/wiki/Q2198018"
-  }
+  },
+  "systeem_wijken": [
+    "Batadorp",
+    "Heivelden"
+  ]
 }

@@ -196,6 +196,7 @@ datum,stad,zoekterm,positie,reviews,score,eigen_website,plaatspaginas,reageert_o
 - `score`: gemiddelde score (bijv. 4.8)
 - `eigen_website`, `plaatspaginas`, `reageert_op_reviews`: `ja` / `nee`
 - `fotos`: aantal foto's op het profiel (getal)
+- `type_bedrijf` (optioneel, laatste kolom): hoofdcategorie in Maps, `glazenwasser` / `schoonmaakbedrijf` / `anders`. Alleen gebruikt als elke rij hem heeft; dan zegt de samenvatting hoeveel bedrijven bovenaan niet als glazenwasser staan ingeschreven. **Uitspraken over het soort bedrijf bovenaan ("vooral schoonmaakbedrijven") staan alleen op een pagina als ze uit deze kolom komen**, nooit als losse tekst in de stads-JSON.
 
 Maak `seo/scans/_TEMPLATE.csv` aan met de header en één voorbeeldrij die duidelijk als voorbeeld gemarkeerd is.
 
@@ -323,6 +324,10 @@ Een tabel met: type (stad/artikel), slug, status (`wacht-op-scan` / `klaar-voor-
 | Week 2 | De overige 7 steden uit golf 1 (zodra de scans er zijn) + artikel 1 |
 | Week 3–8 | 1 kennisartikel per week (artikel 2 t/m 6) |
 | Week 9–12 | Evaluatie (zie hieronder); daarna 1 stadspagina uit golf 2 per 2 weken + 1 artikel per 2 weken |
+
+> **Pauze sinds 2026-10-29 (besluit Jeannot):** geen nieuwe stadspagina's tot Jeannot de indexering in Search Console heeft geëvalueerd en ten minste 80% van de stadspagina's geïndexeerd is. Bestaande pagina's verbeteren mag wel, kennisartikelen gaan door.
+>
+> **Hoe we "geïndexeerd" meten:** per URL de URL-inspectie in Search Console. Telt als geïndexeerd: "URL staat op Google" (groene vinkjes bij Pagina-indexering). De status van een *validatie* ("Oplossing valideren" bij een probleem, of bij Broodkruimels/FAQ onder Verbeteringen) telt **niet** mee: die loopt vaak weken achter en zegt iets over de controle van een melding, niet over of de pagina in Google staat. Groene vinkjes per pagina is dus voldoende; met 10–20 pagina's is dat handmatig te doen, daarna via het rapport Pagina-indexering (filter op de sitemap).
 
 **Evaluatie na 8–12 weken (Jeannot in Search Console):**
 - Zijn alle pagina's geïndexeerd? (Zo niet: inhoud verbeteren, niet meer pagina's maken.)

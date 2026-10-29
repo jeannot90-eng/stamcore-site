@@ -1,4 +1,5 @@
 # VOORBEELD: kopieer naar {slug}.csv (bijv. tilburg.csv), verwijder deze regel en de voorbeeldrij, en vul per bedrijf in de top 3 één rij in. Geen bedrijfsnamen. Gesponsorde resultaten tellen niet mee.
 # reviews/fotos = getal · score = bijv. 4.8 · eigen_website/plaatspaginas/reageert_op_reviews = ja/nee
-datum,stad,zoekterm,positie,reviews,score,eigen_website,plaatspaginas,reageert_op_reviews,fotos
-2026-10-24,Voorbeeldstad,glazenwasser voorbeeldstad,1,42,4.8,ja,nee,ja,12
+# type_bedrijf (optioneel) = hoofdcategorie in Maps: glazenwasser/schoonmaakbedrijf/anders. Alleen invullen als je hem bij alle rijen hebt gezien.
+datum,stad,zoekterm,positie,reviews,score,eigen_website,plaatspaginas,reageert_op_reviews,fotos,type_bedrijf
+2026-10-24,Voorbeeldstad,glazenwasser voorbeeldstad,1,42,4.8,ja,nee,ja,12,glazenwasser

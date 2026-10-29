@@ -2,6 +2,7 @@
   "stad": "Bergen op Zoom",
   "slug": "bergen-op-zoom",
   "niche": "glazenwasser",
+  "regio": "brabant",
   "status": "live",
   "title": "Website glazenwasser Bergen op Zoom | Stam Core",
   "meta": "Glazenwasser in Bergen op Zoom? Bovenaan in Google Maps reageert niemand op reviews. Zo vind je klanten in de binnenstad, Halsteren en Lepelstraat.",
@@ -52,7 +53,8 @@
   "nabije_steden": [
     "roosendaal",
     "tilburg",
-    "s-hertogenbosch"
+    "waalwijk",
+    "boxtel"
   ],
   "scan": "scans/bergen-op-zoom.csv",
   "bronnen": [
@@ -89,5 +91,9 @@
     "Meilust": "https://www.wikidata.org/wiki/Q123997523",
     "Tuinwijk": "https://www.wikidata.org/wiki/Q1882674",
     "Halsteren": "https://www.wikidata.org/wiki/Q2213267"
-  }
+  },
+  "systeem_wijken": [
+    "Halsteren",
+    "De Markiezaten"
+  ]
 }

@@ -2,6 +2,7 @@
   "stad": "Waalwijk",
   "slug": "waalwijk",
   "niche": "glazenwasser",
+  "regio": "brabant",
   "status": "live",
   "title": "Website glazenwasser Waalwijk | Stam Core",
   "meta": "Glazenwasser in Waalwijk? In de top 3 van Google Maps staat zelfs een vergelijkingssite. Zo vind je klanten in Besoijen, Sprang-Capelle en Waspik.",
@@ -49,8 +50,9 @@
   ],
   "cta_tekst": "Een facilitair manager bij de haven en een bewoner in Besoijen bekijken allebei je website voordat ze bellen. De gratis website-scan laat binnen een minuut zien wat er beter kan aan snelheid en vindbaarheid.",
   "nabije_steden": [
-    "tilburg",
     "s-hertogenbosch",
+    "tilburg",
+    "boxtel",
     "oss"
   ],
   "scan": "scans/waalwijk.csv",
@@ -85,5 +87,9 @@
     "Baardwijk": "https://www.wikidata.org/wiki/Q3025163",
     "Sprang-Capelle": "https://www.wikidata.org/wiki/Q1329691",
     "Waspik": "https://www.wikidata.org/wiki/Q2922346"
-  }
+  },
+  "systeem_wijken": [
+    "Sprang-Capelle",
+    "Besoijen"
+  ]
 }

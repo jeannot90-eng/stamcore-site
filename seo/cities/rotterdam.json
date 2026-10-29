@@ -2,6 +2,7 @@
   "stad": "Rotterdam",
   "slug": "rotterdam",
   "niche": "glazenwasser",
+  "regio": "randstad-en-overig",
   "status": "live",
   "title": "Website glazenwasser Rotterdam | Stam Core",
   "meta": "Glazenwasser in Rotterdam? De top 3 in Google Maps heeft gemiddeld maar 12 reviews. Zo vind je klanten in Kralingen, Hillegersberg, Delfshaven en Zuid.",
@@ -53,7 +54,8 @@
   "nabije_steden": [
     "dordrecht",
     "den-haag",
-    "utrecht"
+    "utrecht",
+    "nijmegen"
   ],
   "scan": "scans/rotterdam.csv",
   "bronnen": [
@@ -94,5 +96,9 @@
     "Scheepvaartkwartier": "https://www.wikidata.org/wiki/Q2435152",
     "Delfshaven": "https://www.wikidata.org/wiki/Q2352207",
     "Blijdorp": "https://www.wikidata.org/wiki/Q2668761"
-  }
+  },
+  "systeem_wijken": [
+    "Kralingen",
+    "Hillegersberg"
+  ]
 }

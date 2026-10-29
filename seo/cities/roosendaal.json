@@ -2,6 +2,7 @@
   "stad": "Roosendaal",
   "slug": "roosendaal",
   "niche": "glazenwasser",
+  "regio": "brabant",
   "status": "live",
   "title": "Website glazenwasser Roosendaal | Stam Core",
   "meta": "Glazenwasser in Roosendaal? Bovenaan in Google Maps heeft niemand pagina's per wijk of dorp. Zo vind je klanten in Kroeven, Tolberg, Wouw en Nispen.",
@@ -49,8 +50,8 @@
   "nabije_steden": [
     "bergen-op-zoom",
     "tilburg",
-    "s-hertogenbosch",
-    "dordrecht"
+    "waalwijk",
+    "boxtel"
   ],
   "scan": "scans/roosendaal.csv",
   "bronnen": [
@@ -92,5 +93,9 @@
     "Nispen": "https://www.wikidata.org/wiki/Q670577",
     "Heerle": "https://www.wikidata.org/wiki/Q2868110",
     "Moerstraten": "https://www.wikidata.org/wiki/Q2044968"
-  }
+  },
+  "systeem_wijken": [
+    "Kroeven",
+    "Wouw"
+  ]
 }

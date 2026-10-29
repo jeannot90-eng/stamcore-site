@@ -2,6 +2,7 @@
   "stad": "Utrecht",
   "slug": "utrecht",
   "niche": "glazenwasser",
+  "regio": "randstad-en-overig",
   "status": "live",
   "title": "Website glazenwasser Utrecht | Stam Core",
   "meta": "Glazenwasser in Utrecht? Alle drie bovenaan in Google Maps reageren op reviews, twee hebben pagina's per plaats. Zo val je toch op, van Oost tot Leidsche Rijn.",
@@ -29,7 +30,7 @@
   "kenmerken": [
     "Het historische centrum van Utrecht wordt omringd door de Stadsbuitengracht, met daarbinnen de Oudegracht en de Nieuwegracht. Die grachten hebben werven: lage kades waar de werfkelders van de huizen op uitkomen. De stad telt na Amsterdam en Maastricht de meeste rijksmonumenten van het land. Monumentale ramen vragen vakwerk, en eigenaren zoeken daar een glazenwasser die er voorzichtig mee omgaat.",
     "Aan de andere kant van het Amsterdam-Rijnkanaal ligt Leidsche Rijn, dat bij afronding ongeveer 90.000 inwoners huisvest. Veel jonge gezinnen, veel nieuwe woningen met grote raampartijen. Daar zoekt men een glazenwasser voor het eerst, en dan wint wie al goed vindbaar is.",
-    "Let op het verschil met de bedrijven bovenaan in Maps: in Utrecht zijn dat deels brede schoonmaakbedrijven. Een glazenwasser die zich echt als glazenwasser presenteert, met eigen foto's van ramen, ladders en bus, valt tussen kantoorschoonmakers juist op."
+    "Vleuten en De Meern zijn binnen de gemeente eigen woonplaatsen, met samen ruim 50.000 inwoners. Wie daar woont, zoekt op Vleuten of De Meern en niet op Utrecht. Een glazenwasser die die namen op zijn site gebruikt, met een eigen pagina per woonplaats, sluit aan op hoe mensen daar zoeken."
   ],
   "faq_stad": [
     {
@@ -48,15 +49,15 @@
   ],
   "cta_tekst": "In een stad waar de concurrentie online al sterk is, telt elk detail van je website. Doe de gratis website-scan en zie direct hoe jouw homepage scoort op snelheid, vindbaarheid en mobiel gebruik.",
   "nabije_steden": [
-    "s-hertogenbosch",
-    "nijmegen",
     "rotterdam",
-    "zwolle"
+    "den-haag",
+    "dordrecht",
+    "nijmegen"
   ],
   "scan": "scans/utrecht.csv",
   "bronnen": [
     {
-      "feit": "Gemeente Utrecht: 378.278 inwoners op 1 januari 2026, vierde gemeente; woonplaatsen Utrecht, Haarzuilens, Vleuten en De Meern",
+      "feit": "Gemeente Utrecht: 378.278 inwoners op 1 januari 2026, vierde gemeente; woonplaatsen Utrecht (316.770), Haarzuilens (620), Vleuten (28.385) en De Meern (21.965)",
       "bron": "https://nl.wikipedia.org/wiki/Utrecht_(stad)"
     },
     {
@@ -85,5 +86,9 @@
     "Overvecht": "https://www.wikidata.org/wiki/Q2321954",
     "Vleuten-De Meern": "https://www.wikidata.org/wiki/Q2581182",
     "Oost": "https://www.wikidata.org/wiki/Q2435623"
-  }
+  },
+  "systeem_wijken": [
+    "Leidsche Rijn",
+    "Overvecht"
+  ]
 }

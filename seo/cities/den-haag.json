@@ -2,6 +2,7 @@
   "stad": "Den Haag",
   "slug": "den-haag",
   "niche": "glazenwasser",
+  "regio": "randstad-en-overig",
   "status": "live",
   "title": "Website glazenwasser Den Haag | Stam Core",
   "meta": "Glazenwasser in Den Haag? De drie bovenaan in Google Maps scoren een 5,0, maar niemand reageert op reviews. Zo vind je klanten van Scheveningen tot Ypenburg.",
@@ -23,12 +24,12 @@
   ],
   "wijken_tekst": [
     "Den Haag heeft acht stadsdelen: Centrum, Scheveningen, Segbroek, Loosduinen, Escamp, Laak, Haagse Hout en Leidschenveen-Ypenburg. Scheveningen en Loosduinen dragen nog de naam van het dorp dat ze ooit waren, en daar zoeken bewoners ook op.",
-    "Het verschil tussen de stadsdelen is groot, van villa's in Benoordenhout tot de nieuwbouw van Ypenburg. Een pagina per stadsdeel of wijk laat zien dat je dat verschil kent, en maakt je vindbaar waar je al rijdt."
+    "Het verschil tussen de wijken is groot, van Benoordenhout tot de stadsuitbreidingen Ypenburg en Leidschenveen. Een pagina per stadsdeel of wijk laat zien dat je dat verschil kent, en maakt je vindbaar waar je al rijdt."
   ],
   "kenmerken": [
-    "Langs de kust, van Scheveningen tot Kijkduin, brengt de wind zand en zout mee naar de ramen. Wie daar woont, merkt dat ruiten sneller dof worden dan in de rest van de stad. Een glazenwasser die daar een vaster ritme voor voorstelt en dat op zijn site uitlegt, laat zien dat hij de kust kent.",
-    "Den Haag is ook een stad van overheid en organisaties: in 2006 kwam een kwart van de banen uit die hoek, met ministeries, de gemeente en internationale instellingen. Kantoren, ambassades en instellingen zoeken een betrouwbare vaste partner, liefst één die laat zien dat hij discreet en op afspraak werkt.",
-    "Aan de oostkant liggen de nieuwere wijken van Leidschenveen-Ypenburg. Woningen met grote glaspartijen, vaak met een eerste eigenaar die nog geen vaste glazenwasser heeft. Daar telt vindbaarheid op wijkniveau het meest."
+    "Wie aan de kust woont, van Scheveningen tot Kijkduin, woont met zijn ramen naar de zee. Bespreek met zulke klanten welk ritme ze willen, en leg op je site uit hoe je dat aanpakt. Dat laat zien dat je de kust kent en niet alleen de binnenstad.",
+    "Den Haag is ook een stad van overheid en organisaties: in 2006 kwam een kwart van de banen uit die hoek, met ministeries, de gemeente en internationale instellingen. Kantoren en instellingen zoeken een betrouwbare vaste partner, liefst één die laat zien dat hij discreet en op afspraak werkt.",
+    "Aan de oostkant liggen Ypenburg en Leidschenveen, die pas sinds het eind van de vorige eeuw bij de stad horen en waar sindsdien veel is gebouwd. In zulke wijken zoeken bewoners vaak nog een vaste glazenwasser. Daar telt vindbaarheid op wijkniveau het meest."
   ],
   "faq_stad": [
     {
@@ -48,8 +49,9 @@
   "cta_tekst": "Van Scheveningen tot Ypenburg: een klant die je vindt, beslist binnen een paar seconden of hij belt. Doe de gratis website-scan en zie meteen of je homepage snel genoeg is en wat Google mist.",
   "nabije_steden": [
     "rotterdam",
+    "dordrecht",
     "utrecht",
-    "dordrecht"
+    "nijmegen"
   ],
   "scan": "scans/den-haag.csv",
   "bronnen": [
@@ -63,6 +65,10 @@
     },
     {
       "feit": "Overheid en internationale organisaties 26% van de werkgelegenheid (56.000 personen in 2006)",
+      "bron": "https://nl.wikipedia.org/wiki/Den_Haag"
+    },
+    {
+      "feit": "Annexaties en stadsuitbreidingen Wateringse Veld, Ypenburg en Leidschenveen na eind 20e eeuw; wijk Benoordenhout",
       "bron": "https://nl.wikipedia.org/wiki/Den_Haag"
     }
   ],
@@ -84,5 +90,9 @@
     "Leidschenveen-Ypenburg": "https://www.wikidata.org/wiki/Q1614939",
     "Benoordenhout": "https://www.wikidata.org/wiki/Q4890135",
     "Laak": "https://www.wikidata.org/wiki/Q1614099"
-  }
+  },
+  "systeem_wijken": [
+    "Scheveningen",
+    "Loosduinen"
+  ]
 }
