@@ -17,7 +17,7 @@ Ik run al ruim zes jaar mijn eigen glazenwassersbedrijf en bouw websites en loka
 
 ## Waarom je profiel zwaarder weegt dan je website
 
-Google bepaalt de volgorde in Maps op basis van drie dingen: **relevantie** (past jouw bedrijf bij de zoekopdracht), **afstand** (hoe ver zit je van degene die zoekt) en **bekendheid** (onder andere reviews en links naar je website). Een betere positie kopen of aanvragen kan niet, dat zegt Google er zelf duidelijk bij.
+Google bepaalt de volgorde in Maps op basis van drie dingen: **relevantie** (past jouw bedrijf bij de zoekopdracht), **afstand** (hoe ver zit je van degene die zoekt) en **bekendheid** (onder andere reviews en links naar je website). Een betere positie kopen of aanvragen kan niet, dat zegt Google er zelf duidelijk bij. Ook adverteren in Google Ads verandert daar niets aan. Wat die twee wel met elkaar te maken hebben, lees je in [wat SEO doet voor je Google Ads](/kennis/seo-en-google-ads).
 
 Aan afstand verander je weinig. Aan relevantie en bekendheid wel, en daar is je Bedrijfsprofiel de basis voor. Hoeveel ruimte er ligt, zag ik toen ik in oktober 2026 de top 3 bekeek voor "glazenwasser" plus plaatsnaam in acht Brabantse steden. Van die 24 profielen hadden er **18 minder dan 10 foto's**, reageerden er **17 niet op hun reviews** en hadden er maar **3** een website met pagina's per plaats. Bovenaan staan betekent dus niet dat alles op orde is. De resultaten per stad staan onder meer op de pagina's voor [Tilburg](/website-glazenwasser-tilburg) en [Oss](/website-glazenwasser-oss).
 

@@ -19,6 +19,7 @@
 | 2026-10-25 | 'Kennis voor glazenwassers' hernoemd naar 'Kennis' (menu, footer, overzichtspagina breder); broodkruimel artikelen naar /kennis/ | https://stam-core.nl/kennis/ | seo: kennis hernoemd |
 | 2026-10-25 | Kennisartikel wat-is-geo live (handmatige run op verzoek Jeannot, geen wekelijkse run); artikel 1 linkt ernaar | https://stam-core.nl/kennis/wat-is-geo | kennis: wat-is-geo |
 | 2026-10-26 | Kennisartikel meer-reviews-glazenwasser live (artikel-run 3, wekelijkse run 2; concept 26-10, akkoord Jeannot); in-tekstlinks vanuit google-bedrijfsprofiel-glazenwasser en wat-is-geo | https://stam-core.nl/kennis/meer-reviews-glazenwasser | kennis: meer-reviews-glazenwasser |
+| 2026-10-29 | Kennisartikel seo-en-google-ads live (handmatige run op verzoek Jeannot, geen wekelijkse run; telt niet mee voor het onderhoud uit KENNISARTIKELEN.md §9); in-tekstlink vanuit google-bedrijfsprofiel-glazenwasser | https://stam-core.nl/kennis/seo-en-google-ads | kennis: seo-en-google-ads |
 
 ## Indexering aangevraagd (Search Console)
 
