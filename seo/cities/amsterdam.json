@@ -3,7 +3,7 @@
   "slug": "amsterdam",
   "niche": "glazenwasser",
   "regio": "randstad-en-overig",
-  "status": "concept",
+  "status": "live",
   "title": "Website glazenwasser Amsterdam | Stam Core",
   "meta": "Glazenwasser in Amsterdam? Twee van de drie bovenaan in Google Maps hebben geen pagina's per stadsdeel. Zo vind je klanten in de Jordaan, De Pijp en Noord.",
   "h1": "Glazenwasser in Amsterdam: zo pak je de stad per stadsdeel",
@@ -84,5 +84,12 @@
   "systeem_wijken": [
     "Jordaan",
     "De Pijp"
-  ]
+  ],
+  "gepubliceerd": "2026-10-30",
+  "gewijzigd": "2026-10-30",
+  "kansvarianten": {
+    "plaats": 2,
+    "reageert": 2,
+    "reviewsHoog": 5
+  }
 }

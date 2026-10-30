@@ -3,7 +3,7 @@
   "slug": "oisterwijk",
   "niche": "glazenwasser",
   "regio": "brabant",
-  "status": "concept",
+  "status": "live",
   "title": "Website glazenwasser Oisterwijk | Stam Core",
   "meta": "Glazenwasser in Oisterwijk? Geen van de drie bovenaan in Google Maps reageert op reviews. Zo vind je klanten in Oisterwijk, Moergestel en Haaren.",
   "h1": "Glazenwasser in Oisterwijk: van De Plaatse tot Moergestel en Haaren",
@@ -81,5 +81,12 @@
   "systeem_wijken": [
     "Moergestel",
     "Haaren"
-  ]
+  ],
+  "gepubliceerd": "2026-10-30",
+  "gewijzigd": "2026-10-30",
+  "kansvarianten": {
+    "plaats": 2,
+    "reageert": 1,
+    "reviewsHoog": 3
+  }
 }

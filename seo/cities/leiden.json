@@ -3,7 +3,7 @@
   "slug": "leiden",
   "niche": "glazenwasser",
   "regio": "randstad-en-overig",
-  "status": "concept",
+  "status": "live",
   "title": "Website glazenwasser Leiden | Stam Core",
   "meta": "Glazenwasser in Leiden? Bovenaan in Google Maps hebben alle drie een website en veel reviews. Zo val je toch op in de Merenwijk, Stevenshof en Leiden-Noord.",
   "h1": "Glazenwasser in Leiden: van de binnenstad tot de Stevenshof",
@@ -74,5 +74,12 @@
   "systeem_wijken": [
     "Merenwijk",
     "Stevenshof"
-  ]
+  ],
+  "gepubliceerd": "2026-10-30",
+  "gewijzigd": "2026-10-30",
+  "kansvarianten": {
+    "plaats": 1,
+    "reviewsHoog": 2,
+    "fotos": 2
+  }
 }

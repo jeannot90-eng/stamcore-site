@@ -3,7 +3,7 @@
   "slug": "geldrop-mierlo",
   "niche": "glazenwasser",
   "regio": "brabant",
-  "status": "concept",
+  "status": "live",
   "title": "Website glazenwasser Geldrop-Mierlo | Stam Core",
   "meta": "Glazenwasser in Geldrop of Mierlo? De bedrijven bovenaan in Google Maps hebben weinig reviews. Zo vind je klanten in Braakhuizen, Coevering en Mierlo.",
   "h1": "Glazenwasser in Geldrop-Mierlo: twee plaatsen, twee pagina's",
@@ -83,5 +83,12 @@
   "systeem_wijken": [
     "Braakhuizen",
     "Mierlo"
-  ]
+  ],
+  "gepubliceerd": "2026-10-30",
+  "gewijzigd": "2026-10-30",
+  "kansvarianten": {
+    "reageert": 4,
+    "reviewsLaag": 2,
+    "fotos": 1
+  }
 }

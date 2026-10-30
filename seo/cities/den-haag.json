@@ -48,10 +48,10 @@
   ],
   "cta_tekst": "Van Scheveningen tot Ypenburg: een klant die je vindt, beslist binnen een paar seconden of hij belt. Doe de gratis website-scan en zie meteen of je homepage snel genoeg is en wat Google mist.",
   "nabije_steden": [
+    "leiden",
     "rotterdam",
     "dordrecht",
-    "utrecht",
-    "nijmegen"
+    "utrecht"
   ],
   "scan": "scans/den-haag.csv",
   "bronnen": [
@@ -73,7 +73,7 @@
     }
   ],
   "gepubliceerd": "2026-10-29",
-  "gewijzigd": "2026-10-29",
+  "gewijzigd": "2026-10-30",
   "kansvarianten": {
     "plaats": 2,
     "reageert": 4,

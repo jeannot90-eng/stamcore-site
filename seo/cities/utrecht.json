@@ -49,10 +49,10 @@
   ],
   "cta_tekst": "In een stad waar de concurrentie online al sterk is, telt elk detail van je website. Doe de gratis website-scan en zie direct hoe jouw homepage scoort op snelheid, vindbaarheid en mobiel gebruik.",
   "nabije_steden": [
+    "amsterdam",
     "rotterdam",
     "den-haag",
-    "dordrecht",
-    "nijmegen"
+    "dordrecht"
   ],
   "scan": "scans/utrecht.csv",
   "bronnen": [
@@ -74,7 +74,7 @@
     }
   ],
   "gepubliceerd": "2026-10-29",
-  "gewijzigd": "2026-10-29",
+  "gewijzigd": "2026-10-30",
   "kansvarianten": {
     "reviewsHoog": 4,
     "fotos": 2

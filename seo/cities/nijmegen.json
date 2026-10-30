@@ -52,10 +52,10 @@
   ],
   "cta_tekst": "Van de Waalsprong tot Dukenburg: je website is vaak het eerste wat een nieuwe klant van je ziet. Doe de gratis website-scan en zie binnen een minuut hoe die scoort op mobiel en desktop.",
   "nabije_steden": [
+    "arnhem",
     "utrecht",
     "zwolle",
-    "dordrecht",
-    "rotterdam"
+    "dordrecht"
   ],
   "scan": "scans/nijmegen.csv",
   "bronnen": [
@@ -77,7 +77,7 @@
     }
   ],
   "gepubliceerd": "2026-10-29",
-  "gewijzigd": "2026-10-29",
+  "gewijzigd": "2026-10-30",
   "kansvarianten": {
     "plaats": 4,
     "reageert": 1,

@@ -51,10 +51,10 @@
   ],
   "cta_tekst": "Of je nu in Brandevoort of Stiphout rijdt: een snelle, duidelijke website helpt een zoeker de stap naar contact te zetten. De gratis website-scan laat direct zien hoe jouw site scoort op mobiel en desktop, met de verbeterpunten in gewone taal.",
   "nabije_steden": [
+    "geldrop-mierlo",
     "eindhoven",
     "veldhoven",
-    "best",
-    "uden"
+    "best"
   ],
   "scan": "scans/helmond.csv",
   "bronnen": [
@@ -80,7 +80,7 @@
     }
   ],
   "gepubliceerd": "2026-10-24",
-  "gewijzigd": "2026-10-29",
+  "gewijzigd": "2026-10-30",
   "kansvarianten": {
     "plaats": 3,
     "reageert": 1,

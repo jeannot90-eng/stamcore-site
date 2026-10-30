@@ -50,10 +50,10 @@
   ],
   "cta_tekst": "Klanten in Woensel of Stratum vergelijken snel, vaak op hun telefoon. Vul je webadres in bij de gratis website-scan en zie in een minuut waar je site traag is, wat Google mist en wat het meeste oplevert om te verbeteren.",
   "nabije_steden": [
+    "geldrop-mierlo",
+    "valkenswaard",
     "veldhoven",
-    "best",
-    "helmond",
-    "boxtel"
+    "best"
   ],
   "scan": "scans/eindhoven.csv",
   "bronnen": [
@@ -91,7 +91,7 @@
     }
   ],
   "gepubliceerd": "2026-10-24",
-  "gewijzigd": "2026-10-29",
+  "gewijzigd": "2026-10-30",
   "kansvarianten": {
     "plaats": 0,
     "reviewsHoog": 0

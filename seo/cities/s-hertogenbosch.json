@@ -51,10 +51,10 @@
   ],
   "cta_tekst": "Wie in Rosmalen of de binnenstad een glazenwasser zoekt, klikt eerst door naar je site. Check met de gratis website-scan of die snel laadt en of Google hem goed kan lezen; de uitkomst staat binnen een minuut op je scherm.",
   "nabije_steden": [
+    "vught",
     "boxtel",
     "oss",
-    "waalwijk",
-    "uden"
+    "waalwijk"
   ],
   "scan": "scans/s-hertogenbosch.csv",
   "bronnen": [
@@ -88,7 +88,7 @@
     }
   ],
   "gepubliceerd": "2026-10-24",
-  "gewijzigd": "2026-10-29",
+  "gewijzigd": "2026-10-30",
   "kansvarianten": {
     "plaats": 1,
     "reageert": 0,

@@ -53,10 +53,10 @@
   ],
   "cta_tekst": "Van Zeelst tot de Zilverackers: wie je vindt, kijkt eerst op je website. Doe de gratis website-scan en zie binnen een minuut hoe snel je homepage is op een telefoon en wat Google nog mist.",
   "nabije_steden": [
+    "valkenswaard",
     "eindhoven",
     "best",
-    "helmond",
-    "boxtel"
+    "helmond"
   ],
   "scan": "scans/veldhoven.csv",
   "bronnen": [
@@ -78,7 +78,7 @@
     }
   ],
   "gepubliceerd": "2026-10-29",
-  "gewijzigd": "2026-10-29",
+  "gewijzigd": "2026-10-30",
   "kansvarianten": {
     "plaats": 1,
     "reageert": 3,

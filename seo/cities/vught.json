@@ -3,7 +3,7 @@
   "slug": "vught",
   "niche": "glazenwasser",
   "regio": "brabant",
-  "status": "concept",
+  "status": "live",
   "title": "Website glazenwasser Vught | Stam Core",
   "meta": "Glazenwasser in Vught? Twee van de drie bovenaan in Google Maps hebben geen eigen website. Zo vind je klanten in Vught, Helvoirt en Cromvoirt.",
   "h1": "Glazenwasser in Vught: landgoederen, villa's en drie kernen",
@@ -76,5 +76,12 @@
   "systeem_wijken": [
     "Villapark",
     "Helvoirt"
-  ]
+  ],
+  "gepubliceerd": "2026-10-30",
+  "gewijzigd": "2026-10-30",
+  "kansvarianten": {
+    "plaats": 0,
+    "reageert": 4,
+    "reviewsHoog": 4
+  }
 }

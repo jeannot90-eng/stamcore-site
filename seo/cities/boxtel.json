@@ -44,10 +44,10 @@
   ],
   "cta_tekst": "In een markt waar online nog weinig gebeurt, maakt een goede website meteen verschil. Doe de gratis website-scan en zie hoe jouw homepage scoort op snelheid, vindbaarheid en mobiel gebruik.",
   "nabije_steden": [
+    "oisterwijk",
+    "vught",
     "s-hertogenbosch",
-    "best",
-    "tilburg",
-    "eindhoven"
+    "best"
   ],
   "scan": "scans/boxtel.csv",
   "bronnen": [
@@ -65,7 +65,7 @@
     }
   ],
   "gepubliceerd": "2026-10-29",
-  "gewijzigd": "2026-10-29",
+  "gewijzigd": "2026-10-30",
   "kansvarianten": {
     "plaats": 4,
     "reageert": 1,

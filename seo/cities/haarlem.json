@@ -3,7 +3,7 @@
   "slug": "haarlem",
   "niche": "glazenwasser",
   "regio": "randstad-en-overig",
-  "status": "concept",
+  "status": "live",
   "title": "Website glazenwasser Haarlem | Stam Core",
   "meta": "Glazenwasser in Haarlem? Bovenaan in Google Maps heeft maar één bedrijf pagina's per wijk. Zo vind je klanten in Schalkwijk, Haarlem-Noord en het Kleverpark.",
   "h1": "Glazenwasser in Haarlem: van het Kleverpark tot Schalkwijk",
@@ -75,5 +75,12 @@
   "systeem_wijken": [
     "Kleverpark",
     "Schalkwijk"
-  ]
+  ],
+  "gepubliceerd": "2026-10-30",
+  "gewijzigd": "2026-10-30",
+  "kansvarianten": {
+    "plaats": 0,
+    "reageert": 0,
+    "reviewsLaag": 5
+  }
 }

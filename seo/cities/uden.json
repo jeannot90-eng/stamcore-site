@@ -46,10 +46,10 @@
   ],
   "cta_tekst": "Of je nu in Uden-Zuid of in Zeeland rijdt: je website is vaak het eerste wat een nieuwe klant van je ziet. De gratis website-scan laat meteen zien hoe die scoort op mobiel en desktop, en wat je het eerst verbetert.",
   "nabije_steden": [
+    "veghel",
     "oss",
     "s-hertogenbosch",
-    "helmond",
-    "boxtel"
+    "helmond"
   ],
   "scan": "scans/uden.csv",
   "bronnen": [
@@ -79,7 +79,7 @@
     }
   ],
   "gepubliceerd": "2026-10-29",
-  "gewijzigd": "2026-10-29",
+  "gewijzigd": "2026-10-30",
   "kansvarianten": {
     "plaats": 0,
     "reageert": 2,

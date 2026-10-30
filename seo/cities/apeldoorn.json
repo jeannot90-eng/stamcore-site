@@ -3,7 +3,7 @@
   "slug": "apeldoorn",
   "niche": "glazenwasser",
   "regio": "randstad-en-overig",
-  "status": "concept",
+  "status": "live",
   "title": "Website glazenwasser Apeldoorn | Stam Core",
   "meta": "Glazenwasser in Apeldoorn? Geen van de drie bovenaan in Google Maps heeft pagina's per wijk of dorp. Zo vind je klanten in De Maten, Zevenhuizen en Ugchelen.",
   "h1": "Glazenwasser in Apeldoorn: de stad en de Veluwse dorpen",
@@ -78,5 +78,12 @@
   "systeem_wijken": [
     "De Maten",
     "Ugchelen"
-  ]
+  ],
+  "gepubliceerd": "2026-10-30",
+  "gewijzigd": "2026-10-30",
+  "kansvarianten": {
+    "plaats": 3,
+    "reageert": 3,
+    "reviewsHoog": 0
+  }
 }

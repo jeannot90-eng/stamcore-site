@@ -52,10 +52,10 @@
   ],
   "cta_tekst": "Van Kralingen tot Charlois: wie je vindt, kijkt eerst naar je website, en meestal op een telefoon. Doe de gratis website-scan en zie meteen hoe snel je homepage laadt en wat Google er nog in mist.",
   "nabije_steden": [
+    "leiden",
     "dordrecht",
     "den-haag",
-    "utrecht",
-    "nijmegen"
+    "utrecht"
   ],
   "scan": "scans/rotterdam.csv",
   "bronnen": [
@@ -77,7 +77,7 @@
     }
   ],
   "gepubliceerd": "2026-10-29",
-  "gewijzigd": "2026-10-29",
+  "gewijzigd": "2026-10-30",
   "kansvarianten": {
     "plaats": 0,
     "reviewsLaag": 1,

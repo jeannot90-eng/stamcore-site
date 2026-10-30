@@ -51,10 +51,10 @@
   ],
   "cta_tekst": "Van Assendorp tot Stadshagen: je website moet op een telefoon snel en duidelijk zijn. Doe de gratis website-scan en zie meteen hoe jouw homepage scoort, wat Google mist en waar je begint.",
   "nabije_steden": [
+    "apeldoorn",
     "utrecht",
     "nijmegen",
-    "dordrecht",
-    "rotterdam"
+    "dordrecht"
   ],
   "scan": "scans/zwolle.csv",
   "bronnen": [
@@ -80,7 +80,7 @@
     }
   ],
   "gepubliceerd": "2026-10-29",
-  "gewijzigd": "2026-10-29",
+  "gewijzigd": "2026-10-30",
   "kansvarianten": {
     "plaats": 1,
     "reviewsLaag": 6,
