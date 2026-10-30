@@ -47,17 +47,17 @@ Volgorde = KENNISARTIKELEN.md §3. Titel, zoekwoord en insteek staan daar.
 
 ## Steden (golf 2)
 
-Na indexering golf 1 (Search Console bevestigd) op verzoek van Jeannot gestart. **Pauze:** geen nieuwe stadspagina's tot Jeannot de indexering heeft geëvalueerd (≥ 80% "URL staat op Google", zie SEO-PLAN.md §9).
+Na indexering golf 1 (Search Console bevestigd) op verzoek van Jeannot gestart. Pauze (2026-10-29) opgeheven op 2026-10-30: alle 10 pagina's "URL staat op Google" (Search Console, gecontroleerd door Jeannot).
 
 | Type | Slug | Status | Datum | Opmerking |
 |---|---|---|---|---|
-| stad | veldhoven | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29 |
-| stad | uden | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29; Gemeente Maashorst sinds 2022 |
-| stad | boxtel | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29; Maps toont maar 2 organische resultaten: top 2 |
-| stad | best | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29; Kustermans Glas organisch in top 3, geanonimiseerd meegeteld |
-| stad | rotterdam | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29 |
-| stad | dordrecht | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29 |
-| stad | utrecht | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29; Top 3 sterk: alle drie reageren op reviews |
-| stad | nijmegen | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29 |
-| stad | den-haag | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29; Top 3 allemaal score 5,0 |
-| stad | zwolle | on-hold-tot-evaluatie | 2026-10-29 | Live sinds 2026-10-29 |
+| stad | veldhoven | live | 2026-10-29 | Live sinds 2026-10-29 |
+| stad | uden | live | 2026-10-29 | Live sinds 2026-10-29; Gemeente Maashorst sinds 2022 |
+| stad | boxtel | live | 2026-10-29 | Live sinds 2026-10-29; Maps toont maar 2 organische resultaten: top 2 |
+| stad | best | live | 2026-10-29 | Live sinds 2026-10-29; Kustermans Glas organisch in top 3, geanonimiseerd meegeteld |
+| stad | rotterdam | live | 2026-10-29 | Live sinds 2026-10-29 |
+| stad | dordrecht | live | 2026-10-29 | Live sinds 2026-10-29 |
+| stad | utrecht | live | 2026-10-29 | Live sinds 2026-10-29; Top 3 sterk: alle drie reageren op reviews |
+| stad | nijmegen | live | 2026-10-29 | Live sinds 2026-10-29 |
+| stad | den-haag | live | 2026-10-29 | Live sinds 2026-10-29; Top 3 allemaal score 5,0 |
+| stad | zwolle | live | 2026-10-29 | Live sinds 2026-10-29 |
