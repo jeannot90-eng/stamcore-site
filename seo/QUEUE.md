@@ -64,7 +64,7 @@ Na indexering golf 1 (Search Console bevestigd) op verzoek van Jeannot gestart. 
 
 ## Steden (golf 3)
 
-Gestart op 2026-10-30 na evaluatie golf 2 (10/10 geïndexeerd), steden gekozen door Jeannot.
+Gestart op 2026-10-30 na evaluatie golf 2 (10/10 geïndexeerd), steden gekozen door Jeannot. **Bij livegang:** `nabije_steden` van bestaande pagina's aanvullen met de dichtstbijzijnde nieuwe stad (nijmegen→arnhem, zwolle→apeldoorn, den-haag en rotterdam→leiden, utrecht→amsterdam, s-hertogenbosch→vught, tilburg→oisterwijk, boxtel→oisterwijk+vught, uden→veghel, eindhoven→geldrop-mierlo+valkenswaard, helmond→geldrop-mierlo, veldhoven→valkenswaard). Niet eerder: concept-steden worden overgeslagen en verdringen dan een live buur.
 
 | Type | Slug | Status | Datum | Opmerking |
 |---|---|---|---|---|
