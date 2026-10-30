@@ -23,7 +23,7 @@
   </url>
   <url>
     <loc>https://stam-core.nl/seo-glazenwasser</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
@@ -178,7 +178,7 @@
   </url>
   <url>
     <loc>https://stam-core.nl/kennis/</loc>
-    <lastmod>2026-10-29</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
@@ -199,6 +199,11 @@
   <url>
     <loc>https://stam-core.nl/kennis/wat-is-geo</loc>
     <lastmod>2026-10-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://stam-core.nl/kennis/website-traag-op-mobiel</loc>
+    <lastmod>2026-10-30</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>

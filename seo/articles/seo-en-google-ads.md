@@ -78,7 +78,7 @@ Voor een glazenwasser kan Google Ads zinvol zijn op momenten dat je snel extra a
 ## Stappenplan: SEO en Google Ads laten samenwerken
 
 1. **Maak eerst de pagina's.** Zorg voor een pagina per dienst die je wilt promoten, met duidelijke uitleg, foto's van je eigen werk en een aanvraagknop. Zonder goede bestemming is adverteren weggegooid geld.
-2. **Check je snelheid en mobiele weergave.** Open je pagina's op je telefoon en meet de laadtijd. Traag of onoverzichtelijk? Los dat eerst op.
+2. **Check je snelheid en mobiele weergave.** Open je pagina's op je telefoon en meet de laadtijd. Traag of onoverzichtelijk? Los dat eerst op; [waarom een website traag is op mobiel](/kennis/website-traag-op-mobiel) helpt je de oorzaak te vinden.
 3. **Laat elke advertentie uitkomen op de passende pagina.** Ramen naar de pagina over ramen, zonnepanelen naar de pagina over zonnepanelen. Niet alles naar de homepage.
 4. **Groepeer je zoekwoorden per dienst.** Eén advertentiegroep per dienst, met advertentieteksten die aansluiten bij de zoekwoorden en de pagina.
 5. **Koppel Search Console en je Bedrijfsprofiel aan Google Ads.** Dan zie je betaald en organisch naast elkaar en kunnen je advertenties gegevens uit je profiel gebruiken.
