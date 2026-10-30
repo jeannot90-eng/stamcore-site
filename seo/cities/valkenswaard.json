@@ -1,0 +1,81 @@
+{
+  "stad": "Valkenswaard",
+  "slug": "valkenswaard",
+  "niche": "glazenwasser",
+  "regio": "brabant",
+  "status": "concept",
+  "title": "Website glazenwasser Valkenswaard | Stam Core",
+  "meta": "Glazenwasser in Valkenswaard? Geen van de drie bovenaan in Google Maps heeft pagina's per wijk of dorp. Zo vind je klanten in Dommelen, Borkel en Schaft.",
+  "h1": "Glazenwasser in Valkenswaard: van het centrum tot Dommelen en Borkel",
+  "intro": [
+    "Valkenswaard ligt in de Kempen en telt bijna 32.000 inwoners. De gemeente ontstond in 1934 uit Valkenswaard, Dommelen en Borkel en Schaft.",
+    "In Google Maps heeft geen van de drie bedrijven bovenaan pagina's per wijk of dorp. Hieronder zie je wat dat voor jou betekent."
+  ],
+  "wijken": [
+    "Centrum",
+    "Geenhoven",
+    "Turfberg",
+    "Hoge Akkers",
+    "Kerkakkers",
+    "Het Gegraaf",
+    "Dommelen",
+    "Borkel",
+    "Schaft"
+  ],
+  "wijken_tekst": [
+    "Valkenswaard is gegroeid uit kleine ontginningen als Geenhoven, Zeelberg en Venbergen. Tegenwoordig vind je er buurten als Turfberg, Hoge Akkers, Kerkakkers en Het Gegraaf, met daarnaast Dommelen en de dorpen Borkel en Schaft.",
+    "De uitbreiding van Valkenswaard vindt vooral in Dommelen plaats. Nieuwe bewoners zoeken daar naar een glazenwasser, en een eigen pagina voor Dommelen zorgt dat ze bij jou uitkomen."
+  ],
+  "kenmerken": [
+    "Valkenswaard is vooral een woonplaats voor forenzen die in Eindhoven of België werken. Dat betekent veel huishoudens waar overdag niemand thuis is. Zo'n klant wil op je website lezen wanneer je komt, of je achterom kunt en hoe hij betaalt, zonder dat hij je eerst hoeft te bellen.",
+    "De naam herinnert aan de valkerij, die hier van 1650 tot 1855 floreerde. Met kapitaal uit die valkerij begon vanaf 1864 de sigarenindustrie, met merken als Willem II en Hofnar. Met carnaval heet het dorp nog altijd Striepersgat, naar het striepen van tabaksbladeren. Het Valkerij en Sigarenmakers Museum vertelt dat verhaal.",
+    "Naast het wonen is toerisme een belangrijke bron van inkomsten, en op het bedrijventerrein Schaapsloop zit lichte industrie. Winkels en horeca in het centrum en bedrijven op Schaapsloop vormen samen een zakelijke ronde die je naast particulieren goed kunt plannen."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Mijn klanten in Valkenswaard zijn overdag aan het werk. Wat zet ik op mijn site?",
+      "antwoord": "Hoe het werkt als niemand thuis is: dat je vooraf een bericht stuurt, achterom komt als dat mag, en hoe er betaald wordt. Hoe minder een klant hoeft te vragen, hoe sneller hij een afspraak maakt."
+    },
+    {
+      "vraag": "Ik rijd ook in Waalre en Bergeijk. Kan dat op dezelfde site?",
+      "antwoord": "Ja. Eén website met een pagina per plaats werkt het best. Zo vinden mensen je op hun eigen plaatsnaam, en kan elke pagina doorlinken naar je pagina's in Valkenswaard."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "eigendom",
+    "teksten"
+  ],
+  "cta_tekst": "Van Geenhoven tot Borkel: een forens die 's avonds een glazenwasser zoekt, wil het in één keer kunnen regelen. Doe de gratis website-scan en zie meteen of je homepage dat mogelijk maakt.",
+  "nabije_steden": [
+    "eindhoven",
+    "veldhoven",
+    "geldrop-mierlo",
+    "best"
+  ],
+  "scan": "scans/valkenswaard.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente Valkenswaard: 31.912 inwoners (1 januari 2026, CBS); in 1934 ontstaan uit Valkenswaard, Dommelen en Borkel en Schaft; sigarenfabrieken (Willem II, Hofnar); lichte industrie op een bedrijventerrein; toerisme belangrijke inkomstenbron; vooral vestigingsplaats voor forenzen die in Eindhoven of België werken",
+      "bron": "https://nl.wikipedia.org/wiki/Valkenswaard_(gemeente)"
+    },
+    {
+      "feit": "Valkenswaard: in de Kempen; ontstaan uit ontginningen Cromstraet, Geenhoven, Zeelberg en Venbergen; valkerij 1650-1855; sigarenindustrie vanaf 1864 met kapitaal uit de valkerij; carnavalsnaam Striepersgat; Valkerij en Sigarenmakers Museum; uitbreiding vooral in Dommelen; buurtschappen Geenhoven, Het Gegraaf, Kerkakkers, Schaapsloop, Borkel, Schaft",
+      "bron": "https://nl.wikipedia.org/wiki/Valkenswaard_(plaats)"
+    },
+    {
+      "feit": "Buurten gemeente Valkenswaard: Centrum, Geenhoven, Turfberg-Noord en -Zuid, Hoge Akkers, Kerkakkers, Het Gegraaf, Industrieterrein Schaapsloop, Dommelen, Borkel, Schaft (CBS Wijken en Buurten)",
+      "bron": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85984NED/table"
+    }
+  ],
+  "wikidata": "https://www.wikidata.org/wiki/Q1869375",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Valkenswaard_(plaats)",
+  "wijken_wikidata": {
+    "Dommelen": "https://www.wikidata.org/wiki/Q747614",
+    "Geenhoven": "https://www.wikidata.org/wiki/Q1902881"
+  },
+  "systeem_wijken": [
+    "Dommelen",
+    "Turfberg"
+  ]
+}

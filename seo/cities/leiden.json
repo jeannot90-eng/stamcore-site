@@ -1,0 +1,78 @@
+{
+  "stad": "Leiden",
+  "slug": "leiden",
+  "niche": "glazenwasser",
+  "regio": "randstad-en-overig",
+  "status": "concept",
+  "title": "Website glazenwasser Leiden | Stam Core",
+  "meta": "Glazenwasser in Leiden? Bovenaan in Google Maps hebben alle drie een website en veel reviews. Zo val je toch op in de Merenwijk, Stevenshof en Leiden-Noord.",
+  "h1": "Glazenwasser in Leiden: van de binnenstad tot de Stevenshof",
+  "intro": [
+    "Leiden telt ruim 130.000 inwoners en heeft de oudste universiteit van Nederland, opgericht in 1575. Samen met Oegstgeest, Voorschoten, Leiderdorp en Zoeterwoude vormt de stad één aaneengesloten stedelijk gebied van ruim 215.000 inwoners.",
+    "In Google Maps hebben de bedrijven bovenaan alle drie een eigen website en flink wat reviews. Hieronder zie je waar je je toch kunt onderscheiden."
+  ],
+  "wijken": [
+    "Binnenstad",
+    "Leiden-Noord",
+    "Morsdistrict",
+    "Boerhaavedistrict",
+    "Roodenburgerdistrict",
+    "Bos- en Gasthuisdistrict",
+    "Merenwijk",
+    "Stevenshof"
+  ],
+  "wijken_tekst": [
+    "Leiden is verdeeld in districten: de Binnenstad, Leiden-Noord, het Morsdistrict, het Boerhaavedistrict, het Roodenburgerdistrict, het Bos- en Gasthuisdistrict, en de grote woonwijken Merenwijk en Stevenshof.",
+    "De Merenwijk en de Stevenshof zijn grote woonwijken met een eigen naam, en daar zoeken bewoners ook op. Wie daar rijdt, maakt er gerust een aparte pagina van."
+  ],
+  "kenmerken": [
+    "De binnenstad wordt omringd door een singel van zo'n 6,5 kilometer die nog helemaal intact is. Binnen die singel liggen grachten met 88 bruggen, en Leiden telt 35 hofjes. Een hofje is voor een glazenwasser een mooie klant: veel kleine woningen achter één poort, die je in één keer kunt doen.",
+    "In Leiden werken al bedrijven met veel reviews en een goede website. Dan win je niet met nóg een algemene pagina, maar met lokale details: welke districten je doet, welke dag je in de Merenwijk rijdt, foto's van werk aan een grachtenpand. Daarmee laat je zien dat je Leiden echt kent.",
+    "Oegstgeest, Leiderdorp, Voorschoten en Zoeterwoude zijn voor een klant gewoon de buren van Leiden. Wie daar ook rijdt, zet die plaatsen elk op een eigen pagina. Dat sluit aan op hoe mensen zoeken: iemand in Oegstgeest zoekt eerder op Oegstgeest dan op Leiden."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "In Leiden werken al goede glazenwassers met veel reviews. Heeft een website dan nog zin?",
+      "antwoord": "Ja, juist om je te onderscheiden. Een klant vergelijkt een paar profielen en klikt door naar de websites. Laat daar zien in welke districten je werkt, wat je kost en hoe je met monumentale panden omgaat."
+    },
+    {
+      "vraag": "Ik werk in Leiden, Oegstgeest en Leiderdorp. Hoe zet ik dat op mijn site?",
+      "antwoord": "Met één website en een pagina per plaats. Op elke pagina noem je de buurten en de dag waarop je er rijdt. Zo vind je klanten op hun eigen plaatsnaam en blijft je site overzichtelijk."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "afstand",
+    "eigendom"
+  ],
+  "cta_tekst": "Van de Binnenstad tot de Stevenshof: tussen sterke concurrenten telt elke seconde dat je site laadt. Doe de gratis website-scan en zie meteen hoe je homepage het doet op een telefoon.",
+  "nabije_steden": [
+    "den-haag",
+    "haarlem",
+    "rotterdam",
+    "amsterdam"
+  ],
+  "scan": "scans/leiden.csv",
+  "bronnen": [
+    {
+      "feit": "Leiden: 130.302 inwoners (1 januari 2026); stedelijk gebied met Oegstgeest, Voorschoten, Leiderdorp en Zoeterwoude 215.602 inwoners; oudste universiteit van Nederland (1575); grachtengordel met 88 bruggen binnen de singel; 35 hofjes; buitenste grachtengordel van circa 6,5 km nog geheel intact",
+      "bron": "https://nl.wikipedia.org/wiki/Leiden"
+    },
+    {
+      "feit": "Wijken Leiden: Binnenstad-Zuid en -Noord, Stationsdistrict, Leiden-Noord, Roodenburgerdistrict, Bos- en Gasthuisdistrict, Morsdistrict, Boerhaavedistrict, Merenwijkdistrict, Stevenshofdistrict (CBS Wijken en Buurten)",
+      "bron": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85984NED/table"
+    }
+  ],
+  "wikidata": "https://www.wikidata.org/wiki/Q43631",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Leiden",
+  "wijken_wikidata": {
+    "Merenwijk": "https://www.wikidata.org/wiki/Q13836989",
+    "Stevenshof": "https://www.wikidata.org/wiki/Q5808709",
+    "Leiden-Noord": "https://www.wikidata.org/wiki/Q2224088",
+    "Morsdistrict": "https://www.wikidata.org/wiki/Q1823545"
+  },
+  "systeem_wijken": [
+    "Merenwijk",
+    "Stevenshof"
+  ]
+}

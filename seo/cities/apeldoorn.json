@@ -1,0 +1,82 @@
+{
+  "stad": "Apeldoorn",
+  "slug": "apeldoorn",
+  "niche": "glazenwasser",
+  "regio": "randstad-en-overig",
+  "status": "concept",
+  "title": "Website glazenwasser Apeldoorn | Stam Core",
+  "meta": "Glazenwasser in Apeldoorn? Geen van de drie bovenaan in Google Maps heeft pagina's per wijk of dorp. Zo vind je klanten in De Maten, Zevenhuizen en Ugchelen.",
+  "h1": "Glazenwasser in Apeldoorn: de stad en de Veluwse dorpen",
+  "intro": [
+    "Apeldoorn is in oppervlakte de grootste gemeente van Gelderland en telt ruim 169.000 inwoners. Naast de stad horen dorpen als Beekbergen, Loenen en Hoenderloo bij de gemeente, en Ugchelen ligt er direct tegenaan.",
+    "In Google Maps heeft geen van de drie bedrijven bovenaan pagina's per wijk of dorp, en geen van de drie reageert op reviews. Hieronder zie je wat dat voor jou betekent."
+  ],
+  "wijken": [
+    "Centrum",
+    "De Parkenbuurt",
+    "De Maten",
+    "Zevenhuizen",
+    "Zuidbroek",
+    "Zonnehoeve",
+    "Woudhuis",
+    "Ugchelen",
+    "Beekbergen"
+  ],
+  "wijken_tekst": [
+    "De stad Apeldoorn is verdeeld in acht wijken met 65 buurten. Ten noorden van het centrum ligt De Parkenbuurt; De Maten en Zevenhuizen werden in de jaren zestig en zeventig gebouwd, en ook Zuidbroek, Zonnehoeve en Woudhuis hebben elk een eigen park.",
+    "Ugchelen hoort officieel bij de wijk Zuidwest, maar bewoners noemen het hun dorp. Voor Ugchelen, Beekbergen en de andere dorpen werkt een eigen pagina beter dan een vermelding onder Apeldoorn."
+  ],
+  "kenmerken": [
+    "In de jaren zestig vestigden zich rijksdiensten als de Belastingdienst, Domeinen en het Kadaster in Apeldoorn, en daarmee kwamen veel andere bedrijven. Kantoorgebouwen zijn klanten die op vaste momenten schone ramen willen. Een pagina voor zakelijke klanten, met hoe je planning en facturatie werkt, opent die markt.",
+    "De Maten telt zo'n 30.000 inwoners en Zevenhuizen zo'n 22.000. Zevenhuizen heeft de eerste echte hoogbouw van Apeldoorn. Wijken van die omvang zijn groot genoeg voor een eigen ronde en een eigen pagina, en flats regel je met één afspraak met de vereniging van eigenaren.",
+    "In De Parkenbuurt staan veel oude herenhuizen, soms rijk versierd met ornamenten. Hoge ramen in zulke panden vragen om rustig en zorgvuldig werk. Wie daar vaste klanten heeft, laat op zijn site foto's zien van juist dat soort huizen."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "De dorpen rond Apeldoorn liggen ver uit elkaar. Hoe pak ik dat aan op mijn site?",
+      "antwoord": "Maak alleen pagina's voor de dorpen waar je echt rijdt, en noem de dag waarop je er bent. Een klant in Beekbergen wil vooral weten of je bij hem langskomt, niet dat je de hele gemeente doet."
+    },
+    {
+      "vraag": "Hoe kom ik aan kantoren als klant in Apeldoorn?",
+      "antwoord": "Met een aparte pagina voor bedrijven: hoe vaak je komt, of je buiten kantoortijden werkt, hoe je hoge gevels veilig doet en hoe je factureert. Facilitair managers willen snel zien dat het geregeld is."
+    }
+  ],
+  "faq_pool": [
+    "afstand",
+    "eigendom",
+    "teksten"
+  ],
+  "cta_tekst": "Van De Maten tot Ugchelen: een klant die je vindt, wil meteen zien of je in zijn wijk of dorp komt. Doe de gratis website-scan en zie direct waar je homepage klanten laat liggen.",
+  "nabije_steden": [
+    "arnhem",
+    "zwolle",
+    "nijmegen",
+    "utrecht"
+  ],
+  "scan": "scans/apeldoorn.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente Apeldoorn: 169.222 inwoners (1 januari 2026, CBS); grootste gemeente van Gelderland in oppervlakte",
+      "bron": "https://nl.wikipedia.org/wiki/Apeldoorn_(gemeente)"
+    },
+    {
+      "feit": "Apeldoorn (stad): acht CBS-wijken met 65 buurten; Ugchelen officieel gerekend tot de wijk Apeldoorn Zuidwest; rijksdiensten (Belastingdienst, Domeinen, Kadaster) in de jaren zestig; De Maten (30.000 inwoners) en Zevenhuizen (22.000 inwoners) gebouwd in de jaren 60 en 70; Zevenhuizen eerste echte hoogbouw; De Parkenbuurt ten noorden van het centrum met oude, soms rijk versierde herenhuizen; parken Zuidbroek, Burlingtonpark (Zonnehoeve), Woudhuispark (Woudhuis)",
+      "bron": "https://nl.wikipedia.org/wiki/Apeldoorn_(stad)"
+    },
+    {
+      "feit": "Wijken gemeente Apeldoorn: Centrum, West, Zuidwest, Zuid, Zuidoost, Oost, Noordoost, Noord, Beekbergen en omgeving, Loenen en omgeving, Hoenderloo en omgeving (CBS Wijken en Buurten)",
+      "bron": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85984NED/table"
+    }
+  ],
+  "wikidata": "https://www.wikidata.org/wiki/Q3018561",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Apeldoorn_(stad)",
+  "wijken_wikidata": {
+    "Zevenhuizen": "https://www.wikidata.org/wiki/Q2912881",
+    "Ugchelen": "https://www.wikidata.org/wiki/Q1915779",
+    "Beekbergen": "https://www.wikidata.org/wiki/Q2893671"
+  },
+  "systeem_wijken": [
+    "De Maten",
+    "Ugchelen"
+  ]
+}

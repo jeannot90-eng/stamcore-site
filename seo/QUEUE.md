@@ -61,3 +61,20 @@ Na indexering golf 1 (Search Console bevestigd) op verzoek van Jeannot gestart. 
 | stad | nijmegen | live | 2026-10-29 | Live sinds 2026-10-29 |
 | stad | den-haag | live | 2026-10-29 | Live sinds 2026-10-29; Top 3 allemaal score 5,0 |
 | stad | zwolle | live | 2026-10-29 | Live sinds 2026-10-29 |
+
+## Steden (golf 3)
+
+Gestart op 2026-10-30 na evaluatie golf 2 (10/10 geïndexeerd), steden gekozen door Jeannot.
+
+| Type | Slug | Status | Datum | Opmerking |
+|---|---|---|---|---|
+| stad | vught | concept | 2026-10-30 |  |
+| stad | oisterwijk | concept | 2026-10-30 |  |
+| stad | veghel | concept | 2026-10-30 | Gemeente Meierijstad; zoekterm 'glazenwasser veghel' |
+| stad | geldrop-mierlo | concept | 2026-10-30 | Zoekterm 'glazenwasser geldrop' |
+| stad | valkenswaard | concept | 2026-10-30 |  |
+| stad | amsterdam | concept | 2026-10-30 |  |
+| stad | haarlem | concept | 2026-10-30 |  |
+| stad | leiden | concept | 2026-10-30 |  |
+| stad | arnhem | concept | 2026-10-30 |  |
+| stad | apeldoorn | concept | 2026-10-30 |  |

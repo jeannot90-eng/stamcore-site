@@ -1,0 +1,85 @@
+{
+  "stad": "Oisterwijk",
+  "slug": "oisterwijk",
+  "niche": "glazenwasser",
+  "regio": "brabant",
+  "status": "concept",
+  "title": "Website glazenwasser Oisterwijk | Stam Core",
+  "meta": "Glazenwasser in Oisterwijk? Geen van de drie bovenaan in Google Maps reageert op reviews. Zo vind je klanten in Oisterwijk, Moergestel en Haaren.",
+  "h1": "Glazenwasser in Oisterwijk: van De Plaatse tot Moergestel en Haaren",
+  "intro": [
+    "Oisterwijk ligt tussen Tilburg en Boxtel en staat bekend om zijn bossen en vennen. De gemeente telt ruim 33.000 inwoners, verdeeld over Oisterwijk, Moergestel, Haaren en het gehucht Heukelom.",
+    "In Google Maps reageert geen van de drie bedrijven bovenaan op zijn reviews. Hieronder zie je waar jouw kansen liggen."
+  ],
+  "wijken": [
+    "Centrum",
+    "Pannenschuur",
+    "Waterhoef",
+    "Levenskerk",
+    "Bunders",
+    "Moergestel",
+    "Haaren",
+    "Heukelom"
+  ],
+  "wijken_tekst": [
+    "Rond het centrum van Oisterwijk liggen buurten als Pannenschuur, Waterhoef, Levenskerk en de Bunders. Moergestel en Haaren zijn eigen dorpen met elk zo'n zesduizend inwoners; Heukelom is een gehucht van ruim driehonderd.",
+    "Wie in Moergestel of Haaren woont, zoekt op zijn eigen dorp. Rijd je daar vaste dagen, geef die dorpen dan een eigen pagina."
+  ],
+  "kenmerken": [
+    "Het hart van Oisterwijk is De Plaatse: een brede, pleinachtige straat van bijna een kilometer, ontstaan uit de oude marktplaats. Die structuur lag er eind 14e eeuw al. Langs zo'n lange as zitten winkels en horeca die hun ramen vaak willen laten doen. Dat is een vaste zakelijke ronde die je in één ochtend afwerkt.",
+    "Toerisme is in Oisterwijk geen nieuwigheid: in 1909 werd hier de eerste VVV van Nederland opgericht. De bossen en vennen, zoals de Oisterwijkse Bossen en Vennen en De Kampina, trekken nog steeds bezoekers. Hotels en restaurants in een toeristische plaats willen er verzorgd uitzien, ook aan de ramen. Een pagina voor horeca en verblijfsrecreatie spreekt die klanten direct aan.",
+    "Sinds de gemeente Haaren in 2021 werd opgeheven, hoort het dorp Haaren bij Oisterwijk. Daarmee kwamen er in één keer zo'n zesduizend inwoners bij. Die inwoners zoeken nog altijd op Haaren, dus daar win je met een eigen pagina meer dan met een vermelding onder Oisterwijk."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Ik rijd ook in Haaren en Moergestel. Hoe zet ik dat op mijn site?",
+      "antwoord": "Met één website en een pagina per dorp. Op elke pagina staat wanneer je er rijdt en welke diensten je daar doet. Zo vinden bewoners je op hun eigen dorpsnaam, en blijft je site één geheel."
+    },
+    {
+      "vraag": "Hoe krijg ik meer zakelijke klanten in het centrum van Oisterwijk?",
+      "antwoord": "Maak een aparte pagina voor bedrijven, met hoe vaak je langskomt, of je vroeg begint zodat je klaar bent voor de winkels opengaan, en hoe je factureert. Ondernemers willen snel zien dat het geregeld is."
+    }
+  ],
+  "faq_pool": [
+    "eigendom",
+    "glazenwasser",
+    "prijs"
+  ],
+  "cta_tekst": "Van De Plaatse tot Moergestel: wie je zoekt, opent je site op zijn telefoon en beslist binnen een paar seconden. Doe de gratis website-scan en zie meteen of je homepage snel en duidelijk genoeg is.",
+  "nabije_steden": [
+    "tilburg",
+    "boxtel",
+    "vught",
+    "waalwijk"
+  ],
+  "scan": "scans/oisterwijk.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente Oisterwijk: circa 33.347 inwoners (CBS); woonplaatsen 2023: Oisterwijk 20.495, Moergestel 6.120, Heukelom 310, Haaren 6.000; bossen en vennen (Oisterwijkse Bossen en Vennen, De Kampina) als toeristische trekpleister",
+      "bron": "https://nl.wikipedia.org/wiki/Oisterwijk_(gemeente)"
+    },
+    {
+      "feit": "Oisterwijk ligt tussen Tilburg en Boxtel; De Plaatse: brede pleinachtige straat van bijna een kilometer uit de oude marktplaats, hoofdstructuur eind 14e eeuw; VVV opgericht 1909, de eerste in Nederland",
+      "bron": "https://nl.wikipedia.org/wiki/Oisterwijk_(plaats)"
+    },
+    {
+      "feit": "Gemeente Haaren opgeheven per 1 januari 2021",
+      "bron": "https://nl.wikipedia.org/wiki/Vught_(gemeente)"
+    },
+    {
+      "feit": "Buurten gemeente Oisterwijk: Centrum Oisterwijk, Pannenschuur, Waterhoef, Levenskerk, Bunders, Dorp Moergestel, Dorp Haaren, Heukelom (CBS Wijken en Buurten)",
+      "bron": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85984NED/table"
+    }
+  ],
+  "wikidata": "https://www.wikidata.org/wiki/Q3299324",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Oisterwijk_(plaats)",
+  "wijken_wikidata": {
+    "Moergestel": "https://www.wikidata.org/wiki/Q1921402",
+    "Haaren": "https://www.wikidata.org/wiki/Q2309125",
+    "Heukelom": "https://www.wikidata.org/wiki/Q2235397"
+  },
+  "systeem_wijken": [
+    "Moergestel",
+    "Haaren"
+  ]
+}

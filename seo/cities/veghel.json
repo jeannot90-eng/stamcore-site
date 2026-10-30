@@ -1,0 +1,81 @@
+{
+  "stad": "Veghel",
+  "slug": "veghel",
+  "niche": "glazenwasser",
+  "regio": "brabant",
+  "status": "concept",
+  "title": "Website glazenwasser Veghel | Stam Core",
+  "meta": "Glazenwasser in Veghel? Geen van de drie bovenaan in Google Maps heeft een eigen website. Zo vind je klanten in Veghel, Eerde, Zijtaart en Mariaheide.",
+  "h1": "Glazenwasser in Veghel: van de Markt tot Zijtaart en Eerde",
+  "intro": [
+    "Veghel telt samen met de dorpen Eerde, Mariaheide en Zijtaart bijna 34.000 inwoners en is de grootste plaats van de gemeente Meierijstad. Het gemeentehuis staat aan het Stadhuisplein in Veghel.",
+    "Opvallend: geen van de drie bedrijven bovenaan in Google Maps heeft een eigen website. Hieronder zie je wat dat voor jou betekent."
+  ],
+  "wijken": [
+    "Centrum",
+    "Veghel-Zuid",
+    "De Leest",
+    "Hoogeinde",
+    "'t Ven",
+    "De Scheifelaar",
+    "Eerde",
+    "Mariaheide",
+    "Zijtaart"
+  ],
+  "wijken_tekst": [
+    "De oudere woonwijken van Veghel liggen vooral ten westen van de Aa, verenigd onder de noemer Veghel-West en Leest. Ten oosten van de Aa liggen overwegend jongere of vernieuwde wijken. In de buurtindeling vind je verder namen als Veghel-Zuid, Hoogeinde, 't Ven en De Scheifelaar.",
+    "Eerde, Mariaheide en Zijtaart horen bij Veghel, maar hun bewoners zoeken op hun eigen dorp. Een pagina per dorp, met de dag waarop je er rijdt, sluit daarop aan."
+  ],
+  "kenmerken": [
+    "Veghel groeide door het water. Tussen 1822 en 1826 werd de Zuid-Willemsvaart gegraven, met een haven die tot in de kom van het dorp reikt. Rond die haven vestigden zich al in de 19e eeuw bedrijven, en Veghel werd een echt arbeidersstadje. In het masterplan voor het centrum wordt het oude centrum rond de Hoofdstraat nu verbonden met het havengebied.",
+    "In het centrum zit de horeca vooral aan de Markt en in de Molenstraat. Restaurants, cafés en winkels met grote ruiten zijn klanten die elke week of twee weken schone ramen willen. Wie daar een vaste ochtendronde opbouwt, heeft een stabiele basis naast het werk bij particulieren.",
+    "Sinds 2017 vormt Veghel samen met Schijndel en Sint-Oedenrode de gemeente Meierijstad, met ruim 85.000 inwoners de zevende gemeente van Noord-Brabant. Het werkgebied is dus groot, maar bewoners zoeken nog steeds op Veghel, Schijndel of Erp. Dat is goed nieuws voor een glazenwasser met een pagina per plaats."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Bovenaan in Maps heeft niemand een website. Heb ik er dan wel een nodig?",
+      "antwoord": "Juist dan. Een klant die twijfelt tussen een paar profielen, klikt door om te zien wie je bent, wat je kost en waar je werkt. Heb jij als enige een duidelijke website, dan heb je iets wat de anderen niet laten zien."
+    },
+    {
+      "vraag": "Ik werk in heel Meierijstad. Maak ik één pagina voor de gemeente?",
+      "antwoord": "Liever een pagina per plaats: Veghel, Schijndel, Sint-Oedenrode, Erp en de dorpen waar je echt rijdt. Mensen zoeken veel vaker op hun eigen plaats dan op de gemeentenaam."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "teksten",
+    "eigendom"
+  ],
+  "cta_tekst": "Van de Markt tot Zijtaart: als je in Veghel de enige bent met een goede website, moet die ook echt werken. Doe de gratis website-scan en zie meteen hoe je homepage scoort op snelheid en vindbaarheid.",
+  "nabije_steden": [
+    "uden",
+    "s-hertogenbosch",
+    "boxtel",
+    "oss"
+  ],
+  "scan": "scans/veghel.csv",
+  "bronnen": [
+    {
+      "feit": "Veghel: 33.895 inwoners op 1 januari 2023 inclusief de kernen Eerde, Mariaheide en Zijtaart; grootste woonplaats van Meierijstad; oudere wijken ten westen van de Aa (Veghel-West en Leest), ten oosten jongere of geherstructureerde wijken; Zuid-Willemsvaart 1822-1826 met haven tot in de kom; bedrijven rond de haven vanaf midden 19e eeuw, arbeidersstadje; masterplan verbindt oude centrum rond de Hoofdstraat met het havengebied; horeca vooral aan de Markt en de Molenstraat",
+      "bron": "https://nl.wikipedia.org/wiki/Veghel_(plaats)"
+    },
+    {
+      "feit": "Meierijstad: per 1 januari 2017 fusie van Schijndel, Sint-Oedenrode en Veghel; 85.249 inwoners, zevende gemeente van Noord-Brabant; gemeentehuis aan het Stadhuisplein in Veghel",
+      "bron": "https://nl.wikipedia.org/wiki/Meierijstad"
+    },
+    {
+      "feit": "Buurten Veghel: Veghel Centrum, Veghel Zuid, Hoogeinde, 't Ven, De Scheifelaar, Leest, Eerde, Mariaheide, Zijtaart (CBS Wijken en Buurten)",
+      "bron": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85984NED/table"
+    }
+  ],
+  "wikidata": "https://www.wikidata.org/wiki/Q12557060",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Veghel_(plaats)",
+  "wijken_wikidata": {
+    "Zijtaart": "https://www.wikidata.org/wiki/Q2628057",
+    "Mariaheide": "https://www.wikidata.org/wiki/Q1905002"
+  },
+  "systeem_wijken": [
+    "Zijtaart",
+    "Eerde"
+  ]
+}

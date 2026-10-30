@@ -1,0 +1,5 @@
+# Gemeten door Claude via de browser (Google Maps, ingelogd in het browserpaneel; gesponsorde resultaten overgeslagen). Plaatspagina's gecontroleerd op de websites zelf. type_bedrijf = hoofdcategorie zoals Maps die in de resultatenlijst toont.
+datum,stad,zoekterm,positie,reviews,score,eigen_website,plaatspaginas,reageert_op_reviews,fotos,type_bedrijf
+2026-10-30,Arnhem,glazenwasser arnhem,1,10,4.5,ja,nee,nee,6,glazenwasser
+2026-10-30,Arnhem,glazenwasser arnhem,2,11,4.6,ja,ja,ja,10,glazenwasser
+2026-10-30,Arnhem,glazenwasser arnhem,3,68,4.3,ja,nee,ja,7,glazenwasser

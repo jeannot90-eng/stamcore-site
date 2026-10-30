@@ -1,0 +1,87 @@
+{
+  "stad": "Geldrop-Mierlo",
+  "slug": "geldrop-mierlo",
+  "niche": "glazenwasser",
+  "regio": "brabant",
+  "status": "concept",
+  "title": "Website glazenwasser Geldrop-Mierlo | Stam Core",
+  "meta": "Glazenwasser in Geldrop of Mierlo? De bedrijven bovenaan in Google Maps hebben weinig reviews. Zo vind je klanten in Braakhuizen, Coevering en Mierlo.",
+  "h1": "Glazenwasser in Geldrop-Mierlo: twee plaatsen, twee pagina's",
+  "intro": [
+    "Geldrop-Mierlo ligt tussen Eindhoven en Helmond en telt ruim 40.000 inwoners. De gemeente ontstond in 2004 uit Geldrop en Mierlo, twee plaatsen die elk een eigen naam en eigen wijken hebben.",
+    "De bedrijven bovenaan in Google Maps hebben maar weinig reviews. Hieronder zie je wat dat voor jou betekent."
+  ],
+  "wijken": [
+    "Centrum",
+    "Braakhuizen",
+    "Coevering",
+    "Genoenhuis",
+    "Zesgehuchten",
+    "Akert",
+    "Mierlo",
+    "Luchen",
+    "Neerakkers"
+  ],
+  "wijken_tekst": [
+    "Geldrop is ontstaan uit drie kernen: het eigenlijke Geldrop, Braakhuizen ten oosten van de Kleine Dommel en Hoog Geldrop, de belangrijkste nederzetting van het vroegere Zesgehuchten. Wijken als Coevering, Genoenhuis en Akert kwamen later. Mierlo heeft eigen wijken, zoals Luchen, Neerakkers en Kerkakkers.",
+    "Een klant in Mierlo zoekt op Mierlo, een klant in Braakhuizen vaak op Geldrop. Twee aparte pagina's werken daarom beter dan één pagina voor de hele gemeente."
+  ],
+  "kenmerken": [
+    "Geldrop was eeuwenlang een textielplaats. Van het eind van de 16e eeuw tot in de tweede helft van de 20e eeuw draaide de lakennijverheid, en al in 1831 stond er een stoommachine. Met carnaval heet Geldrop daarom Lappegat, en het Weverijmuseum laat de oude weefmachines zien.",
+    "Met zo'n dertigduizend inwoners, hoogbouw en eigen voorzieningen als een ziekenhuis is Geldrop eerder een kleine stad dan een dorp. Flats en appartementencomplexen zijn voor een glazenwasser werk dat je met één afspraak per complex regelt. Laat op je site zien dat je met een vereniging van eigenaren werkt en dat je ook hogere verdiepingen veilig aankunt.",
+    "Mierlo was tot 2004 een zelfstandige gemeente en is met ongeveer tienduizend inwoners de kleinste kern. Ten oosten van Geldrop loopt de Molenheide, een groot dennenbos, tot aan Mierlo door. Wie in Mierlo vaste klanten heeft, maakt er een eigen pagina van in plaats van het weg te stoppen onder Geldrop."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Moet ik Geldrop en Mierlo op één pagina zetten?",
+      "antwoord": "Liever niet. Bewoners zoeken op hun eigen plaats, dus twee pagina's sluiten beter aan. Op elke pagina noem je de wijken waar je rijdt en de dag waarop je er bent."
+    },
+    {
+      "vraag": "In Geldrop staan ook flats. Hoe kom ik aan werk voor een VvE?",
+      "antwoord": "Maak een korte pagina voor VvE's en beheerders: hoe vaak je komt, hoe je hoge ramen veilig doet, en hoe je factureert. Beheerders vergelijken offertes, dus een duidelijke werkwijze helpt."
+    }
+  ],
+  "faq_pool": [
+    "afstand",
+    "glazenwasser",
+    "prijs"
+  ],
+  "cta_tekst": "Van Braakhuizen tot Mierlo: wie je vindt, wil meteen zien in welke wijken je rijdt en hoe hij je bereikt. Doe de gratis website-scan en zie wat Google op je homepage mist en wat een klant kan afschrikken.",
+  "nabije_steden": [
+    "eindhoven",
+    "helmond",
+    "valkenswaard",
+    "veldhoven"
+  ],
+  "scan": "scans/geldrop-mierlo.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente Geldrop-Mierlo: 40.683 inwoners (1 januari 2026, CBS); bestaat uit Geldrop en Mierlo; buurgemeenten o.a. Eindhoven en Helmond; Geldrop met circa dertigduizend inwoners, hoogbouw en een ziekenhuis typeert zich als middelkleine stad",
+      "bron": "https://nl.wikipedia.org/wiki/Geldrop-Mierlo"
+    },
+    {
+      "feit": "Geldrop: ontstaan uit Geldrop, Braakhuizen (oost van de Kleine Dommel) en Hoog Geldrop (Zesgehuchten); fusie met Mierlo op 1 januari 2004; textiel- en lakennijverheid eind 16e eeuw tot tweede helft 20e eeuw; stoommachine in 1831; carnavalsnaam Lappegat; Weverijmuseum; Molenheide strekt zich uit tot Mierlo; wijken Akert, Braakhuizen, Coevering",
+      "bron": "https://nl.wikipedia.org/wiki/Geldrop"
+    },
+    {
+      "feit": "Mierlo: zelfstandige gemeente tot 1 januari 2004; kern met ongeveer 10.000 inwoners, kleinste kern van de fusiegemeente; wijken Kerkakkers, Luchen, Neerakkers",
+      "bron": "https://nl.wikipedia.org/wiki/Mierlo"
+    },
+    {
+      "feit": "Buurten Geldrop-Mierlo: Centrum, Akert, Zesgehuchten, Braakhuizen-Noord en -Zuid, Coevering, Genoenhuis, Mierlo-Dorp, Neerakkers, Kerkakkers, Luchen (CBS Wijken en Buurten)",
+      "bron": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85984NED/table"
+    }
+  ],
+  "wikidata": "https://www.wikidata.org/wiki/Q9835",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Geldrop-Mierlo",
+  "wijken_wikidata": {
+    "Braakhuizen": "https://www.wikidata.org/wiki/Q2341807",
+    "Coevering": "https://www.wikidata.org/wiki/Q2272474",
+    "Zesgehuchten": "https://www.wikidata.org/wiki/Q2052846",
+    "Mierlo": "https://www.wikidata.org/wiki/Q1614337"
+  },
+  "systeem_wijken": [
+    "Braakhuizen",
+    "Mierlo"
+  ]
+}

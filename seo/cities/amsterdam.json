@@ -1,0 +1,88 @@
+{
+  "stad": "Amsterdam",
+  "slug": "amsterdam",
+  "niche": "glazenwasser",
+  "regio": "randstad-en-overig",
+  "status": "concept",
+  "title": "Website glazenwasser Amsterdam | Stam Core",
+  "meta": "Glazenwasser in Amsterdam? Twee van de drie bovenaan in Google Maps hebben geen pagina's per stadsdeel. Zo vind je klanten in de Jordaan, De Pijp en Noord.",
+  "h1": "Glazenwasser in Amsterdam: zo pak je de stad per stadsdeel",
+  "intro": [
+    "Amsterdam is met ruim 900.000 inwoners de grootste gemeente van Nederland, verdeeld over zeven stadsdelen en het stadsgebied Weesp. Van de grachtengordel tot IJburg en Nieuw-West: voor een glazenwasser is het eigenlijk een verzameling steden.",
+    "In Google Maps hebben alle drie de bedrijven bovenaan een eigen website, maar maar één heeft pagina's per stadsdeel. Hieronder zie je wat dat voor jou betekent."
+  ],
+  "wijken": [
+    "Grachtengordel",
+    "Jordaan",
+    "De Pijp",
+    "Oostelijke Eilanden",
+    "Amsterdam-Noord",
+    "Nieuw-West",
+    "Buitenveldert",
+    "Zuidoost",
+    "IJburg"
+  ],
+  "wijken_tekst": [
+    "Rond de oudste kern liggen de grachtengordel en de 17e-eeuwse buurten zoals de Jordaan en de Oostelijke Eilanden. In de 19e eeuw kwamen daar arbeidersbuurten als De Pijp bij, en na de oorlog de Westelijke Tuinsteden, Buitenveldert en een grote uitbreiding van Amsterdam-Noord.",
+    "Amsterdammers zoeken vaak op hun buurt of stadsdeel. In een stad van deze omvang is één algemene pagina te weinig: begin met de stadsdelen waar je al klanten hebt en breid van daaruit uit."
+  ],
+  "kenmerken": [
+    "Sinds 2010 staat de grachtengordel op de Werelderfgoedlijst van UNESCO, en de binnenstad heeft meerdere beschermde stadsgezichten. Ramen aan de gracht vragen om een glazenwasser die weet hoe hij met monumentale kozijnen, smalle stoepen en parkeren omgaat. Wie daar ervaring mee heeft, moet dat op zijn site laten zien.",
+    "In de jaren twintig werden Plan Zuid en Plan West gebouwd in de stijl van de Amsterdamse School, en later volgden met het Algemeen Uitbreidingsplan grote wijken in het westen en zuiden. Bouwblokken met portieken betekenen veel woningen per straat. Een tevreden bewoner levert in zo'n blok vaak de buren op.",
+    "Amsterdam-Noord ligt aan de andere kant van het IJ en is met de rest van de stad verbonden via de IJ-veren, de Noord/Zuidlijn, drie tunnels en een brug. Voor je planning maakt dat water veel uit: een ronde aan één kant van het IJ kost minder reistijd dan heen en weer. Laat op je site zien in welke stadsdelen je vaste dagen hebt."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Moet ik voor elke buurt in Amsterdam een eigen pagina maken?",
+      "antwoord": "Nee, begin met drie tot vijf buurten of stadsdelen waar je al klanten hebt. Een sterke pagina per gebied werkt beter dan veertig dunne pagina's. Daarna breid je uit waar je ronde groeit."
+    },
+    {
+      "vraag": "Ik werk vooral in Amsterdam-Noord. Moet mijn site dan over heel Amsterdam gaan?",
+      "antwoord": "Nee. Je homepage mag Amsterdam noemen, maar je pagina's gaan over de buurten in Noord waar je echt rijdt. Een klant in Noord ziet liever een glazenwasser die daar vast komt dan een die de hele stad belooft."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "afstand",
+    "teksten"
+  ],
+  "cta_tekst": "Van de Jordaan tot IJburg: een Amsterdammer die je vindt, vergelijkt snel en klikt weg als je site traag laadt. Doe de gratis website-scan en zie meteen hoe je homepage scoort op een telefoon.",
+  "nabije_steden": [
+    "haarlem",
+    "utrecht",
+    "leiden",
+    "den-haag"
+  ],
+  "scan": "scans/amsterdam.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente Amsterdam: 918.117 inwoners (1 januari 2023), meeste inwoners van Nederland; zeven stadsdelen (sinds 1 mei 2010) en het stadsgebied Weesp",
+      "bron": "https://nl.wikipedia.org/wiki/Amsterdam"
+    },
+    {
+      "feit": "Grachtengordel op 1 augustus 2010 op de Werelderfgoedlijst van UNESCO; beschermde stadsgezichten in de binnenstad; 17e-eeuwse buurten Jordaan en Oostelijke Eilanden; 19e-eeuwse arbeidersbuurten waaronder de Pijp; Plan Zuid en Plan West in de jaren twintig in Amsterdamse School-stijl; Algemeen Uitbreidingsplan: Westelijke Tuinsteden, Buitenveldert, uitbreiding Amsterdam-Noord",
+      "bron": "https://nl.wikipedia.org/wiki/Amsterdam"
+    },
+    {
+      "feit": "Amsterdam-Noord ten noorden van het IJ, verbonden via IJ-veren, de Noord/Zuidlijn, drie tunnels en een brug",
+      "bron": "https://nl.wikipedia.org/wiki/Amsterdam"
+    },
+    {
+      "feit": "Wijken en buurten Amsterdam o.a. Jordaan, Oude/Nieuwe/Zuid Pijp, Oostelijke Eilanden/Kadijken, Buitenveldert-West en -Oost, IJburg-West/-Oost/-Zuid (CBS Wijken en Buurten)",
+      "bron": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85984NED/table"
+    }
+  ],
+  "wikidata": "https://www.wikidata.org/wiki/Q727",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Amsterdam",
+  "wijken_wikidata": {
+    "De Pijp": "https://www.wikidata.org/wiki/Q163319",
+    "Amsterdam-Noord": "https://www.wikidata.org/wiki/Q478607",
+    "Nieuw-West": "https://www.wikidata.org/wiki/Q478593",
+    "Zuidoost": "https://www.wikidata.org/wiki/Q478670",
+    "IJburg": "https://www.wikidata.org/wiki/Q1653952"
+  },
+  "systeem_wijken": [
+    "Jordaan",
+    "De Pijp"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "stad": "Vught",
+  "slug": "vught",
+  "niche": "glazenwasser",
+  "regio": "brabant",
+  "status": "concept",
+  "title": "Website glazenwasser Vught | Stam Core",
+  "meta": "Glazenwasser in Vught? Twee van de drie bovenaan in Google Maps hebben geen eigen website. Zo vind je klanten in Vught, Helvoirt en Cromvoirt.",
+  "h1": "Glazenwasser in Vught: landgoederen, villa's en drie kernen",
+  "intro": [
+    "Vught ligt naast 's-Hertogenbosch, op de overgang van het lage rivierengebied naar de hogere zandgronden. De gemeente telt ruim 33.000 inwoners en bestaat uit Vught, Helvoirt en Cromvoirt.",
+    "In Google Maps hebben twee van de drie bedrijven bovenaan geen eigen website, en geen van de drie heeft pagina's per wijk of kern. Hieronder zie je wat dat voor jou betekent."
+  ],
+  "wijken": [
+    "Centrum",
+    "Taalstraat",
+    "Villapark",
+    "De Baarzen",
+    "Vijverhof",
+    "Vughtse Hoeven",
+    "Helvoirt",
+    "Cromvoirt"
+  ],
+  "wijken_tekst": [
+    "Vught zelf is verdeeld in buurten als het Centrum, de Taalstraat, het Villapark, De Baarzen, Vijverhof en De Vughtse Hoeven. Cromvoirt hoort al sinds 1933 bij de gemeente, Helvoirt sinds 2021.",
+    "Wie in Helvoirt of Cromvoirt woont, zoekt op zijn eigen dorp en niet op Vught. Rijd je daar, geef die dorpen dan een eigen pagina met de dagen waarop je er bent."
+  ],
+  "kenmerken": [
+    "Vught heeft nog steeds veel parken en landgoederen, zoals Landgoed Maurick, Sparrendaal en Zionsburg, en een buurt die niet voor niets het Villapark heet. Bij ruime huizen met grote ramen, serres en dakkapellen wil een klant eerst zien wie er komt. Laat op je site foto's zien van vergelijkbare huizen en vertel hoe je werkt, bijvoorbeeld met een telescoopsteel en osmosewater.",
+    "Waar tot 2004 de Frederik Hendrikkazerne stond, ligt nu de wijk Stadhouderspark: de oude kazernegebouwen zijn omgebouwd tot appartementen. Zulke complexen zijn voor een glazenwasser interessant, omdat één afspraak met een vereniging van eigenaren veel ramen tegelijk oplevert. Een korte pagina voor VvE's en beheerders maakt duidelijk dat je dat werk aankunt.",
+    "Sinds de opheffing van de gemeente Haaren in 2021 hoort Helvoirt bij Vught. Het dorp heeft zijn eigen naam gehouden, en daar zoeken de bewoners op. Wie er vaste klanten heeft, doet er goed aan Helvoirt apart te noemen in plaats van het onder Vught weg te stoppen."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Is Vught niet te klein naast Den Bosch voor een eigen pagina?",
+      "antwoord": "Nee. Mensen in Vught zoeken op Vught, niet op Den Bosch. Een eigen pagina laat zien dat je er vast rijdt, en vanaf die pagina link je door naar Helvoirt en Cromvoirt."
+    },
+    {
+      "vraag": "Ik heb veel klanten met grote vrijstaande huizen. Wat zet ik op mijn site?",
+      "antwoord": "Foto's van vergelijkbaar werk, hoe je werkt en hoe vaak je langskomt. Klanten met veel glas willen vooral weten dat hun kozijnen, serre en dakkapel bij jou in goede handen zijn."
+    }
+  ],
+  "faq_pool": [
+    "prijs",
+    "teksten",
+    "afstand"
+  ],
+  "cta_tekst": "Van het Villapark tot Helvoirt: een klant die je vindt, wil in een paar seconden zien wat je doet en hoe hij je bereikt. Doe de gratis website-scan en zie meteen waar je homepage punten laat liggen.",
+  "nabije_steden": [
+    "s-hertogenbosch",
+    "boxtel",
+    "oisterwijk",
+    "veghel"
+  ],
+  "scan": "scans/vught.csv",
+  "bronnen": [
+    {
+      "feit": "Gemeente Vught: 33.200 inwoners (1 januari 2026, CBS); kernen Vught, Helvoirt en Cromvoirt; Cromvoirt bij Vught sinds 1933; Helvoirt sinds opheffing gemeente Haaren op 1 januari 2021",
+      "bron": "https://nl.wikipedia.org/wiki/Vught_(gemeente)"
+    },
+    {
+      "feit": "Vught: overgangszone tussen laaggelegen rivierengebied en hogere zandgronden; parken en landgoederen (Maurick, Sparrendaal, Zionsburg); Frederik Hendrikkazerne 1936-2004, omgebouwd tot appartementen in de wijk Stadhouderspark; buurgemeente 's-Hertogenbosch",
+      "bron": "https://nl.wikipedia.org/wiki/Vught_(plaats)"
+    },
+    {
+      "feit": "Buurten gemeente Vught: Centrum, Taalstraat en omgeving, Villapark, De Baarzen, Vijverhof, De Vughtse Hoeven, Cromvoirt, Helvoirt (CBS Wijken en Buurten)",
+      "bron": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85984NED/table"
+    }
+  ],
+  "wikidata": "https://www.wikidata.org/wiki/Q12013510",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Vught_(plaats)",
+  "wijken_wikidata": {
+    "Helvoirt": "https://www.wikidata.org/wiki/Q2197808",
+    "Cromvoirt": "https://www.wikidata.org/wiki/Q2981622"
+  },
+  "systeem_wijken": [
+    "Villapark",
+    "Helvoirt"
+  ]
+}

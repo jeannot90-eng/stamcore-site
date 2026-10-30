@@ -1,0 +1,79 @@
+{
+  "stad": "Haarlem",
+  "slug": "haarlem",
+  "niche": "glazenwasser",
+  "regio": "randstad-en-overig",
+  "status": "concept",
+  "title": "Website glazenwasser Haarlem | Stam Core",
+  "meta": "Glazenwasser in Haarlem? Bovenaan in Google Maps heeft maar één bedrijf pagina's per wijk. Zo vind je klanten in Schalkwijk, Haarlem-Noord en het Kleverpark.",
+  "h1": "Glazenwasser in Haarlem: van het Kleverpark tot Schalkwijk",
+  "intro": [
+    "Haarlem is de hoofdstad van Noord-Holland en telt bijna 169.000 inwoners. De stad ligt aan het Spaarne en is na Amsterdam de grootste van de provincie.",
+    "In Google Maps heeft maar één van de drie bedrijven bovenaan pagina's per wijk. Hieronder zie je wat dat voor jou betekent."
+  ],
+  "wijken": [
+    "Oude Stad",
+    "Haarlemmerhoutkwartier",
+    "Garenkokerskwartier",
+    "Leidsebuurt",
+    "Kleverpark",
+    "Haarlem-Noord",
+    "Schalkwijk",
+    "Zuiderpolder",
+    "Spaarndam"
+  ],
+  "wijken_tekst": [
+    "Haarlem heeft vijf stadsdelen en 21 wijken. Rond de Oude Stad liggen het Haarlemmerhoutkwartier, het Garenkokerskwartier en de Leidsebuurt. Ten noorden van het station verrezen eind 19e eeuw de Frans Halsbuurt en de Kleverparkbuurt, en in het zuidoosten ligt Schalkwijk.",
+    "Haarlem-Noord alleen al telt ruim 56.000 inwoners. Wie daar of in Schalkwijk vaste klanten heeft, kan van zo'n stadsdeel gerust een eigen pagina maken."
+  ],
+  "kenmerken": [
+    "De oude kern, de Haarlemmerhout en het gebied ertussen zijn sinds 1990 beschermd stadsgezicht. Rond 2015 kwamen daar vooroorlogse buurten als de Patrimoniumbuurt, het Kleverpark, de Bomenbuurt en de Koninginnebuurt bij. Oude kozijnen en glas in zulke buurten vragen om zorgvuldig werk, en dat mag je op je site best laten zien.",
+    "Schalkwijk is pas in 1963 bij Haarlem gekomen en werd in de jaren zestig, zeventig en tachtig volgebouwd. Het stadsdeel telt zo'n 32.500 inwoners. Wijken uit die periode hebben vaak flats en portiekwoningen: werk dat je met een vereniging van eigenaren of een beheerder regelt.",
+    "Ten noorden van de Amsterdamsevaart ligt de Waarderpolder, een bedrijventerrein met groot- en detailhandel, bouwbedrijven en lichte industrie. Bedrijfspanden en kantoren zijn klanten die op vaste momenten schone ramen willen. Een pagina voor zakelijke klanten maakt duidelijk dat je die ronde aankunt."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Is Haarlem-Noord groot genoeg voor een eigen pagina?",
+      "antwoord": "Ja. Het stadsdeel telt ruim 56.000 inwoners, meer dan menige gemeente. Noem op die pagina de buurten waar je rijdt, zoals het Kleverpark of de Frans Halsbuurt."
+    },
+    {
+      "vraag": "Ik rijd ook in Heemstede en Bloemendaal. Kan dat op dezelfde site?",
+      "antwoord": "Ja, met een pagina per plaats. Zo vinden bewoners je op hun eigen plaatsnaam, en kunnen je Haarlemse pagina's en die voor de buurgemeenten naar elkaar linken."
+    }
+  ],
+  "faq_pool": [
+    "eigendom",
+    "prijs",
+    "glazenwasser"
+  ],
+  "cta_tekst": "Van het Garenkokerskwartier tot Schalkwijk: wie je vindt, wil snel zien wat je doet en waar je rijdt. Doe de gratis website-scan en ontdek of je homepage op een telefoon snel laadt en duidelijk genoeg is.",
+  "nabije_steden": [
+    "amsterdam",
+    "leiden",
+    "den-haag",
+    "utrecht"
+  ],
+  "scan": "scans/haarlem.csv",
+  "bronnen": [
+    {
+      "feit": "Haarlem: hoofdstad van Noord-Holland aan het Spaarne; 168.946 inwoners, na Amsterdam de grootste stad van Noord-Holland; 5 stadsdelen en 21 wijken; Haarlem-Noord ruim 56.000 inwoners met Frans Halsbuurt en Kleverparkbuurt (eind 19e eeuw); Schalkwijk in 1963 geannexeerd, circa 32.500 inwoners, volgebouwd in de jaren 1960-1980; Garenkokerskwartier en Leidsebuurt; Waarderpolder bedrijventerrein ten noorden van de Amsterdamsevaart; beschermd stadsgezicht sinds 5 december 1990, rond 2015 uitgebreid met o.a. Patrimoniumbuurt, Kleverpark, Bomenbuurt, Koninginnebuurt",
+      "bron": "https://nl.wikipedia.org/wiki/Haarlem"
+    },
+    {
+      "feit": "Wijken Haarlem: Oude Stad, Haarlemmerhoutkwartier, Zijlwegkwartier, Spaarndam e.a. (CBS Wijken en Buurten)",
+      "bron": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85984NED/table"
+    }
+  ],
+  "wikidata": "https://www.wikidata.org/wiki/Q9920",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Haarlem",
+  "wijken_wikidata": {
+    "Schalkwijk": "https://www.wikidata.org/wiki/Q2169991",
+    "Haarlem-Noord": "https://www.wikidata.org/wiki/Q55078594",
+    "Kleverpark": "https://www.wikidata.org/wiki/Q65993895",
+    "Garenkokerskwartier": "https://www.wikidata.org/wiki/Q40165829"
+  },
+  "systeem_wijken": [
+    "Kleverpark",
+    "Schalkwijk"
+  ]
+}

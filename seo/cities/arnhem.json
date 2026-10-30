@@ -1,0 +1,81 @@
+{
+  "stad": "Arnhem",
+  "slug": "arnhem",
+  "niche": "glazenwasser",
+  "regio": "randstad-en-overig",
+  "status": "concept",
+  "title": "Website glazenwasser Arnhem | Stam Core",
+  "meta": "Glazenwasser in Arnhem? Twee van de drie bovenaan in Google Maps hebben geen pagina's per wijk. Zo vind je klanten in Schuytgraaf, Klarendal en Arnhem-Zuid.",
+  "h1": "Glazenwasser in Arnhem: noord en zuid van de Rijn",
+  "intro": [
+    "Arnhem is de hoofdstad van Gelderland en telt ruim 172.000 inwoners. De stad ligt aan beide oevers van de Nederrijn; vooral het zuidelijke deel is na de Tweede Wereldoorlog flink gegroeid.",
+    "In Google Maps hebben twee van de drie bedrijven bovenaan geen pagina's per wijk. Hieronder zie je wat dat voor jou betekent."
+  ],
+  "wijken": [
+    "Centrum",
+    "Spijkerkwartier",
+    "Klarendal",
+    "Burgemeesterswijk",
+    "Presikhaaf",
+    "Malburgen",
+    "Elderveld",
+    "De Laar",
+    "Rijkerswoerd",
+    "Schuytgraaf"
+  ],
+  "wijken_tekst": [
+    "Ten noorden van de Rijn liggen het centrum en wijken als het Spijkerkwartier, Klarendal, de Burgemeesterswijk en Presikhaaf. In Arnhem-Zuid kwamen na de oorlog onder meer Malburgen, en later Elderveld, De Laar en Rijkerswoerd. Sinds 2002 wordt er gebouwd aan de Vinex-wijk Schuytgraaf.",
+    "Met de Rijn ertussen plan je een ronde in Arnhem het makkelijkst per oever. Geef de wijken waar je vaak bent een eigen pagina, dan zien klanten meteen dat je in hun deel van de stad rijdt."
+  ],
+  "kenmerken": [
+    "Arnhem stond in 2014 op een gedeelde zevende plaats van de groenste steden van Nederland, mede door de ligging aan de zuidrand van de Veluwe. In de Burgemeesterswijk, Alteveer en Cranevelt en het Spijkerkwartier wonen van oudsher veel gegoede burgers. Daar wil een klant vooral zien dat je zorgvuldig werkt, met foto's van vergelijkbare huizen.",
+    "Klarendal heeft een grote vernieuwing achter de rug. Na onrust eind jaren tachtig is er veel verbeterd, met onder andere het Modekwartier vol kleine winkels. Winkels met etalages zijn klanten die vaak en op vaste momenten schone ramen willen, en een straat vol daarvan is een zakelijke ronde op zich.",
+    "Schuytgraaf groeit sinds 2002 ten westen van de spoorlijn naar Nijmegen. Nieuwe bewoners zoeken een glazenwasser zodra ze er wonen. Wie dan met een eigen pagina voor Schuytgraaf vindbaar is, heeft een voorsprong op wie alleen Arnhem noemt."
+  ],
+  "faq_stad": [
+    {
+      "vraag": "Kan ik me beter op één kant van de Rijn richten?",
+      "antwoord": "Dat hangt af van waar je klanten wonen. Veel glazenwassers houden hun ronde compact om reistijd te sparen. Laat op je site duidelijk zien welke wijken je doet, dan krijg je vooral aanvragen uit dat gebied."
+    },
+    {
+      "vraag": "Ik rijd ook in Elst en Huissen. Moet dat een aparte site worden?",
+      "antwoord": "Nee, één site met een pagina per plaats is beter. Zo bouw je één sterke site op, en linken je pagina's voor Arnhem, Elst en Huissen naar elkaar."
+    }
+  ],
+  "faq_pool": [
+    "teksten",
+    "prijs",
+    "glazenwasser"
+  ],
+  "cta_tekst": "Van Klarendal tot Schuytgraaf: een klant die je vindt, wil meteen zien of je in zijn wijk komt. Doe de gratis website-scan en zie direct hoe je homepage scoort op snelheid en vindbaarheid.",
+  "nabije_steden": [
+    "nijmegen",
+    "apeldoorn",
+    "utrecht",
+    "zwolle"
+  ],
+  "scan": "scans/arnhem.csv",
+  "bronnen": [
+    {
+      "feit": "Arnhem: hoofdstad van Gelderland; 172.002 inwoners (1 januari 2026, CBS); aan beide oevers van de Nederrijn, zuidelijk stadsdeel na de Tweede Wereldoorlog grootschalig ontwikkeld; Malburgen en Presikhaaf in de jaren 50; Vinex-wijk Schuytgraaf ten westen van de spoorlijn sinds 2002; Klarendal: onrust 1989, daarna vernieuwing met het Modekwartier; in 2014 gedeelde zevende plaats groenste steden, mede door ligging aan de zuidrand van de Veluwe; gegoede burgers van oudsher in Burgemeesterswijk, Alteveer en Cranevelt, Spijkerkwartier en Schuytgraaf",
+      "bron": "https://nl.wikipedia.org/wiki/Arnhem"
+    },
+    {
+      "feit": "Wijken Arnhem: Centrum, Spijkerkwartier, Klarendal, Presikhaaf-West/-Oost, Burgemeesterswijk/Hoogkamp, Malburgen, Elderveld, De Laar, Rijkerswoerd, Schuytgraaf (CBS Wijken en Buurten)",
+      "bron": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85984NED/table"
+    }
+  ],
+  "wikidata": "https://www.wikidata.org/wiki/Q1310",
+  "wikipedia": "https://nl.wikipedia.org/wiki/Arnhem",
+  "wijken_wikidata": {
+    "Schuytgraaf": "https://www.wikidata.org/wiki/Q2543905",
+    "Klarendal": "https://www.wikidata.org/wiki/Q2308236",
+    "Spijkerkwartier": "https://www.wikidata.org/wiki/Q2316692",
+    "Presikhaaf": "https://www.wikidata.org/wiki/Q2233212",
+    "Rijkerswoerd": "https://www.wikidata.org/wiki/Q2786816"
+  },
+  "systeem_wijken": [
+    "Schuytgraaf",
+    "Klarendal"
+  ]
+}

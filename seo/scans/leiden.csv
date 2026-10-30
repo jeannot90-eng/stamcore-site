@@ -1,0 +1,5 @@
+# Gemeten door Claude via de browser (Google Maps, ingelogd in het browserpaneel; gesponsorde resultaten overgeslagen). Plaatspagina's gecontroleerd op de websites zelf. type_bedrijf = hoofdcategorie zoals Maps die in de resultatenlijst toont. Positie 3: website staat in het profiel maar laadde niet bij de controle; plaatspaginas daarom op nee.
+datum,stad,zoekterm,positie,reviews,score,eigen_website,plaatspaginas,reageert_op_reviews,fotos,type_bedrijf
+2026-10-30,Leiden,glazenwasser leiden,1,178,4.6,ja,ja,ja,10,glazenwasser
+2026-10-30,Leiden,glazenwasser leiden,2,18,5.0,ja,nee,ja,9,glazenwasser
+2026-10-30,Leiden,glazenwasser leiden,3,5,4.2,ja,nee,nee,0,glazenwasser
