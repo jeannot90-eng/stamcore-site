@@ -39,7 +39,8 @@ Reken op 2–4 maanden voordat er structureel organisch verkeer is.
 10. **Bronnen:** elk getal en elk historisch of feitelijk gegeven in een stadspagina heeft een bron in het JSON-bestand van die stad (`bronnen`: `{ "feit", "bron" }`). Geen bron = weglaten. *(toegevoegd 2026-10-24)*
 11. **Geen bronvermelding in de paginatekst:** "volgens Wikipedia", "bron:", "aldus" en dergelijke staan nooit op de pagina; bronnen staan alleen in het JSON-bestand van de stad. *(toegevoegd 2026-10-24)*
 12. **FAQ vanuit de glazenwasser:** stads-FAQ's zijn vragen die een glazenwasser aan Stam Core stelt ("Kan mijn werkgebied … mee?"), nooit vragen die klinken alsof Stam Core zelf ramen wast ("Doe je ook …?"). *(toegevoegd 2026-10-24)*
-13. Toon: Nederlands, direct, van ondernemer tot ondernemer, vakjargon van glazenwassers mag (rondes, osmose, telescoopsteel, frequentie). Geen bureau-taal.
+13. **Geen negatieve typering van wijken of plaatsen:** geen onrust, overlast, criminaliteit, armoede, "probleemwijk" of lage inkomens, ook niet als het op Wikipedia staat. Beschrijf wat een wijk is en wat er voor een glazenwasser te doen is, niet wat er mis was. *(toegevoegd 2026-10-30)*
+14. Toon: Nederlands, direct, van ondernemer tot ondernemer, vakjargon van glazenwassers mag (rondes, osmose, telescoopsteel, frequentie). Geen bureau-taal.
 
 ---
 
