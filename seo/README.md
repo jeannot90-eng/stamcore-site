@@ -5,6 +5,7 @@ Het plan staat in [`SEO-PLAN.md`](../SEO-PLAN.md) en is leidend. Dit bestand bes
 ```bash
 npm run seo:all      # = seo:build → seo:check → seo:sitemap
 npm run build        # = build:css + seo:all (draai dit als je Tailwind-klassen hebt toegevoegd)
+npm run seo:index    # indexeringsstatus van alle sitemap-URL's (Search Console API; sleutel in %USERPROFILE%\.stamcore\gsc-key.json)
 ```
 
 | Script | Wat het doet |

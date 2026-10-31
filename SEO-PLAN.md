@@ -330,7 +330,7 @@ Een tabel met: type (stad/artikel), slug, status (`wacht-op-scan` / `klaar-voor-
 >
 > **Golf 2 geëvalueerd op 2026-10-30:** alle 10 pagina's "URL staat op Google" (samen met golf 1: 18 van 18). Pauze opgeheven; golf 3 mag gestart worden.
 >
-> **Hoe we "geïndexeerd" meten:** per URL de URL-inspectie in Search Console. Telt als geïndexeerd: "URL staat op Google" (groene vinkjes bij Pagina-indexering). De status van een *validatie* ("Oplossing valideren" bij een probleem, of bij Broodkruimels/FAQ onder Verbeteringen) telt **niet** mee: die loopt vaak weken achter en zegt iets over de controle van een melding, niet over of de pagina in Google staat. Groene vinkjes per pagina is dus voldoende; met 10–20 pagina's is dat handmatig te doen, daarna via het rapport Pagina-indexering (filter op de sitemap).
+> **Hoe we "geïndexeerd" meten:** per URL de URL-inspectie in Search Console. Telt als geïndexeerd: "URL staat op Google" (groene vinkjes bij Pagina-indexering). De status van een *validatie* ("Oplossing valideren" bij een probleem, of bij Broodkruimels/FAQ onder Verbeteringen) telt **niet** mee: die loopt vaak weken achter en zegt iets over de controle van een melding, niet over of de pagina in Google staat. Groene vinkjes per pagina is dus voldoende; sinds 2026-10-31 via `npm run seo:index`: dat vraagt dezelfde URL-inspectie op via de API voor alle sitemap-URL's (✓ = "Ingediend en geïndexeerd"). Het rapport Pagina-indexering loopt dagen achter en is daarvoor niet geschikt.
 
 **Evaluatie na 8–12 weken (Jeannot in Search Console):**
 - Zijn alle pagina's geïndexeerd? (Zo niet: inhoud verbeteren, niet meer pagina's maken.)
