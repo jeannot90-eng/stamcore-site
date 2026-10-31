@@ -8,6 +8,7 @@
     "seo:build": "node seo/scripts/build.mjs",
     "seo:check": "node seo/scripts/check.mjs",
     "seo:sitemap": "node seo/scripts/sitemap.mjs",
+    "seo:index": "node seo/scripts/index-check.mjs",
     "seo:all": "npm run seo:build && npm run seo:check && npm run seo:sitemap",
     "generate": "npm run seo:all",
     "build": "npm run build:css && npm run seo:all"
