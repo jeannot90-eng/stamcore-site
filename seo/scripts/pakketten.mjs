@@ -39,6 +39,14 @@ const kaartKlasse = (k) => (k.aanrader
   ? 'relative flex flex-col rounded-3xl border border-electric-500/50 bg-gradient-to-b from-electric-500/15 to-emerald-500/5 p-8'
   : 'relative flex flex-col rounded-3xl border border-white/10 card-sheen p-8');
 
+// Label naast de pakketnaam, zodat in één oogopslag duidelijk is welke pakketten SEO bevatten.
+const pil = (k) => (k.label
+  ? `<span class="rounded-full px-2.5 py-0.5 text-xs font-semibold ${k.seo ? 'border border-emerald-400/40 bg-emerald-400/10 text-emerald-300' : 'border border-white/10 bg-white/5 text-slate-400'}">${esc(k.label)}</span>`
+  : '');
+const kop = (k, tag, cls) => `<div class="flex flex-wrap items-center gap-2"><${tag} class="${cls}">${esc(k.naam)}</${tag}>${pil(k)}</div>`;
+// Korte naam voor lopende tekst: "Groei + SEO"
+export const naamKort = (k) => `${k.naam}${k.seo ? ' + SEO' : ''}`;
+
 function prijsRegel(k, groot = true) {
   return `<p class="mt-4 font-display ${groot ? 'text-5xl' : 'text-4xl'} font-bold text-white">${pm(k)}<span class="text-lg font-semibold text-slate-400"> per maand</span></p>`;
 }
@@ -47,7 +55,7 @@ function prijsRegel(k, groot = true) {
 function kaartVol(k) {
   return `<div class="reveal ${kaartKlasse(k)} ${order(k)}">
         ${k.aanrader ? badge : ''}
-        <h2 class="font-display text-2xl font-bold text-white">${esc(k.naam)}</h2>
+        ${kop(k, 'h2', 'font-display text-2xl font-bold text-white')}
         ${prijsRegel(k)}
         <p class="mt-2 text-sm text-slate-400">${esc(k.looptijd)}</p>
         <ul class="mt-6 flex-1 space-y-3 text-slate-200">
@@ -64,7 +72,7 @@ function cel(waarde, k) {
 }
 
 function vergelijking() {
-  const head = pakketten.map((k) => `<th scope="col" class="px-4 py-3 text-center font-display font-semibold ${k.aanrader ? 'text-electric-400' : 'text-white'}">${esc(k.naam)}</th>`).join('');
+  const head = pakketten.map((k) => `<th scope="col" class="px-4 py-3 text-center font-display font-semibold ${k.aanrader ? 'text-electric-400' : 'text-white'}">${esc(k.naam)}${k.label ? `<span class="block text-[11px] font-normal ${k.seo ? 'text-emerald-300' : 'text-slate-500'}">${esc(k.label)}</span>` : ''}</th>`).join('');
   const rows = P.vergelijking.map((r) => `<tr class="border-t border-white/5"><th scope="row" class="px-4 py-3 text-left font-normal text-slate-300">${esc(tekst(r.onderdeel))}</th>${pakketten.map((k) => `<td class="px-4 py-3 text-center text-slate-200">${cel(r[k.id], k)}</td>`).join('')}</tr>`);
   rows.push(`<tr class="border-t border-white/5"><th scope="row" class="px-4 py-3 text-left font-normal text-slate-300">Looptijd</th>${pakketten.map((k) => `<td class="px-4 py-3 text-center text-xs text-slate-400">${esc(k.looptijd)}</td>`).join('')}</tr>`);
   rows.push(`<tr class="border-t border-white/10"><th scope="row" class="px-4 py-3 text-left font-semibold text-white">Per maand</th>${pakketten.map((k) => `<td class="px-4 py-3 text-center font-display text-lg font-bold text-white">${pm(k)}${k.id === 'groei' ? `<span class="block text-xs font-normal text-slate-400">${euro(P.jaarkorting_groei)} bij een jaar</span>` : ''}</td>`).join('')}</tr>`);
@@ -113,7 +121,7 @@ export function pakketKaarten() {
 function kaartCompact(k) {
   return `<div class="reveal ${kaartKlasse(k)} ${order(k)}">
         ${k.aanrader ? badge : ''}
-        <h3 class="font-display text-xl font-bold text-white">${esc(k.naam)}</h3>
+        ${kop(k, 'h3', 'font-display text-xl font-bold text-white')}
         ${prijsRegel(k, false)}
         <ul class="mt-5 flex-1 space-y-2 text-sm text-slate-200">
           ${k.inhoud.slice(0, 3).map((i) => `<li class="flex gap-3">${check}<span>${esc(tekst(i, k))}</span></li>`).join('\n          ')}
@@ -136,7 +144,7 @@ export function pakketCompact() {
 
 // ── Eén regel (stadspagina's, contactblok home) ─────────────────────────────
 export function pakketRegel() {
-  const rij = pakketten.map((k) => `${esc(k.naam)} ${pm(k)} p/m`).join(' &middot; ');
+  const rij = pakketten.map((k) => `${esc(naamKort(k))} ${pm(k)} p/m`).join(' &middot; ');
   return `<p class="text-sm text-slate-300">${rij}, website ${euro(P.website_eenmalig)} eenmalig (${esc(BTW)}). <a href="/prijzen" class="font-semibold text-electric-400 underline-offset-4 transition hover:text-white hover:underline">Bekijk de pakketten</a></p>`;
 }
 
@@ -152,7 +160,7 @@ export function pakketStats() {
 
 // ── FAQ /prijzen ────────────────────────────────────────────────────────────
 export const PRIJZEN_FAQ = [
-  { vraag: 'Wat is het verschil tussen de pakketten?', antwoord: `${byId.start.naam} (${pm(byId.start)} per maand) houdt je website online en bijgehouden, met een ingericht Google Bedrijfsprofiel. ${groei.naam} (${pm(groei)} per maand) laat je groeien: tot ${groei.paginas_pm} nieuwe plaats- of dienstpagina's per maand, je Bedrijfsprofiel bijgehouden, een reviewlink met QR-code en een maandoverzicht. ${byId.top.naam} (${pm(byId.top)} per maand) doet dat met tot ${byId.top.paginas_pm} pagina's per maand, plus een kennisartikel per maand met kant-en-klare posts. De website kost bij elk pakket ${euro(P.website_eenmalig)} eenmalig. Alle bedragen ${BTW}.` },
+  { vraag: 'Wat is het verschil tussen de pakketten?', antwoord: `${byId.start.naam} (${pm(byId.start)} per maand) houdt je website online en bijgehouden, met een ingericht Google Bedrijfsprofiel. ${groei.naam} (${pm(groei)} per maand) voegt lokale SEO toe en laat je groeien: tot ${groei.paginas_pm} nieuwe plaats- of dienstpagina's per maand, je Bedrijfsprofiel bijgehouden, een reviewlink met QR-code en een maandoverzicht. ${byId.top.naam} (${pm(byId.top)} per maand, ook met lokale SEO) doet dat met tot ${byId.top.paginas_pm} pagina's per maand, plus een kennisartikel per maand met kant-en-klare posts. De website kost bij elk pakket ${euro(P.website_eenmalig)} eenmalig. Alle bedragen ${BTW}.` },
   { vraag: 'Kan ik later overstappen?', antwoord: 'Ja. Naar een hoger pakket kan op elk moment. Naar een lager pakket kan na de minimale looptijd.' },
   { vraag: 'Hoe lang zit ik vast?', antwoord: `${pakketten.map((k) => `${k.naam}: ${k.looptijd.replace(/^./, (c) => c.toLowerCase())}`).join('. ')}. Leg je ${groei.naam} voor een jaar vast, dan betaal je ${euro(P.jaarkorting_groei)} per maand.` },
   { vraag: 'Is de website van mij?', antwoord: 'Ja. Website, domein, teksten en alle pagina\'s blijven van jou, ook als je stopt.' },
@@ -193,8 +201,8 @@ export function prijzenSchema() {
 }
 
 export function prijzenMeta() {
-  const rij = pakketten.map((k) => `${k.naam} ${pm(k)}`).join(', ');
-  const desc = `Wat kost een website en lokale SEO voor je servicebedrijf? Website ${euro(P.website_eenmalig)} eenmalig, daarna een pakket: ${rij} per maand. ${Btw}.`;
+  const rij = pakketten.map((k) => `${naamKort(k)} ${pm(k)}`).join(', ');
+  const desc = `Prijzen website en lokale SEO: website ${euro(P.website_eenmalig)} eenmalig, daarna ${rij} per maand. ${Btw}. Alles blijft van jou.`;
   const kort = `Website ${euro(P.website_eenmalig)} eenmalig. Pakketten ${rij} per maand. ${Btw}.`;
   return [
     `<meta name="description" content="${esc(desc)}">`,
