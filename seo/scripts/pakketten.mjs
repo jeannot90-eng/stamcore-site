@@ -12,6 +12,7 @@
      prijzenfaq      FAQ-blokken van /prijzen
      prijzenschema   JSON-LD van /prijzen (OfferCatalog + FAQPage + BreadcrumbList)
      prijzenmeta     meta description + OG/Twitter-teksten van /prijzen
+     pakketopties    <option>s voor het pakketveld in het contactformulier (home)
 =========================================================================== */
 import { config, SITE, esc, euro, fillTokens } from './lib.mjs';
 
@@ -61,7 +62,7 @@ function kaartVol(k) {
         <ul class="mt-6 flex-1 space-y-3 text-slate-200">
           ${k.inhoud.map((i) => `<li class="flex gap-3">${check}<span>${esc(tekst(i, k))}</span></li>`).join('\n          ')}
         </ul>
-        <a href="/#contact" class="mt-8 inline-flex items-center justify-center rounded-xl ${k.aanrader ? 'bg-electric-500 text-white shadow-lg shadow-electric-500/25 hover:bg-electric-400' : 'border border-white/15 bg-white/5 text-white hover:bg-white/10'} px-6 py-3 text-sm font-semibold transition">Kies ${esc(k.naam)}</a>
+        <a href="/?pakket=${k.id}#contact" class="mt-8 inline-flex items-center justify-center rounded-xl ${k.aanrader ? 'bg-electric-500 text-white shadow-lg shadow-electric-500/25 hover:bg-electric-400' : 'border border-white/15 bg-white/5 text-white hover:bg-white/10'} px-6 py-3 text-sm font-semibold transition">Kies ${esc(k.naam)}</a>
       </div>`;
 }
 
@@ -211,6 +212,15 @@ export function prijzenMeta() {
   ].join('\n');
 }
 
+// ── Keuzelijst in het contactformulier (home) ───────────────────────────────
+// De "Kies …"-knoppen op /prijzen linken naar /?pakket={id}#contact; het formulier vult dit in.
+export function pakketOpties() {
+  return [
+    '<option value="">Weet ik nog niet</option>',
+    ...pakketten.map((k) => `<option value="${esc(k.naam)}" data-pakket="${esc(k.id)}"${k.seo ? ' data-seo' : ''}>${esc(k.naam)}${k.seo ? ' (met lokale SEO)' : ''}, ${pm(k)} per maand</option>`),
+  ].join('\n                ');
+}
+
 /** Alle pakket-partials, voor de partial-stap in build.mjs. */
 export function pakketPartials() {
   return {
@@ -221,6 +231,7 @@ export function pakketPartials() {
     prijzenfaq: prijzenFaq(),
     prijzenschema: prijzenSchema(),
     prijzenmeta: prijzenMeta(),
+    pakketopties: pakketOpties(),
   };
 }
 
