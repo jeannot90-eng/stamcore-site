@@ -10,6 +10,7 @@ import {
   ROOT, SITE, PREVIEW_DIR, config, read, exists, slugify, words, loadNiches, loadCities, loadArticles, cityInfo, isExcluded,
   visibleText, uniqueText, trigrams, jaccard, resolveUrl,
 } from './lib.mjs';
+import { TOEGESTANE_BEDRAGEN } from './pakketten.mjs';
 
 const niches = loadNiches();
 const cities = loadCities();
@@ -248,6 +249,28 @@ for (let i = 0; i < artikelZinnen.length; i++) for (let j = i + 1; j < artikelZi
     const kort = z.length > 90 ? `${z.slice(0, 90)}…` : z;
     a.r.fout.push(`zin staat ook in ${b.r.p.url}: "${kort}"`);
     b.r.fout.push(`zin staat ook in ${a.r.p.url}: "${kort}"`);
+  }
+}
+
+// ── Bedragen: alleen wat in seo/config.json staat (hele site) ──────────────────
+// Elk €-bedrag op een pagina moet uit config.prijzen komen (website, pakketten, jaarkorting).
+// Een bewust ander bedrag (bijv. een marktprijs in een artikel) zet je in een element met
+// data-vrij-bedrag; dat deel wordt overgeslagen.
+{
+  const toegestaan = new Set(TOEGESTANE_BEDRAGEN.map(Number));
+  const lijst = (dir) => (exists(dir) ? fs.readdirSync(path.join(ROOT, dir)).filter((f) => f.endsWith('.html')).map((f) => `${dir}/${f}`) : []);
+  const bestanden = [...fs.readdirSync(ROOT).filter((f) => f.endsWith('.html')), ...lijst('kennis'), ...lijst(PREVIEW_DIR)];
+  for (const file of bestanden) {
+    const html = read(file)
+      .replace(/<style[\s\S]*?<\/style>/g, '')
+      .replace(/<(\w+)[^>]*\sdata-vrij-bedrag[^>]*>[\s\S]*?<\/\1>/g, '');
+    const fout = [...new Set([...html.matchAll(/€\s?(\d+(?:[.,]\d+)?)/g)].map((m) => m[1]))]
+      .filter((n) => !toegestaan.has(Number(n.replace(',', '.'))))
+      .map((n) => `bedrag €${n} komt niet uit seo/config.json (prijzen). Gebruik de pakket-partials of zet het in data-vrij-bedrag.`);
+    if (!fout.length) continue;
+    const r = results.find((x) => x.p.file === file);
+    if (r) r.fout.push(...fout);
+    else results.push({ p: { file, url: `/${file.replace(/(^|\/)index\.html$/, '$1').replace(/\.html$/, '')}`, type: 'bedragen' }, fout, waarschuwing: [] });
   }
 }
 

@@ -27,17 +27,19 @@ const MAANDEN = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli',
 export const datumLeesbaar = (iso) => { const [y, m, d] = String(iso).split('-').map(Number); return `${d} ${MAANDEN[m - 1]} ${y}`; };
 export const today = () => new Date().toISOString().slice(0, 10);
 
-// Tokens uit config die in niche-/stadsteksten mogen staan, bijv. {seo_per_maand}.
+// Tokens uit config die in niche-/stadsteksten mogen staan, bijv. {groei_pm}.
+// Per pakket: {start_pm}, {groei_pm}, {top_pm} (bedrag) en {start_looptijd} enz. (tekst).
 const p = config.prijzen;
-const maanden = (n) => `${n} ${n === 1 ? 'maand' : 'maanden'}`;
 export const TOKENS = {
-  website_eenmalig: euro(p.website.eenmalig),
-  website_per_jaar: euro(p.website.perJaar),
-  seo_per_maand: euro(p.lokaleSeo.perMaand),
-  seo_min_maanden: String(p.lokaleSeo.minimaalMaanden),
-  seo_opzegtermijn: maanden(p.lokaleSeo.opzegtermijnMaanden),
-  seo_paginas: p.lokaleSeo.paginasPerMaand,
+  website_eenmalig: euro(p.website_eenmalig),
+  groei_jaar_pm: euro(p.jaarkorting_groei),
+  vanaf_pm: euro(Math.min(...p.pakketten.map((k) => k.prijs_pm))),
   btw: p.btw,
+  ...Object.fromEntries(p.pakketten.flatMap((k) => [
+    [`${k.id}_pm`, euro(k.prijs_pm)],
+    [`${k.id}_looptijd`, k.looptijd.replace(/^./, (c) => c.toLowerCase())],
+    ...(k.paginas_pm ? [[`${k.id}_paginas`, `tot ${k.paginas_pm}`]] : []),
+  ])),
 };
 export function fillTokens(s, extra = {}) {
   const all = { ...TOKENS, ...extra };

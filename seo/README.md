@@ -32,7 +32,9 @@ npm run seo:index    # indexeringsstatus van alle sitemap-URL's (Search Console 
 ## Tokens in teksten
 
 In de JSON- en Markdown-teksten mogen deze tokens staan; de build vult ze in uit `config.json`:
-`{website_eenmalig}` `{website_per_jaar}` `{seo_per_maand}` `{seo_min_maanden}` `{seo_opzegtermijn}` `{seo_paginas}` `{btw}`, en in het systeemblok `{stad}`.
+`{website_eenmalig}` `{start_pm}` `{groei_pm}` `{top_pm}` `{groei_jaar_pm}` `{vanaf_pm}` `{start_looptijd}` `{groei_looptijd}` `{top_looptijd}` `{groei_paginas}` `{top_paginas}` `{btw}`, en in het systeemblok `{stad}`.
+
+Prijsblokken op pagina's en in templates zijn partials uit `seo/scripts/pakketten.mjs`: `pakketkaarten`, `pakketcompact`, `pakketregel`, `pakketstats`, `prijzenfaq`, `prijzenschema`, `prijzenmeta`. Zet `<!-- partial:naam --><!-- /partial:naam -->` en draai `npm run seo:all`.
 Een token dat niet is ingevuld, laat de check falen.
 
 ## Stadspagina

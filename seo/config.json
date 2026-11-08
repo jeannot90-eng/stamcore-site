@@ -14,9 +14,40 @@
     "kvk": "78014336"
   },
   "prijzen": {
-    "website": { "eenmalig": 350, "perJaar": 300 },
-    "lokaleSeo": { "perMaand": 199, "minimaalMaanden": 3, "opzegtermijnMaanden": 1, "paginasPerMaand": "tot 5" },
-    "btw": "excl. btw"
+    "_uitleg": "Enige bron voor pakketten en bedragen op de hele site (ook /prijzen, home en /website-glazenwasser via partials). In teksten mogen {website_eenmalig} en {paginas_pm} staan. Pagina-aantallen altijd als 'tot X'. seo:check faalt op elk €-bedrag dat hier niet staat.",
+    "btw": "excl. btw",
+    "website_eenmalig": 350,
+    "jaarkorting_groei": 129,
+    "pakketten": [
+      { "id": "start", "naam": "Start", "prijs_pm": 25,
+        "looptijd": "Loopt door, per jaar opzegbaar",
+        "inhoud": ["Website (eenmalig {website_eenmalig})", "Hosting en onderhoud", "Google Bedrijfsprofiel ingericht"] },
+      { "id": "groei", "naam": "Groei", "prijs_pm": 199, "aanrader": true, "paginas_pm": 3,
+        "looptijd": "Minimaal 3 maanden, daarna per maand opzegbaar",
+        "inhoud": ["Alles van Start",
+                   "Tot {paginas_pm} nieuwe plaats- of dienstpagina's per maand",
+                   "Google Bedrijfsprofiel bijhouden",
+                   "Reviewlink, QR-code en een kant-en-klaar appje dat je na de klus zelf verstuurt",
+                   "Maandoverzicht: hoe vaak je in Google gevonden, aangeklikt en vanuit Google gebeld wordt"] },
+      { "id": "top", "naam": "Top", "prijs_pm": 299, "paginas_pm": 6,
+        "looptijd": "Minimaal 3 maanden, daarna per maand opzegbaar",
+        "inhoud": ["Alles van Groei",
+                   "Tot {paginas_pm} nieuwe plaats- of dienstpagina's per maand",
+                   "Eén kennisartikel per maand op je eigen site",
+                   "Kant-en-klare posts bij het artikel voor Bedrijfsprofiel, Facebook/Instagram en LinkedIn"] }
+    ],
+    "vergelijking": [
+      { "onderdeel": "Website (eenmalig {website_eenmalig})", "start": true, "groei": true, "top": true },
+      { "onderdeel": "Hosting en onderhoud", "start": true, "groei": true, "top": true },
+      { "onderdeel": "Google Bedrijfsprofiel ingericht", "start": true, "groei": true, "top": true },
+      { "onderdeel": "Google Bedrijfsprofiel bijhouden", "start": false, "groei": true, "top": true },
+      { "onderdeel": "Nieuwe plaats- of dienstpagina's per maand", "start": false, "groei": "tot {paginas_pm}", "top": "tot {paginas_pm}" },
+      { "onderdeel": "Reviewlink, QR-code en kant-en-klaar appje (verstuur je zelf)", "start": false, "groei": true, "top": true },
+      { "onderdeel": "Maandoverzicht: gevonden, aangeklikt, gebeld", "start": false, "groei": true, "top": true },
+      { "onderdeel": "Kennisartikel op je eigen site", "start": false, "groei": false, "top": "1 per maand" },
+      { "onderdeel": "Kant-en-klare posts bij het artikel", "start": false, "groei": false, "top": true }
+    ],
+    "later": ["Social media beheer", "Google Ads-beheer", "Boekingsmodule", "Plansysteem"]
   },
   "case": {
     "naam": "Clean up support Nederland",

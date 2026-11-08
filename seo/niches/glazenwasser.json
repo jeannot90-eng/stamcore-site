@@ -21,7 +21,7 @@
   "faq_pool": {
     "prijs": {
       "vraag": "Wat kost een website en lokale SEO?",
-      "antwoord": "De website kost {website_eenmalig} eenmalig plus {website_per_jaar} per jaar voor hosting en onderhoud. Lokale SEO is optioneel: {seo_per_maand} per maand, minimaal {seo_min_maanden} maanden, daarna maandelijks opzegbaar met {seo_opzegtermijn} opzegtermijn. Alle bedragen {btw}."
+      "antwoord": "De website kost {website_eenmalig} eenmalig. Daarna kies je een pakket: Start {start_pm}, Groei {groei_pm} of Top {top_pm} per maand. Bij Start blijft je site online en bijgehouden; bij Groei en Top komen er elke maand nieuwe pagina's bij. Alle bedragen {btw}. Alle details staan op de prijzenpagina."
     },
     "eigendom": {
       "vraag": "Van wie is de website?",
@@ -45,7 +45,7 @@
     { "vraag": "Hoe lang duurt het voordat ik iets merk?", "antwoord": "Een goed ingericht profiel en de eerste pagina's kunnen binnen een paar weken iets doen, maar reken op enkele maanden voordat je het structureel terugziet in aanvragen. Daarom laat het maandrapport vanaf maand 1 zien wat er gebouwd is en wat er beweegt." },
     { "vraag": "Ik heb al een website. Kan lokale SEO daar ook op?", "antwoord": "Dan kijk ik eerst wat er staat. Soms kunnen de pagina's per plaats er gewoon bij, soms is een nieuwe site sneller en goedkoper dan repareren. Dat hoor je eerlijk in het eerste gesprek." },
     { "vraag": "Wat moet ik zelf doen?", "antwoord": "Weinig. Foto's van je werk en je bus aanleveren, af en toe een vraag beantwoorden over waar je rijdt, en je klanten tevreden houden. De rest doe ik." },
-    { "vraag": "Kan ik lokale SEO opzeggen?", "antwoord": "Ja. De minimale looptijd is {seo_min_maanden} maanden. Daarna is het maandelijks opzegbaar met {seo_opzegtermijn} opzegtermijn. Je website en alle pagina's blijven van jou." },
+    { "vraag": "Kan ik lokale SEO opzeggen?", "antwoord": "Ja. Groei en Top: {groei_looptijd}. Start: {start_looptijd}. Je website en alle pagina's blijven van jou, ook als je stopt." },
     { "ref": "glazenwasser" }
   ]
 }

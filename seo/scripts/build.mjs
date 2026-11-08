@@ -8,7 +8,8 @@
    2. SEO-pijler /seo-{niche} uit seo/templates/seo-pijler.html (prijzen uit config)
    3. Kennisartikelen uit seo/articles/*.md → /kennis/{slug}.html (concept → _preview/kennis/)
    4. Blokken "Per stad" en "Kennis" op de pijler bijwerken (markers PLAATSEN / KENNIS)
-   5. Header/footer/scripts/scanblok uit templates/partials/ en inline CSS in alle pagina's
+   5. Header/footer/scripts/scanblok uit templates/partials/, pakket-/prijsblokken uit pakketten.mjs,
+      en inline CSS in alle pagina's
    Daarna: npm run seo:check en npm run seo:sitemap (of in één keer: npm run seo:all).
 =========================================================================== */
 import fs from 'node:fs';
@@ -19,6 +20,7 @@ import {
   TOKENS, fillTokens, render, loadNiches, loadCities, loadArticles, cityInfo, isExcluded, parseScan, analyseScan,
 } from './lib.mjs';
 import { kiesKansen } from './kansen.mjs';
+import { offers as pakketOffers, pakketPartials } from './pakketten.mjs';
 
 const errors = [];
 const written = new Set();
@@ -39,13 +41,6 @@ const noindex = '<meta name="robots" content="noindex">';
 const voorbeeldBanner = '<div class="fixed inset-x-0 bottom-0 z-[60] bg-amber-400 px-4 py-2 text-center text-sm font-semibold text-slate-950">VOORBEELDDATA: de Maps-scan op deze pagina is geen echte meting. Niet publiceren.</div>';
 
 const sharedVars = {
-  prijsWebsite: euro(P.website.eenmalig),
-  prijsWebsiteJaar: euro(P.website.perJaar),
-  prijsSeo: euro(P.lokaleSeo.perMaand),
-  seoPaginas: P.lokaleSeo.paginasPerMaand,
-  seoPaginasHoofdletter: P.lokaleSeo.paginasPerMaand.replace(/^./, (c) => c.toUpperCase()),
-  seoVoorwaarden: `na ${P.lokaleSeo.minimaalMaanden} maanden maandelijks opzegbaar · ${P.btw}`,
-  seoVoorwaardenLang: `Minimaal ${TOKENS.seo_min_maanden} maanden, daarna maandelijks opzegbaar met ${TOKENS.seo_opzegtermijn} opzegtermijn. ${P.btw.replace(/^./, (c) => c.toUpperCase())}.`,
   btw: P.btw,
   caseNaam: config.case.naam,
   caseUrl: config.case.url,
@@ -65,13 +60,7 @@ const sharedVars = {
   ogImage: OG,
 };
 
-const offers = [
-  { '@type': 'Offer', name: 'Website', price: String(P.website.eenmalig), priceCurrency: 'EUR', url: `${SITE}/prijzen`,
-    description: `Eenmalig, plus ${euro(P.website.perJaar)} per jaar voor hosting en onderhoud. ${P.btw}.` },
-  { '@type': 'Offer', name: 'Lokale SEO', price: String(P.lokaleSeo.perMaand), priceCurrency: 'EUR', url: `${SITE}/prijzen`,
-    priceSpecification: { '@type': 'UnitPriceSpecification', price: String(P.lokaleSeo.perMaand), priceCurrency: 'EUR', unitText: 'maand', valueAddedTaxIncluded: false },
-    description: sharedVars.seoVoorwaardenLang },
-];
+const offers = pakketOffers();
 const breadcrumb = (items) => ({
   '@type': 'BreadcrumbList',
   itemListElement: items.map(([name, item], i) => ({ '@type': 'ListItem', position: i + 1, name, item })),
@@ -152,7 +141,10 @@ const conceptArticles = articles.filter((a) => a.status !== 'live');
 if (errors.length) bail();
 
 // ── 2. Stadspagina's renderen ───────────────────────────────────────────────
-const partials = Object.fromEntries(['header', 'footer', 'scripts', 'scanblok'].map((n) => [n, read(`templates/partials/${n}.html`).trimEnd()]));
+const partials = {
+  ...Object.fromEntries(['header', 'footer', 'scripts', 'scanblok'].map((n) => [n, read(`templates/partials/${n}.html`).trimEnd()])),
+  ...pakketPartials(), // prijsblokken uit seo/config.json (zie pakketten.mjs)
+};
 const fillPartials = (src) => src.replace(/<!-- partial:(\w+) -->[\s\S]*?<!-- \/partial:\1 -->/g, (m, n) => {
   if (!partials[n]) { errors.push(`onbekende partial "${n}"`); return m; }
   return `<!-- partial:${n} -->\n${partials[n]}\n<!-- /partial:${n} -->`;
@@ -436,7 +428,7 @@ for (const niche of Object.values(niches)) {
   const canonical = `${SITE}${niche.seoPijlerUrl}`;
   const faq = niche.seo_pijler_faq.map((f) => (f.ref ? resolvePool(niche, [f.ref])[0] : { vraag: f.vraag, antwoord: fillTokens(f.antwoord) })).filter(Boolean);
   const title = `${niche.seoPijlerTitel} | Stam Core`;
-  const meta = `Gevonden worden per plaats en in Google Maps, uitgelegd door een glazenwasser. Reviews, Bedrijfsprofiel en pagina's per wijk. ${euro(P.lokaleSeo.perMaand)} per maand.`;
+  const meta = `Gevonden worden per plaats en in Google Maps, uitgelegd door een glazenwasser. Reviews, Bedrijfsprofiel en pagina's per wijk. Pakketten vanaf ${TOKENS.vanaf_pm} per maand.`;
   const jsonld = { '@context': 'https://schema.org', '@graph': [
     { '@type': 'Service', '@id': `${canonical}#service`, name: niche.seoPijlerTitel, serviceType: niche.serviceType, url: canonical,
       provider: { '@id': `${SITE}/#organization` }, areaServed: { '@type': 'Country', name: 'Nederland' },

@@ -34,7 +34,7 @@ Reken op 2–4 maanden voordat er structureel organisch verkeer is.
 5. **Eén echt adres.** Stam Core zit in Oosterhout (Rietbeemd 48, 4907 ED). Stadspagina's gebruiken `areaServed`, nooit een nep-adres of `LocalBusiness` per stad.
 6. **Geen dunne duplicaten.** Elke stadspagina moet de kwaliteitscheck (§6) halen, anders wordt hij niet gepubliceerd.
 7. **Uitgesloten steden** (eigen werkgebied en klantregio): Oosterhout, Breda, Dongen, Geertruidenberg, Drimmelen, Etten-Leur, Gilze en Rijen, Amersfoort (en kernen daarbinnen). Maak voor deze plaatsen nooit een stadspagina, tenzij Jeannot dit expliciet wijzigt in `seo/config.json`.
-8. **Prijzen en voorwaarden** altijd uit `seo/config.json`, nooit hardcoded in teksten: website €350 eenmalig + €300/jaar; lokale SEO €199/maand, minimaal 3 maanden, daarna maandelijks opzegbaar met 1 maand opzegtermijn; alle bedragen excl. btw.
+8. **Prijzen en voorwaarden** altijd uit `seo/config.json` (`prijzen`: website eenmalig, pakketten Start/Groei/Top, jaarkorting, "later"), nooit hardcoded. Prijsblokken komen uit de pakket-partials (`seo/scripts/pakketten.mjs`). Pagina-aantallen altijd als "tot X". `seo:check` faalt op elk €-bedrag dat niet in de config staat. *(gewijzigd 2026-11-08: pakketten)*
 9. **Reviews:** Stam Core verstuurt nooit zelf reviewverzoeken naar klanten van klanten; de klant verstuurt ze zelf. Wat we leveren: een vaste reviewlink, een QR-code en een kant-en-klaar appje dat de klant na de ronde zelf verstuurt. *(toegevoegd 2026-10-24)*
 10. **Bronnen:** elk getal en elk historisch of feitelijk gegeven in een stadspagina heeft een bron in het JSON-bestand van die stad (`bronnen`: `{ "feit", "bron" }`). Geen bron = weglaten. *(toegevoegd 2026-10-24)*
 11. **Geen bronvermelding in de paginatekst:** "volgens Wikipedia", "bron:", "aldus" en dergelijke staan nooit op de pagina; bronnen staan alleen in het JSON-bestand van de stad. *(toegevoegd 2026-10-24)*
@@ -92,11 +92,11 @@ Gebruik geen frameworks of zware dependencies. Node zonder of met minimale packa
   - een blok "**Per stad**" met links naar alle live stadspagina's (automatisch door de generator);
   - een blok "**Kennis voor glazenwassers**" met links naar de kennisartikelen;
   - een link naar `/seo-glazenwasser`.
-- Pas "5 nieuwe pagina's per maand" aan naar "**tot 5** nieuwe pagina's per maand", als dat nog niet gebeurd is.
+- Het prijsblok is de partial `pakketcompact` (uit config).
 
 ### 3.2 Pijler: `/seo-glazenwasser` (nieuw)
 - **Title:** `Lokale SEO voor glazenwassers | Stam Core`
-- **Meta:** ±150 tekens: gevonden worden per plaats en in Google Maps, uitgelegd door een glazenwasser. €199/mnd.
+- **Meta:** ±150 tekens: gevonden worden per plaats en in Google Maps, uitgelegd door een glazenwasser, met het "vanaf"-bedrag uit config.
 - **H1:** *Gevonden worden in de wijken waar je al rijdt*
 - **Inhoud (≥ 1.000 woorden):**
   1. Waarom Maps voor een glazenwasser belangrijker is dan de gewone zoekresultaten
@@ -104,7 +104,7 @@ Gebruik geen frameworks of zware dependencies. Node zonder of met minimale packa
   3. Pagina's per dienst × plaats: wat ze zijn en waarom ze unieke inhoud nodig hebben
   4. Reviews: wanneer je erom vraagt (als de ramen nog glimmen), QR op de bus of de factuur
   5. Bedrijfsprofiel: categorieën ("Glazenwasser" als hoofdcategorie), diensten, foto's, posts
-  6. Wat je elke maand krijgt voor €199 (uit config)
+  6. Wat het kost: de drie pakketten (partial `pakketcompact`, uit config)
   7. Wat je zelf kunt doen zonder ons (geeft vertrouwen)
   8. FAQ (5–7 vragen, `FAQPage`-schema)
   9. CTA: gratis website-scan (`/website-scan?bron=seo-glazenwasser`) als hoofdactie; Maps-scan via WhatsApp als tweede optie voor wie nog geen website heeft *(gewijzigd 2026-10-24)*
