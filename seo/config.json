@@ -17,7 +17,7 @@
     "_uitleg": "Enige bron voor pakketten en bedragen op de hele site (ook /prijzen, home en /website-glazenwasser via partials). In teksten mogen {website_eenmalig} en {paginas_pm} staan. Pagina-aantallen altijd als 'tot X'. seo:check faalt op elk €-bedrag dat hier niet staat.",
     "btw": "excl. btw",
     "website_eenmalig": 350,
-    "jaarkorting_groei": 129,
+    "jaarkorting_groei": 179,
     "pakketten": [
       { "id": "start", "naam": "Start", "prijs_pm": 25,
         "looptijd": "Loopt door, per jaar opzegbaar",
