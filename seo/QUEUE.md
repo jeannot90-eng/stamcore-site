@@ -1,6 +1,6 @@
 # Publicatiewachtrij
 
-Statussen: `on-hold-tot-evaluatie` (live, maar geen nieuwe stadspagina's tot de indexering is geëvalueerd, SEO-PLAN.md §9) · `klaar-voor-bouw` · `wacht-op-scan` (scan mislukt) · `concept` (gebouwd, wacht op akkoord) · `overgeslagen` (overlap met bestaande pagina, reden in Opmerking) · `live`.
+Statussen: `on-hold-tot-evaluatie` (live, maar geen nieuwe stadspagina's tot de indexering is geëvalueerd, SEO-PLAN.md §9) · `klaar-voor-bouw` · `wacht-op-scan` (scan mislukt) · `concept` (gebouwd, wacht op akkoord) · `gepland` (concept met akkoord; Datum = geplande publicatie, de geplande taak `kennisartikel-publiceren` zet hem op die dag live) · `overgeslagen` (overlap met bestaande pagina, reden in Opmerking) · `live`.
 Claude pakt bij "maak de volgende stadspagina" de bovenste stad die nog niet live is en doet zelf de Maps-scan; bij "Schrijf het kennisartikel van deze week" het bovenste artikel met status `klaar-voor-bouw` (workflow: `KENNISARTIKELEN.md`).
 
 ## Steden (golf 1)
@@ -29,21 +29,21 @@ Volgorde = KENNISARTIKELEN.md §3. Titel, zoekwoord en insteek staan daar.
 | artikel | website-traag-op-mobiel | live | 2026-10-30 | Op verzoek Jeannot direct live (akkoord vooraf gegeven) |
 | artikel | wat-kost-website-glazenwasser | live | 2026-11-10 | Wekelijkse run (artikel-run 5), akkoord Jeannot 10-11; slotalinea naar nieuwe pakketten |
 | artikel | pagespeed-score-uitleg | live | 2026-11-10 | Wekelijkse run (artikel-run 6), akkoord Jeannot 10-11; invalshoek 'rapport lezen', oorzaken/oplossingen blijven bij website-traag-op-mobiel |
-| artikel | klanten-werven-glazenwasser | klaar-voor-bouw |  | |
-| artikel | negatieve-review-reageren | klaar-voor-bouw |  | |
-| artikel | winter-glazenwasser-omzet | klaar-voor-bouw |  | |
-| artikel | servicegebied-google-instellen | klaar-voor-bouw |  | |
-| artikel | zonnepanelen-reinigen-extra-dienst | klaar-voor-bouw |  | |
-| artikel | abonnement-glazenwasser-online | klaar-voor-bouw |  | |
-| artikel | prijzen-op-website-glazenwasser | klaar-voor-bouw |  | |
-| artikel | fotos-bedrijfsprofiel | klaar-voor-bouw |  | |
-| artikel | zakelijke-klanten-glazenwasser | klaar-voor-bouw |  | |
-| artikel | whatsapp-business-glazenwasser | klaar-voor-bouw |  | |
-| artikel | offerteformulier-dat-werkt | klaar-voor-bouw |  | |
-| artikel | google-ads-glazenwasser | klaar-voor-bouw |  | |
-| artikel | marketingkalender-glazenwasser | klaar-voor-bouw |  | |
-| artikel | starten-als-glazenwasser-online | klaar-voor-bouw |  | |
-| artikel | domeinnaam-email-glazenwasser | klaar-voor-bouw |  | |
+| artikel | klanten-werven-glazenwasser | gepland | 2026-11-12 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | negatieve-review-reageren | gepland | 2026-11-16 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | winter-glazenwasser-omzet | gepland | 2026-11-19 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | servicegebied-google-instellen | gepland | 2026-11-23 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | zonnepanelen-reinigen-extra-dienst | gepland | 2026-11-26 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | abonnement-glazenwasser-online | gepland | 2026-11-30 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | prijzen-op-website-glazenwasser | gepland | 2026-12-03 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | fotos-bedrijfsprofiel | gepland | 2026-12-07 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | zakelijke-klanten-glazenwasser | gepland | 2026-12-10 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | whatsapp-business-glazenwasser | gepland | 2026-12-14 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | offerteformulier-dat-werkt | gepland | 2026-12-17 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | google-ads-glazenwasser | gepland | 2026-12-21 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | marketingkalender-glazenwasser | gepland | 2026-12-24 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | starten-als-glazenwasser-online | gepland | 2026-12-28 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | domeinnaam-email-glazenwasser | gepland | 2026-12-31 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
 
 ## Steden (golf 2)
 
