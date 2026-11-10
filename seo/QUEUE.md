@@ -27,8 +27,8 @@ Volgorde = KENNISARTIKELEN.md §3. Titel, zoekwoord en insteek staan daar.
 | artikel | meer-reviews-glazenwasser | live | 2026-10-26 | Wekelijkse run, na akkoord Jeannot |
 | artikel | seo-en-google-ads | live | 2026-10-29 | Extra op verzoek Jeannot, na akkoord; aanvulling op google-ads-glazenwasser (#17), andere zoekintentie |
 | artikel | website-traag-op-mobiel | live | 2026-10-30 | Op verzoek Jeannot direct live (akkoord vooraf gegeven) |
-| artikel | wat-kost-website-glazenwasser | klaar-voor-bouw |  | |
-| artikel | pagespeed-score-uitleg | klaar-voor-bouw |  | |
+| artikel | wat-kost-website-glazenwasser | live | 2026-11-10 | Wekelijkse run (artikel-run 5), akkoord Jeannot 10-11; slotalinea naar nieuwe pakketten |
+| artikel | pagespeed-score-uitleg | live | 2026-11-10 | Wekelijkse run (artikel-run 6), akkoord Jeannot 10-11; invalshoek 'rapport lezen', oorzaken/oplossingen blijven bij website-traag-op-mobiel |
 | artikel | klanten-werven-glazenwasser | klaar-voor-bouw |  | |
 | artikel | negatieve-review-reageren | klaar-voor-bouw |  | |
 | artikel | winter-glazenwasser-omzet | klaar-voor-bouw |  | |

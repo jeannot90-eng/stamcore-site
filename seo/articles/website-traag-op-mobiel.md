@@ -5,7 +5,7 @@ meta: Is je website traag op mobiel? De zes meest voorkomende oorzaken in gewone
 h1: Waarom is mijn website traag op mobiel?
 zoekwoord: website traag op mobiel
 datePublished: 2026-10-30
-dateModified: 2026-10-30
+dateModified: 2026-11-10
 og: ["Waarom is mijn website", "traag op mobiel?", "De oorzaken in gewone taal,", "en wat je er zelf aan doet."]
 gerelateerd: ["seo-en-google-ads", "google-bedrijfsprofiel-glazenwasser"]
 faq: [{"vraag": "Heb ik een PageSpeed-score van 100 nodig?", "antwoord": "Nee. Een score in het groen is mooi, maar het gaat erom dat een klant op zijn telefoon snel ziet wat je doet en hoe hij je bereikt. Kijk vooral of je drie Core Web Vitals in het groen staan en of de pagina op je eigen telefoon vlot opent."}, {"vraag": "Waarom geeft PageSpeed elke keer een andere score?", "antwoord": "De meting is een simulatie en hangt af van het netwerk en de belasting van de testcomputer op dat moment. Een paar punten verschil tussen twee metingen is normaal, ook als er aan je site niets veranderd is. Meet daarom een paar keer en kijk naar de lijn, niet naar één uitschieter."}, {"vraag": "Kom ik hoger in Google als mijn site sneller is?", "antwoord": "Dat valt niet te beloven. Google gebruikt de Core Web Vitals in zijn ranking, maar zegt er zelf bij dat relevantie voorgaat: de pagina die de zoekvraag het best beantwoordt, wint. Een snelle site helpt vooral om bezoekers vast te houden die je al vinden."}, {"vraag": "Ligt het misschien aan mijn telefoon of mijn internet?", "antwoord": "Dat kan. Test daarom ook met PageSpeed Insights, die meet los van jouw toestel en verbinding. Is de site daar ook traag, dan ligt het aan de site. Is hij daar snel en op jouw telefoon niet, kijk dan eerst naar je eigen verbinding."}]
@@ -66,7 +66,7 @@ Een kaartje van Google Maps, een Instagram-feed of een reviewwidget lijkt klein,
 ## Zo meet je zelf hoe snel je site op mobiel is
 
 1. **Open je site op je eigen telefoon, met wifi uit.** Tel hoe lang het duurt tot je ziet wat je doet en hoe iemand je belt. Doe dat ook met je belangrijkste dienstpagina, niet alleen met je homepage.
-2. **Meet met PageSpeed Insights.** Vul je webadres in en kies het tabblad voor mobiel. De score van 0 tot 100 staat in het rood (0–49), oranje (50–89) of groen (90–100).
+2. **Meet met PageSpeed Insights.** Vul je webadres in en kies het tabblad voor mobiel. De score van 0 tot 100 staat in het rood (0–49), oranje (50–89) of groen (90–100). Wat elk van de vier cijfers betekent, lees je in [je PageSpeed-score uitgelegd](/kennis/pagespeed-score-uitleg).
 3. **Kijk naar de drie Core Web Vitals.** Als vuistregel van Google: het grootste element is binnen 2,5 seconde zichtbaar (LCP), de pagina reageert binnen 200 milliseconden op een tik (INP) en verspringt nauwelijks (CLS 0,1 of minder).
 4. **Schrik niet van ontbrekende gebruikersdata.** Bovenaan staan soms meetgegevens van echte bezoekers. Bij een kleine of nieuwe site zijn er daar vaak te weinig van, en dan toont Google alleen de gesimuleerde meting. Dat is normaal.
 5. **Meet een paar keer.** De score schommelt per meting, ook als er niets veranderd is. Kijk naar de lijn, niet naar één uitschieter.
