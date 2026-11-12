@@ -12,7 +12,7 @@ module.exports = {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         display: ['"Space Grotesk"', 'Inter', 'sans-serif'],
       },
-      colors: { electric: { 400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7' } },
+      colors: { electric: { 400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7', 700: '#0279bb' } },
       keyframes: {
         'fade-up': { '0%': { opacity: '0', transform: 'translateY(24px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
       },

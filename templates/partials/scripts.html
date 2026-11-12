@@ -32,8 +32,15 @@
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') moreMenu.open = false; });
   }
 
-  // Reveal-on-scroll
-  const reveals = document.querySelectorAll('.reveal');
+  // Reveal-on-scroll. Wat bij het laden al in beeld staat, verschijnt meteen (zonder fade),
+  // zodat de pagina direct compleet oogt; ook zonder animatie bij "minder beweging".
+  const reveals = [...document.querySelectorAll('.reveal')];
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const showNow = (el) => { el.style.transition = 'none'; el.classList.add('in'); };
+  reveals.forEach((el) => {
+    if (reduceMotion || el.getBoundingClientRect().top < window.innerHeight) showNow(el);
+  });
+  requestAnimationFrame(() => requestAnimationFrame(() => reveals.forEach((el) => { el.style.transition = ''; })));
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach((e) => {

@@ -8,7 +8,7 @@
         <label for="scan-blok-url" class="sr-only">Je website</label>
         <input id="scan-blok-url" name="url" type="text" inputmode="url" autocomplete="url" required placeholder="jouwbedrijf.nl" class="w-full rounded-lg border border-white/10 bg-slate-950/60 px-4 py-3 text-white placeholder-slate-500 outline-none transition focus:border-electric-500/50 focus:ring-2 focus:ring-electric-500/20">
         <input type="hidden" name="bron" value="" data-scan-bron>
-        <button type="submit" class="inline-flex shrink-0 items-center justify-center rounded-xl bg-electric-500 px-6 py-3 font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-400">Scan mijn website</button>
+        <button type="submit" class="inline-flex shrink-0 items-center justify-center rounded-xl bg-electric-700 px-6 py-3 font-semibold text-white shadow-lg shadow-electric-500/25 transition hover:bg-electric-600">Scan mijn website</button>
       </form>
       <script>document.querySelectorAll('[data-scan-bron]').forEach(function (i) { i.value = location.pathname.replace(/^\/+|\/+$|\.html$/g, '').replace(/\//g, '-') || 'home'; });</script>
     </div>

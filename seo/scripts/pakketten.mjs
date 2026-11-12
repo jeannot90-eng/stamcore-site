@@ -33,7 +33,7 @@ export const TOEGESTANE_BEDRAGEN = [...new Set([P.website_eenmalig, P.jaarkortin
 
 // ── Bouwstenen ──────────────────────────────────────────────────────────────
 const check = '<span class="text-emerald-400" aria-hidden="true">&check;</span>';
-const badge = '<span class="absolute -top-3 left-6 rounded-full bg-electric-500 px-3 py-1 text-xs font-bold uppercase tracking-[0.15em] text-white">Aanrader</span>';
+const badge = '<span class="absolute -top-3 left-6 rounded-full bg-electric-700 px-3 py-1 text-xs font-bold uppercase tracking-[0.15em] text-white">Aanrader</span>';
 // Op mobiel staat de aanrader bovenaan (order-first), vanaf lg in de normale volgorde.
 const order = (k) => (k.aanrader ? 'order-first lg:order-none' : '');
 const kaartKlasse = (k) => (k.aanrader
@@ -62,7 +62,7 @@ function kaartVol(k) {
         <ul class="mt-6 flex-1 space-y-3 text-slate-200">
           ${k.inhoud.map((i) => `<li class="flex gap-3">${check}<span>${esc(tekst(i, k))}</span></li>`).join('\n          ')}
         </ul>
-        <a href="/?pakket=${k.id}#contact" class="mt-8 inline-flex items-center justify-center rounded-xl ${k.aanrader ? 'bg-electric-500 text-white shadow-lg shadow-electric-500/25 hover:bg-electric-400' : 'border border-white/15 bg-white/5 text-white hover:bg-white/10'} px-6 py-3 text-sm font-semibold transition">Kies ${esc(k.naam)}</a>
+        <a href="/?pakket=${k.id}#contact" class="mt-8 inline-flex items-center justify-center rounded-xl ${k.aanrader ? 'bg-electric-700 text-white shadow-lg shadow-electric-500/25 hover:bg-electric-600' : 'border border-white/15 bg-white/5 text-white hover:bg-white/10'} px-6 py-3 text-sm font-semibold transition">Kies ${esc(k.naam)}</a>
       </div>`;
 }
 
