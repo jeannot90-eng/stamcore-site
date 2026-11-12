@@ -1,5 +1,5 @@
 ---
-status: concept
+status: live
 title: Klanten werven als glazenwasser: wat werkt echt | Stam Core
 meta: Klanten werven als glazenwasser zonder geld te verbranden: wijkgericht werken, je ronde dichter maken, Google Maps en mond-tot-mond slim inzetten.
 h1: Klanten werven als glazenwasser: wat werkt echt?

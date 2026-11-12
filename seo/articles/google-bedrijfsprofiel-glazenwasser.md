@@ -5,7 +5,7 @@ meta: Zo richt je als glazenwasser je Google Bedrijfsprofiel in: de juiste categ
 h1: Je Bedrijfsprofiel als glazenwasser: stap voor stap
 zoekwoord: google bedrijfsprofiel glazenwasser
 datePublished: 2026-10-24
-dateModified: 2026-10-26
+dateModified: 2026-11-12
 og: ["Google Bedrijfsprofiel", "voor glazenwassers", "Stap voor stap: categorie, werkgebied, foto's,", "updates en reviews."]
 gerelateerd: ["wat-is-geo", "meer-reviews-glazenwasser"]
 faq: [{"vraag": "Mag ik 'glazenwasser' en mijn plaatsnaam in mijn bedrijfsnaam zetten?", "antwoord": "Alleen als dat echt je bedrijfsnaam is, zoals op je bus, je facturen en je website. Google staat niet toe dat je zoekwoorden, plaatsnamen of diensten aan je naam toevoegt. Die horen in je categorie, je diensten en je beschrijving."}, {"vraag": "Moet ik mijn huisadres op mijn profiel laten zien?", "antwoord": "Nee. Komen klanten niet naar jou toe, dan moet je je adres zelfs verbergen. Je stelt in plaats daarvan een servicegebied in met de plaatsen waar je werkt."}, {"vraag": "Hoeveel plaatsen kan ik als werkgebied instellen?", "antwoord": "Maximaal 20 servicegebieden, en de grens ligt niet verder dan ongeveer 2 uur rijden van je bedrijf. Een straal rond je adres instellen kan niet; je kiest plaatsen, postcodes of andere gebieden."}, {"vraag": "Mag ik klanten korting geven als ze een review schrijven?", "antwoord": "Nee. Google verbiedt elke beloning in ruil voor een review, ook korting of een gratis extra beurt. Vragen om een eerlijke review mag wel, zolang je het iedereen vraagt en niemand onder druk zet."}, {"vraag": "Hoe vaak moet ik een update plaatsen?", "antwoord": "Daar is geen regel voor. Updates die ouder zijn dan zes maanden worden wel gearchiveerd. Een paar keer per maand een korte update met een foto houdt je profiel zichtbaar actief, en dat kost je hooguit tien minuten."}]
@@ -123,6 +123,6 @@ Reageer op reviews als je iets toevoegt, kort en vriendelijk; je hoeft niet iede
 
 ## Wat een goed profiel oplevert, en wat niet
 
-Een goed ingericht Bedrijfsprofiel brengt je niet vanzelf bovenaan. Afstand speelt altijd mee, en Google past de volgorde voortdurend aan. Wat een goed profiel wel doet: het geeft Google alles om je te koppelen aan de juiste zoekopdrachten in jouw werkgebied, en het overtuigt de klant die je profiel opent.
+Een goed ingericht Bedrijfsprofiel brengt je niet vanzelf bovenaan. Afstand speelt altijd mee, en Google past de volgorde voortdurend aan. Wat een goed profiel wel doet: het geeft Google alles om je te koppelen aan de juiste zoekopdrachten in jouw werkgebied, en het overtuigt de klant die je profiel opent. Hoe je Maps combineert met werven in de straten waar je al rijdt, lees je in [klanten werven als glazenwasser](/kennis/klanten-werven-glazenwasser).
 
 Het sterkst werkt het samen met een website die per plaats en wijk laat zien waar je rijdt, en met een vaste reviewroutine. Hoe dat samenhangt, lees je op [lokale SEO voor glazenwassers](/seo-glazenwasser). En omdat een compleet profiel ook meetelt voor AI-assistenten zoals ChatGPT, lees je in [wat GEO is](/kennis/wat-is-geo) hoe je daar zichtbaar wordt. Wil je eerst weten hoe je huidige website ervoor staat? Doe dan de [gratis website-scan](/website-scan?bron=kennis-google-bedrijfsprofiel-glazenwasser): binnen een minuut zie je snelheid, vindbaarheid en de belangrijkste verbeterpunten.

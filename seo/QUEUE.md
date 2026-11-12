@@ -29,7 +29,7 @@ Volgorde = KENNISARTIKELEN.md §3. Titel, zoekwoord en insteek staan daar.
 | artikel | website-traag-op-mobiel | live | 2026-10-30 | Op verzoek Jeannot direct live (akkoord vooraf gegeven) |
 | artikel | wat-kost-website-glazenwasser | live | 2026-11-10 | Wekelijkse run (artikel-run 5), akkoord Jeannot 10-11; slotalinea naar nieuwe pakketten |
 | artikel | pagespeed-score-uitleg | live | 2026-11-10 | Wekelijkse run (artikel-run 6), akkoord Jeannot 10-11; invalshoek 'rapport lezen', oorzaken/oplossingen blijven bij website-traag-op-mobiel |
-| artikel | klanten-werven-glazenwasser | gepland | 2026-11-12 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | klanten-werven-glazenwasser | live | 2026-11-12 | Gepland op 2026-11-12, automatisch gepubliceerd (taak kennisartikel-publiceren); concept 2026-11-10, akkoord Jeannot |
 | artikel | negatieve-review-reageren | gepland | 2026-11-16 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
 | artikel | winter-glazenwasser-omzet | gepland | 2026-11-19 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
 | artikel | servicegebied-google-instellen | gepland | 2026-11-23 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
