@@ -1,6 +1,5 @@
 /* ===========================================================================
    Stam Core — herkomst-opvanger (referral + UTM) voor stam-core.nl
-   - Registreert WAAR een bezoeker vandaan komt (?ref= / ?utm_) in Supabase.
    - Onthoudt de herkomst (FIRST-TOUCH, 30 dagen) in de browser, zodat 'ie ook
      beschikbaar is als de bezoeker doorklikt of later terugkomt.
    - Zet de herkomst in het contactformulier, zodat een lead aan de juiste
@@ -9,10 +8,7 @@
    cookies van derden; alleen localStorage in de eigen browser.
 =========================================================================== */
 (function () {
-  var SUPABASE_URL = "https://fgpfpdnmktktjmrunlrb.supabase.co";
-  var SUPABASE_ANON_KEY = "sb_publishable_RPg4tH4g3T08T2l59oPRsg_zCUC0koz";
   var KEY = "sc_herkomst";            // onthouden herkomst (first-touch)
-  var ONCE = "sc_herkomst_logged";    // voorkomt dubbel loggen per sessie
   var VENSTER_MS = 30 * 24 * 60 * 60 * 1000;   // 30 dagen geldig
 
   function param(name) {
@@ -38,7 +34,7 @@
   // Voor het contactformulier: leesbare bron-tekst (of "").
   window.stamcoreHerkomst = function () { return bronTekst(bewaardeHerkomst()); };
 
-  // ── 2) Nieuwe herkomst in de URL? First-touch vastleggen + 1x per sessie loggen
+  // ── 2) Nieuwe herkomst in de URL? First-touch vastleggen (alleen in deze browser)
   var hit = {
     ref_code: param("ref"),
     utm_source: param("utm_source"),
@@ -53,24 +49,6 @@
     // FIRST-TOUCH: alleen vastleggen als er nog geen geldige (niet-verlopen) herkomst is.
     if (!bewaardeHerkomst()) {
       try { localStorage.setItem(KEY, JSON.stringify(hit)); } catch (e) {}
-    }
-    // Bezoek 1x per sessie loggen naar referral_hits.
-    var alGelogd = (function () { try { return sessionStorage.getItem(ONCE); } catch (e) { return true; } })();
-    if (!alGelogd) {
-      fetch(SUPABASE_URL + "/rest/v1/referral_hits", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "apikey": SUPABASE_ANON_KEY,
-          "Authorization": "Bearer " + SUPABASE_ANON_KEY,
-          "Prefer": "return=minimal"
-        },
-        body: JSON.stringify(hit)
-      }).then(function () {
-        try { sessionStorage.setItem(ONCE, "1"); } catch (e) {}
-      }).catch(function (err) {
-        if (window.console) console.warn("[stamcore] herkomst niet gelogd:", err && err.message);
-      });
     }
   }
 
