@@ -56,15 +56,17 @@ De run start elke maandag om 7:00 automatisch (geplande taak `kennisartikel-weke
 | 9 | `servicegebied-google-instellen` | Je werkgebied instellen in Google als je bij de klant werkt | servicegebied google bedrijfsprofiel | Adres verbergen, servicegebied kiezen, wat het wel en niet doet |
 | 10 | `zonnepanelen-reinigen-extra-dienst` | Zonnepanelen reinigen als extra dienst online verkopen | zonnepanelen reinigen klanten | Aparte dienstpagina, plaatspagina's, uitleg voor klanten |
 | 11 | `abonnement-glazenwasser-online` | Een glazenwassersabonnement online aanbieden | glazenwasser abonnement | Frequenties uitleggen, aanmelden via de site, betalen via Mollie (boekingsmodule) |
-| 12 | `prijzen-op-website-glazenwasser` | Prijzen op je website zetten: wel of niet? | prijzen op website zetten | Voor- en nadelen, vanaf-prijzen, prijsindicatie per woningtype |
+| 12 | `prijzen-op-website` | Prijzen op je website zetten: wel of niet? | prijzen op website zetten | Voor- en nadelen, vanaf-prijzen, prijsindicatie per woningtype |
 | 13 | `fotos-bedrijfsprofiel` | Welke foto's werken op je Bedrijfsprofiel? | foto's google bedrijfsprofiel | Bus, team, voor/na, wat je beter niet doet |
 | 14 | `zakelijke-klanten-glazenwasser` | Zakelijke klanten en VvE's werven als glazenwasser | zakelijke glazenbewassing klanten | Contracten, frequentie, één factuur, wat een beheerder wil zien |
-| 15 | `whatsapp-business-glazenwasser` | WhatsApp Business voor glazenwassers | whatsapp business tips | Snelle antwoorden, aankondigingen, knop op je website |
+| 15 | `whatsapp-business-tips` | WhatsApp Business voor vakmensen | whatsapp business tips | Snelle antwoorden, aankondigingen, knop op je website |
 | 16 | `offerteformulier-dat-werkt` | Een aanvraagformulier dat klanten wél invullen | offerte formulier website | Weinig velden, adres, woningtype, frequentie; mobiel eerst |
 | 17 | `google-ads-glazenwasser` | Google Ads voor glazenwassers: wanneer is het zinvol? | google ads glazenwasser | Lokale campagnes, seizoen, budget-denken; geen beloftes over resultaat |
 | 18 | `marketingkalender-glazenwasser` | Marketingkalender voor glazenwassers: wat doe je wanneer? | marketing glazenwasser | Per seizoen: voorjaarspiek, zomer, najaar, winter |
 | 19 | `starten-als-glazenwasser-online` | Net gestart als glazenwasser: zo ben je vanaf dag één vindbaar | starten als glazenwasser | Domein, profiel, eerste reviews, simpele site |
-| 20 | `domeinnaam-email-glazenwasser` | Domeinnaam en zakelijk e-mailadres voor je bedrijf | domeinnaam kiezen bedrijf | Naam kiezen, .nl, e-mail op eigen domein |
+| 20 | `domeinnaam-kiezen-bedrijf` | Domeinnaam en zakelijk e-mailadres voor je bedrijf | domeinnaam kiezen bedrijf | Naam kiezen, .nl, e-mail op eigen domein |
+
+**Besluit Jeannot (2026-11-16):** minder focus op alleen glazenwassers. #9, #12, #13, #15, #16 en #20 zijn herschreven voor servicebedrijven in het algemeen (glazenwasser blijft één van de voorbeelden). Van de pure glazenwasseronderwerpen blijven #8, #17 en #19 gepland; #10, #11, #14 en #18 zijn geparkeerd (concept, niet gepland). Nieuwe onderwerpen: wissel algemene servicebedrijf-onderwerpen af met af en toe een glazenwasseronderwerp.
 
 Is de backlog leeg? Stel dan zelf vijf nieuwe onderwerpen voor (met slug, titel, zoekwoord en insteek) in het rapport, en wacht op akkoord van Jeannot voordat je ze in de queue zet.
 

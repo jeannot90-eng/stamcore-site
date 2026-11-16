@@ -32,18 +32,18 @@ Volgorde = KENNISARTIKELEN.md §3. Titel, zoekwoord en insteek staan daar.
 | artikel | klanten-werven-glazenwasser | live | 2026-11-12 | Gepland op 2026-11-12, automatisch gepubliceerd (taak kennisartikel-publiceren); concept 2026-11-10, akkoord Jeannot |
 | artikel | negatieve-review-reageren | live | 2026-11-16 | Gepland op 2026-11-16, automatisch gepubliceerd (taak kennisartikel-publiceren); concept 2026-11-10, akkoord Jeannot |
 | artikel | winter-glazenwasser-omzet | gepland | 2026-11-19 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
-| artikel | servicegebied-google-instellen | gepland | 2026-11-23 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
-| artikel | zonnepanelen-reinigen-extra-dienst | gepland | 2026-11-26 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
-| artikel | abonnement-glazenwasser-online | gepland | 2026-11-30 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
-| artikel | prijzen-op-website-glazenwasser | gepland | 2026-12-03 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
-| artikel | fotos-bedrijfsprofiel | gepland | 2026-12-07 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
-| artikel | zakelijke-klanten-glazenwasser | gepland | 2026-12-10 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
-| artikel | whatsapp-business-glazenwasser | gepland | 2026-12-14 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
-| artikel | offerteformulier-dat-werkt | gepland | 2026-12-17 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
-| artikel | google-ads-glazenwasser | gepland | 2026-12-21 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
-| artikel | marketingkalender-glazenwasser | gepland | 2026-12-24 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
-| artikel | starten-als-glazenwasser-online | gepland | 2026-12-28 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
-| artikel | domeinnaam-email-glazenwasser | gepland | 2026-12-31 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | servicegebied-google-instellen | gepland | 2026-11-23 | Concept 2026-11-10, op 2026-11-16 herschreven voor servicebedrijven algemeen (verzoek Jeannot: minder glazenwasserfocus); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | prijzen-op-website | gepland | 2026-11-26 | Concept 2026-11-10, op 2026-11-16 herschreven voor servicebedrijven algemeen (verzoek Jeannot: minder glazenwasserfocus); taak kennisartikel-publiceren zet hem op deze datum live; slug was prijzen-op-website-glazenwasser |
+| artikel | starten-als-glazenwasser-online | gepland | 2026-11-30 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live; gekozen als een van de 3 glazenwasserartikelen |
+| artikel | fotos-bedrijfsprofiel | gepland | 2026-12-03 | Concept 2026-11-10, op 2026-11-16 herschreven voor servicebedrijven algemeen (verzoek Jeannot: minder glazenwasserfocus); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | whatsapp-business-tips | gepland | 2026-12-07 | Concept 2026-11-10, op 2026-11-16 herschreven voor servicebedrijven algemeen (verzoek Jeannot: minder glazenwasserfocus); taak kennisartikel-publiceren zet hem op deze datum live; slug was whatsapp-business-glazenwasser |
+| artikel | google-ads-glazenwasser | gepland | 2026-12-10 | Concept 2026-11-10 (batch op verzoek Jeannot); taak kennisartikel-publiceren zet hem op deze datum live; gekozen als een van de 3 glazenwasserartikelen |
+| artikel | offerteformulier-dat-werkt | gepland | 2026-12-14 | Concept 2026-11-10, op 2026-11-16 herschreven voor servicebedrijven algemeen (verzoek Jeannot: minder glazenwasserfocus); taak kennisartikel-publiceren zet hem op deze datum live |
+| artikel | domeinnaam-kiezen-bedrijf | gepland | 2026-12-17 | Concept 2026-11-10, op 2026-11-16 herschreven voor servicebedrijven algemeen (verzoek Jeannot: minder glazenwasserfocus); taak kennisartikel-publiceren zet hem op deze datum live; slug was domeinnaam-email-glazenwasser |
+| artikel | zonnepanelen-reinigen-extra-dienst | concept | - | Geparkeerd 2026-11-16 op verzoek Jeannot (minder glazenwasserfocus); concept blijft staan, niet gepland |
+| artikel | abonnement-glazenwasser-online | concept | - | Geparkeerd 2026-11-16 op verzoek Jeannot (minder glazenwasserfocus); concept blijft staan, niet gepland |
+| artikel | zakelijke-klanten-glazenwasser | concept | - | Geparkeerd 2026-11-16 op verzoek Jeannot (minder glazenwasserfocus); concept blijft staan, niet gepland |
+| artikel | marketingkalender-glazenwasser | concept | - | Geparkeerd 2026-11-16 op verzoek Jeannot (minder glazenwasserfocus); concept blijft staan, niet gepland |
 
 ## Steden (golf 2)
 
