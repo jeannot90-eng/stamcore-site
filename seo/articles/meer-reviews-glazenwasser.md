@@ -5,7 +5,7 @@ meta: Meer Google reviews krijgen als glazenwasser? Zo maak je je reviewlink en 
 h1: Zo krijg je als glazenwasser meer Google-reviews
 zoekwoord: meer google reviews krijgen
 datePublished: 2026-10-26
-dateModified: 2026-11-12
+dateModified: 2026-11-16
 og: ["Meer Google-reviews", "als glazenwasser", "Reviewlink, QR-code, het juiste moment", "en de regels van Google."]
 gerelateerd: ["google-bedrijfsprofiel-glazenwasser", "wat-is-geo"]
 faq: [{"vraag": "Hoeveel reviews heb ik nodig?", "antwoord": "Daar is geen vast getal voor. Kijk naar de drie glazenwassers die in jouw plaats bovenaan Google Maps staan: dat is je vergelijking. In onze scans van acht Brabantse steden had bijna de helft van die bedrijven minder dan tien reviews."}, {"vraag": "Wat als een klant geen Google-account heeft?", "antwoord": "Om een review te plaatsen moet de klant ingelogd zijn met een Google-account. Dat account kan ook met een bestaand e-mailadres worden aangemaakt, het hoeft geen Gmail te zijn. Wil iemand dat niet, laat het dan rusten."}, {"vraag": "Mag ik familie of vrienden om een review vragen?", "antwoord": "Alleen als ze echt klant zijn en geen persoonlijke band met het bedrijf hebben. Google verbiedt reviews bij een belangenconflict, zoals van (oud-)medewerkers of mensen met een persoonlijke band. Laat familie dus liever buiten je profiel."}, {"vraag": "Kan ik een slechte review laten verwijderen?", "antwoord": "Alleen als de review tegen het contentbeleid van Google ingaat, bijvoorbeeld omdat het geen echte ervaring is. Dan kun je hem melden. Een eerlijke maar negatieve review blijft staan; reageer er dan rustig op en los het probleem op."}]
@@ -105,7 +105,7 @@ Let vooral op de tweede en derde regel. Een zin als "Tevreden? Laat een review a
 
 Reacties op reviews lezen nieuwe klanten mee. Google raadt aan om vriendelijk, duidelijk en kort te reageren, en alleen als je iets toe te voegen hebt. Je hoeft dus niet onder elke review "bedankt!" te zetten. Zet er geen aanbiedingen in, en onderteken met je naam of initialen.
 
-Bij een negatieve review: blijf rustig, zoek op wat er gebeurd is en nodig de klant uit om het telefonisch of via WhatsApp op te lossen. Geef toe wat je fout deed, maar neem geen schuld voor wat buiten jou lag. Noem nooit privégegevens van de klant, zoals het adres of hoe vaak je er komt. Een klant die zich gehoord voelt, past zijn review soms zelf aan, maar dat mag je nooit als voorwaarde stellen.
+Bij een negatieve review: blijf rustig, zoek op wat er gebeurd is en nodig de klant uit om het telefonisch of via WhatsApp op te lossen. Geef toe wat je fout deed, maar neem geen schuld voor wat buiten jou lag. Noem nooit privégegevens van de klant, zoals het adres of hoe vaak je er komt. Een klant die zich gehoord voelt, past zijn review soms zelf aan, maar dat mag je nooit als voorwaarde stellen. Een vaste opbouw voor zo'n reactie, met wat je beter nooit schrijft, lees je in [reageren op een negatieve review](/kennis/negatieve-review-reageren).
 
 In de scans die ik deed, reageerden 17 van de 24 bedrijven bovenaan niet op hun reviews. Wie dat wel doet, valt op.
 

@@ -1,5 +1,5 @@
 ---
-status: concept
+status: live
 title: Reageren op een negatieve review als vakman | Stam Core
 meta: Reageren op een negatieve review zonder het erger te maken: een vaste opbouw, wat je nooit schrijft en wanneer je een review bij Google kunt melden.
 h1: Reageren op een negatieve review: zo doe je dat als vakman
