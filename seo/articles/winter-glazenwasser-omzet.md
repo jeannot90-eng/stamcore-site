@@ -1,5 +1,5 @@
 ---
-status: concept
+status: live
 title: Glazenwasser in de winter: omzet op peil houden | Stam Core
 meta: Glazenwasser in de winter? Zo houd je je omzet op peil met abonnementen, zakelijke rondes, binnenwerk en extra diensten, en plan je het voorjaar vooruit.
 h1: Glazenwasser in de winter: zo houd je je omzet op peil

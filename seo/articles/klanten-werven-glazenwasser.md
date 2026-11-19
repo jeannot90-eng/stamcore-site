@@ -5,7 +5,7 @@ meta: Klanten werven als glazenwasser zonder geld te verbranden: wijkgericht wer
 h1: Klanten werven als glazenwasser: wat werkt echt?
 zoekwoord: klanten werven glazenwasser
 datePublished: 2026-11-12
-dateModified: 2026-11-12
+dateModified: 2026-11-19
 og: ["Klanten werven", "als glazenwasser", "Wijkgericht, dichter rijden", "en beter gevonden worden."]
 gerelateerd: ["google-bedrijfsprofiel-glazenwasser", "meer-reviews-glazenwasser"]
 faq: [{"vraag": "Werkt flyeren nog als glazenwasser?", "antwoord": "Ja, als je het gericht doet. Een flyer in de straten waar je al wast, met de dag waarop je er toch bent, werkt beter dan duizend flyers in een wijk waar je nog niemand hebt. Zet er je telefoonnummer, WhatsApp en een QR-code naar je site op."}, {"vraag": "Moet ik korting geven aan nieuwe klanten?", "antwoord": "Dat hoeft niet. Een eerste beurt met korting trekt vooral mensen die op prijs kiezen. Een duidelijke vaste prijs en het gemak van een vaste dag overtuigen vaak beter. Wil je toch iets geven, koppel het dan aan een abonnement in plaats van aan één beurt."}, {"vraag": "Hoe snel levert lokale SEO klanten op?", "antwoord": "Dat valt niet te beloven. Een goed ingericht Bedrijfsprofiel en pagina's per plaats hebben tijd nodig voordat Google ze laat zien. Reken eerder in maanden dan in weken, en blijf in de tussentijd gewoon werven in de wijken waar je al rijdt."}]
@@ -19,7 +19,7 @@ Een glazenwasser verdient zijn geld op de ladder, niet in de bus. Een nieuwe kla
 
 Daarom is de belangrijkste vraag bij klanten werven niet "hoe krijg ik meer klanten", maar "hoe krijg ik meer klanten in de straten waar ik al ben". Dat bepaalt welke acties zinvol zijn. Een advertentie die de hele regio bereikt, levert soms losse adressen op die je ronde juist uit elkaar trekken.
 
-Pak eens je planning erbij en kijk welke straten al goed gevuld zijn, en welke maar één of twee adressen hebben. Die laatste zijn je kansen.
+Pak eens je planning erbij en kijk welke straten al goed gevuld zijn, en welke maar één of twee adressen hebben. Die laatste zijn je kansen. Een volle ronde met vaste klanten helpt je bovendien door de rustige maanden heen; hoe dat werkt, lees je in [als glazenwasser je omzet in de winter op peil houden](/kennis/winter-glazenwasser-omzet).
 
 ## De buren van je vaste klanten
 

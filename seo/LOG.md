@@ -28,6 +28,7 @@
 | 2026-11-10 | Kennisartikelen wat-kost-website-glazenwasser (artikel-run 5) en pagespeed-score-uitleg (artikel-run 6) live na akkoord Jeannot; slotalinea wat-kost naar pakketten Start/Groei/Top; in-tekstlink vanuit website-traag-op-mobiel | https://stam-core.nl/kennis/wat-kost-website-glazenwasser · https://stam-core.nl/kennis/pagespeed-score-uitleg | kennis: wat-kost-website-glazenwasser en pagespeed-score-uitleg |
 | 2026-11-12 | Gepland kennisartikel live (taak kennisartikel-publiceren): klanten-werven-glazenwasser | https://stam-core.nl/kennis/klanten-werven-glazenwasser | kennis: klanten-werven-glazenwasser |
 | 2026-11-16 | Gepland kennisartikel live (taak kennisartikel-publiceren): negatieve-review-reageren | https://stam-core.nl/kennis/negatieve-review-reageren | kennis: negatieve-review-reageren |
+| 2026-11-19 | Gepland kennisartikel live (taak kennisartikel-publiceren): winter-glazenwasser-omzet | https://stam-core.nl/kennis/winter-glazenwasser-omzet | kennis: winter-glazenwasser-omzet |
 
 ## Indexering aangevraagd (Search Console)
 
